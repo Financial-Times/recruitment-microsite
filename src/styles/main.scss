@@ -1,0 +1,762 @@
+// Origami
+@import 'o-typography/main';
+@import 'o-buttons/main';
+@import 'o-colors/main';
+@import 'o-forms/main';
+@import 'o-fonts/main';
+
+@include oFontsInclude(FinancierDisplayWeb);
+@include oFontsInclude(MetricWeb);
+
+// Non origami colors
+$dark-slate: #1A1D24;
+$light-grey: #4A4A4A;
+
+// Variables
+$animation-lasts: 6s;
+$content-width: 1270px;
+$one-third-card-width: 260px;
+$one-forth-card-width: 240px;
+
+// Generic
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: oColorsGetPaletteColor('slate');
+}
+
+body, body a {
+  color: oColorsGetPaletteColor('white-80');
+}
+
+// Grid
+.content {
+  display: grid;
+  grid-template-columns:
+    minmax(1.2rem, 1fr)
+    minmax(auto, $content-width)
+    minmax(1.2rem, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
+}
+
+.chapter {
+  grid-column: 2;
+}
+
+.header, footer, .quotes {
+  grid-column: 1/-1;
+}
+
+.intro {
+  grid-column: 1/-1;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 1fr)
+    minmax(auto, 170px)
+    minmax(300px, 500px)
+    minmax(auto, 170px)
+    minmax(auto, 1fr);
+  grid-template-rows: 1fr 300px 200px 1fr;
+  justify-content: center;
+  align-items: center;
+
+  .heritage-logo {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+  }
+
+  .central-logo { // ask for better cropped image
+    grid-column: 3;
+    grid-row: 2/3;
+    z-index: 2;
+    width: 100%;
+  }
+
+  h1 {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    margin-top: -60px;
+    z-index: 2;
+  }
+
+  .title {
+    grid-column: 2/5;
+    grid-row: 2/4;
+    z-index: 2;
+
+    p {
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    h1, p {
+      width: 100%; // or would it be better to have a grid?
+    }
+  }
+}
+
+.video, .quotes {
+  grid-column: 1/-1;
+}
+
+.video {
+  iframe {
+    grid-column: 2;
+  }
+}
+
+.quotes {
+  h1, hr, p {
+    grid-column: 3;
+  }
+}
+
+.chapter {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  h2, hr, p {
+    grid-column: 3;
+  }
+
+  .announcement {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 3em 3em auto;
+
+    margin-bottom: 2em;
+
+    .section-line {
+      grid-column: 1/-1;
+      grid-row: 1;
+      align-self: end;
+    }
+
+    h2 {
+      grid-column: 1;
+      grid-row: 2/-1;
+    }
+
+    p {
+      grid-column: 2;
+      grid-row: 3/-1;
+    }
+  }
+
+  .question {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .culture-cards, .benefits-cards, .apply-cards, .interviews {
+    grid-column: 2/5;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+  }
+
+  .culture-cards, .benefits-cards {
+    grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  }
+
+  .apply-cards {
+    grid-template-columns: repeat(auto-fill, minmax($one-forth-card-width, 1fr));
+  }
+
+  .people {
+    grid-template-rows: 3em 3em;
+  }
+}
+
+.people {
+  .announcement h2 {
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .chapter {
+    .culture-cards, .benefits-cards, .apply-cards {
+      grid-column: 3;
+    }
+
+    .culture-card img {
+      display: none;
+    }
+
+    .announcement {
+      grid-column: 1/-1;
+
+      .section-line {
+        grid-column: 1;
+      }
+
+      h2 {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+      }
+
+      p {
+        grid-column: 1/-1;
+        grid-row: 3/-1;
+      }
+    }
+  }
+}
+
+// Interviews
+.interviews {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 15px;
+}
+
+.interview video {
+  width: 100%;
+}
+
+.interview-0 {
+  grid-column: 1 / 5;
+  grid-row: 2 / 5;
+}
+
+.interview-1 {
+  grid-column: 5 / 8;
+  grid-row: 1 / 5;
+}
+
+.interview-2 {
+  grid-column: 2 / 5;
+  grid-row: 5 / 7;
+}
+
+.interview-3 {
+  grid-column: 5 / 9;
+  grid-row: 5 / 8;
+}
+
+@media only screen and (max-width: 780px) {
+  .interviews {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .interview-0 {
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+  }
+
+  .interview-1 {
+    grid-column: 1 / 9;
+    grid-row: 2 / 3;
+  }
+
+  .interview-2 {
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+  }
+
+  .interview-3 {
+    grid-column: 1 / 9;
+    grid-row: 4 / 5;
+  }
+}
+
+// Header
+.header { // Menu as a grid? Keran, what do you think?
+  @include oTypographySans($scale: 2);
+  background-color: $dark-slate;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 28px;
+  z-index: 3;
+  text-align: center;
+
+  .menu {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .menu__item {
+    margin: 0;
+    padding: 0 1rem;
+    display: inline-block;
+    border-right: 1px solid $light-grey;
+  }
+
+  .menu__item:last-child {
+    border-right: none;
+  }
+
+  .menu__item a {
+    text-decoration: none;
+  }
+}
+
+// Intro
+.intro {
+  background-color: $dark-slate;
+
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    text-align: center;
+    font-weight: 200;
+  }
+}
+
+// Video
+.video-wrapper {
+  background-color: oColorsGetPaletteColor('claret-100');
+
+  iframe {
+    width: 100%;
+  }
+}
+
+// Chapter
+.section-line {
+  border-top: 4px solid oColorsGetPaletteColor('claret-100');
+}
+
+.announcement {
+  h2 {
+    @include oTypographySans($scale: 4);
+    font-weight: 400;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+    font-weight: 200;
+  }
+}
+
+.table {
+  grid-column: 3;
+  @include oTypographySans($scale: -1);
+  margin-bottom: 3rem;
+
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+
+  div {
+    p {
+      margin: 10px;
+    }
+
+    .bolder {
+      font-weight: 600;
+    }
+
+    .mini-header {
+      font-weight: 600;
+    }
+  }
+
+  .description .list {
+    margin-top: 1em;
+
+    p {
+      margin-bottom: 0.3em;
+      margin-top: 0.3em;
+      margin-left: 3em;
+    }
+  }
+
+  .left {
+    grid-column: 1;
+    display: flex;
+  }
+
+  .right {
+    grid-column: 2;
+    display: flex;
+  }
+
+  .description {
+    display: block;
+  }
+
+  .section-header {
+    margin-bottom: 0.6rem;
+  }
+
+  hr {
+    grid-column: 1/-1;
+    width: 100%;
+    height: 1px;
+    background-color: oColorsGetPaletteColor('white-80');
+
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+  }
+
+  .buttons {
+    display: flex;
+
+    margin-top: 1.3rem;
+
+    button {
+      @include oButtonsSize(big);
+      background-color: oColorsGetPaletteColor('claret-100');
+      border: solid 2px oColorsGetPaletteColor('claret-100');
+      color: oColorsGetPaletteColor('white-80');
+      margin: 5px;
+    }
+
+    .linkedIn {
+      @include oButtonsSize(big);
+      background-color: oColorsGetPaletteColor('slate');
+      border: solid 2px oColorsGetPaletteColor('white-80');
+      color: oColorsGetPaletteColor('white-80');
+      margin: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .table {
+    .left, .right {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+// Culture
+.culture-cards {
+  text-align: center;
+}
+
+.culture-card {
+  background-color: oColorsGetPaletteColor('white-80');
+  color: $light-grey;
+
+  img {
+    width: 100%;
+  }
+
+  h4 {
+    @include oTypographySans($scale: 1);
+    margin-top: 50px;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+    font-weight: 200;
+    margin: 2rem 10% 67px 10%;
+  }
+}
+
+// Quotes
+.quotes {
+  height: 430px;
+  padding-top: 130px;
+  background-color: $dark-slate;
+  text-align: center;
+
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 200;
+  }
+
+  hr {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 3em;
+    background-color: oColorsGetPaletteColor('claret-100');
+    border: none;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+// Benefits
+.benefits-card {
+  @include oTypographyDisplay($scale: 6);
+  background-color: oColorsGetPaletteColor('white-80');
+  color: $light-grey;
+  position: relative;
+
+  hr {
+    margin-left: 10%;
+    margin-top: 30px;
+    height: 4px;
+    width: 52px;
+    background-color: $light-grey;
+    border: none;
+  }
+
+  h3 {
+    margin: 10px 20% 0 10%;
+  }
+
+  p {
+    @include oTypographySans($scale: 0);
+    margin: 1rem 20% 2rem 10%;
+  }
+}
+
+.benefit-0:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 75px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
+
+.benefit-4:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 70px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+// Apply
+.apply {
+  text-align: center;
+
+  h2 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+    margin-bottom: 4rem;
+  }
+}
+
+.apply-card {
+  background-color: $dark-slate;
+  padding: 1rem;
+
+  h3 {
+    @include oTypographyDisplay($scale: 3);
+    font-weight: 200;
+    margin: 0 5% 0 5%;
+  }
+
+  p {
+    @include oTypographySans($scale: 0);
+    font-weight: 200;
+    margin: 1rem 5% 1rem 5%;
+  }
+
+  button {
+    @include oButtonsSize(big);
+    background-color: oColorsGetPaletteColor('claret-100');
+    color: oColorsGetPaletteColor('white-80');
+    border: none;
+  }
+}
+
+// Footer
+footer {
+  background-color: $dark-slate;
+  height: 160px;
+
+  p {
+    @include oTypographySans($scale: -1);
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+// Position
+.intro .title {
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 200;
+  }
+
+  hr {
+    background-color: oColorsGetPaletteColor('claret-100');
+    width: 60px;
+    height: 4px;
+    border: none;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+// Form
+.form {
+  grid-column: 3;
+  @include oFormsBaseFeatures();
+  @include oFormsWideFeature();
+
+  .o-forms__label {
+    @include oTypographySansBold($scale: -2);
+    color: oColorsGetPaletteColor('white-80');
+  }
+
+  margin-top: 1rem;
+
+  h2 {
+    @include oTypographySansBold($scale: 1);
+    color: oColorsGetPaletteColor('white-80');
+    margin-left: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .o-forms__text {
+    color: oColorsGetPaletteColor('black-40');
+    @include oTypographySans($scale: -2);
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  .o-forms__additional-info {
+    @include oTypographySans($scale: -2);
+    color: oColorsGetPaletteColor('white-80');
+  }
+
+  .upload {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  button {
+    @include oButtons($size: big, $theme: primary);
+    @include oTypographySans($scale: -2);
+    color: oColorsGetPaletteColor('white-80');
+    margin-bottom: 3rem;
+  }
+}
+
+.thankyou {
+  height: 100vh;
+}
+
+// Animation
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+
+.heritage-logo {
+  -webkit-animation: fadeOut $animation-lasts;
+  -moz-animation: fadeOut $animation-lasts;
+  -o-animation: fadeOut $animation-lasts;
+  animation: fadeOut $animation-lasts;
+  animation-iteration-count: 1;
+
+  opacity: 0.5;
+  -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
+  filter: grayscale(95%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro div h1, .intro div hr, .intro div p, .intro div img {
+  -webkit-animation: fadeIn $animation-lasts;
+  -moz-animation: fadeIn $animation-lasts;
+  -o-animation: fadeIn $animation-lasts;
+  animation: fadeIn $animation-lasts;
+  animation-iteration-count: 1;
+
+  opacity: 1;
+}
+
+.intro div p {
+  @include oTypographySans($scale: 0);
+  width: 450px;
+  margin: auto;
+}

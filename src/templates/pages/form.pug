@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Product and Tech
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+  body
+    .content
+        .header
+            nav.menu
+                each val in menu.items
+                    li.menu__item
+                        a(href=`index.html#${val.link}`)=val.text
+        section.intro
+            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
+            .title
+                h1 Apply now
+                hr
+                p You are part of a team that effects stock markets, influences wars and break down barriers
+        section.chapter
+            .form
+                h2 Please complete your details.
+                form.o-forms.o-forms--wide(action='thankyou.html', name='application', method='POST', netlify)
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Email address
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Enter your email address', name='email')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') First name
+                        input.o-forms__text(type='text', id='o-forms-standard', value='First name', name='first-name')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Last name
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Last name', name='last-name')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Phone number
+                    .o-forms__additional-info(id='text-box-info') 5 to 15 characters (numbers only)
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Enter your phone number', name='number')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Job title
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Job title', name='job-title')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Attach CV/Resume
+                        button.upload Upload CV
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Github
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Github handle if you have one', name='github')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Portflio website
+                        input.o-forms__text(type='text', id='o-forms-standard', value='Portfolio URL if you have one', name='portfolio')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') LinkedIn
+                        input.o-forms__text(type='text', id='o-forms-standard', value='LinkedIn URL if you have one', name='linkedin')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Salary expectations
+                        input.o-forms__text(type='text', id='o-forms-standard', name='salary')
+
+                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Availability/Notice period
+                        input.o-forms__text(type='text', id='o-forms-standard', name='notice-period')
+
+                    button(type='submit') Submit
+        footer.footer
+            p #{footer.text}

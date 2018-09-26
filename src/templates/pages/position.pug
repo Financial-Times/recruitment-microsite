@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Product and Tech
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+  body
+    .content
+        .header
+            nav.menu
+                each val in menu.items
+                    li.menu__item
+                        a(href=`index.html#${val.link}`)=val.text
+        section.intro
+            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
+            .title
+                h1 Engineer
+                hr
+                p You are part of a team that effects stock markets, influences wars and break down barriers
+        section.job-description.chapter
+            .table
+                .section-header
+                .left
+                    p.bolder Level
+                    p All
+                .right
+                    p.bolder Profession
+                    p Product management
+                hr
+                .left
+                    p.bolder Type
+                    p Full time
+                .right
+                    p.bolder Location
+                    p London, Sofia, Manilla
+                hr
+                .left
+                    p.bolder Description
+                .right
+                    .description
+                        p We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.
+                        p We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged.
+                        .list
+                            p.mini-header RESPONSIBILITIES
+                            p Creating budgets and schedules
+                            p Allocating freelance resources
+                            p Attending briefing meetings with the creative team
+                            p Invoicing and financial project admin
+                            p Organising external post-production sessions
+                            p Client liaison
+                            p Managing projects to ensure they are delivered on time and within budget
+                        .list
+                            p.mini-header REQUIREMENTS
+                            p 2-3 years minimum in similar role
+                            p Excellent written and verbal communication skills.
+                            p Strong financial management skills
+                            p Ability to interpret client briefs
+                            p Self motivated with a passion for creative culture
+                            p A down-to-earth approach and ability for getting the best out of both your team and your clients
+                        p Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter.
+                        .buttons
+                            form(action="form.html")
+                                    button Apply now
+                            button.linkedIn Apply with LinkedIn
+        footer
+            .chapter
+                p #{footer.text}

@@ -1,0 +1,197 @@
+{
+    "menu": {
+        "items":
+        [
+            {
+                "text": "Why FT",
+                "link": "why"
+            },
+            {
+                "text": "Our culture",
+                "link": "culture"
+            },
+            {
+                "text": "Our people",
+                "link": "people"
+            },
+            {
+                "text": "Benefits",
+                "link": "benefits"
+            }
+        ]
+    },
+    "video": {
+        "tmp": "video_tmp.png"
+    },
+    "intro": {
+        "text": "We may be 130 years old but we've never stopped innovating ...",
+        "logo": "ft_logo.svg",
+        "heritage_logo": "ft-heritage-logo.svg"
+    },
+    "why": {
+        "title": "Creative collaboration. 24/7",
+        "text": "The FT is 130 years old but we’re an exciting, pioneering business - not stuck in the past. Our digital news relies on constant technological innovation so our projects vary in scale and scope. We’re constantly looking for new ways to improve our user experience, design and delivery."
+    },
+    "culture": {
+        "title": "Express yourself",
+        "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team. Working as part of our tech team means you’ll be empowered to choose your own stack and to deploy new software, sometimes hundreds of times a day.",
+        "cards": [
+            {
+                "image": "c_tmp_1.png",
+                "title": "Autonomy",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+            },
+            {
+                "image": "c_tmp_2.png",
+                "title": "Inclusion",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+            },
+            {
+                "image": "c_tmp_3.png",
+                "title": "Empowering",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+            }
+        ]
+    },
+    "quotes": [
+        {
+            "quote": "Always zoom out",
+            "author": "Mark Hale, Principle UI"
+        }
+    ],
+    "people": {
+        "title": "Tech is what makes us tick",
+        "text": "Our product and tech team comprises hundreds of developers, designers, product managers and analysts - but our teams are small, self-governing and multi-disciplined. It means your decisions and knowledge will count in a major way, every day.",
+        "videos": [
+            {
+                "image": "int_tmp_1.png"
+            },
+            {
+                "image": "int_tmp_2.png"
+            },
+            {
+                "image": "int_tmp_3.png"
+            },
+            {
+                "image": "int_tmp_4.png"
+            }
+        ]
+    },
+    "benefits": {
+        "title": "Benefits",
+        "text": "As a team, we believe in the importance of trusted high quality journalism and the role it plays in a world dominated by fake news.",
+        "cards": [
+            {
+                "title": "Career development",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "decoration": true
+            },
+            {
+                "title": "Flexible working",
+                "text": "We offer a variety of time-off arrangements, including flexi leave, and two days of paid volunteer leave each year.",
+                "decoration": false
+            },
+            {
+                "title": "Health & wellness",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "decoration": false
+            },
+            {
+                "title": "Investing in your future",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "decoration": false
+            },
+            {
+                "title": "Work-life balance",
+                "text": "We offer a variety of time-off arrangements, including flexi leave, and two days of paid volunteer leave each year.",
+                "decoration": true
+            },
+            {
+                "title": "Friendly, vibrant team of 250+",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "decoration": false
+            }
+        ]
+    },
+    "apply": {
+        "title": "Got what it takes?",
+        "text": "We are based in London and have offices in London, Sofia and Manilla",
+        "cards": [
+            {
+                "name": "Engineering",
+                "type": "engineering",
+                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+            },
+            {
+                "name": "UX and Design",
+                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+            },
+            {
+                "name": "Product Management",
+                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+            },
+            {
+                "name": "Delivery",
+                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+            }
+        ]
+    },
+    "footer": {
+        "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+    },
+    "positions": {
+        "engineering": {
+            "level": {
+                "title": "Level",
+                "text": "All"
+            },
+            "profession": {
+                "title": "Profession",
+                "text": "Product management"
+            },
+            "type": {
+                "title": "Type",
+                "text": "Full time"
+            },
+            "location": {
+                "title": "Location",
+                "text": "London, Sofia, Manilla"
+            },
+            "description": {
+                "title": "Description",
+                "about": [
+                    "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                    "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                ],
+                "responsibilities": {
+                    "title": "RESPONSIBILITIES",
+                    "list": [
+                        "Creating budgets and schedules",
+                        "Allocating freelance resources",
+                        "Attending briefing meetings with the creative team",
+                        "Organising external post-production sessions",
+                        "Client liaison",
+                        "Managing projects to ensure they are delivered on time and within budget"
+                    ]
+                },
+                "requirements": {
+                    "title": "REQUIREMENTS",
+                    "list": [
+                        "2-3 years minimum in similar role",
+                        "Excellent written and verbal communication skills",
+                        "Strong financial management skills",
+                        "Ability to interpret client briefs",
+                        "Self motivated with a passion for creative culture",
+                        "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                    ]
+                }
+            },
+            "conclution": {
+                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+            }
+        },
+        "ux-and-design": true,
+        "product-management": true,
+        "delivery": true
+    }
+}

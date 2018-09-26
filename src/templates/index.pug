@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Product and Tech
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+  body
+    .content
+        .header
+            nav.menu
+                each val in menu.items
+                    li.menu__item
+                        a(href=`#${val.link}`)=val.text
+        section.intro
+            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
+            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+            h1 #{intro.text}
+        section.why.chapter(id='why')
+            .announcement
+                .section-line
+                h2 #{why.title}
+                p #{why.text}
+        section.video
+            .video-wrapper.content
+                iframe(width="560" height="315" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
+        section.culture.chapter(id='culture')
+            .announcement
+                .section-line
+                h2 #{culture.title}
+                p #{culture.text}
+            .culture-cards
+                each card in culture.cards
+                    .culture-card
+                        img(src=`images/${card.image}`, alt=`{card.title}`, role='presentation')
+                        h4 #{card.title}
+                        p #{card.text}
+        section.quotes
+            .chapter
+                h1 #{quotes[0].quote}
+                hr
+                p #{quotes[0].author}
+        section.people.chapter(id='people')
+            .announcement
+                .section-line
+                h2 #{people.title}
+            .interviews
+                each video,index in people.videos
+                    .interview(class='interview-'+index)
+                        img(src=`images/${video.image}`)
+        section.benefits.chapter(id='benefits')
+            .announcement
+                .section-line
+                h2 #{benefits.title}
+                p #{benefits.text}
+            .benefits-cards
+                each card, index in benefits.cards
+                    .benefits-card(class='benefit-'+index)
+                        hr(align="left")
+                        h3 #{card.title}
+                        p #{card.text}
+        section.apply.chapter
+            .question
+                h2 #{apply.title}
+                p #{apply.text}
+            .apply-cards
+                each card in apply.cards
+                    .apply-card
+                        h3 #{card.name}
+                        p #{card.text}
+                        form(action=`position.html`)
+                            button Apply now
+        footer
+            .chapter
+                p #{footer.text}

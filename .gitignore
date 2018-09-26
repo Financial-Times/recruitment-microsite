@@ -1,0 +1,6 @@
+public/*
+build/*
+.DS_STORE
+node_modules/*
+bower_components/*
+package-lock.json
