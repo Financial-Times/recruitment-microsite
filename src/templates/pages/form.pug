@@ -22,26 +22,27 @@ html(lang='en')
             div.form
                 h2 Please complete your details.
                 form.o-forms.o-forms--wide(action='thankyou.html', name='application', method='POST', netlify)
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Email address
-                    input.o-forms__text(type='text', id='o-forms-standard', value='Enter your email address', name='email')
+                    label.o-forms__label(aria-describedby='text-box-info', for='email') Email address
+                    input.o-forms__text(type='text', id='email', value='Enter your email address', name='email')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') First name
-                    input.o-forms__text(type='text', id='o-forms-standard', value='First name', name='first-name')
+                    label.o-forms__label(aria-describedby='text-box-info', for='first-name') First name
+                    input.o-forms__text(type='text', id='first-name', value='First name', name='first-name')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Last name
-                    input.o-forms__text(type='text', id='o-forms-standard', value='Last name', name='last-name')
+                    label.o-forms__label(aria-describedby='text-box-info', for='last-name') Last name
+                    input.o-forms__text(type='text', id='last-name', value='Last name', name='last-name')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Attach CV/Resume
-                    button.upload Upload CV
+                    span Attach CV/Resume
+                    label.upload-button(for='upload-cv') Upload CV
+                    input.upload-file(type='file', id='upload-cv')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Portfolio
-                    input.o-forms__text(type='text', id='o-forms-standard', value='Enter a link to your portfolio', name='portfolio')
+                    label.o-forms__label(aria-describedby='text-box-info', for='portfolio') Portfolio
+                    input.o-forms__text(type='text', id='portfolio', value='Enter a link to your portfolio', name='portfolio')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Salary expectations
-                    input.o-forms__text(type='text', id='o-forms-standard', name='salary', value='Enter your salary expectations')
+                    label.o-forms__label(aria-describedby='text-box-info', for='salary') Salary expectations
+                    input.o-forms__text(type='text', id='salary', value='Enter your salary expectations', name='salary')
 
-                    label.o-forms__label(aria-describedby='text-box-info', for='o-forms-standard') Availability/Notice period
-                    input.o-forms__text(type='text', id='o-forms-standard', name='notice-period', value='Enter your availability/notice period')
+                    label.o-forms__label(aria-describedby='text-box-info', for='notice-period') Availability/Notice period
+                    input.o-forms__text(type='text', id='notice-period', value='Enter your availability/notice period', name='notice-period')
 
-                    button.submit(type='submit') Submit
+                    button.submit-button(type='submit') Submit
         footer.footer
