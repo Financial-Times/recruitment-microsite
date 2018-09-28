@@ -642,7 +642,7 @@ footer {
     width: 100%;
   }
 
-  button {
+  .submit {
     @include oButtons($size: big, $theme: primary);
     @include oTypographySans($scale: -2);
     color: oColorsGetPaletteColor('white-80');
