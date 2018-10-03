@@ -611,6 +611,7 @@ footer {
   margin-top: 1rem;
   @include oFormsBaseFeatures();
   @include oFormsWideFeature();
+  @include oFormsRadioCheckboxFeatures();
 
   h2 {
     @include oTypographySansBold($scale: 1);
