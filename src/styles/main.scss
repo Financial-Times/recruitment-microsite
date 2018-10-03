@@ -621,27 +621,28 @@ footer {
   }
 }
 
-.o-forms {
+.form-body {
+  background-color: oColorsGetPaletteColor('white-80');
+
   .o-forms__label {
     @include oTypographySansBold($scale: -2);
-    color: oColorsGetPaletteColor('white-80');
+    color: oColorsGetPaletteColor('black-80');
   }
 
   .o-forms__text {
-    color: oColorsGetPaletteColor('black-40');
     @include oTypographySans($scale: -2);
+    color: oColorsGetPaletteColor('black-40');
     margin-bottom: 1rem;
-    border: none;
   }
 
   .o-forms__additional-info {
     @include oTypographySans($scale: -2);
-    color: oColorsGetPaletteColor('white-80');
+    color: oColorsGetPaletteColor('black-80');
   }
 
   span {
     @include oTypographySansBold($scale: -2);
-    color: oColorsGetPaletteColor('white-80');
+    color: oColorsGetPaletteColor('black-80');
   }
 
   .upload-button {
