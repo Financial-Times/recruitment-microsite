@@ -607,11 +607,11 @@ footer {
 
 // Form
 .form {
-  grid-column: 3;
-  margin-top: 1rem;
   @include oFormsBaseFeatures();
   @include oFormsWideFeature();
   @include oFormsRadioCheckboxFeatures();
+  grid-column: 3;
+  margin-top: 1rem;
 
   h2 {
     @include oTypographySansBold($scale: 1);
@@ -623,6 +623,10 @@ footer {
 
 .form-body {
   background-color: oColorsGetPaletteColor('white');
+}
+
+.form-fields {
+  padding: 30px;
 
   .o-forms__label {
     @include oTypographySansBold($scale: -2);
@@ -635,7 +639,11 @@ footer {
     margin-bottom: 1rem;
   }
 
-  .o-forms__additional-info {
+  .o-forms__errortext {
+    @include oTypographySans($scale: -2);
+  }
+
+  .o-forms__group .o-forms__label {
     @include oTypographySans($scale: -2);
     color: oColorsGetPaletteColor('black-80');
   }
@@ -667,7 +675,7 @@ footer {
     @include oButtons($size: big, $theme: primary);
     @include oTypographySans($scale: -2);
     color: oColorsGetPaletteColor('white-80');
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
