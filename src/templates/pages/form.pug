@@ -23,45 +23,43 @@ html(lang='en')
                 h2 Please complete your details.
                 div.form-body
                     form.o-forms.o-forms--wide(action='thankyou.html', name='application', method='POST', netlify)
-                        label.o-forms__label(aria-describedby='text-box-info', for='email') Email address
-                        input.o-forms__text(type='text', id='email', value='Enter your email address', name='email')
+                        div.form-fields
+                            label.o-forms__label(aria-describedby='text-box-info', for='full-name') Full name
+                            input.o-forms__text(type='text', id='full-name', placeholder='Enter your full name', name='full-name' required)
 
-                        label.o-forms__label(aria-describedby='text-box-info', for='first-name') First name
-                        input.o-forms__text(type='text', id='first-name', value='First name', name='first-name')
+                            label.o-forms__label(aria-describedby='text-box-info', for='email') Email address
+                            input.o-forms__text(type='text', id='email', placeholder='Enter your email address', name='email' required)
 
-                        label.o-forms__label(aria-describedby='text-box-info', for='last-name') Last name
-                        input.o-forms__text(type='text', id='last-name', value='Last name', name='last-name')
+                            fieldset.o-forms
+                                legend.o-forms__label Location
+                                div.o-forms__group.o-forms__group--inline
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="london" id="london")
+                                    label.o-forms__label(for="london") London
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="manilla" id="manilla")
+                                    label.o-forms__label(for="manilla") Manilla
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="sofia" id="sofia")
+                                    label.o-forms__label(for="sofia") Sofia
 
-                        fieldset.o-forms
-                            legend.o-forms__label Location
-                            div.o-forms__group.o-forms__group--inline
-                                input.o-forms__checkbox(type="checkbox" name="checkbox" value="london" id="london")
-                                label.o-forms__label(for="london") London
-                                input.o-forms__checkbox(type="checkbox" name="checkbox" value="manilla" id="manilla")
-                                label.o-forms__label(for="manilla") Manilla
-                                input.o-forms__checkbox(type="checkbox" name="checkbox" value="sofia" id="sofia")
-                                label.o-forms__label(for="sofia") Sofia
+                            span Attach CV/Resume
+                            label.upload-button(for='upload-cv') Upload CV
+                            input.upload-file(type='file', id='upload-cv')
 
-                        span Attach CV/Resume
-                        label.upload-button(for='upload-cv') Upload CV
-                        input.upload-file(type='file', id='upload-cv')
+                            label.o-forms__label(aria-describedby='text-box-info', for='portfolio') Portfolio
+                            input.o-forms__text(type='text', id='portfolio', placeholder='Enter a link to your portfolio', name='portfolio')
 
-                        label.o-forms__label(aria-describedby='text-box-info', for='portfolio') Portfolio
-                        input.o-forms__text(type='text', id='portfolio', value='Enter a link to your portfolio', name='portfolio')
+                            fieldset.o-forms
+                                legend.o-forms__label Role type
+                                div.o-forms__group.o-forms__group--inline
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract")
+                                    label.o-forms__label(for="contract") Contract
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent")
+                                    label.o-forms__label(for="permanent") Permanent
 
-                        fieldset.o-forms
-                            legend.o-forms__label Role type
-                            div.o-forms__group.o-forms__group--inline
-                                input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract")
-                                label.o-forms__label(for="contract") Contract
-                                input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent")
-                                label.o-forms__label(for="permanent") Permanent
+                            label.o-forms__label(aria-describedby='text-box-info', for='salary') Salary expectations
+                            input.o-forms__text(type='text', id='salary', placeholder='Enter your salary expectations', name='salary' required)
 
-                        label.o-forms__label(aria-describedby='text-box-info', for='salary') Salary expectations
-                        input.o-forms__text(type='text', id='salary', value='Enter your salary expectations', name='salary')
+                            label.o-forms__label(aria-describedby='text-box-info', for='notice-period') Availability/Notice period
+                            input.o-forms__text(type='text', id='notice-period', placeholder='Enter your availability/notice period', name='notice-period')
 
-                        label.o-forms__label(aria-describedby='text-box-info', for='notice-period') Availability/Notice period
-                        input.o-forms__text(type='text', id='notice-period', value='Enter your availability/notice period', name='notice-period')
-
-                        button.submit-button(type='submit') Submit
+                            button.submit-button(type='submit') Submit
         footer.footer
