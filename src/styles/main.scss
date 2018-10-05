@@ -629,33 +629,33 @@ footer {
   padding: 30px;
 
   .o-forms__label {
-    @include oTypographySansBold($scale: -2);
+    @include oTypographySansBold($scale: 0);
     color: oColorsGetPaletteColor('black-80');
   }
 
   .o-forms__text {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('black-40');
     margin-bottom: 1rem;
   }
 
   .o-forms__errortext {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
   }
 
   .o-forms__group .o-forms__label {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('black-80');
   }
 
   span {
-    @include oTypographySansBold($scale: -2);
+    @include oTypographySansBold($scale: 0);
     color: oColorsGetPaletteColor('black-80');
   }
 
   .upload-button {
     @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -673,7 +673,7 @@ footer {
 
   .submit-button {
     @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
     margin-bottom: 2rem;
   }
