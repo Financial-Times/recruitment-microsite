@@ -216,13 +216,19 @@ body, body a {
     margin: 0 auto 1em auto;
   }
 
-  .heritage-logo {
+  .heritage-logo-container {
+    width: 100%;
     position: absolute;
-    max-width: 100%;
-    height: 30vh;
     top: 15vh;
     left: 0;
+
+    .heritage-logo {
+      max-width: 100%;
+      height: 30vh;
+      margin: auto;
+    }
   }
+
 
   h1 {
     @include oTypographyDisplay($scale: 8);
@@ -658,7 +664,7 @@ footer {
   animation: fadeOut $animation-lasts;
   animation-iteration-count: 1;
 
-  opacity: 0;
+  opacity: 0.1;
   -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
   filter: grayscale(95%);
 }

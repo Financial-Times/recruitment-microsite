@@ -8,7 +8,8 @@ html(lang="en")
   body
     .content
         section.intro
-            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
+            .heritage-logo-container
+                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
             h1 #{intro.heading}
             hr
