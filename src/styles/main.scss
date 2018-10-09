@@ -54,21 +54,11 @@ body, body a {
   }
 }
 
-.quotes {
-  h1, hr, p {
-    grid-column: 2;
-  }
-}
-
 .chapter {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
   grid-template-rows: auto auto;
-
-  h2, hr, p {
-    grid-column: 3;
-  }
 
   .announcement {
     grid-column: 3;
@@ -228,6 +218,14 @@ body, body a {
   .central-logo {
     width: 66px;
     margin: 0 auto 1em auto;
+  }
+
+  .heritage-logo {
+    position: absolute;
+    max-width: 100%;
+    height: 30vh;
+    top: 15vh;
+    left: 0;
   }
 
   h1 {
@@ -435,6 +433,7 @@ body, body a {
   padding-top: 130px;
   background-color: $dark-slate;
   text-align: center;
+  margin-bottom: 2em;
 
   h1 {
     @include oTypographyDisplay($scale: 8);
@@ -617,106 +616,106 @@ footer {
 }
 
 // Animation
-// @keyframes fadeOut {
-//   0% {
-//     opacity: 1;
-//     filter: none;
-//   }
-//   100% {
-//     opacity: 0.5;
-//     -webkit-filter: grayscale(95%);
-//     filter: grayscale(95%);
-//   }
-// }
-// @-o-keyframes fadeOut {
-//   0% {
-//     opacity: 1;
-//     filter: none;
-//   }
-//   100% {
-//     opacity: 0.5;
-//     -webkit-filter: grayscale(95%);
-//     filter: grayscale(95%);
-//   }
-// }
-// @-moz-keyframes fadeOut {
-//   0% {
-//     opacity: 1;
-//     filter: none;
-//   }
-//   100% {
-//     opacity: 0.5;
-//     -webkit-filter: grayscale(95%);
-//     filter: grayscale(95%);
-//   }
-// }
-// @-webkit-keyframes fadeOut {
-//   0% {
-//     opacity: 1;
-//     filter: none;
-//   }
-//   100% {
-//     opacity: 0.5;
-//     -webkit-filter: grayscale(95%);
-//     filter: grayscale(95%);
-//   }
-// }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
+  }
+}
 
-// .heritage-logo {
-//   -webkit-animation: fadeOut $animation-lasts;
-//   -moz-animation: fadeOut $animation-lasts;
-//   -o-animation: fadeOut $animation-lasts;
-//   animation: fadeOut $animation-lasts;
-//   animation-iteration-count: 1;
+.heritage-logo {
+  -webkit-animation: fadeOut $animation-lasts;
+  -moz-animation: fadeOut $animation-lasts;
+  -o-animation: fadeOut $animation-lasts;
+  animation: fadeOut $animation-lasts;
+  animation-iteration-count: 1;
 
-//   opacity: 0.5;
-//   -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
-//   filter: grayscale(95%);
-// }
+  opacity: 0;
+  -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
+  filter: grayscale(95%);
+}
 
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0.1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-// @-o-keyframes fadeIn {
-//   0% {
-//     opacity: 0.1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-// @-moz-keyframes fadeIn {
-//   0% {
-//     opacity: 0.1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-// @-webkit-keyframes fadeIn {
-//   0% {
-//     opacity: 0.1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-// .intro h1, .intro hr, .intro p, .intro .central-logo {
-//   -webkit-animation: fadeIn $animation-lasts;
-//   -moz-animation: fadeIn $animation-lasts;
-//   -o-animation: fadeIn $animation-lasts;
-//   animation: fadeIn $animation-lasts;
-//   animation-iteration-count: 1;
+.intro h1, .intro hr, .intro p, .intro .central-logo {
+  -webkit-animation: fadeIn $animation-lasts;
+  -moz-animation: fadeIn $animation-lasts;
+  -o-animation: fadeIn $animation-lasts;
+  animation: fadeIn $animation-lasts;
+  animation-iteration-count: 1;
 
-//   opacity: 1;
-//   z-index: 2;
-// }
+  opacity: 1;
+  z-index: 2;
+}
 
 // .intro div p {
 //   @include oTypographySans($scale: 0);

@@ -8,6 +8,7 @@ html(lang="en")
   body
     .content
         section.intro
+            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
             h1 #{intro.heading}
             hr
@@ -23,7 +24,7 @@ html(lang="en")
                 p #{why.text}
         section.video
             .video-wrapper.content
-                iframe(width="1440" height="810" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
+                iframe(width="1440" height="600" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
         section.culture.chapter(id='culture')
             .announcement
                 .section-line
@@ -36,10 +37,9 @@ html(lang="en")
                         h4 #{card.title}
                         p #{card.text}
         section.quotes
-            .chapter
-                h1 #{quotes[0].quote}
-                hr
-                p #{quotes[0].author}
+            h1 #{quotes[0].quote}
+            hr
+            p #{quotes[0].author}
         section.people.chapter(id='people')
             .announcement
                 .section-line
@@ -59,7 +59,7 @@ html(lang="en")
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
-        section.apply.chapter
+        section.apply.chapter(id='opennings')
             .question
                 h2 #{apply.title}
                 p #{apply.text}
