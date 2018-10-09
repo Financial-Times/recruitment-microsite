@@ -44,7 +44,7 @@ body, body a {
     minmax(1.2rem, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-.header, footer, .quotes, .intro, .video {
+.header, .quotes, .intro, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
@@ -497,7 +497,10 @@ body, body a {
 
 // Apply
 .apply {
+  background-color: $dark-slate;
   text-align: center;
+  padding-bottom: 4em;
+  margin-bottom: 2em;
 
   h2 {
     @include oTypographyDisplay($scale: 8);
@@ -507,43 +510,34 @@ body, body a {
 
   p {
     @include oTypographySans($scale: 1);
-    margin-bottom: 4rem;
-  }
-}
-
-.apply-card {
-  background-color: $dark-slate;
-  padding: 1rem;
-
-  h3 {
-    @include oTypographyDisplay($scale: 3);
     font-weight: 200;
-    margin: 0 5% 0 5%;
-  }
-
-  p {
-    @include oTypographySans($scale: 0);
-    font-weight: 200;
-    margin: 1rem 5% 1rem 5%;
+    margin-bottom: 1rem;
   }
 
   button {
-    @include oButtonsSize(big);
-    background-color: oColorsGetPaletteColor('claret-100');
-    color: oColorsGetPaletteColor('white-80');
-    border: none;
+    @include oButtons('big');
+    @include oButtonsTheme(('primary', 'inverse'));
   }
 }
 
 // Footer
 footer {
-  background-color: $dark-slate;
-  height: 160px;
+  height: 70px;
+
+  hr {
+    margin: auto;
+    max-width: 900px;
+    height: 0.25px;
+    background-color: oColorsGetPaletteColor('white-80');
+  }
 
   p {
     @include oTypographySans($scale: -1);
-    margin-top: 60px;
+    font-weight: 200;
     text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    max-width: 460px;
   }
 }
 

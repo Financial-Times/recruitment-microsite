@@ -117,25 +117,7 @@
     "apply": {
         "title": "Got what it takes?",
         "text": "We are based in London and have offices in London, Sofia and Manilla",
-        "cards": [
-            {
-                "name": "Engineering",
-                "type": "engineering",
-                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
-            },
-            {
-                "name": "UX and Design",
-                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
-            },
-            {
-                "name": "Product Management",
-                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
-            },
-            {
-                "name": "Delivery",
-                "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
-            }
-        ]
+        "button": "Current openings"
     },
     "footer": {
         "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
