@@ -48,10 +48,8 @@ body, body a {
   grid-column: 1/-1;
 }
 
-.video {
-  iframe {
-    grid-column: 2;
-  }
+iframe {
+  grid-column: 2;
 }
 
 .chapter {
@@ -103,6 +101,10 @@ body, body a {
 
   .culture-cards, .benefits-cards {
     grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  }
+
+  .benefits-cards {
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .people {
