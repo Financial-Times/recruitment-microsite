@@ -1,4 +1,10 @@
 {
+    "intro": {
+        "heading": "Make work that's meaningful",
+        "subheading": "Join the FT, one of the world's leading news organisation, as part of our diverse product and technology team.",
+        "logo": "FT_Logo_PinkGrey.png",
+        "heritage_logo": "ft-heritage-logo.svg"
+    },
     "menu": {
         "items":
         [
@@ -7,26 +13,21 @@
                 "link": "why"
             },
             {
-                "text": "Our culture",
-                "link": "culture"
-            },
-            {
                 "text": "Our people",
                 "link": "people"
             },
             {
                 "text": "Benefits",
                 "link": "benefits"
+            },
+            {
+                "text": "Current openings",
+                "link": "openings"
             }
         ]
     },
     "video": {
         "tmp": "video_tmp.png"
-    },
-    "intro": {
-        "text": "We may be 130 years old but we've never stopped innovating ...",
-        "logo": "ft_logo.svg",
-        "heritage_logo": "ft-heritage-logo.svg"
     },
     "why": {
         "title": "Creative collaboration. 24/7",

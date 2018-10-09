@@ -5,8 +5,11 @@
 @import 'o-forms/main';
 @import 'o-fonts/main';
 
-@include oFontsInclude(FinancierDisplayWeb);
-@include oFontsInclude(MetricWeb);
+@include oFontsInclude(FinancierDisplayWeb, regular);
+// @include oFontsInclude(FinancierDisplayWeb, bold);
+
+@include oFontsInclude(MetricWeb, $weight: light);
+@include oFontsInclude(MetricWeb, $weight: regular);
 
 // Non origami colors
 $dark-slate: #1A1D24;
@@ -14,7 +17,7 @@ $light-grey: #4A4A4A;
 
 // Variables
 $animation-lasts: 6s;
-$content-width: 1270px;
+$content-width: 1440px;
 $one-third-card-width: 260px;
 $one-forth-card-width: 240px;
 
@@ -41,65 +44,7 @@ body, body a {
     minmax(1.2rem, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-.chapter {
-  grid-column: 2;
-}
-
-.header, footer, .quotes {
-  grid-column: 1/-1;
-}
-
-.intro {
-  grid-column: 1/-1;
-  min-height: 80vh;
-  display: grid;
-  grid-template-columns:
-    minmax(auto, 1fr)
-    minmax(auto, 170px)
-    minmax(300px, 500px)
-    minmax(auto, 170px)
-    minmax(auto, 1fr);
-  grid-template-rows: 1fr 300px 200px 1fr;
-  justify-content: center;
-  align-items: center;
-
-  .heritage-logo {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    width: 100%;
-  }
-
-  .central-logo { // ask for better cropped image
-    grid-column: 3;
-    grid-row: 2/3;
-    z-index: 2;
-    width: 100%;
-  }
-
-  h1 {
-    grid-column: 2/5;
-    grid-row: 3/4;
-    margin-top: -60px;
-    z-index: 2;
-  }
-
-  .title {
-    grid-column: 2/5;
-    grid-row: 2/4;
-    z-index: 2;
-
-    p {
-      text-align: center;
-      margin-top: 2em;
-    }
-
-    h1, p {
-      width: 100%; // or would it be better to have a grid?
-    }
-  }
-}
-
-.video, .quotes {
+.header, footer, .quotes, .intro, .video {
   grid-column: 1/-1;
 }
 
@@ -111,7 +56,7 @@ body, body a {
 
 .quotes {
   h1, hr, p {
-    grid-column: 3;
+    grid-column: 2;
   }
 }
 
@@ -130,7 +75,7 @@ body, body a {
     grid-row: 1;
     display: grid;
     grid-template-columns: 2fr 6fr;
-    grid-template-rows: 3em 3em auto;
+    grid-template-rows: 0.3em 4em auto;
 
     margin-bottom: 2em;
 
@@ -141,7 +86,7 @@ body, body a {
     }
 
     h2 {
-      grid-column: 1;
+      grid-column: 1/-1;
       grid-row: 2/-1;
     }
 
@@ -217,6 +162,7 @@ body, body a {
 
 // Interviews
 .interviews {
+  grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -249,72 +195,81 @@ body, body a {
 
 @media only screen and (max-width: 780px) {
   .interviews {
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 
   .interview-0 {
-    grid-column: 1 / 9;
+    grid-column: 1/-1;
     grid-row: 1 / 2;
   }
 
   .interview-1 {
-    grid-column: 1 / 9;
+    grid-column: 1/-1;
     grid-row: 2 / 3;
   }
 
   .interview-2 {
-    grid-column: 1 / 9;
+    grid-column: 1/-1;
     grid-row: 3 / 4;
   }
 
   .interview-3 {
-    grid-column: 1 / 9;
+    grid-column: 1/-1;
     grid-row: 4 / 5;
-  }
-}
-
-// Header
-.header { // Menu as a grid? Keran, what do you think?
-  @include oTypographySans($scale: 2);
-  background-color: $dark-slate;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  min-height: 28px;
-  z-index: 3;
-  text-align: center;
-
-  .menu {
-    width: 100%;
-    margin-top: 6px;
-  }
-
-  .menu__item {
-    margin: 0;
-    padding: 0 1rem;
-    display: inline-block;
-    border-right: 1px solid $light-grey;
-  }
-
-  .menu__item:last-child {
-    border-right: none;
-  }
-
-  .menu__item a {
-    text-decoration: none;
   }
 }
 
 // Intro
 .intro {
-  background-color: $dark-slate;
+  min-height: 66vh;
+  text-align: center;
+  padding-top: 15vh;
+    
+  .central-logo {
+    width: 66px;
+    margin: 0 auto 1em auto;
+  }
 
   h1 {
     @include oTypographyDisplay($scale: 8);
-    text-align: center;
-    font-weight: 200;
+    max-width: 800px;
+    margin: auto;
   }
+
+  p {
+    @include oTypographySans($scale: 1);
+    font-weight: 200;
+    max-width: 480px;
+    margin: auto;
+  }
+}
+
+// Menu
+.menu {
+  @include oTypographySans($scale: 2);
+  background-color: $dark-slate;
+  padding: 1rem;
+  position: absolute;
+  top: 66vh;
+  width: 100%;
+  min-height: 28px;
+  z-index: 3;
+  text-align: center;
+}
+
+.menu__item {
+  margin: 0;
+  padding: 0 1rem;
+  display: inline-block;
+  border-right: 1px solid $light-grey;
+}
+
+.menu__item:last-child {
+  border-right: none;
+}
+
+.menu__item a {
+  text-decoration: none;
 }
 
 // Video
@@ -334,13 +289,24 @@ body, body a {
 .announcement {
   h2 {
     @include oTypographySans($scale: 4);
-    font-weight: 400;
+    font-weight: 200;
   }
 
   p {
     @include oTypographySans($scale: 1);
     font-weight: 200;
+    margin-right: 2em;
   }
+
+}
+
+.intro hr, .quotes hr {
+  width: 60px;
+  height: 4px;
+  margin-bottom: 1.3em;
+  margin-top: 1.3em;
+  background-color: oColorsGetPaletteColor('claret-100');
+  border: none;
 }
 
 .table {
@@ -469,14 +435,6 @@ body, body a {
   h1 {
     @include oTypographyDisplay($scale: 8);
     font-weight: 200;
-  }
-
-  hr {
-    width: 60px;
-    height: 4px;
-    margin-bottom: 3em;
-    background-color: oColorsGetPaletteColor('claret-100');
-    border: none;
   }
 
   p {
@@ -655,108 +613,109 @@ footer {
 }
 
 // Animation
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0.5;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0.5;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0.5;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0.5;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//     filter: none;
+//   }
+//   100% {
+//     opacity: 0.5;
+//     -webkit-filter: grayscale(95%);
+//     filter: grayscale(95%);
+//   }
+// }
+// @-o-keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//     filter: none;
+//   }
+//   100% {
+//     opacity: 0.5;
+//     -webkit-filter: grayscale(95%);
+//     filter: grayscale(95%);
+//   }
+// }
+// @-moz-keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//     filter: none;
+//   }
+//   100% {
+//     opacity: 0.5;
+//     -webkit-filter: grayscale(95%);
+//     filter: grayscale(95%);
+//   }
+// }
+// @-webkit-keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//     filter: none;
+//   }
+//   100% {
+//     opacity: 0.5;
+//     -webkit-filter: grayscale(95%);
+//     filter: grayscale(95%);
+//   }
+// }
 
-.heritage-logo {
-  -webkit-animation: fadeOut $animation-lasts;
-  -moz-animation: fadeOut $animation-lasts;
-  -o-animation: fadeOut $animation-lasts;
-  animation: fadeOut $animation-lasts;
-  animation-iteration-count: 1;
+// .heritage-logo {
+//   -webkit-animation: fadeOut $animation-lasts;
+//   -moz-animation: fadeOut $animation-lasts;
+//   -o-animation: fadeOut $animation-lasts;
+//   animation: fadeOut $animation-lasts;
+//   animation-iteration-count: 1;
 
-  opacity: 0.5;
-  -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
-  filter: grayscale(95%);
-}
+//   opacity: 0.5;
+//   -webkit-filter: grayscale(95%); // Maybe logo with predefined color would be better?
+//   filter: grayscale(95%);
+// }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0.1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @-o-keyframes fadeIn {
+//   0% {
+//     opacity: 0.1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @-moz-keyframes fadeIn {
+//   0% {
+//     opacity: 0.1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @-webkit-keyframes fadeIn {
+//   0% {
+//     opacity: 0.1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-.intro div h1, .intro div hr, .intro div p, .intro div img {
-  -webkit-animation: fadeIn $animation-lasts;
-  -moz-animation: fadeIn $animation-lasts;
-  -o-animation: fadeIn $animation-lasts;
-  animation: fadeIn $animation-lasts;
-  animation-iteration-count: 1;
+// .intro h1, .intro hr, .intro p, .intro .central-logo {
+//   -webkit-animation: fadeIn $animation-lasts;
+//   -moz-animation: fadeIn $animation-lasts;
+//   -o-animation: fadeIn $animation-lasts;
+//   animation: fadeIn $animation-lasts;
+//   animation-iteration-count: 1;
 
-  opacity: 1;
-}
+//   opacity: 1;
+//   z-index: 2;
+// }
 
-.intro div p {
-  @include oTypographySans($scale: 0);
-  width: 450px;
-  margin: auto;
-}
+// .intro div p {
+//   @include oTypographySans($scale: 0);
+//   width: 450px;
+//   margin: auto;
+// }

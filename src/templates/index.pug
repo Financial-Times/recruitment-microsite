@@ -7,15 +7,15 @@ html(lang="en")
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
     .content
-        .header
-            nav.menu
-                each val in menu.items
-                    li.menu__item
-                        a(href=`#${val.link}`)=val.text
         section.intro
-            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            h1 #{intro.text}
+            h1 #{intro.heading}
+            hr
+            p #{intro.subheading}
+        nav.menu
+            each val in menu.items
+                li.menu__item
+                    a(href=`#${val.link}`)=val.text
         section.why.chapter(id='why')
             .announcement
                 .section-line
