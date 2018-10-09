@@ -44,7 +44,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-.header, .quotes, .intro, .video, .apply, footer {
+.header, .quotes, .intro, .video, .apply, footer, .menu {
   grid-column: 1/-1;
 }
 
@@ -207,11 +207,12 @@ body, body a {
 
 // Intro
 .intro {
-  min-height: 66vh;
+  min-height: 56vh;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 10vh;
     
   .central-logo {
+    // margin-top: 15vh;
     width: 66px;
     margin: 0 auto 1em auto;
   }
@@ -229,7 +230,6 @@ body, body a {
     }
   }
 
-
   h1 {
     @include oTypographyDisplay($scale: 8);
     max-width: 800px;
@@ -241,6 +241,7 @@ body, body a {
     font-weight: 200;
     max-width: 480px;
     margin: auto;
+    margin-bottom: 1em;
   }
 }
 
@@ -249,12 +250,10 @@ body, body a {
   @include oTypographySans($scale: 2);
   background-color: $dark-slate;
   padding: 1rem;
-  position: absolute;
-  top: 66vh;
-  width: 100%;
   min-height: 28px;
   z-index: 3;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .menu__item {
@@ -529,7 +528,7 @@ footer {
   hr {
     margin: auto;
     max-width: 900px;
-    height: 0.25px;
+    height: 0.1px;
     background-color: oColorsGetPaletteColor('white-80');
   }
 
