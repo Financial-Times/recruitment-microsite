@@ -510,7 +510,7 @@ body, body a {
     margin-bottom: 1rem;
   }
 
-  button {
+  a {
     @include oButtons('big');
     @include oButtonsTheme(('primary', 'inverse'));
   }
