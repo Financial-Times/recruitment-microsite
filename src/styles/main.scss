@@ -48,7 +48,7 @@ body, body a {
   grid-column: 1/-1;
 }
 
-.video iframe {
+.video iframe, h2 {
   grid-column: 2;
 }
 
@@ -110,6 +110,47 @@ body, body a {
 
   .people {
     grid-template-rows: 3em 3em;
+  }
+}
+
+.vacancy {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+
+  .heading {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 0.3em 4em auto auto auto auto;
+
+    .section-line {
+      grid-column: 1/-1;
+      align-self: end;
+    }
+
+    h2 {
+      grid-column: 1/-1;
+      align-self: center;
+    }
+
+    p {
+      grid-column: 2;
+      align-self: start;
+    }
+
+    a {
+      grid-column: 2;
+    }
+
+    .table {
+      grid-column: 1/-1;
+    }
+  }
+
+  h2 {
+    grid-column: 3;
   }
 }
 
@@ -225,7 +266,7 @@ body, body a {
 
 // Intro
 .intro {
-  min-height: 56vh;
+  min-height: 36vh;
   text-align: center;
   padding: 1em;
   padding-top: 10vh;
@@ -264,6 +305,10 @@ body, body a {
   }
 }
 
+.front-page {
+  min-height: 56vh;
+}
+
 // Menu
 .menu {
   @include oTypographySans($scale: 2);
@@ -273,12 +318,26 @@ body, body a {
   z-index: 3;
   text-align: center;
   margin-bottom: 2em;
+
+  img {
+    height: 30px;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    float: right;
+  }
 }
 
-.menu__item {
+.menu__item, .menu p {
   margin: 0;
   padding: 0 1rem;
   display: inline-block;
+}
+
+.menu__item {
   border-right: 1px solid $light-grey;
 }
 
@@ -304,22 +363,33 @@ body, body a {
 }
 
 // Chapter
-.section-line {
+.announcement .section-line {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
 
-.announcement {
-  h2 {
-    @include oTypographySans($scale: 4);
-    font-weight: 200;
-  }
+.vacancy .section-line {
+  border-top: 2px solid oColorsGetPaletteColor('claret-100');
+}
 
+h2 {
+  @include oTypographySans($scale: 4);
+  font-weight: 200;
+}
+
+.announcement, .vacancy {
   p {
     @include oTypographySans($scale: 1);
     font-weight: 200;
     margin-right: 2em;
   }
 
+  a {
+    @include oButtons('big');
+    @include oButtonsTheme(('primary', 'inverse'));
+
+    width: 230px;
+    height: 2em;
+  }
 }
 
 .intro hr, .quotes hr {
