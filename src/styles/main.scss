@@ -48,7 +48,7 @@ body, body a {
   grid-column: 1/-1;
 }
 
-iframe {
+.video iframe {
   grid-column: 2;
 }
 
@@ -99,11 +99,12 @@ iframe {
     margin-bottom: 5rem;
   }
 
-  .culture-cards, .benefits-cards {
-    grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  .culture-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .benefits-cards {
+    grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
     grid-template-rows: repeat(2, 1fr);
   }
 
@@ -145,14 +146,15 @@ iframe {
         grid-row: 3/-1;
       }
     }
-  }
 
-  .culture-cards {
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .benefits-cards {
-    grid-template-rows: repeat(6, 1fr);
+    .culture-cards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  
+    .benefits-cards {
+      grid-template-rows: repeat(6, 1fr);
+    }
   }
 }
 
