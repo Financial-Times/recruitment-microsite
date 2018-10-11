@@ -130,7 +130,7 @@ body, body a {
       align-self: end;
     }
 
-    h2 {
+    h2, label {
       grid-column: 1/-1;
       align-self: center;
     }
@@ -381,7 +381,7 @@ body, body a {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
 
-h2 {
+h2, label {
   @include oTypographySans($scale: 4);
   font-weight: 200;
 }
@@ -412,10 +412,9 @@ h2 {
 }
 
 .table {
+  display: none;
   grid-column: 3;
   margin-bottom: 3rem;
-
-  display: grid;
   grid-template-columns: 2fr 6fr;
 
   div {
@@ -481,6 +480,19 @@ h2 {
       @include oButtonsTheme(('primary', 'inverse'));
     }
   }
+}
+
+label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.vacancy .hidden-input {
+  display: none;
+}
+
+.vacancy .hidden-input:checked ~ .table {
+  display: grid;
 }
 
 @media only screen and (max-width: 780px) {
