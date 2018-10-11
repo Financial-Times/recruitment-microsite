@@ -7,17 +7,15 @@ html(lang='en')
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
     .content
-        .header
-            nav.menu
-                each val in menu.items
-                    li.menu__item
-                        a(href=`index.html#${val.link}`)=val.text
+        nav.menu
+            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+            p Current openings
         section.intro
-            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
-            .title
-                h1 Apply now
-                hr
-                p You are part of a team that effects stock markets, influences wars and break down barriers
+            .heritage-logo-container
+                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
+            h1 Search for your next role
+            hr
+            p You are part of a team that effects stock markets, influences wars and breaks down barriers
         section.chapter
             .form
                 h2 Please complete your details.
@@ -57,5 +55,6 @@ html(lang='en')
                         input.o-forms__text(type='text', id='o-forms-standard', name='notice-period')
 
                     button(type='submit') Submit
-        footer.footer
+        footer
+            hr
             p #{footer.text}
