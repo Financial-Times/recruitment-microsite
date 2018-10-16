@@ -6,14 +6,13 @@ html(lang="en")
     title Product and Tech
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
-    div.header
+    .content
         nav.menu
-            each val in menu.items
-                li.menu__item
-                    a(href=`index.html#${val.link}`)=val.text
-    section.intro.thankyou
-        img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
-        div.title
+            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+            p Current openings
+        section.intro
+            .heritage-logo-container
+                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             h1 Thank you
             hr
             p A member of our team will be in contact shortly
