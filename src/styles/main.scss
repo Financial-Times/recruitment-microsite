@@ -4,6 +4,7 @@
 @import 'o-colors/main';
 @import 'o-forms/main';
 @import 'o-fonts/main';
+@import 'o-icons/main';
 
 @include oFontsInclude(FinancierDisplayWeb, regular);
 // @include oFontsInclude(FinancierDisplayWeb, bold);
@@ -113,6 +114,17 @@ body, body a {
   }
 }
 
+.epigraph {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+
+  h2 {
+    grid-column: 3;
+    align-self: end;
+  }
+}
+
 .vacancy {
   grid-column: 2;
   display: grid;
@@ -122,7 +134,7 @@ body, body a {
     grid-column: 3;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 2fr 5fr 1fr;
     grid-template-rows: 0.3em 4em auto auto auto auto;
 
     .section-line {
@@ -131,17 +143,23 @@ body, body a {
     }
 
     h2, label {
-      grid-column: 1/-1;
+      grid-column: 1/3;
       align-self: center;
     }
 
+    i {
+      grid-column: 3;
+      align-self: center;
+      justify-self: end;
+    }
+
     p {
-      grid-column: 2;
+      grid-column: 2/-1;
       align-self: start;
     }
 
     a {
-      grid-column: 2;
+      grid-column: 2/-1;
     }
 
     .table {
@@ -381,6 +399,14 @@ body, body a {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
 
+.epigraph h2 {
+  font-weight: 600;
+}
+
+.vacancy .heading a {
+  margin-bottom: 3em;
+}
+
 h2, label {
   @include oTypographySans($scale: 4);
   font-weight: 200;
@@ -388,14 +414,15 @@ h2, label {
 
 .announcement, .vacancy {
   p {
-    @include oTypographySans($scale: 1);
+    @include oTypographySans($scale: 2);
     font-weight: 200;
     margin-right: 2em;
   }
 
   a {
     @include oButtons('big');
-    @include oButtonsTheme(('primary', 'inverse'));
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
 
     width: 230px;
     height: 2em;
@@ -412,24 +439,23 @@ h2, label {
 }
 
 .table {
-  display: none;
+  display: grid;
   grid-column: 3;
-  margin-bottom: 3rem;
   grid-template-columns: 2fr 6fr;
 
   div {
     p {
-      @include oTypographySans($scale: -2);
+      @include oTypographySans($scale: 0);
       margin: 10px;
     }
 
     .bolder {
-      @include oTypographySans($scale: -2);
+      @include oTypographySans($scale: 0);
       font-weight: 600;
     }
 
     .mini-header {
-      @include oTypographySans($scale: -2);
+      @include oTypographySans($scale: 0);
       font-weight: 600;
     }
   }
@@ -438,18 +464,18 @@ h2, label {
     margin-top: 1em;
 
     p {
-      @include oTypographySans($scale: -2);
+      @include oTypographySans($scale: 0);
     }
   }
 
   .left {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     grid-column: 1;
     display: flex;
   }
 
   .right {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     grid-column: 2;
     display: flex;
   }
@@ -459,7 +485,7 @@ h2, label {
   }
 
   .section-header {
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     margin-bottom: 0.6rem;
   }
 
@@ -477,7 +503,8 @@ h2, label {
 
     button {
       @include oButtons();
-      @include oButtonsTheme(('primary', 'inverse'));
+      @include oButtonsTheme('primary');
+      @include oButtonsTheme('inverse');
     }
   }
 }
@@ -487,12 +514,34 @@ label {
   margin-bottom: 1em;
 }
 
+.vacancy .heading:hover i {
+  @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 36);
+}
+
 .vacancy .hidden-input {
   display: none;
 }
 
+.vacancy .hidden-input ~ .table {
+  // display: none;
+  height: 0;
+  overflow-y: hidden;
+
+  transition: 
+		height 0.5s ease-in-out;
+}
+
 .vacancy .hidden-input:checked ~ .table {
-  display: grid;
+  // display: grid;
+  height: 1000px;
+  margin-bottom: 3rem;
+
+  transition: 
+		height 0.5s ease-in-out;
+}
+
+.vacancy .hidden-input:checked ~ i {
+  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 36);
 }
 
 @media only screen and (max-width: 780px) {
@@ -617,7 +666,8 @@ label {
 
   a {
     @include oButtons('big');
-    @include oButtonsTheme(('primary', 'inverse'));
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
   }
 }
 
