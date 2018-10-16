@@ -421,7 +421,8 @@ h2, label {
 
   a {
     @include oButtons('big');
-    @include oButtonsTheme(('primary', 'inverse'));
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
 
     width: 230px;
     height: 2em;
@@ -502,7 +503,8 @@ h2, label {
 
     button {
       @include oButtons();
-      @include oButtonsTheme(('primary', 'inverse'));
+      @include oButtonsTheme('primary');
+      @include oButtonsTheme('inverse');
     }
   }
 }
@@ -664,7 +666,8 @@ label {
 
   a {
     @include oButtons('big');
-    @include oButtonsTheme(('primary', 'inverse'));
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
   }
 }
 
