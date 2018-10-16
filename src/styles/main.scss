@@ -113,6 +113,17 @@ body, body a {
   }
 }
 
+.epigraph {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+
+  h2 {
+    grid-column: 3;
+    align-self: end;
+  }
+}
+
 .vacancy {
   grid-column: 2;
   display: grid;
@@ -379,6 +390,14 @@ body, body a {
 
 .vacancy .section-line {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
+}
+
+.epigraph h2 {
+  font-weight: 600;
+}
+
+.vacancy .heading a {
+  margin-bottom: 3em;
 }
 
 h2, label {
