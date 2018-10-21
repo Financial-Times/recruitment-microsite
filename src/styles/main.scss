@@ -7,7 +7,7 @@
 @import 'o-icons/main';
 
 @include oFontsInclude(FinancierDisplayWeb, regular);
-// @include oFontsInclude(FinancierDisplayWeb, bold);
+@include oFontsInclude(FinancierDisplayWeb, bold);
 
 @include oFontsInclude(MetricWeb, $weight: light);
 @include oFontsInclude(MetricWeb, $weight: regular);
