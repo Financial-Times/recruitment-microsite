@@ -512,6 +512,9 @@ label {
   margin-bottom: 1em;
 }
 
+// Vacancies animation
+// https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
+
 .vacancy .heading:hover i {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 36);
 }
