@@ -210,7 +210,7 @@ body, body a {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
-  
+
     .benefits-cards {
       grid-template-rows: repeat(6, 1fr);
     }
@@ -298,7 +298,7 @@ body, body a {
   text-align: center;
   padding: 1em;
   padding-top: 10vh;
-    
+
   .central-logo {
     // margin-top: 15vh;
     width: 66px;
@@ -527,7 +527,7 @@ label {
   height: 0;
   overflow-y: hidden;
 
-  transition: 
+  transition:
 		height 0.5s ease-in-out;
 }
 
@@ -536,7 +536,7 @@ label {
   height: 1000px;
   margin-bottom: 3rem;
 
-  transition: 
+  transition:
 		height 0.5s ease-in-out;
 }
 
