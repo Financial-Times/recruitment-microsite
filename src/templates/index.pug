@@ -3,12 +3,12 @@ html(lang="en")
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Tech
+    title Product and Technology
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
-    .content
+    div.content
         section.intro.front-page
-            .heritage-logo-container
+            div.heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
             h1 #{intro.heading}
@@ -18,22 +18,22 @@ html(lang="en")
             each val in menu.items
                 li.menu__item
                     a(href=`#${val.link}`)=val.text
-        section.why.chapter(id='why')
-            .announcement
-                .section-line
-                h2 #{why.title}
-                p #{why.text}
+        section.about.chapter(id='about')
+            div.announcement
+                div.section-line
+                h2 #{about.title}
+                p #{about.text}
         section.video
-            .video-wrapper.content
+            div.video-wrapper.content
                 iframe(width="1440" height="800" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
         section.culture.chapter(id='culture')
-            .announcement
-                .section-line
+            div.announcement
+                div.section-line
                 h2 #{culture.title}
                 p #{culture.text}
-            .culture-cards
+            div.culture-cards
                 each card in culture.cards
-                    .culture-card
+                    div.culture-card
                         img(src=`images/${card.image}`, alt=`{card.title}`, role='presentation')
                         h4 #{card.title}
                         p #{card.text}
@@ -42,29 +42,29 @@ html(lang="en")
             hr
             p #{quotes[0].author}
         section.people.chapter(id='people')
-            .announcement
-                .section-line
+            div.announcement
+                div.section-line
                 h2 #{people.title}
-            .interviews
+                p #{people.text}
+            div.interviews
                 each video,index in people.videos
-                    .interview(class='interview-'+index)
+                    div.interview(class='interview-'+index)
                         img(src=`images/${video.image}`)
         section.benefits.chapter(id='benefits')
-            .announcement
-                .section-line
+            div.announcement
+                div.section-line
                 h2 #{benefits.title}
-                p #{benefits.text}
-            .benefits-cards
+            div.benefits-cards
                 each card, index in benefits.cards
-                    .benefits-card(class='benefit-'+index)
+                    div.benefits-card(class='benefit-'+index)
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
         section.apply(id='openings')
-            .question
+            div.question
                 h2 #{apply.title}
                 p #{apply.text}
-                a(href='opennings.html') #{apply.button}
+                a(href='openings.html') #{apply.button}
         footer
             hr
             p #{footer.text}
