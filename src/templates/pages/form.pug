@@ -6,7 +6,7 @@ html(lang='en')
     title Product and Tech
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
-    .content
+    div.content
         nav.menu
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
             p Current openings
@@ -62,7 +62,7 @@ html(lang='en')
                             label.o-forms__label(aria-describedby='text-box-info', for='notice-period') Availability/Notice period
                             input.o-forms__text(type='text', id='notice-period', placeholder='Enter your availability/notice period', name='notice-period')
 
-                            button.submit-button(type='submit') Submit       
+                            button.submit-button(type='submit') Submit
         footer
             hr
             p #{footer.text}
