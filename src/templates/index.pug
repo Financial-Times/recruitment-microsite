@@ -7,15 +7,17 @@ html(lang="en")
     link(rel='stylesheet', href='css/main.css', type='text/css')
   body
     .content
-        .header
-            nav.menu
-                each val in menu.items
-                    li.menu__item
-                        a(href=`#${val.link}`)=val.text
-        section.intro
-            img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.heritage_logo}`, role='presentation')
+        section.intro.front-page
+            .heritage-logo-container
+                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            h1 #{intro.text}
+            h1 #{intro.heading}
+            hr
+            p #{intro.subheading}
+        nav.menu
+            each val in menu.items
+                li.menu__item
+                    a(href=`#${val.link}`)=val.text
         section.why.chapter(id='why')
             .announcement
                 .section-line
@@ -23,7 +25,7 @@ html(lang="en")
                 p #{why.text}
         section.video
             .video-wrapper.content
-                iframe(width="560" height="315" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
+                iframe(width="1440" height="800" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
         section.culture.chapter(id='culture')
             .announcement
                 .section-line
@@ -36,10 +38,9 @@ html(lang="en")
                         h4 #{card.title}
                         p #{card.text}
         section.quotes
-            .chapter
-                h1 #{quotes[0].quote}
-                hr
-                p #{quotes[0].author}
+            h1 #{quotes[0].quote}
+            hr
+            p #{quotes[0].author}
         section.people.chapter(id='people')
             .announcement
                 .section-line
@@ -59,17 +60,11 @@ html(lang="en")
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
-        section.apply.chapter
+        section.apply(id='openings')
             .question
                 h2 #{apply.title}
                 p #{apply.text}
-            .apply-cards
-                each card in apply.cards
-                    .apply-card
-                        h3 #{card.name}
-                        p #{card.text}
-                        form(action=`position.html`)
-                            button Apply now
+                a(href='opennings.html') #{apply.button}
         footer
-            .chapter
-                p #{footer.text}
+            hr
+            p #{footer.text}
