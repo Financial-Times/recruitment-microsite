@@ -26,9 +26,6 @@
             }
         ]
     },
-    "video": {
-        "tmp": "video_tmp.png"
-    },
     "about": {
         "title": "Creative collaboration. 24/7",
         "text": "The FT is 130 years old but we’re an exciting, pioneering business - not stuck in the past. Our digital news relies on constant technological innovation so our projects vary in scale and scope. We’re constantly looking for new ways to improve our user experience, design and delivery."
@@ -140,7 +137,6 @@
     },
     "positions": {
         "businessAnalyst": {
-            "title": "Business Analyst",
             "level": {
                 "title": "Level",
                 "text": "All"
