@@ -529,7 +529,7 @@ label {
 }
 
 .vacancy .hidden-input:checked ~ .table {
-  height: 1000px; // this is a magic number that I think causes "jump", need to find a way to go around it
+  height: auto;
   margin-bottom: 3rem;
 
   transition: 
