@@ -138,66 +138,386 @@
     "footer": {
         "text": ""
     },
-    "positions": {
-        "businessAnalyst": {
+    "oppenings": [
+        {
             "title": "Business Analyst",
-            "level": {
-                "title": "Level",
-                "text": "All"
-            },
-            "profession": {
-                "title": "Profession",
-                "text": "Business Analyst"
-            },
-            "type": {
-                "title": "Type",
-                "text": "Full time"
-            },
-            "location": {
-                "title": "Location",
-                "text": "London, Sofia"
-            },
-            "description": {
-                "about": [
-                    "Business Anaysts at the Financial Times (FT) are central to the changes that support our continued growth.",
-                    "As a BA at the FT you will naturally flex your approach to analysis depending on the stakeholders and business needs. We’re empowered to work in the best way for the work/delivery and ultimately deliver value for our colleagues, customers and the organisation as a whole. At times you will be thinking strategically and helping to set direction with the team leadership; equally you may be working in close partnership with delivery teams to get things done."
-                ],
-                "responsibilities": {
-                    "title": "This role could be for you if...",
-                    "list": [
-                        "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
-                        "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
-                        "You’re able to rapidly understand new concepts and business areas, as well as the fundamentals of underpinning technologies.",
-                        "You can communicate complexity and distill detail into clearly understandable concepts, no matter the audience.",
-                        "You flourish when balancing appropriate levels of detail and shifting priorities whilst keeping an eye on outcomes, strategy and scope.",
-                        "You’re an effective devil’s advocate, constructively and impartially questioning the status quo.",
-                        "You love juggling multiple projects at the same time."
-                    ]
+            "id": "businessAnalyst",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
                 },
-                "requirements": {
-                    "title": "You have...",
-                    "list": [
-                        "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
-                        "A wide variety of analysis and problem solving techniques to call upon.",
-                        "Experience of conducting analysis in an Agile environment. You might have a background in Lean, Scrum, Kanban, UX, Anarchy, or a mix of all of the above.",
-                        "Experience of working with Product Owners and stakeholders from senior level management to end-users.",
-                        "The confidence to own the analysis of a problem, define the scope and present findings and recommendations to Senior stakeholders.",
-                        "A knack for understanding, documenting and assessing business processes.",
-                        "Experience in using data and metrics to assess the value of requirements or change requests."
-                    ]
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
                 },
-                "additionalInformation": {
-                    "text": "You’ll be joining a dynamic BA community. Whilst we all work in different programmes across the business, we meet every fortnight to share knowledge, skills and food.Sharing your ideas and experiences will help us learn from each other and further the reach, visibility and standing of the BA function at the FT.Do you enjoy a little social time ? Join us for regular lunches and our summer pétanque games."
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "Business Anaysts at the Financial Times (FT) are central to the changes that support our continued growth.",
+                        "As a BA at the FT you will naturally flex your approach to analysis depending on the stakeholders and business needs. We’re empowered to work in the best way for the work/delivery and ultimately deliver value for our colleagues, customers and the organisation as a whole. At times you will be thinking strategically and helping to set direction with the team leadership; equally you may be working in close partnership with delivery teams to get things done."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
+                            "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
+                            "You’re able to rapidly understand new concepts and business areas, as well as the fundamentals of underpinning technologies.",
+                            "You can communicate complexity and distill detail into clearly understandable concepts, no matter the audience.",
+                            "You flourish when balancing appropriate levels of detail and shifting priorities whilst keeping an eye on outcomes, strategy and scope.",
+                            "You’re an effective devil’s advocate, constructively and impartially questioning the status quo.",
+                            "You love juggling multiple projects at the same time."
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
+                            "A wide variety of analysis and problem solving techniques to call upon.",
+                            "Experience of conducting analysis in an Agile environment. You might have a background in Lean, Scrum, Kanban, UX, Anarchy, or a mix of all of the above.",
+                            "Experience of working with Product Owners and stakeholders from senior level management to end-users.",
+                            "The confidence to own the analysis of a problem, define the scope and present findings and recommendations to Senior stakeholders.",
+                            "A knack for understanding, documenting and assessing business processes.",
+                            "Experience in using data and metrics to assess the value of requirements or change requests."
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
                 }
-            },
-            "conclusion": {
-                "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
             }
         },
-        "deliveryManagers": {},
-        "networkEngineers": {},
-        "productDesigners": {},
-        "productManagers": {},
-        "softwareEngineers": {}
-    }
+        {
+            "title": "Engineer",
+            "id": "engineer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        },
+        {
+            "title": "UI Designer",
+            "id": "ui-designer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        },
+        {
+            "title": "UX Designer",
+            "id": "ux-designer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        },
+        {
+            "title": "Customer researcher",
+            "id": "customer-researcher",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        },
+        {
+            "title": "Product manager",
+            "id": "product-manager",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        },
+        {
+            "title": "Project manager",
+            "id": "project-manager",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia, Manilla"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We think the Financial Times is a great place to work – we have a technical stack that is cutting edge, our development methodologies are very current, our engineers are free to choose the tools they need and are encouraged to be creative, to influence and to challenge the way we work and how we deliver. Additional we positively encourage continuing learning and importantly, we ensure staff also have the ability to achieve a good work life balance.",
+                        "We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Creating budgets and schedules",
+                            "Allocating freelance resources",
+                            "Attending briefing meetings with the creative team",
+                            "Organising external post-production sessions",
+                            "Client liaison",
+                            "Managing projects to ensure they are delivered on time and within budget"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "2-3 years minimum in similar role",
+                            "Excellent written and verbal communication skills",
+                            "Strong financial management skills",
+                            "Ability to interpret client briefs",
+                            "Self motivated with a passion for creative culture",
+                            "A down-to-earth approach and ability for getting the best out of both your team and your clients"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+                }
+            }
+        }
+    ]
 }

@@ -7,7 +7,7 @@
 @import 'o-icons/main';
 
 @include oFontsInclude(FinancierDisplayWeb, regular);
-// @include oFontsInclude(FinancierDisplayWeb, bold);
+@include oFontsInclude(FinancierDisplayWeb, bold);
 
 @include oFontsInclude(MetricWeb, $weight: light);
 @include oFontsInclude(MetricWeb, $weight: regular);
@@ -20,7 +20,6 @@ $light-grey: #4A4A4A;
 $animation-lasts: 6s;
 $content-width: 1440px;
 $one-third-card-width: 340px;
-// $one-forth-card-width: 240px;
 
 // Generic
 html,
@@ -294,13 +293,12 @@ body, body a {
 
 // Intro
 .intro {
-  min-height: 36vh;
+  min-height: 56vh;
   text-align: center;
   padding: 1em;
   padding-top: 10vh;
 
   .central-logo {
-    // margin-top: 15vh;
     width: 66px;
     margin: 0 auto 1em auto;
   }
@@ -331,10 +329,6 @@ body, body a {
     margin: auto;
     margin-bottom: 1em;
   }
-}
-
-.front-page {
-  min-height: 56vh;
 }
 
 // Menu
@@ -391,6 +385,7 @@ body, body a {
 }
 
 // Chapter
+// NOTE: chapter is the on front page, vanacy is the one on openings page - these naming is confusing =) - so maybe should be renamed
 .announcement .section-line {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
@@ -514,6 +509,9 @@ label {
   margin-bottom: 1em;
 }
 
+// Vacancies animation
+// https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
+
 .vacancy .heading:hover i {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 36);
 }
@@ -523,7 +521,6 @@ label {
 }
 
 .vacancy .hidden-input ~ .table {
-  // display: none;
   height: 0;
   overflow-y: hidden;
 
@@ -532,12 +529,11 @@ label {
 }
 
 .vacancy .hidden-input:checked ~ .table {
-  // display: grid;
-  height: 1000px;
+  height: 1000px; // this is a magic number that I think causes "jump", need to find a way to go around it
   margin-bottom: 3rem;
 
-  transition:
-		height 0.5s ease-in-out;
+  transition: 
+		height 1.0s ease-in-out;
 }
 
 .vacancy .hidden-input:checked ~ i {
@@ -694,7 +690,7 @@ footer {
   }
 }
 
-// Position
+// Vacancies page
 .intro .title {
   h1 {
     @include oTypographyDisplay($scale: 8);
@@ -787,6 +783,7 @@ footer {
   }
 }
 
+// Thank you page
 .thankyou {
   height: 100vh;
 }
@@ -892,9 +889,3 @@ footer {
   opacity: 1;
   z-index: 2;
 }
-
-// .intro div p {
-//   @include oTypographySans($scale: 0);
-//   width: 450px;
-//   margin: auto;
-// }
