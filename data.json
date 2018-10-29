@@ -189,11 +189,6 @@
             "conclusion": {
                 "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
             }
-        },
-        "deliveryManagers": {},
-        "networkEngineers": {},
-        "productDesigners": {},
-        "productManagers": {},
-        "softwareEngineers": {}
+        }
     }
 }
