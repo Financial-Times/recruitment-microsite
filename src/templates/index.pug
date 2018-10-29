@@ -17,7 +17,7 @@ html(lang="en")
         nav.menu
             each val in menu.items
                 li.menu__item
-                    a(href=`#${val.link}`)=val.text
+                    a(href=val.link)=val.text
         section.about.chapter(id='about')
             div.announcement
                 div.section-line
@@ -60,7 +60,7 @@ html(lang="en")
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
-        section.apply(id='openings')
+        section.apply
             div.question
                 h2 #{apply.title}
                 p #{apply.text}

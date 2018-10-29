@@ -8,8 +8,9 @@ html(lang="en")
   body
     .content
         nav.menu
-            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            p Current openings
+            a(href='index.html')
+                img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+            a.current-openings(href='#current-openings') Current openings
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
@@ -59,7 +60,7 @@ html(lang="en")
                                 .buttons
                                     form(action="form.html")
                                         button Apply now                
-        section.vacancy
+        section.vacancy(id='current-openings')
             .heading
                 .section-line
                 h2 Check our live roles

@@ -8,8 +8,9 @@ html(lang='en')
   body
     div.content
         nav.menu
-            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            p Current openings
+            a(href='index.html')
+                img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+            a.current-openings(href='#current-openings') Current openings
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
