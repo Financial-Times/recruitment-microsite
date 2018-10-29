@@ -1,7 +1,7 @@
 {
     "intro": {
         "heading": "Make work that's meaningful",
-        "subheading": "Join the FT, one of the world's leading news organisation, as part of our diverse product and technology team.",
+        "subheading": "Join the FT, one of the world’s leading news organisations, as part of our diverse product and technology team. You’ll enjoy creating and collaborating on projects that deliver our award - winning journalism to almost a million global subscribers.",
         "logo": "FT_Logo_PinkGrey.png",
         "heritage_logo": "ft-heritage-logo.svg"
     },
@@ -9,55 +9,55 @@
         "items":
         [
             {
-                "text": "Why FT",
-                "link": "why"
+                "text": "About Us",
+                "link": "about"
             },
             {
-                "text": "Our people",
+                "text": "Jobs",
+                "link": "openings"
+            },
+            {
+                "text": "Our People",
                 "link": "people"
             },
             {
                 "text": "Benefits",
                 "link": "benefits"
-            },
-            {
-                "text": "Current openings",
-                "link": "openings"
             }
         ]
     },
     "video": {
         "tmp": "video_tmp.png"
     },
-    "why": {
+    "about": {
         "title": "Creative collaboration. 24/7",
         "text": "The FT is 130 years old but we’re an exciting, pioneering business - not stuck in the past. Our digital news relies on constant technological innovation so our projects vary in scale and scope. We’re constantly looking for new ways to improve our user experience, design and delivery."
     },
     "culture": {
         "title": "Express yourself",
-        "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team. Working as part of our tech team means you’ll be empowered to choose your own stack and to deploy new software, sometimes hundreds of times a day.",
+        "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
         "cards": [
             {
                 "image": "c_tmp_1.png",
                 "title": "Autonomy",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+                "text": "Our teams are small, self-governing and multi-disciplined. Working as part of our team means you’ll be empowered to choose your own tools, methodologies and frameworks to solve problems."
             },
             {
                 "image": "c_tmp_2.png",
                 "title": "Inclusion",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+                "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives."
             },
             {
                 "image": "c_tmp_3.png",
-                "title": "Empowering",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women."
+                "title": "Creativity",
+                "text": "With internal Hackathons and 10% time, we welcome ideas and different approaches to improving our product."
             }
         ]
     },
     "quotes": [
         {
-            "quote": "Always zoom out",
-            "author": "Mark Hale, Principle UI"
+            "quote": "Empowered teams delivering world-class products for the FT",
+            "author": "Cait O’Roirdan, Chief Product & Information Officer"
         }
     ],
     "people": {
@@ -80,49 +80,121 @@
     },
     "benefits": {
         "title": "Benefits",
-        "text": "As a team, we believe in the importance of trusted high quality journalism and the role it plays in a world dominated by fake news.",
         "cards": [
             {
-                "title": "Career development",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "title": "Career Development",
+                "text": "We offer confidential career coaching, mentoring and a range of training courses, including tech talks, internal and external workshops and conferences.",
                 "decoration": true
             },
             {
-                "title": "Flexible working",
-                "text": "We offer a variety of time-off arrangements, including flexi leave, and two days of paid volunteer leave each year.",
+                "title": "Friendly, vibrant team of 400+",
+                "text": "We are a cross-functional, diverse team of 400+ globally and regularly have socials such as board games night, netball, rounders, football and quiz night.",
                 "decoration": false
             },
             {
-                "title": "Health & wellness",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "title": "Work-life Balance",
+                "text": "We make it a priority to provide flexible conditions for everyone, including flexi-leave, capacity to work from home, shared parental leave, a 35-hour work work, 10% time and more. (Location Specific)",
                 "decoration": false
             },
             {
-                "title": "Investing in your future",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "title": "Investing in Your Future ",
+                "text": "Employees can save for the future through competitive local pension schemes, such as a double match employee pension contribution in UK. (Location Specific)",
                 "decoration": false
             },
             {
-                "title": "Work-life balance",
-                "text": "We offer a variety of time-off arrangements, including flexi leave, and two days of paid volunteer leave each year.",
+                "title": "Health & Wellness",
+                "text": "We offer competitive healthcare options in all regions, such as subsidised gym membership, or weekly yoga classes. (Location Specific)",
                 "decoration": true
             },
             {
-                "title": "Friendly, vibrant team of 250+",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including a development programme designed for women.",
+                "title": "Active Communities",
+                "text": "Active employee led communities such as FT Women, FT Embrace (BAME Network), FT Mental Health, FT Access and Proud FT.",
                 "decoration": false
             }
         ]
     },
     "apply": {
-        "title": "Got what it takes?",
-        "text": "We are based in London and have offices in London, Sofia and Manilla",
+        "title": "Apply",
+        "cards": [
+            {
+                "title": "Engineering",
+                "text": "In FT Tech, we develop products such as FT.com, internal tools for our editorial teams and power the FT with strong, simple and open technology."
+            },
+            {
+                "title": "UX and Design",
+                "text": "Our UX and Design team crafts and evolves the quality user experience and design across our digital products across web and mobile devices."
+            },
+            {
+                "title": "Product Management",
+                "text": "The Product Management team at the FT define and deliver a vision through to product delivery, ensuring that user needs are addressed and business goals are achieved."
+            },
+            {
+                "title": "Delivery",
+                "text": "FT Technology is organised to align to an empowerment model with a focus on Delivery teams to specific groups across our programme."
+            }
+        ],
         "button": "Current openings"
     },
     "footer": {
-        "text": "Interested? If you can see yourself working here and think you've got what it takes please attach your CV and covering letter."
+        "text": ""
     },
     "oppenings": [
+        {
+            "title": "Business Analyst",
+            "id": "businessAnalyst",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product management"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "Business Anaysts at the Financial Times (FT) are central to the changes that support our continued growth.",
+                        "As a BA at the FT you will naturally flex your approach to analysis depending on the stakeholders and business needs. We’re empowered to work in the best way for the work/delivery and ultimately deliver value for our colleagues, customers and the organisation as a whole. At times you will be thinking strategically and helping to set direction with the team leadership; equally you may be working in close partnership with delivery teams to get things done."
+                    ],
+                    "responsibilities": {
+                        "title": "RESPONSIBILITIES",
+                        "list": [
+                            "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
+                            "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
+                            "You’re able to rapidly understand new concepts and business areas, as well as the fundamentals of underpinning technologies.",
+                            "You can communicate complexity and distill detail into clearly understandable concepts, no matter the audience.",
+                            "You flourish when balancing appropriate levels of detail and shifting priorities whilst keeping an eye on outcomes, strategy and scope.",
+                            "You’re an effective devil’s advocate, constructively and impartially questioning the status quo.",
+                            "You love juggling multiple projects at the same time."
+                        ]
+                    },
+                    "requirements": {
+                        "title": "REQUIREMENTS",
+                        "list": [
+                            "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
+                            "A wide variety of analysis and problem solving techniques to call upon.",
+                            "Experience of conducting analysis in an Agile environment. You might have a background in Lean, Scrum, Kanban, UX, Anarchy, or a mix of all of the above.",
+                            "Experience of working with Product Owners and stakeholders from senior level management to end-users.",
+                            "The confidence to own the analysis of a problem, define the scope and present findings and recommendations to Senior stakeholders.",
+                            "A knack for understanding, documenting and assessing business processes.",
+                            "Experience in using data and metrics to assess the value of requirements or change requests."
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
         {
             "title": "Engineer",
             "id": "engineer",

@@ -209,7 +209,7 @@ body, body a {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
-  
+
     .benefits-cards {
       grid-template-rows: repeat(6, 1fr);
     }
@@ -297,7 +297,7 @@ body, body a {
   text-align: center;
   padding: 1em;
   padding-top: 10vh;
-    
+
   .central-logo {
     width: 66px;
     margin: 0 auto 1em auto;
@@ -524,7 +524,7 @@ label {
   height: 0;
   overflow-y: hidden;
 
-  transition: 
+  transition:
 		height 0.5s ease-in-out;
 }
 
@@ -711,15 +711,10 @@ footer {
 
 // Form
 .form {
-  grid-column: 3;
   @include oFormsBaseFeatures();
   @include oFormsWideFeature();
-
-  .o-forms__label {
-    @include oTypographySansBold($scale: -2);
-    color: oColorsGetPaletteColor('white-80');
-  }
-
+  @include oFormsRadioCheckboxFeatures();
+  grid-column: 3;
   margin-top: 1rem;
 
   h2 {
@@ -728,29 +723,63 @@ footer {
     margin-left: 0.5rem;
     margin-bottom: 1.3rem;
   }
+}
+
+.form-body {
+  background-color: oColorsGetPaletteColor('white');
+}
+
+.form-fields {
+  padding: 30px;
+
+  .o-forms__label {
+    @include oTypographySansBold($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
 
   .o-forms__text {
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('black-40');
-    @include oTypographySans($scale: -2);
     margin-bottom: 1rem;
-    border: none;
   }
 
-  .o-forms__additional-info {
-    @include oTypographySans($scale: -2);
+  .o-forms__errortext {
+    @include oTypographySans($scale: 0);
+  }
+
+  .o-forms__group .o-forms__label {
+    @include oTypographySans($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
+
+  span {
+    @include oTypographySansBold($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
+
+  .upload-button {
+    @include oButtons($size: big, $theme: primary);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
-  }
-
-  .upload {
     margin-top: 1em;
+    margin-bottom: 1.5em;
     width: 100%;
   }
 
-  button {
+  .upload-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .submit-button {
     @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: -2);
+    @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
