@@ -1,16 +1,9 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Tech
-    link(rel='stylesheet', href='css/main.css', type='text/css')
+  include ../partials/head.pug
   body
     .content
-        nav.menu
-            a(href='index.html')
-                img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            a.current-openings(href='#current-openings') Current openings
+        include ../partials/menu.pug
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
@@ -25,7 +18,7 @@ html(lang="en")
                     input.hidden-input(id=`${oppening.id}` type="checkbox")
                     .section-line
                     label(for=`${oppening.id}`) #{oppening.title}
-                    i
+                        i
                     .table
                         .section-header
                         .left
@@ -66,6 +59,4 @@ html(lang="en")
                 h2 Check our live roles
                 p We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged.
                 a(href='https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be') See our current live roles
-        footer
-            hr
-            p #{footer.text}
+        include ../partials/footer.pug

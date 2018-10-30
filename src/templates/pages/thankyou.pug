@@ -1,16 +1,9 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Tech
-    link(rel='stylesheet', href='css/main.css', type='text/css')
+  include ../partials/head.pug
   body
     .content
-        nav.menu
-            a(href='index.html')
-                img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            a.current-openings(href='#current-openings') Current openings
+        include ../partials/menu.pug
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')

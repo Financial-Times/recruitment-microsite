@@ -1,10 +1,6 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Technology
-    link(rel='stylesheet', href='css/main.css', type='text/css')
+  include partials/head.pug
   body
     div.content
         section.intro.front-page
@@ -65,6 +61,4 @@ html(lang="en")
                 h2 #{apply.title}
                 p #{apply.text}
                 a(href='openings.html') #{apply.button}
-        footer
-            hr
-            p #{footer.text}
+        include partials/footer.pug
