@@ -10,19 +10,19 @@
         [
             {
                 "text": "About Us",
-                "link": "about"
+                "link": "#about"
             },
             {
                 "text": "Jobs",
-                "link": "openings"
+                "link": "openings.html"
             },
             {
                 "text": "Our People",
-                "link": "people"
+                "link": "#people"
             },
             {
                 "text": "Benefits",
-                "link": "benefits"
+                "link": "#benefits"
             }
         ]
     },

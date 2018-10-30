@@ -1,10 +1,6 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Technology
-    link(rel='stylesheet', href='css/main.css', type='text/css')
+  include partials/head.pug
   body
     div.content
         section.intro.front-page
@@ -17,7 +13,7 @@ html(lang="en")
         nav.menu
             each val in menu.items
                 li.menu__item
-                    a(href=`#${val.link}`)=val.text
+                    a(href=val.link)=val.text
         section.about.chapter(id='about')
             div.announcement
                 div.section-line
@@ -60,11 +56,9 @@ html(lang="en")
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
-        section.apply(id='openings')
+        section.apply
             div.question
                 h2 #{apply.title}
                 p #{apply.text}
                 a(href='openings.html') #{apply.button}
-        footer
-            hr
-            p #{footer.text}
+        include partials/footer.pug

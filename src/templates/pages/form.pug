@@ -1,15 +1,9 @@
 doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Product and Tech
-    link(rel='stylesheet', href='css/main.css', type='text/css')
+html(lang="en")
+  include ../partials/head.pug
   body
     div.content
-        nav.menu
-            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
-            p Current openings
+        include ../partials/menu.pug
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
@@ -63,6 +57,4 @@ html(lang='en')
                             input.o-forms__text(type='text', id='notice-period', placeholder='Enter your availability/notice period', name='notice-period')
 
                             button.submit-button(type='submit') Submit
-        footer
-            hr
-            p= footer.text
+        include ../partials/footer.pug
