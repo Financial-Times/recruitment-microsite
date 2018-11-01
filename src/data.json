@@ -165,8 +165,8 @@
                         "Business Anaysts at the Financial Times (FT) are central to the changes that support our continued growth.",
                         "As a BA at the FT you will naturally flex your approach to analysis depending on the stakeholders and business needs. We’re empowered to work in the best way for the work/delivery and ultimately deliver value for our colleagues, customers and the organisation as a whole. At times you will be thinking strategically and helping to set direction with the team leadership; equally you may be working in close partnership with delivery teams to get things done."
                     ],
-                    "responsibilities": {
-                        "title": "This role could be for you if...",
+                    "requirements": {
+                        "title": "This role will be right for you if...",
                         "list": [
                             "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
                             "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
@@ -177,7 +177,7 @@
                             "You love juggling multiple projects at the same time."
                         ]
                     },
-                    "requirements": {
+                    "additionalRequirements": {
                         "title": "You have...",
                         "list": [
                             "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
@@ -235,16 +235,6 @@
                         ]
                     },
                     "requirements": {
-                        "title": "You have...",
-                        "list": [
-                            "3+ years leading and coaching Agile teams",
-                            "Strong experience and understanding of digital product development",
-                            "A good understanding of lean/agile principles and multiple methodologies",
-                            "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving",
-                            "Experience managing delivery using measurable business outcomes"
-                        ]
-                    },
-                    "additionalRequirements": {
                         "title": "This role will be right for you if...",
                         "list": [
                             "You are enthusiastic, proactive and able to resolve conflict - individuals & teams",
@@ -253,6 +243,220 @@
                             "You are a clear, adaptive and transparent communicator",
                             "You are Bold and strategic - not afraid of failing, but afraid of not failing fast enough",
                             "You are a proactive and an accomplished influencer - ability to negotiate with other programmes and teams to deliver work to fixed deadlines."
+                        ]
+                    },
+                    "additionalRequirements": {
+                        "title": "You have...",
+                        "list": [
+                            "3+ years leading and coaching Agile teams",
+                            "Strong experience and understanding of digital product development",
+                            "A good understanding of lean/agile principles and multiple methodologies",
+                            "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving",
+                            "Experience managing delivery using measurable business outcomes"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
+        {
+            "title": "Network Engineer",
+            "id": "networkEngineer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Network Engineer"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Manila"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "This role is within Enterprise Services (ES)  Networks whose mantra is ‘To enable the FT with outstanding, cost- effective technology.",
+                        "Networks spans all areas of network associated services and scope, covering; local and wide-area networking; cloud services; development; security; quality assurance; integration; operational support; governance and cost controls; project management & customer/supplier management.",
+                        "We believe in multi-disciplined co-located teams empowered to choose their own development methodologies. Teams typically use methodologies such as SCRUM or Kanban. Similarly most teams choose to practise Continuous Delivery or Continuous Deployment. We are constantly pushing the boundaries in the quality of the network services that support our internal users, always looking for better, simpler and more effective ways of delivery in a fast paced environment.",
+                        "This role has a wide remit and includes architecting & executing the delivery of scalable, secure, and highly available network services and products for our internal customers. On a daily basis the role covers the monitoring and supporting all network services in our global offices and datacentres, connectivity into Cloud Services, delivering continual service improvement of all network services and troubleshooting problem areas as required, providing in depth network support to both support and project teams. Proactively manage and administer systems that relate to network management (including network monitoring and analysis tools as well as peripheral network services like DNS and DHCP). Supporting the wider team become more code focused will also be a key part of the role as is accelerating the move to Infrastructure-as-code.",
+                        "You will also take responsibility for exposing the performance metrics and alerting on the global networks for all internal users to consume, ensuring changes and new products are being delivered with customers in mind and not just focused on feature delivery.",
+                        "Collaboration with our customers is encouraged to understand their experience of the services we provide and then using that to improve and shape new products and services. Active involvement in all stages of planning of initiatives and preparing and presenting product demos at the fortnightly program showcases will help develop your interpersonal skills.",
+                        "As a Network Engineer you will be using a breadth of technologies and processes to help promote quality within the Working Environments Team.",
+                        "You should be passionate about delivering excellence and to achieve that we encourage self management and ownership of technical issue. So you should be tenacious in finding a resolution, working collaboratively within different teams.",
+                        "As an important member of Product/Technology you will contribute to the company-wide strategies and frameworks and ensure all network components adhere to security standard. In addition, you are encouraged to participate in a number of activities such as Hackathons, coding club, lunch & learn sessions, training courses and conferences and contributing to the open source community."
+                    ],
+                    "requirements": {
+                        "title": "This role will be right for you if...",
+                        "list": [
+                            "You are highly capable in managing and troubleshooting in a Cisco and Checkpoint world to a senior level",
+                            "You have solid switching and routing skills and experience supporting both Layer 2 networks, and a Layer 3 LAN that closely integrates with the MAN and WAN network using BGP, OSPF and EIGRP routing protocols to provide resilience",
+                            "You have expertise in maximising performance and availability of wireless networking",
+                            "You have professional technical accreditations",
+                            "You have experience in Python or similar, with the desire to learn new languages",
+                            "You have experience with Cloud Computing e.g. IaaS, PaaS, SaaS etc.",
+                            "You are familiar with a range of AWS  technologies (such as Cloudformation, Lambda and EC2)",
+                            "You have the ability to work with APIs",
+                            "You have experience with version control systems, e.g. Git",
+                            "You produce effective documentation to communicate anything from an idea to a strategy",
+                            "You have experience defining and implementing testing processes and procedures",
+                            "You have an understanding of agile development and its core principles",
+                            "You have a good command of written and spoken English."
+                        ]
+                    },
+                    "additionalRequirements": {
+                        "title": "These are handy, but don’t be put of if you don’t have exposure to them...",
+                        "list": [
+                            "Software Defined Networking",
+                            "Experienced with shell scripting (bash or otherwise)",
+                            "Experience working with monitoring and visibility tools (e.g. Solarwinds, Graphite/Grafana, Splunk or Zabbix)",
+                            "HTML, CSS & JavaScript"
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
+        {
+            "title": "Product Designer",
+            "id": "productDesigner",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product Designer"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "As a Product Designer in the FT, you will be working with our growing user experience design team in a fast and iterative product environment. We craft and evolve the quality user experience across several of our digital products across web and mobile devices and build on the success we have already gained among our growing audience of international readers.",
+                        "Working collaboratively with the Principal UX and UI designers on the FT.com programme you will be creating flows, wireframes and prototypes, through to visual / UI design while working within mature UX frameworks and design system.",
+                        "Our teams work using a lean methodology, this means validating design solutions quickly and being a highly collaborative and communicative team player (no rock stars please!). We design products and services to add value to our FT readers, not for ourselves. It requires working hand in hand with Product Owners, Researchers, BA’s and Developers and a willingness to both dig into details and think strategically.",
+                        "Our Product Designers can lean towards UX or UI - but what we are looking for is solid UX thinkers with quality design skills who can demonstrate a clear problem solving process based around the needs of users. Please note we are not looking for Visual Designers who can do wireframes.",
+                        "It’s important that you are committed to creating great product design but are pragmatic enough to test out customer-centric hypotheses quickly. Are comfortable working with analysts and product managers in assessing those ideas for likely impact, and are willing to re-evaluate your solutions when the insight isn’t in their favour."
+                    ],
+                    "responsibilities": {
+                        "title": "As a Product Designer you will be responsible for...",
+                        "list": [
+                            "Design features across the entire project lifecycle from ideation to launch",
+                            "You are a creative problem solver with an eye for detail and accuracy, you start any project by asking what are the behaviours and needs of the consumers we’re designing for.",
+                            "Confidently work alongside Product Managers to evolve the strategy and create user centred solutions for the product.",
+                            "Perform competitor analysis, review and analyse existing features, apply user-centred methods to provide ideas for improvements.",
+                            "Work alongside our Research team for creating briefs for user research and testing.",
+                            "Collaborate with Product Managers, Research, Engineers, and other stakeholders to solve design problems effectively and efficiently.",
+                            "Run ideation workshops and design sprints.",
+                            "Create user flows, journeys and pixel-perfect designs.",
+                            "Produce multiple concepts and prototype interactions, and iterate based on feedback, A/B testing, user research, etc. Work alongside research to create scripts and goals for testing.",
+                            "Champion consistency of the FT’s brand and products and uphold the quality of the design.",
+                            "Assist with technical implementation by providing advice, mockups, prototypes, and assets"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "This role will be right for you if...",
+                        "list": [
+                            "You are enthusiastic and eager to learn. You don’t think you’re a finished product.",
+                            "You are a good communicator, this is a crucial part of what you’ll do so you need to understand how to present your UX thinking to stakeholders.",
+                            "You are a solid team player. You will be highly collaborative and welcome working with others.",
+                            "You are receptive to giving and receiving feedback and productive design critique."
+                        ]
+                    },
+                    "additionalRequirements": {
+                        "title": "You have...",
+                        "list": [
+                            "Significant expertise in user experience and user interface design.",
+                            "Expertise in using Sketch, Invision, alongside knowledge of other prototyping tools.",
+                            "Demonstrate your ability to create prototypes for web and mobile that provide a fantastic user experience and demonstrate your design thinking",
+                            "Ability to work with existing pattern libraries/design systems.",
+                            "Able to work in a lean environment."
+                        ]
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
+        {
+            "title": "Product Manager",
+            "id": "productManager",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Product Manager"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "Digital and the web have an increasingly important role to play for the business as media consumption habits change and revenues migrate from print to online. The Product Management team are responsible for defining and delivering on a vision through to product delivery, ensuring that user needs are addressed and business goals are achieved.",
+                        "A Product Manager role is available with an exciting remit of working on satisfying the needs of the FT 930,000 paid for subscribers and providing the Editorial team with front-end tools to improve storytelling and bring clarity to news.",
+                        "The right person will play a key role working with stakeholders across Editorial, B2B/B2C, Ads and Data Science. You’ll be both data led and user focused with a keen eye for detail. You’ll be adept at spotting opportunities to improve our customer facing platforms; driving greater engagement among existing users while delivering new ways to tell stories. You will conduct customer research, define problems, discover insights and come up with solutions. You will work in a cross functional autonomous team that use lean methodology to deliver on outcomes."
+                    ],
+                    "responsibilities": {
+                        "title": "As a Product Manager you will be...",
+                        "list": [
+                            "Owning a stream of work: define the problem, set up metrics and goals and set up a course of direction",
+                            "Working in a cross functional team and lead its direction without authority",
+                            "Conduct customer research and extract insights",
+                            "Take part in finding solutions together with UX and Design",
+                            "Help developers understand the problem and come up with the best way of implementing the solution",
+                            "Working with a diverse set of stakeholders to define, champion and deliver product vision and roadmaps",
+                            "Track and analyse competitors, feeding ‘best practice’ into the product development process",
+                            "Maintain and update product backlogs and to track priorities for the digital offerings",
+                            "Working within a lean development framework",
+                            "Communicate roadmap, vision, achievements and progress to the wider team and to stakeholders"
+                        ]
+                    },
+                    "requirements": {
+                        "title": "This role will be right for you if...",
+                        "list": [
+                            "You have a proven track record in a product management role (2 years +)",
+                            "You are data-driven and hypothesis led with ability to balance alongside user research and business objectives",
+                            "You are customer obsessed",
+                            "You have good communication skills – able to clearly write and present documents targeted at various audiences, as well as make presentations to large/small groups",
+                            "You are proactive, outcome driven, with a can-do attitude",
+                            "You are intellectually curious,  with a demonstrable ability to identify opportunities and communicate their value proposition and business benefits",
+                            "You have the  ability to work independently, but with regular support and collaboration with their manager",
+                            "You have the ability to balance workloads and priorities throughout the product lifecycle across of a range of email products and offsite services"
+                        ]
+                    },
+                    "additionalRequirements": {
+                        "title": "Desirable",
+                        "list": [
+                            "Experience of working in a data heavy environment: AB testing, segmentation, data models",
+                            "Experience in customer research"
                         ]
                     }
                 },
