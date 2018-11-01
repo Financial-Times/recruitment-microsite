@@ -529,7 +529,7 @@ h2, label {
   height: auto;
   margin-bottom: 3rem;
 
-  transition: 
+  transition:
 		height 1.0s ease-in-out;
 }
 
@@ -732,6 +732,8 @@ footer {
   .o-forms__label {
     @include oTypographySansBold($scale: 0);
     color: oColorsGetPaletteColor('black-80');
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 
   .o-forms__text {
