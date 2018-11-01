@@ -12,47 +12,47 @@ html(lang="en")
             p You are part of a team that effects stock markets, influences wars and breaks down barriers
         section.epigraph
             h2 We are always on the look out for the following roles
-        each oppening in oppenings
+        each opening in openings
             section.vacancy
                 .heading
-                    input.hidden-input(id=`${oppening.id}` type="checkbox")
+                    input.hidden-input(id=`${opening.id}` type="checkbox")
                     .section-line
-                    label(for=`${oppening.id}`) #{oppening.title}
+                    label(for=`${opening.id}`) #{opening.title}
                         i
                     .table
                         .section-header
                         .left
-                            p.bolder #{oppening.details.level.title}
-                            p #{oppening.details.level.text}
+                            p.bolder #{opening.details.level.title}
+                            p #{opening.details.level.text}
                         .right
-                            p.bolder #{oppening.details.profession.title}
-                            p #{oppening.details.profession.text}
+                            p.bolder #{opening.details.profession.title}
+                            p #{opening.details.profession.text}
                         hr
                         .left
-                            p.bolder #{oppening.details.type.title}
-                            p #{oppening.details.type.text}
+                            p.bolder #{opening.details.type.title}
+                            p #{opening.details.type.text}
                         .right
-                            p.bolder #{oppening.details.location.title}
-                            p #{oppening.details.location.text}
+                            p.bolder #{opening.details.location.title}
+                            p #{opening.details.location.text}
                         hr
                         .left
-                            p.bolder #{oppening.details.description.title}
+                            p.bolder #{opening.details.description.title}
                         .right
                             .description
-                                each line in oppening.details.description.about
+                                each line in opening.details.description.about
                                     p #{line}
                                 .list
-                                    p.mini-header #{oppening.details.description.responsibilities.title}
-                                    each line in oppening.details.description.responsibilities.list
+                                    p.mini-header #{opening.details.description.responsibilities.title}
+                                    each line in opening.details.description.responsibilities.list
                                         p #{line}
                                 .list
-                                    p.mini-header #{oppening.details.description.requirements.title}
-                                        each line in oppening.details.description.requirements.list
+                                    p.mini-header #{opening.details.description.requirements.title}
+                                        each line in opening.details.description.requirements.list
                                             p #{line}
-                                p #{oppening.details.description.conclusion}
+                                p #{opening.details.description.conclusion}
                                 .buttons
                                     form(action="form.html")
-                                        button Apply now                
+                                        button Apply now
         section.vacancy(id='current-openings')
             .heading
                 .section-line
