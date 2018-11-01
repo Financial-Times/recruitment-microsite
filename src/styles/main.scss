@@ -396,10 +396,6 @@ body, body a {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
 
-.epigraph h2 {
-  font-weight: 600;
-}
-
 .vacancy .heading a {
   margin-bottom: 3em;
 }
@@ -411,7 +407,7 @@ h2, label {
 
 .announcement, .vacancy {
   p {
-    @include oTypographySans($scale: 2);
+    @include oTypographySans($scale: 1);
     font-weight: 200;
     margin-right: 2em;
   }
@@ -590,7 +586,7 @@ h2, label {
 
 // Benefits
 .benefits-card {
-  @include oTypographyDisplay($scale: 6);
+  @include oTypographyDisplay($scale: 5);
   background-color: oColorsGetPaletteColor('white-80');
   color: $light-grey;
   position: relative;
