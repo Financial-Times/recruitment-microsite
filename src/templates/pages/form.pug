@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
   include ../partials/head.pug
   body
-    div.content
+    .content
         include ../partials/menu.pug
         section.intro
             .heritage-logo-container
@@ -11,11 +11,11 @@ html(lang="en")
             hr
             p Your perspective will help us make great things happen.
         section.chapter
-            div.form
+            .form
                 h2 Please complete your details.
-                div.form-body
+                .form-body
                     form.o-forms.o-forms--wide(action='thankyou.html', name='application', method='POST', netlify)
-                        div.form-fields
+                        .form-fields
                             label.o-forms__label(aria-describedby='text-box-info', for='first-name') First name
                             input.o-forms__text(type='text', id='first-name', placeholder='Enter your first name', name='first-name' required)
 
@@ -27,7 +27,7 @@ html(lang="en")
 
                             fieldset.o-forms
                                 legend.o-forms__label Location
-                                div.o-forms__group.o-forms__group--inline
+                                .o-forms__group.o-forms__group--inline
                                     input.o-forms__radio(type="radio" name="radio" value="london" id="london")
                                     label.o-forms__label(for="london") London
                                     input.o-forms__radio(type="radio" name="radio" value="manilla" id="manilla")
@@ -44,7 +44,7 @@ html(lang="en")
 
                             fieldset.o-forms
                                 legend.o-forms__label Role type
-                                div.o-forms__group.o-forms__group--inline
+                                .o-forms__group.o-forms__group--inline
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract")
                                     label.o-forms__label(for="contract") Contract
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent")
