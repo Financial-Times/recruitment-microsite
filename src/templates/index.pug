@@ -2,9 +2,9 @@ doctype html
 html(lang="en")
   include partials/head.pug
   body
-    div.content
+    .content
         section.intro.front-page
-            div.heritage-logo-container
+            .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
             img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
             h1 #{intro.heading}
@@ -15,21 +15,21 @@ html(lang="en")
                 li.menu__item
                     a(href=val.link)=val.text
         section.about.chapter(id='about')
-            div.announcement
-                div.section-line
+            .announcement
+                .section-line
                 h2 #{about.title}
                 p #{about.text}
         section.video
-            div.video-wrapper.content
+            .video-wrapper.content
                 iframe(width="1440" height="800" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
         section.culture.chapter(id='culture')
-            div.announcement
-                div.section-line
+            .announcement
+                .section-line
                 h2 #{culture.title}
                 p #{culture.text}
-            div.culture-cards
+            .culture-cards
                 each card in culture.cards
-                    div.culture-card
+                    .culture-card
                         img(src=`images/${card.image}`, alt=`{card.title}`, role='presentation')
                         h4 #{card.title}
                         p #{card.text}
@@ -38,26 +38,26 @@ html(lang="en")
             hr
             p #{quotes[0].author}
         section.people.chapter(id='people')
-            div.announcement
-                div.section-line
+            .announcement
+                .section-line
                 h2 #{people.title}
                 p #{people.text}
-            div.interviews
+            .interviews
                 each video,index in people.videos
-                    div.interview(class='interview-'+index)
+                    .interview(class='interview-'+index)
                         img(src=`images/${video.image}`)
         section.benefits.chapter(id='benefits')
-            div.announcement
-                div.section-line
+            .announcement
+                .section-line
                 h2 #{benefits.title}
-            div.benefits-cards
+            .benefits-cards
                 each card, index in benefits.cards
-                    div.benefits-card(class='benefit-'+index)
+                    .benefits-card(class='benefit-'+index)
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
         section.apply
-            div.question
+            .question
                 h2 #{apply.title}
                 p #{apply.text}
                 a(href='openings.html') #{apply.button}

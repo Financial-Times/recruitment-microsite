@@ -7,56 +7,65 @@ html(lang="en")
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
-            h1 Search for your next role
+            h1 Find your place to craFT
             hr
-            p You are part of a team that effects stock markets, influences wars and breaks down barriers
+            p Your perspective will help us make great things happen.
         section.epigraph
-            h2 We are always on the look out for the following roles
-        each oppening in oppenings
+            h2 We are always on the lookout for talent for the following roles in Product and Technology:
+        each opening, key in openings
             section.vacancy
                 .heading
-                    input.hidden-input(id=`${oppening.id}` type="checkbox")
+                    input.hidden-input(id=`${opening.id}` type="checkbox")
                     .section-line
-                    label(for=`${oppening.id}`) #{oppening.title}
+                    label(for=`${opening.id}`) #{opening.title}
                         i
                     .table
                         .section-header
                         .left
-                            p.bolder #{oppening.details.level.title}
-                            p #{oppening.details.level.text}
+                            p.bolder #{opening.details.level.title}
+                            p #{opening.details.level.text}
                         .right
-                            p.bolder #{oppening.details.profession.title}
-                            p #{oppening.details.profession.text}
+                            p.bolder #{opening.details.profession.title}
+                            p #{opening.details.profession.text}
                         hr
                         .left
-                            p.bolder #{oppening.details.type.title}
-                            p #{oppening.details.type.text}
+                            p.bolder #{opening.details.type.title}
+                            p #{opening.details.type.text}
                         .right
-                            p.bolder #{oppening.details.location.title}
-                            p #{oppening.details.location.text}
+                            p.bolder #{opening.details.location.title}
+                            p #{opening.details.location.text}
                         hr
                         .left
-                            p.bolder #{oppening.details.description.title}
+                            p.bolder #{opening.details.description.title}
                         .right
                             .description
-                                each line in oppening.details.description.about
+                                each line in opening.details.description.about
                                     p #{line}
                                 .list
-                                    p.mini-header #{oppening.details.description.responsibilities.title}
-                                    each line in oppening.details.description.responsibilities.list
-                                        p #{line}
-                                .list
-                                    p.mini-header #{oppening.details.description.requirements.title}
-                                        each line in oppening.details.description.requirements.list
+                                    - const responsibilities = opening.details.description.responsibilities
+                                    if responsibilities
+                                        p.mini-header #{responsibilities.title}
+                                        each line in responsibilities.list
                                             p #{line}
-                                p #{oppening.details.description.conclusion}
+                                .list
+                                    - const requirements = opening.details.description.requirements
+                                    if requirements
+                                        p.mini-header #{requirements.title}
+                                            each line in requirements.list
+                                                p #{line}
+                                .list
+                                    - const additionalRequirements = opening.details.description.requirements
+                                    if additionalRequirements
+                                        p.mini-header #{additionalRequirements.title}
+                                            each line in additionalRequirements.list
+                                                p #{line}
+                                p #{opening.details.description.conclusion}
                                 .buttons
                                     form(action="form.html")
-                                        button Apply now                
+                                        button Apply now
         section.vacancy(id='current-openings')
             .heading
                 .section-line
-                h2 Check our live roles
-                p We are looking for someone to develop the already excellent Network team, supporting the team on the journey to infrastructure as code.  Someone who is passionate about delivering an exceptional service in an ever-changing, dynamic, fun and friendly environment, where taking the initiative and trying new things is encouraged.
-                a(href='https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be') See our current live roles
+                h2 Live Vacancies
+                a(href='https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be') See our current live roles here
         include ../partials/footer.pug
