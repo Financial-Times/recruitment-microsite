@@ -5,8 +5,8 @@ html(lang="en")
     .content
         section.intro.front-page
             .heritage-logo-container
-                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
-            img.central-logo(src=`images/${intro.logo}`, alt=`{intro.logo}`, role='presentation')
+                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
+            img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
             h1 #{intro.heading}
             hr
             p #{intro.subheading}
@@ -14,15 +14,15 @@ html(lang="en")
             each val in menu.items
                 li.menu__item
                     a(href=val.link)=val.text
-        section.about.chapter(id='about')
+        section.about.chapter(id="about")
             .announcement
                 .section-line
                 h2 #{about.title}
                 p #{about.text}
         section.video
             .video-wrapper.content
-                iframe(width="1440" height="800" src="https://www.youtube-nocookie.com/embed/cdy_bj2mahU?rel=0&amp;controls=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media")
-        section.culture.chapter(id='culture')
+                video(width="1440" height="800" src=`${video.link}`)
+        section.culture.chapter(id="culture")
             .announcement
                 .section-line
                 h2 #{culture.title}
@@ -30,29 +30,29 @@ html(lang="en")
             .culture-cards
                 each card in culture.cards
                     .culture-card
-                        img(src=`images/${card.image}`, alt=`{card.title}`, role='presentation')
+                        img(src=`images/${card.image}`, alt=`${card.title}`, role="presentation")
                         h4 #{card.title}
                         p #{card.text}
         section.quotes
             h1 #{quotes[0].quote}
             hr
             p #{quotes[0].author}
-        section.people.chapter(id='people')
+        section.people.chapter(id="people")
             .announcement
                 .section-line
                 h2 #{people.title}
                 p #{people.text}
             .interviews
                 each video,index in people.videos
-                    .interview(class='interview-'+index)
+                    .interview(class="interview-"+index)
                         img(src=`images/${video.image}`)
-        section.benefits.chapter(id='benefits')
+        section.benefits.chapter(id="benefits")
             .announcement
                 .section-line
                 h2 #{benefits.title}
             .benefits-cards
                 each card, index in benefits.cards
-                    .benefits-card(class='benefit-'+index)
+                    .benefits-card(class="benefit-"+index)
                         hr(align="left")
                         h3 #{card.title}
                         p #{card.text}
@@ -60,5 +60,5 @@ html(lang="en")
             .question
                 h2 #{apply.title}
                 p #{apply.text}
-                a(href='openings.html') #{apply.button}
+                a(href="openings.html") #{apply.button}
         include partials/footer.pug
