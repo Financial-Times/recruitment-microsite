@@ -505,7 +505,7 @@ h2, label {
 // Vacancies animation
 // https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
-.vacancy .heading:hover i {
+.vacancy label:hover i, .vacancy i:hover  {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
 }
 
@@ -531,8 +531,8 @@ h2, label {
 		max-height 2s ease-in-out;
 }
 
-.vacancy .hidden-input:checked ~ i {
-  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 36);
+.vacancy .hidden-input:checked ~ label:hover i, .vacancy .hidden-input:checked ~ i:hover  {
+  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
 
 @media only screen and (max-width: 780px) {
