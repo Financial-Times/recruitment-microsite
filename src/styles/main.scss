@@ -514,19 +514,21 @@ h2, label {
 }
 
 .vacancy .hidden-input ~ .table {
-  height: 0;
+  max-height: 0;
   overflow-y: hidden;
 
   transition:
-		height 0.5s ease-in-out;
+		max-height 2s ease-in-out;
 }
 
 .vacancy .hidden-input:checked ~ .table {
+  // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
+  max-height: 10000px; // Be careful, this magic number might have to change!
   margin-bottom: 3rem;
 
   transition:
-		height 1.0s ease-in-out;
+		max-height 2s ease-in-out;
 }
 
 .vacancy .hidden-input:checked ~ i {
