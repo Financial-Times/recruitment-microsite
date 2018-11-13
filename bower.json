@@ -3,8 +3,6 @@
   "dependencies": {
     "o-typography": "^5.0.0",
     "o-buttons": "^5.0.0",
-    "o-colors": "^4.6.2",
-    "o-forms": "^5.8.2",
-    "o-fonts": "^3.1.1"
+    "o-forms": "^5.8.2"
   }
 }
