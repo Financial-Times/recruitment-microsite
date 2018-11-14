@@ -227,6 +227,21 @@ body, body a {
   }
 }
 
+.name-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .first-name {
+    grid-column: 1;
+    margin-right: 10px;
+  }
+
+  .last-name {
+    grid-column: 2;
+    margin-left: 10px;
+  }
+}
+
 // Interviews
 .interviews {
   grid-column: 1/-1;
