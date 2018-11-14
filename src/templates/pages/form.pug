@@ -4,6 +4,7 @@ html(lang="en")
     body
         div.content
             include ../partials/menu.pug
+            //- TODO: Figure out why VO is not reading the header text
             header.intro
                 div.heritage-logo-container
                     img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role="presentation")
