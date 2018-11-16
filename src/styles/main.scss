@@ -1,10 +1,11 @@
 // Origami
-@import 'o-typography/main';
 @import 'o-buttons/main';
 @import 'o-colors/main';
-@import 'o-forms/main';
 @import 'o-fonts/main';
+@import 'o-footer-services/main';
+@import 'o-forms/main';
 @import 'o-icons/main';
+@import 'o-typography/main';
 
 @include oFontsInclude(FinancierDisplayWeb, regular);
 @include oFontsInclude(FinancierDisplayWeb, bold);
@@ -679,24 +680,17 @@ h2, label {
 
 // Footer
 footer {
+  @include oFooterServicesBase($class: 'o-footer-services');
   height: 70px;
   padding-right: 2em;
   padding-left: 2em;
 
-  hr {
-    margin: auto;
-    max-width: 900px;
-    height: 0.1px;
-    background-color: oColorsGetPaletteColor('white-80');
+  .o-footer-services__wrapper {
+    color: oColorsGetPaletteColor('white-80');
   }
 
-  p {
-    @include oTypographySans($scale: -1);
-    font-weight: 200;
-    text-align: center;
-    margin: auto;
-    margin-top: 1em;
-    max-width: 460px;
+  .o-footer-services__links a {
+    color: oColorsGetPaletteColor('white-80');
   }
 }
 
