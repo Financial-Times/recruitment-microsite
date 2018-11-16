@@ -505,7 +505,7 @@ h2, label {
 // Vacancies animation
 // https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
-.vacancy .heading:hover i {
+.vacancy label:hover i, .vacancy i:hover  {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
 }
 
@@ -514,23 +514,25 @@ h2, label {
 }
 
 .vacancy .hidden-input ~ .table {
-  height: 0;
+  max-height: 0;
   overflow-y: hidden;
 
   transition:
-		height 0.5s ease-in-out;
+		max-height 2s ease-in-out;
 }
 
 .vacancy .hidden-input:checked ~ .table {
+  // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
+  max-height: 10000px; // Be careful, this magic number might have to change!
   margin-bottom: 3rem;
 
   transition:
-		height 1.0s ease-in-out;
+		max-height 2s ease-in-out;
 }
 
-.vacancy .hidden-input:checked ~ i {
-  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 36);
+.vacancy .hidden-input:checked ~ label:hover i, .vacancy .hidden-input:checked ~ i:hover  {
+  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
 
 @media only screen and (max-width: 780px) {
