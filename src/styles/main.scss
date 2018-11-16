@@ -46,7 +46,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-.header, .quotes, .intro, .video, .apply, footer, .menu {
+header, .quotes, .intro, .video, .apply, footer, .menu {
   grid-column: 1/-1;
 }
 
@@ -346,6 +346,19 @@ body, body a {
     max-width: 480px;
     margin: auto;
     margin-bottom: 1em;
+  }
+}
+
+// Header
+.o-header-services {
+  @include oHeaderServices($class: 'o-header-services');
+
+  .o-header-services__bleed-container {
+    background-color: $dark-slate;
+  }
+
+  .o-header-services__product-name {
+    @include oTypographySans($scale: 2);
   }
 }
 
