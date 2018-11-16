@@ -1,60 +1,63 @@
 doctype html
 html(lang="en")
-  include ../partials/head.pug
-  body
-    .content
-        include ../partials/menu.pug
-        section.intro
-            .heritage-logo-container
-                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
-            h1 Find your place to craFT
-            hr
-            p Your perspective will help us make great things happen.
-        section.chapter
-            .form
-                h2 Please complete your details.
-                .form-body
-                    form.o-forms.o-forms--wide(action='thankyou.html', name='application', method='POST', netlify)
-                        .form-fields
-                            label.o-forms__label(aria-describedby='text-box-info', for='first-name') First name
-                            input.o-forms__text(type='text', id='first-name', placeholder='Enter your first name', name='first-name' required)
+    include ../partials/head.pug
+    body
+        div.content
+            include ../partials/menu.pug
+            //- TODO: Figure out why VO is not reading the header text
+            header.intro
+                div.heritage-logo-container
+                    img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role="presentation")
+                h1(aria-label="Find your place to craft") Find your place to craFT
+                hr
+                p Your perspective will help us make great things happen.
+            main.chapter
+                div.form
+                    h2 Please complete the form to apply now.
+                    form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
+                        div.fields
+                            div.name
+                                div.first-name
+                                    label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
+                                    input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
+                                div.last-name
+                                    label.o-forms__label(aria-describedby="text-box-info", for="last-name") Last name
+                                    input.o-forms__text(type="text", id="last-name", placeholder="Last name", name="last-name" required)
 
-                            label.o-forms__label(aria-describedby='text-box-info', for='last-name') Last name
-                            input.o-forms__text(type='text', id='last-name', placeholder='Enter your last name', name='last-name' required)
+                            label.o-forms__label(aria-describedby="text-box-info", for="email") Email address
+                            input.o-forms__text(type="text", id="email", placeholder="Enter your email address", name="email" required)
 
-                            label.o-forms__label(aria-describedby='text-box-info', for='email') Email address
-                            input.o-forms__text(type='text', id='email', placeholder='Enter your email address', name='email' required)
-
+                            //- TODO: Make location a required field
                             fieldset.o-forms
                                 legend.o-forms__label Location
-                                .o-forms__group.o-forms__group--inline
-                                    input.o-forms__radio(type="radio" name="radio" value="london" id="london")
+                                div.o-forms__group.o-forms__group--inline
+                                    input.o-forms__radio(type="radio" name="radio" value="london" id="london" aria-label="Select London as your location")
                                     label.o-forms__label(for="london") London
-                                    input.o-forms__radio(type="radio" name="radio" value="manilla" id="manilla")
+                                    input.o-forms__radio(type="radio" name="radio" value="manilla" id="manilla" aria-label="Select Manilla as your location")
                                     label.o-forms__label(for="manilla") Manilla
-                                    input.o-forms__radio(type="radio" name="radio" value="sofia" id="sofia")
+                                    input.o-forms__radio(type="radio" name="radio" value="sofia" id="sofia" aria-label="Select Sofia as your location")
                                     label.o-forms__label(for="sofia") Sofia
 
                             span Attach CV/Resume
-                            label.upload-button(for='upload-cv') Upload CV
-                            input.upload-file(type='file', id='upload-cv', name='upload-cv')
+                            label.upload-button(for="upload-cv") Upload CV
+                            input.upload-file(type="file", id="upload-cv", name="upload-cv")
 
-                            label.o-forms__label(aria-describedby='text-box-info', for='portfolio') Portfolio
-                            input.o-forms__text(type='text', id='portfolio', placeholder='Enter a link to your portfolio', name='portfolio')
+                            label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
+                            input.o-forms__text(type="text", id="portfolio", placeholder="Enter a link to your portfolio", name="portfolio")
 
                             fieldset.o-forms
-                                legend.o-forms__label Role type
-                                .o-forms__group.o-forms__group--inline
-                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract")
+                                legend.o-forms__label.o-forms__label--optional Role type
+                                div.o-forms__group.o-forms__group--inline
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract" aria-label="Select contract as your role type")
                                     label.o-forms__label(for="contract") Contract
-                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent")
+                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
                                     label.o-forms__label(for="permanent") Permanent
 
-                            label.o-forms__label(aria-describedby='text-box-info', for='salary') Salary expectations
-                            input.o-forms__text(type='text', id='salary', placeholder='Enter your salary expectations', name='salary' required)
+                            label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations
+                            input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations", name="salary" required)
 
-                            label.o-forms__label(aria-describedby='text-box-info', for='notice-period') Availability/Notice period
-                            input.o-forms__text(type='text', id='notice-period', placeholder='Enter your availability/notice period', name='notice-period')
+                            label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
+                            input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
-                            button.submit-button(type='submit') Submit
-        include ../partials/footer.pug
+                            button.submit-button(type="submit") Submit
+    include ../partials/footer.pug

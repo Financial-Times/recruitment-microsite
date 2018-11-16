@@ -227,6 +227,21 @@ body, body a {
   }
 }
 
+.name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .first-name {
+    grid-column: 1;
+    margin-right: 10px;
+  }
+
+  .last-name {
+    grid-column: 2;
+    margin-left: 10px;
+  }
+}
+
 // Interviews
 .interviews {
   grid-column: 1/-1;
@@ -718,13 +733,13 @@ footer {
     margin-left: 0.5rem;
     margin-bottom: 1.3rem;
   }
-}
 
-.form-body {
+  .o-forms {
   background-color: oColorsGetPaletteColor('white');
+  }
 }
 
-.form-fields {
+.fields {
   padding: 30px;
 
   .o-forms__label {
