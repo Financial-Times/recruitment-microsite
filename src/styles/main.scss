@@ -358,7 +358,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   }
 
   .o-header-services__product-name {
-    @include oTypographySans($scale: 2);
+    @include oTypographySans($scale: 1);
   }
 }
 
