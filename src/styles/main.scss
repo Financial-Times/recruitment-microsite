@@ -172,7 +172,8 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
     }
 
     a {
-      grid-column: 2/-1;
+      grid-column: 1/-1;
+      margin-top: 2em;
     }
 
     .table {
@@ -515,7 +516,7 @@ h2, label {
     margin-top: 1em;
 
     button {
-      @include oButtons();
+      @include oButtons('big');
       @include oButtonsTheme('primary');
       @include oButtonsTheme('inverse');
     }
@@ -696,6 +697,10 @@ footer {
   .o-footer-services__links a {
     color: oColorsGetPaletteColor('white-80');
   }
+}
+
+footer .o-footer-services__container:before {
+  border-top: none;
 }
 
 // Vacancies page
