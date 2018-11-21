@@ -5,12 +5,12 @@ html(lang="en")
     .content
         section.intro.front-page
             .heritage-logo-container
-                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
+                img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
             .header-container
-                img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-                h1 #{intro.heading}
-                hr
-                p #{intro.subheading}
+                img.central-logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
+                h1.fade-in-animation #{intro.heading}
+                hr.fade-in-animation
+                p.fade-in-animation #{intro.subheading}
         nav.menu
             each val in menu.items
                 li.menu__item
