@@ -4,6 +4,7 @@
 @import 'o-fonts/main';
 @import 'o-footer-services/main';
 @import 'o-forms/main';
+@import 'o-header-services/main';
 @import 'o-icons/main';
 @import 'o-typography/main';
 
@@ -45,7 +46,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-.header, .quotes, .intro, .video, .apply, footer, .menu {
+header, .quotes, .intro, .video, .apply, footer, .menu {
   grid-column: 1/-1;
 }
 
@@ -345,6 +346,19 @@ body, body a {
     max-width: 480px;
     margin: auto;
     margin-bottom: 1em;
+  }
+}
+
+// Header
+.o-header-services {
+  @include oHeaderServices($class: 'o-header-services');
+
+  .o-header-services__bleed-container {
+    background-color: $dark-slate;
+  }
+
+  .o-header-services__product-name {
+    @include oTypographySans($scale: 1);
   }
 }
 
@@ -894,4 +908,12 @@ footer {
 
   opacity: 1;
   z-index: 2;
+}
+
+.o-header-services__top .index-link {
+  float: left;
+}
+
+.o-header-services__top .openings-link {
+  float: right;
 }
