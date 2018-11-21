@@ -49,6 +49,7 @@ html(lang="en")
                 each video,index in people.videos
                     .interview(class="interview-"+index)
                         img(src=`images/${video.image}`)
+                        p #{video.caption}
         section.benefits.chapter(id="benefits")
             .announcement
                 .section-line

@@ -65,16 +65,28 @@
         "text": "Our product and tech team comprises hundreds of developers, designers, product managers and analysts - but our teams are small, self-governing and multi-disciplined. It means your decisions and knowledge will count in a major way, every day.",
         "videos": [
             {
-                "image": "int_tmp_1.png"
+                "image": "Caroline.png",
+                "caption": "Caroline"
             },
             {
-                "image": "int_tmp_2.png"
+                "image": "Jamie.png",
+                "caption": "Jamie"
             },
             {
-                "image": "int_tmp_3.png"
+                "image": "Katie.png",
+                "caption": "Katie"
             },
             {
-                "image": "int_tmp_4.png"
+                "image": "Kamran.png",
+                "caption": "Kamran"
+            },
+            {
+                "image": "Miguel.png",
+                "caption": "Miguel"
+            },
+            {
+                "image": "Robin.png",
+                "caption": "Robin"
             }
         ]
     },
