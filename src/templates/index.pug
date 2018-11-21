@@ -6,11 +6,10 @@ html(lang="en")
         section.intro.front-page
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
-            .header-container
-                img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-                h1 #{intro.heading}
-                hr
-                p #{intro.subheading}
+            img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
+            h1 #{intro.heading}
+            hr
+            p #{intro.subheading}
         nav.menu
             each val in menu.items
                 li.menu__item
