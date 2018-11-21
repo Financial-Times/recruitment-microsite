@@ -829,44 +829,8 @@ footer {
     filter: grayscale(95%);
   }
 }
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  100% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
 
 .heritage-logo {
-  -webkit-animation: fadeOut $animation-lasts;
-  -moz-animation: fadeOut $animation-lasts;
-  -o-animation: fadeOut $animation-lasts;
   animation: fadeOut $animation-lasts;
   animation-iteration-count: 1;
 
@@ -883,35 +847,8 @@ footer {
     opacity: 1;
   }
 }
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .intro h1, .intro hr, .intro p, .intro .central-logo {
-  -webkit-animation: fadeIn $animation-lasts;
-  -moz-animation: fadeIn $animation-lasts;
-  -o-animation: fadeIn $animation-lasts;
   animation: fadeIn $animation-lasts;
   animation-iteration-count: 1;
 
