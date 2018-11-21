@@ -53,6 +53,15 @@ body, body a {
   grid-column: 2;
 }
 
+.intro {
+  display: grid;
+  grid-template-rows: 0.66fr 16em 1fr;
+
+  .header-container {
+    grid-row: 2;
+  }
+}
+
 .chapter {
   grid-column: 2;
   display: grid;
