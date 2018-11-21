@@ -2,25 +2,26 @@ doctype html
 html(lang="en")
     include ../partials/head.pug
     body
-        div.content
+        .content
             include ../partials/header.pug
             //- TODO: Figure out why VO is not reading the header text
             header.intro
-                div.heritage-logo-container
+                .heritage-logo-container
                     img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role="presentation")
-                h1(aria-label="Find your place to craft") Find your place to craFT
-                hr
-                p Your perspective will help us make great things happen.
+                .header-container
+                    h1(aria-label="Find your place to craft") Find your place to craFT
+                    hr
+                    p Your perspective will help us make great things happen.
             main.chapter
-                div.form
+                .form
                     h2 Please complete the form to apply now.
                     form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
-                        div.fields
-                            div.name
-                                div.first-name
+                        .fields
+                            .name
+                                .first-name
                                     label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
                                     input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
-                                div.last-name
+                                .last-name
                                     label.o-forms__label(aria-describedby="text-box-info", for="last-name") Last name
                                     input.o-forms__text(type="text", id="last-name", placeholder="Last name", name="last-name" required)
 
@@ -30,7 +31,7 @@ html(lang="en")
                             //- TODO: Make location a required field
                             fieldset.o-forms
                                 legend.o-forms__label Location
-                                div.o-forms__group.o-forms__group--inline
+                                .o-forms__group.o-forms__group--inline
                                     input.o-forms__radio(type="radio" name="radio" value="london" id="london" aria-label="Select London as your location")
                                     label.o-forms__label(for="london") London
                                     input.o-forms__radio(type="radio" name="radio" value="manilla" id="manilla" aria-label="Select Manilla as your location")
@@ -47,7 +48,7 @@ html(lang="en")
 
                             fieldset.o-forms
                                 legend.o-forms__label.o-forms__label--optional Role type
-                                div.o-forms__group.o-forms__group--inline
+                                .o-forms__group.o-forms__group--inline
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract" aria-label="Select contract as your role type")
                                     label.o-forms__label(for="contract") Contract
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
