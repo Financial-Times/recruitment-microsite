@@ -3,7 +3,7 @@ html(lang="en")
   include ../partials/head.pug
   body
     .content
-        include ../partials/menu.pug
+        include ../partials/header.pug
         section.intro
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
@@ -55,7 +55,7 @@ html(lang="en")
                                             each line in requirements.list
                                                 p #{line}
                                 .list
-                                    - const additionalRequirements = opening.details.description.requirements
+                                    - const additionalRequirements = opening.details.description.additionalRequirements
                                     if additionalRequirements
                                         p.mini-header #{additionalRequirements.title}
                                             each line in additionalRequirements.list
