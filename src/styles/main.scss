@@ -905,3 +905,19 @@ footer {
   float: right;
   padding: 16px 10px
 }
+
+.o-footer-services__wrapper {
+  text-align: center;
+
+  .o-footer-services__links {
+    float: none;
+  }
+}
+
+footer .o-footer-services__wrapper--legal p {
+  float: none;
+}
+
+footer {
+  margin-bottom: 2em;
+}
