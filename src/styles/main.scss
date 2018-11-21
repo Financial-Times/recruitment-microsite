@@ -23,6 +23,11 @@ $animation-lasts: 6s;
 $content-width: 1440px;
 $one-third-card-width: 340px;
 
+// Breakpoints
+$breakpoint-s: 420px;
+$breakpoint-m: 780px;
+$breakpoint-l: 960px;
+
 // Generic
 html,
 body {
@@ -189,7 +194,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .chapter {
     .culture-cards, .benefits-cards {
       grid-column: 2/5;
@@ -286,7 +291,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   grid-row: 5 / 8;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .interviews {
     grid-column: 3;
     grid-template-columns: repeat(1, 1fr);
@@ -574,7 +579,7 @@ h2, label {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .table {
     .left, .right {
       grid-column: 1/-1;
