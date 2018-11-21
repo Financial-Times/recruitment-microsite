@@ -135,9 +135,6 @@
         ],
         "button": "Current Vacancies"
     },
-    "footer": {
-        "text": ""
-    },
     "openings": [
         {
             "title": "Business Analyst",
