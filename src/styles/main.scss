@@ -347,6 +347,22 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
     margin: auto;
     margin-bottom: 1em;
   }
+
+  .thank-you-buttons a {
+    @include oButtons('big');
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
+    margin-top: 1em;
+    width: 10em;
+  }
+
+  a:first-child {
+    margin-right: 10px;
+  }
+
+  a:last-child {
+    margin-left: 10px;
+  }
 }
 
 // Header
@@ -801,11 +817,6 @@ footer {
     color: oColorsGetPaletteColor('white-80');
     margin-bottom: 2rem;
   }
-}
-
-// Thank you page
-.thankyou {
-  height: 100vh;
 }
 
 // Animation
