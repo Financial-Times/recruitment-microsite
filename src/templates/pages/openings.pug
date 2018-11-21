@@ -54,7 +54,7 @@ html(lang="en")
                                             each line in requirements.list
                                                 p #{line}
                                 .list
-                                    - const additionalRequirements = opening.details.description.requirements
+                                    - const additionalRequirements = opening.details.description.additionalRequirements
                                     if additionalRequirements
                                         p.mini-header #{additionalRequirements.title}
                                             each line in additionalRequirements.list
