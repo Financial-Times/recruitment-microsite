@@ -13,16 +13,16 @@
                 "link": "#about"
             },
             {
-                "text": "Jobs",
-                "link": "openings.html"
-            },
-            {
                 "text": "Our People",
                 "link": "#people"
             },
             {
                 "text": "Benefits",
                 "link": "#benefits"
+            },
+            {
+                "text": "Current openings",
+                "link": "openings.html"
             }
         ]
     },

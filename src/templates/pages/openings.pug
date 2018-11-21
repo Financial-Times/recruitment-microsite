@@ -5,11 +5,10 @@ html(lang="en")
     .content
         include ../partials/header.pug
         section.intro
-            .heritage-logo-container
-                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`{intro.logo}`, role='presentation')
-            h1 Find your place to craFT
-            hr
-            p Your perspective will help us make great things happen.
+            .header-container
+                h1 Find your place to craFT
+                hr
+                p Your perspective will help us make great things happen.
         section.epigraph
             h2 We are always on the lookout for talent for the following roles:
         each opening, key in openings

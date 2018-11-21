@@ -19,7 +19,8 @@ $dark-slate: #1A1D24;
 $light-grey: #4A4A4A;
 
 // Variables
-$animation-lasts: 6s;
+$animation-fade-in: 8s;
+$animation-fade-out: 2s;
 $content-width: 1440px;
 $one-third-card-width: 340px;
 
@@ -52,6 +53,15 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
 
 .video video, h2 {
   grid-column: 2;
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: 0.66fr 16em 1fr;
+
+  .header-container {
+    grid-row: 2;
+  }
 }
 
 .chapter {
@@ -89,6 +99,11 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   .question {
     grid-column: 3;
     grid-row: 1;
+  }
+
+  .quote {
+    grid-column: 3;
+    grid-row: 1/-1;
   }
 
   .culture-cards, .benefits-cards, .interviews {
@@ -866,10 +881,10 @@ footer {
 }
 
 .heritage-logo {
-  -webkit-animation: fadeOut $animation-lasts;
-  -moz-animation: fadeOut $animation-lasts;
-  -o-animation: fadeOut $animation-lasts;
-  animation: fadeOut $animation-lasts;
+  -webkit-animation: fadeOut $animation-fade-out;
+  -moz-animation: fadeOut $animation-fade-out;
+  -o-animation: fadeOut $animation-fade-out;
+  animation: fadeOut $animation-fade-out;
   animation-iteration-count: 1;
 
   opacity: 0;
@@ -911,10 +926,10 @@ footer {
 }
 
 .intro h1, .intro hr, .intro p, .intro .central-logo {
-  -webkit-animation: fadeIn $animation-lasts;
-  -moz-animation: fadeIn $animation-lasts;
-  -o-animation: fadeIn $animation-lasts;
-  animation: fadeIn $animation-lasts;
+  -webkit-animation: fadeIn $animation-fade-in;
+  -moz-animation: fadeIn $animation-fade-in;
+  -o-animation: fadeIn $animation-fade-in;
+  animation: fadeIn $animation-fade-in;
   animation-iteration-count: 1;
 
   opacity: 1;
@@ -925,6 +940,11 @@ footer {
   float: left;
 }
 
+.o-header-services .o-header-services__title {
+  padding: 7px 10px;
+}
+
 .o-header-services__top .openings-link {
   float: right;
+  padding: 16px 10px
 }

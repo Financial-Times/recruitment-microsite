@@ -6,10 +6,11 @@ html(lang="en")
         section.intro.front-page
             .heritage-logo-container
                 img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
-            img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-            h1 #{intro.heading}
-            hr
-            p #{intro.subheading}
+            .header-container
+                img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
+                h1 #{intro.heading}
+                hr
+                p #{intro.subheading}
         nav.menu
             each val in menu.items
                 li.menu__item
@@ -33,10 +34,11 @@ html(lang="en")
                         img(src=`images/${card.image}`, alt=`${card.title}`, role="presentation")
                         h4 #{card.title}
                         p #{card.text}
-        section.quotes
-            h1 #{quotes[0].quote}
-            hr
-            p #{quotes[0].author}
+        section.quotes.chapter
+            .quote
+                h1 #{quotes[0].quote}
+                hr
+                p #{quotes[0].author}
         section.people.chapter(id="people")
             .announcement
                 .section-line
