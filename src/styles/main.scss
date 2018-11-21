@@ -19,7 +19,8 @@ $dark-slate: #1A1D24;
 $light-grey: #4A4A4A;
 
 // Variables
-$animation-lasts: 6s;
+$animation-fade-in: 8s;
+$animation-fade-out: 2s;
 $content-width: 1440px;
 $one-third-card-width: 340px;
 
@@ -869,10 +870,10 @@ footer {
 }
 
 .heritage-logo {
-  -webkit-animation: fadeOut $animation-lasts;
-  -moz-animation: fadeOut $animation-lasts;
-  -o-animation: fadeOut $animation-lasts;
-  animation: fadeOut $animation-lasts;
+  -webkit-animation: fadeOut $animation-fade-out;
+  -moz-animation: fadeOut $animation-fade-out;
+  -o-animation: fadeOut $animation-fade-out;
+  animation: fadeOut $animation-fade-out;
   animation-iteration-count: 1;
 
   opacity: 0;
@@ -914,10 +915,10 @@ footer {
 }
 
 .intro h1, .intro hr, .intro p, .intro .central-logo {
-  -webkit-animation: fadeIn $animation-lasts;
-  -moz-animation: fadeIn $animation-lasts;
-  -o-animation: fadeIn $animation-lasts;
-  animation: fadeIn $animation-lasts;
+  -webkit-animation: fadeIn $animation-fade-in;
+  -moz-animation: fadeIn $animation-fade-in;
+  -o-animation: fadeIn $animation-fade-in;
+  animation: fadeIn $animation-fade-in;
   animation-iteration-count: 1;
 
   opacity: 1;
