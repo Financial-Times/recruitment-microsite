@@ -46,10 +46,10 @@ html(lang="en")
                 h2 #{people.title}
                 p #{people.text}
             .interviews
-                each video,index in people.videos
+                each person,index in people.information
                     .interview(class="interview-"+index)
-                        img(src=`images/${video.image}`)
-                        p #{video.caption}
+                        img(src=`images/${person.image}`)
+                        p #{person.caption}
         section.benefits.chapter(id="benefits")
             .announcement
                 .section-line
