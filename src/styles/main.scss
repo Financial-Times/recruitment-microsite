@@ -28,6 +28,7 @@ $one-third-card-width: 340px;
 $breakpoint-s: 420px;
 $breakpoint-m: 780px;
 $breakpoint-l: 960px;
+$breakpoint-vl: 1340px;
 
 // Generic
 html,
@@ -586,11 +587,35 @@ h2, label {
 .vacancy .hidden-input:checked ~ .table {
   // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
-  max-height: 10000px; // Be careful, this magic number might have to change!
+  max-height: 1700px; // Be careful, this magic number might have to change if text changes!
   margin-bottom: 3rem;
 
   transition:
 		max-height 2s ease-in-out;
+}
+
+@media only screen and (max-width: $breakpoint-vl) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2100px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-l) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2500px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2800px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-s) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 3500px; // Be careful, this magic number might have to change if text changes!
+  }
 }
 
 .vacancy .hidden-input:checked ~ label i, .vacancy .hidden-input:checked ~ i  {
