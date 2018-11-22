@@ -28,6 +28,7 @@ $one-third-card-width: 340px;
 $breakpoint-s: 420px;
 $breakpoint-m: 780px;
 $breakpoint-l: 960px;
+$breakpoint-vl: 1340px;
 
 // Generic
 html,
@@ -52,7 +53,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-header, .quotes, .intro, .video, .apply, footer, .menu {
+header, .quotes, .central-header, .video, .apply, footer, .menu {
   grid-column: 1/-1;
 }
 
@@ -60,7 +61,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   grid-column: 2;
 }
 
-.intro {
+.central-header {
   display: grid;
   grid-template-rows: 0.66fr 16em 1fr;
 
@@ -129,13 +130,19 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
     grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
     grid-template-rows: repeat(auto-fill, 1fr);
   }
+
+  .header-container {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h1, p {
+      grid-column: 1;
+    }
+  }
 }
 
 .epigraph {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
-
   h2 {
     grid-column: 3;
     align-self: end;
@@ -296,7 +303,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
 }
 
 // Intro
-.intro {
+.central-header {
   min-height: 56vh;
   text-align: center;
   padding: 1em;
@@ -321,19 +328,16 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   }
 
   h1 {
-    @include oTypographyDisplay($scale: 8);
     max-width: 800px;
     margin: auto;
   }
-
+  
   p {
-    @include oTypographySans($scale: 1);
-    font-weight: 200;
     max-width: 480px;
     margin: auto;
     margin-bottom: 1em;
   }
-
+  
   .thank-you-buttons a {
     @include oButtons('big');
     @include oButtonsTheme('primary');
@@ -343,6 +347,38 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
     margin-right: 5px;
     width: 10em;
   }
+}
+
+.central-header, .left-aligned-header {
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+  }
+  
+  p {
+    @include oTypographySans($scale: 1);
+    font-weight: 200;
+  }
+}
+
+.left-aligned-header {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+}
+
+.epigraph {
+  h2 {
+    @include oTypographySansBold($scale: 2);
+    margin-bottom: 1.3em;
+  }
+}
+
+.live-vacancies-title {
+  margin-top: 3em;
 }
 
 // Header
@@ -432,8 +468,8 @@ h2, label {
 }
 
 .announcement, .vacancy {
-  p {
-    @include oTypographySans($scale: 1);
+  p, li {
+    @include oTypographySans($scale: 0);
     font-weight: 200;
     margin-right: 2em;
   }
@@ -448,7 +484,7 @@ h2, label {
   }
 }
 
-.intro hr, .quotes hr {
+.central-header hr, .quotes hr {
   width: 60px;
   height: 4px;
   margin-bottom: 1.3em;
@@ -463,8 +499,7 @@ h2, label {
   grid-template-columns: 2fr 6fr;
 
   div {
-    p {
-      @include oTypographySans($scale: 0);
+    p, li {
       margin: 10px;
     }
 
@@ -474,16 +509,17 @@ h2, label {
     }
 
     .mini-header {
-      @include oTypographySans($scale: 0);
-      font-weight: 600;
+      @include oTypographySansBold($scale: 1);
+      margin-top: 2em;
     }
   }
 
   .description .list {
     margin-top: 1em;
 
-    p {
-      @include oTypographySans($scale: 0);
+    ul {
+      list-style-type: square;
+      list-style-position: outside;
     }
   }
 
@@ -518,12 +554,13 @@ h2, label {
   .buttons {
     display: flex;
 
-    margin-top: 1em;
-
     button {
       @include oButtons('big');
       @include oButtonsTheme('primary');
       @include oButtonsTheme('inverse');
+
+      margin: 10px;
+      margin-top: 1em;
     }
   }
 }
@@ -531,7 +568,7 @@ h2, label {
 // Vacancies animation
 // https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
-.vacancy label:hover i, .vacancy i:hover  {
+.vacancy label i, .vacancy i  {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
 }
 
@@ -550,14 +587,38 @@ h2, label {
 .vacancy .hidden-input:checked ~ .table {
   // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
-  max-height: 10000px; // Be careful, this magic number might have to change!
+  max-height: 1700px; // Be careful, this magic number might have to change if text changes!
   margin-bottom: 3rem;
 
   transition:
 		max-height 2s ease-in-out;
 }
 
-.vacancy .hidden-input:checked ~ label:hover i, .vacancy .hidden-input:checked ~ i:hover  {
+@media only screen and (max-width: $breakpoint-vl) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2100px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-l) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2500px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 2800px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-s) {
+  .vacancy .hidden-input:checked ~ .table {
+    max-height: 3500px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+.vacancy .hidden-input:checked ~ label i, .vacancy .hidden-input:checked ~ i  {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
 
@@ -714,7 +775,7 @@ footer .o-footer-services__container:before {
 }
 
 // Vacancies page
-.intro .title {
+.central-header .title {
   h1 {
     @include oTypographyDisplay($scale: 8);
     font-weight: 200;
@@ -739,6 +800,7 @@ footer .o-footer-services__container:before {
   @include oFormsRadioCheckboxFeatures();
   grid-column: 3;
   margin-top: 1rem;
+  margin-bottom: 3rem;
 
   h2 {
     @include oTypographySansBold($scale: 1);
