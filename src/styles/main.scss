@@ -912,6 +912,12 @@ footer .o-footer-services__container:before {
   z-index: 2;
 }
 
+header, .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .o-header-services__top .index-link {
   float: left;
 }
