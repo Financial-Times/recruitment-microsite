@@ -24,6 +24,11 @@ $animation-fade-out: 2.5s;
 $content-width: 1440px;
 $one-third-card-width: 340px;
 
+// Breakpoints
+$breakpoint-s: 420px;
+$breakpoint-m: 780px;
+$breakpoint-l: 960px;
+
 // Generic
 html,
 body {
@@ -192,7 +197,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .chapter {
     .culture-cards, .benefits-cards {
       grid-column: 2/5;
@@ -284,7 +289,7 @@ header, .quotes, .intro, .video, .apply, footer, .menu {
 }
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .interviews {
     grid-column: 3;
   }
@@ -556,7 +561,7 @@ h2, label {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: $breakpoint-m) {
   .table {
     .left, .right {
       grid-column: 1/-1;
@@ -810,44 +815,8 @@ footer .o-footer-services__container:before {
     filter: grayscale(95%);
   }
 }
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  30% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  30% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    filter: none;
-  }
-  30% {
-    opacity: 0;
-    -webkit-filter: grayscale(95%);
-    filter: grayscale(95%);
-  }
-}
 
 .fade-out-animation {
-  -webkit-animation: fadeOut $animation-fade-out;
-  -moz-animation: fadeOut $animation-fade-out;
-  -o-animation: fadeOut $animation-fade-out;
   animation: fadeOut $animation-fade-out;
   animation-iteration-count: 1;
 
@@ -867,35 +836,8 @@ footer .o-footer-services__container:before {
     opacity: 1;
   }
 }
-@-o-keyframes fadeIn {
-  30% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  30% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  30% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .fade-in-animation {
-  -webkit-animation: fadeIn $animation-fade-in;
-  -moz-animation: fadeIn $animation-fade-in;
-  -o-animation: fadeIn $animation-fade-in;
   animation: fadeIn $animation-fade-in;
   animation-iteration-count: 1;
 
