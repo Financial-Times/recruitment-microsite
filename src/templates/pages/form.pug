@@ -5,14 +5,14 @@ html(lang="en")
         .content
             include ../partials/header.pug
             //- TODO: Figure out why VO is not reading the header text
-            header.intro
+            section.left-aligned-header.chapter
                 .header-container
                     h1(aria-label="Find your place to craft") Find your place to craFT
-                    hr
                     p Your perspective will help us make great things happen.
+            section.epigraph.chapter
+                h2 Please complete the form to apply now.
             main.chapter
                 .form
-                    h2 Please complete the form to apply now.
                     form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
                         .fields
                             .name

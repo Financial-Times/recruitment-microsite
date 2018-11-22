@@ -4,12 +4,11 @@ html(lang="en")
   body
     .content
         include ../partials/header.pug
-        section.intro
+        section.left-aligned-header.chapter
             .header-container
                 h1 Find your place to craFT
-                hr
                 p Your perspective will help us make great things happen.
-        section.epigraph
+        section.epigraph.chapter
             h2 We are always on the lookout for talent for the following roles:
         each opening, key in openings
             section.vacancy
@@ -65,6 +64,6 @@ html(lang="en")
         section.vacancy(id="current-openings")
             .heading
                 .section-line
-                h2 Live Vacancies
+                h2.live-vacancies-title Live Vacancies
                 a(href="https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be" target="_blank") See our current live roles here
         include ../partials/footer.pug
