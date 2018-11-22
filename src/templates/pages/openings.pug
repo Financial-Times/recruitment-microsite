@@ -43,20 +43,23 @@ html(lang="en")
                                     - const responsibilities = opening.details.description.responsibilities
                                     if responsibilities
                                         p.mini-header #{responsibilities.title}
-                                        each line in responsibilities.list
-                                            p #{line}
+                                        ul
+                                            each line in responsibilities.list
+                                                li #{line}
                                 .list
                                     - const requirements = opening.details.description.requirements
                                     if requirements
                                         p.mini-header #{requirements.title}
+                                        ul
                                             each line in requirements.list
-                                                p #{line}
+                                                li #{line}
                                 .list
                                     - const additionalRequirements = opening.details.description.additionalRequirements
                                     if additionalRequirements
                                         p.mini-header #{additionalRequirements.title}
+                                        ul
                                             each line in additionalRequirements.list
-                                                p #{line}
+                                                li #{line}
                                 p #{opening.details.description.conclusion}
                                 .buttons
                                     form(action="form.html")

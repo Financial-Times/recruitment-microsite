@@ -467,8 +467,8 @@ h2, label {
 }
 
 .announcement, .vacancy {
-  p {
-    @include oTypographySans($scale: 1);
+  p, li {
+    @include oTypographySans($scale: 0);
     font-weight: 200;
     margin-right: 2em;
   }
@@ -498,8 +498,7 @@ h2, label {
   grid-template-columns: 2fr 6fr;
 
   div {
-    p {
-      @include oTypographySans($scale: 0);
+    p, li {
       margin: 10px;
     }
 
@@ -509,16 +508,17 @@ h2, label {
     }
 
     .mini-header {
-      @include oTypographySans($scale: 0);
-      font-weight: 600;
+      @include oTypographySansBold($scale: 1);
+      margin-top: 2em;
     }
   }
 
   .description .list {
     margin-top: 1em;
 
-    p {
-      @include oTypographySans($scale: 0);
+    ul {
+      list-style-type: square;
+      list-style-position: outside;
     }
   }
 
@@ -553,12 +553,13 @@ h2, label {
   .buttons {
     display: flex;
 
-    margin-top: 1em;
-
     button {
       @include oButtons('big');
       @include oButtonsTheme('primary');
       @include oButtonsTheme('inverse');
+
+      margin: 10px;
+      margin-top: 1em;
     }
   }
 }
