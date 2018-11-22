@@ -696,11 +696,16 @@ footer {
   padding-left: 2em;
 
   .o-footer-services__wrapper {
-    color: oColorsGetPaletteColor('white-80');
+    color: oColorsMix(slate, white, 10);
   }
 
   .o-footer-services__links a {
-    color: oColorsGetPaletteColor('white-80');
+    color: oColorsMix(slate, white, 10);
+    border: none;
+  }
+
+  .o-footer-services__links a:hover {
+    color: oColorsMix(slate, white, 0);
   }
 }
 
