@@ -5,12 +5,12 @@ html(lang="en")
     .content
         section.intro.front-page
             .heritage-logo-container
-                img.heritage-logo(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
+                img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.logo}`, role="presentation")
             .header-container
-                img.central-logo(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-                h1 #{intro.heading}
-                hr
-                p #{intro.subheading}
+                img.central-logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
+                h1.fade-in-animation #{intro.heading}
+                hr.fade-in-animation
+                p.fade-in-animation #{intro.subheading}
         nav.menu
             each val in menu.items
                 li.menu__item
@@ -22,7 +22,7 @@ html(lang="en")
                 p #{about.text}
         section.video
             .video-wrapper.content
-                video(width="1440" height="800" src=`${video.link}`)
+                video(controls src=`${video.link}`)
         section.culture.chapter(id="culture")
             .announcement
                 .section-line
@@ -35,18 +35,21 @@ html(lang="en")
                         h4 #{card.title}
                         p #{card.text}
         section.quotes
-            h1 #{quotes[0].quote}
-            hr
-            p #{quotes[0].author}
+            .chapter
+                .quote
+                    h1 #{quotes[0].quote}
+                    hr
+                    p #{quotes[0].author}
         section.people.chapter(id="people")
             .announcement
                 .section-line
                 h2 #{people.title}
                 p #{people.text}
             .interviews
-                each video,index in people.videos
+                each person,index in people.information
                     .interview(class="interview-"+index)
-                        img(src=`images/${video.image}`)
+                        img(src=`images/${person.image}`)
+                        p #{person.caption}
         section.benefits.chapter(id="benefits")
             .announcement
                 .section-line

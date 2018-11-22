@@ -13,16 +13,16 @@
                 "link": "#about"
             },
             {
-                "text": "Jobs",
-                "link": "openings.html"
-            },
-            {
                 "text": "Our People",
                 "link": "#people"
             },
             {
                 "text": "Benefits",
                 "link": "#benefits"
+            },
+            {
+                "text": "Current openings",
+                "link": "openings.html"
             }
         ]
     },
@@ -38,17 +38,17 @@
         "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
         "cards": [
             {
-                "image": "c_tmp_1.png",
+                "image": "autonomy.png",
                 "title": "Autonomy",
                 "text": "Our teams are small, self-governing and multi-disciplined. Working as part of our team means you’ll be empowered to choose your own tools, methodologies and frameworks to solve problems."
             },
             {
-                "image": "c_tmp_2.png",
+                "image": "inclusion.png",
                 "title": "Inclusion",
                 "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives."
             },
             {
-                "image": "c_tmp_3.png",
+                "image": "creativity.png",
                 "title": "Creativity",
                 "text": "With internal Hackathons and 10% time, we welcome ideas and different approaches to improving our product."
             }
@@ -63,18 +63,30 @@
     "people": {
         "title": "Tech is what makes us tick",
         "text": "Our product and tech team comprises hundreds of developers, designers, product managers and analysts - but our teams are small, self-governing and multi-disciplined. It means your decisions and knowledge will count in a major way, every day.",
-        "videos": [
+        "information": [
             {
-                "image": "int_tmp_1.png"
+                "image": "Caroline.png",
+                "caption": "Caroline"
             },
             {
-                "image": "int_tmp_2.png"
+                "image": "Jamie.png",
+                "caption": "Jamie"
             },
             {
-                "image": "int_tmp_3.png"
+                "image": "Katie.png",
+                "caption": "Katie"
             },
             {
-                "image": "int_tmp_4.png"
+                "image": "Kamran.png",
+                "caption": "Kamran"
+            },
+            {
+                "image": "Miguel.png",
+                "caption": "Miguel"
+            },
+            {
+                "image": "Robin.png",
+                "caption": "Robin"
             }
         ]
     },
@@ -134,9 +146,6 @@
             }
         ],
         "button": "Current Vacancies"
-    },
-    "footer": {
-        "text": ""
     },
     "openings": [
         {
