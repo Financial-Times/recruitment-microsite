@@ -63,7 +63,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
 .central-header {
   display: grid;
-  grid-template-rows: 0.66fr 16em 1fr;
+  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
 
   .header-container {
     grid-row: 2;
@@ -657,7 +657,7 @@ h2, label {
 
 // Quotes
 .quotes {
-  height: 430px;
+  min-height: 430px;
   padding-top: 130px;
   background-color: $dark-slate;
   text-align: center;
@@ -670,6 +670,13 @@ h2, label {
 
   p {
     @include oTypographySans($scale: 1);
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .quotes {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
