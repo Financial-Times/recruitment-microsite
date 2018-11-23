@@ -404,7 +404,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   margin-bottom: 3em;
 
   a {
-    margin-top: 5em;
+    margin-top: 7em;
   }
 }
 
@@ -612,7 +612,7 @@ h2, label {
   overflow-y: hidden;
 
   transition:
-		max-height 2s ease-in-out;
+		max-height .6s ease-in-out;
 }
 
 .vacancy .hidden-input:checked ~ .table {
