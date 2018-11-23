@@ -42,7 +42,7 @@ html(lang="en")
                             input.upload-file(type="file", id="upload-cv", name="upload-cv")
 
                             label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
-                            input.o-forms__text(type="text", id="portfolio", placeholder="Enter a link to your portfolio", name="portfolio")
+                            input.o-forms__text(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
 
                             fieldset.o-forms
                                 legend.o-forms__label.o-forms__label--optional Role type
@@ -51,12 +51,13 @@ html(lang="en")
                                     label.o-forms__label(for="contract") Contract
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
                                     label.o-forms__label(for="permanent") Permanent
-
-                            label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations
-                            input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations", name="salary" required)
-
-                            label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
-                            input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
+                            .additional-info
+                                .salary-expectations
+                                    label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations (in local currency)
+                                    input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations in local currency", name="salary" required)
+                                .availability
+                                    label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
+                                    input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
                             button.submit-button(type="submit") Submit
     include ../partials/footer.pug
