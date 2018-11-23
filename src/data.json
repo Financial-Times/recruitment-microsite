@@ -66,27 +66,27 @@
         "information": [
             {
                 "image": "Caroline.png",
-                "caption": "Caroline"
+                "caption": "Caroline, Research"
             },
             {
                 "image": "Jamie.png",
-                "caption": "Jamie"
+                "caption": "Jamie, Junior Engineer"
             },
             {
                 "image": "Katie.png",
-                "caption": "Katie"
+                "caption": "Katie, Junior Engineer"
             },
             {
                 "image": "Kamran.png",
-                "caption": "Kamran"
+                "caption": "Kamran, Junior Integration Engineer"
             },
             {
                 "image": "Miguel.png",
-                "caption": "Miguel"
+                "caption": "Miguel, IT Service Desk Analyst"
             },
             {
                 "image": "Robin.png",
-                "caption": "Robin"
+                "caption": "Robin, Interactive Data Journalist"
             }
         ]
     },
@@ -126,8 +126,8 @@
         ]
     },
     "apply": {
-        "title": "Discover more here",
-        "button": "Roles"
+        "title": "Join the team",
+        "button": "See our roles"
     },
     "openings": [
         {
