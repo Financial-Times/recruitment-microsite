@@ -159,6 +159,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  overflow: hidden;
 
   .heading {
     grid-column: 3;
@@ -187,7 +188,6 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
     p {
       grid-column: 2/-1;
       align-self: start;
-      margin-top: 2em;
     }
 
     a {
@@ -580,6 +580,7 @@ h2, label {
   display: grid;
   grid-column: 3;
   grid-template-columns: 2fr 6fr;
+  overflow: hidden;
 
   div {
     p, li {
