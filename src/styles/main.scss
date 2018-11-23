@@ -451,6 +451,12 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   }
 }
 
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy .live-vacancies {
+    grid-column: 2/5;
+  }
+}
+
 // Header
 .o-header-services {
   @include oHeaderServices($class: 'o-header-services');
@@ -837,6 +843,7 @@ h2, label {
     @include oButtons('big');
     @include oButtonsTheme('primary');
     @include oButtonsTheme('inverse');
+    margin-top: 2em;
   }
 }
 
