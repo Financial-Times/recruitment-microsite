@@ -135,6 +135,86 @@
     },
     "openings": [
         {
+            "title": "Software Engineer",
+            "id": "softwareEngineer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Software Engineer"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London, Sofia"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We are a multi-disciplinary, co-located team within which we periodically rotate between teams.",
+                        "We value transparency, accountability, shared responsibility and teamwork. We’re listen to our users real needs and the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
+                        "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tech we use and site reliability."
+                    ],
+                    "details": {
+                        "responsibilities": {
+                            "title": "You will work on...",
+                            "list": [
+                                "New features for FT.com and our presentation layer applications / services using modern web technologies.",
+                                "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
+                                "Maintain our high standards for web performance, security and accessibility.",
+                                "Help improve the way we work and the tools we use."
+                            ]
+                        },
+                        "requirements": {
+                            "title": "This role will be right for you if...",
+                            "list": [
+                                "You want to use tech where your input is valued in both product and technical choices.",
+                                "You prioritise a good work / life balance and rewarding work environment.",
+                                "You value a clear view on the reason why you’re working on something and how its success is measured.",
+                                "Your core skill set and expertise is web development and you're enthusiastic about contributing to all parts of the process.",
+                                "You are keen to take action whilst being pragmatic.",
+                                "You pay attention to detail and have common sense.",
+                                "You love being collaborative.",
+                                "You enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team.",
+                                "You love the web, have an interest performance and accessibility.",
+                                "You have an understanding of design and UX principles.",
+                                "You like to avoid of frameworks and only use them when necessary and right for the use case."
+                            ]
+                        },
+                        "technologies": {
+                            "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
+                            "list": [
+                                "Node.js; Heroku; AWS: Mainly Lambda, Kinesis, Dynamo",
+                                "Ad-tech stack (Google Ad Server DFP, 3rd Party Ad Servers, GPT libraries)",
+                                "RESTful APIs (third-party APIs)",
+                                "Elasticsearch; Neo4j; Redis; GraphQL",
+                                "Handlebars; Sass; Webpack; Preact",
+                                "Fastly and VCL",
+                                "GitHub; CircleCI; Sentry",
+                                "Graphite; Grafana, Splunk",
+                                "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
+                            ]
+                        },
+                        "hiringProcess": {
+                            "title": "The hiring process",
+                            "list": [
+                                "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly.  It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
+                            ]
+                        }
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
+        {
             "title": "Business Analyst",
             "id": "businessAnalyst",
             "details": {
@@ -461,86 +541,6 @@
                             "list": [
                                 "Experience of working in a data heavy environment: AB testing, segmentation, data models",
                                 "Experience in customer research"
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Software Engineer",
-            "id": "softwareEngineer",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Software Engineer"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London, Sofia"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "We are a multi-disciplinary, co-located team within which we periodically rotate between teams.",
-                        "We value transparency, accountability, shared responsibility and teamwork. We’re listen to our users real needs and the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
-                        "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tech we use and site reliability."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "You will work on...",
-                            "list": [
-                                "New features for FT.com and our presentation layer applications / services using modern web technologies.",
-                                "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
-                                "Maintain our high standards for web performance, security and accessibility.",
-                                "Help improve the way we work and the tools we use."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "This role will be right for you if...",
-                            "list": [
-                                "You want to use tech where your input is valued in both product and technical choices.",
-                                "You prioritise a good work / life balance and rewarding work environment.",
-                                "You value a clear view on the reason why you’re working on something and how its success is measured.",
-                                "Your core skill set and expertise is web development and you're enthusiastic about contributing to all parts of the process.",
-                                "You are keen to take action whilst being pragmatic.",
-                                "You pay attention to detail and have common sense.",
-                                "You love being collaborative.",
-                                "You enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team.",
-                                "You love the web, have an interest performance and accessibility.",
-                                "You have an understanding of design and UX principles.",
-                                "You like to avoid of frameworks and only use them when necessary and right for the use case."
-                            ]
-                        },
-                        "technologies": {
-                            "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
-                            "list": [
-                                "Node.js; Heroku; AWS: Mainly Lambda, Kinesis, Dynamo",
-                                "Ad-tech stack (Google Ad Server DFP, 3rd Party Ad Servers, GPT libraries)",
-                                "RESTful APIs (third-party APIs)",
-                                "Elasticsearch; Neo4j; Redis; GraphQL",
-                                "Handlebars; Sass; Webpack; Preact",
-                                "Fastly and VCL",
-                                "GitHub; CircleCI; Sentry",
-                                "Graphite; Grafana, Splunk",
-                                "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
-                            ]
-                        },
-                        "hiringProcess": {
-                            "title": "The hiring process",
-                            "list": [
-                                "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly.  It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
                             ]
                         }
                     }
