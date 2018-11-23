@@ -38,8 +38,8 @@ html(lang="en")
                                     label.o-forms__label(for="sofia") Sofia
 
                             span Attach CV/Resume
-                            label.upload-button(for="upload-cv") Upload CV
-                            input.upload-file(type="file", id="upload-cv", name="upload-cv")
+                            label.upload-button(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
+                            input.upload-file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
 
                             label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
                             input.o-forms__text(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
@@ -61,3 +61,5 @@ html(lang="en")
 
                             button.submit-button(type="submit") Submit
     include ../partials/footer.pug
+script(type="text/javascript")
+    include ../../scripts/script.js
