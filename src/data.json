@@ -488,6 +488,11 @@
                 },
                 "description": {
                     "title": "Description",
+                    "about": [
+                        "We are a multi-disciplinary, co-located team within which we periodically rotate between teams.",
+                        "We value transparency, accountability, shared responsibility and teamwork. We’re listen to our users real needs and the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
+                        "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tech we use and site reliability."
+                    ],
                     "details": {
                         "responsibilities": {
                             "title": "You will work on...",
