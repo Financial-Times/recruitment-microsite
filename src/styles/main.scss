@@ -346,13 +346,13 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
     max-width: 800px;
     margin: auto;
   }
-  
+
   p {
     max-width: 480px;
     margin: auto;
     margin-bottom: 1em;
   }
-  
+
   .thank-you-buttons a {
     @include oButtons('big');
     @include oButtonsTheme('primary');
@@ -368,7 +368,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   h1 {
     @include oTypographyDisplay($scale: 8);
   }
-  
+
   p {
     @include oTypographySans($scale: 1);
     font-weight: 200;
@@ -412,6 +412,10 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
   .o-header-services__product-name {
     @include oTypographySans($scale: 1);
+  }
+
+  .o-header-services__ftlogo {
+    margin: 8px 8px 8px 0;
   }
 }
 
