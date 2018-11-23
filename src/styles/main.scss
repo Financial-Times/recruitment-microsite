@@ -159,7 +159,6 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
-  overflow: hidden;
 
   .heading {
     grid-column: 3;
@@ -714,26 +713,6 @@ h2, label {
   }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .not-on-mobile-2 {
-    display: none;
-  }
-
-  .table .top {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    .righter {
-      grid-column: 2;
-    }
-
-    .lefter {
-      grid-column: 1;
-    }
-  }
-}
-
 // Culture
 .culture-cards {
   text-align: center;
@@ -1052,7 +1031,7 @@ header, .menu {
 
 .o-header-services__top .openings-link {
   float: right;
-  padding: 16px 10px
+  padding: 16px 10px;
 }
 
 .openings header .o-header-services__top .o-header-services__title h1 a {
