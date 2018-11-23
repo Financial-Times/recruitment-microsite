@@ -37,6 +37,9 @@ html(lang="en")
                             p.bolder #{opening.details.description.title}
                         .right
                             .description
+                                if opening.details.description.about
+                                    each line in opening.details.description.about
+                                            p #{line}
                                 each section in opening.details.description.details
                                     p.bolder #{section.title}
                                     each line in section.list
