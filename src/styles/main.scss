@@ -133,12 +133,6 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
   .header-container {
     grid-column: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    h1, p {
-      grid-column: 1;
-    }
   }
 }
 
@@ -152,8 +146,6 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 @media only screen and (max-width: $breakpoint-m) {
   .chapter .header-container {
     grid-column: 2/5;
-    display: grid;
-    grid-template-columns: 1fr;
   }
 
   .epigraph {
@@ -501,6 +493,12 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   margin: 0;
   padding: 0 1rem;
   display: inline-block;
+}
+
+@media only screen and (max-width: 440px) {
+  .not-on-mobile {
+    display: none;
+  }
 }
 
 .menu__item {

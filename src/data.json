@@ -10,19 +10,23 @@
         [
             {
                 "text": "About Us",
-                "link": "#about"
+                "link": "#about",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Our People",
-                "link": "#people"
+                "link": "#people",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Benefits",
-                "link": "#benefits"
+                "link": "#benefits",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Roles",
-                "link": "openings.html"
+                "link": "openings.html",
+                "class": "on-mobile"
             }
         ]
     },
@@ -66,27 +70,27 @@
         "information": [
             {
                 "image": "Caroline.png",
-                "caption": "Caroline"
+                "caption": "Caroline, Research"
             },
             {
                 "image": "Jamie.png",
-                "caption": "Jamie"
+                "caption": "Jamie, Junior Engineer"
             },
             {
                 "image": "Katie.png",
-                "caption": "Katie"
+                "caption": "Katie, Junior Engineer"
             },
             {
                 "image": "Kamran.png",
-                "caption": "Kamran"
+                "caption": "Kamran, Junior Integration Engineer"
             },
             {
                 "image": "Miguel.png",
-                "caption": "Miguel"
+                "caption": "Miguel, IT Service Desk Analyst"
             },
             {
                 "image": "Robin.png",
-                "caption": "Robin"
+                "caption": "Robin, Interactive Data Journalist"
             }
         ]
     },
@@ -126,8 +130,8 @@
         ]
     },
     "apply": {
-        "title": "Discover more here",
-        "button": "Roles"
+        "title": "Join the team",
+        "button": "See our roles"
     },
     "openings": [
         {

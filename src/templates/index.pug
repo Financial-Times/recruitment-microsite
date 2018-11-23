@@ -13,7 +13,7 @@ html(lang="en")
                 p.fade-in-animation #{intro.subheading}
         nav.menu
             each val in menu.items
-                li.menu__item
+                li.menu__item(class=`${val.class}`)
                     a(href=val.link)=val.text
         section.about.chapter(id="about")
             .announcement
