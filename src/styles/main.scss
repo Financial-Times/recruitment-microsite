@@ -714,6 +714,26 @@ h2, label {
   }
 }
 
+@media only screen and (max-width: $breakpoint-m) {
+  .not-on-mobile-2 {
+    display: none;
+  }
+
+  .table .top {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .righter {
+      grid-column: 2;
+    }
+
+    .lefter {
+      grid-column: 1;
+    }
+  }
+}
+
 // Culture
 .culture-cards {
   text-align: center;
