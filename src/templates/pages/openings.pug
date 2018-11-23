@@ -10,7 +10,7 @@ html(lang="en")
                 p Your perspective will help us make great things happen.
         section.epigraph.chapter
             h2 We are always on the lookout for talent for the following roles:
-        each opening, key in openings
+        each opening in openings
             section.vacancy
                 .heading
                     input.hidden-input(id=`${opening.id}` type="checkbox")
@@ -37,30 +37,10 @@ html(lang="en")
                             p.bolder #{opening.details.description.title}
                         .right
                             .description
-                                each line in opening.details.description.about
-                                    p #{line}
-                                .list
-                                    - const responsibilities = opening.details.description.responsibilities
-                                    if responsibilities
-                                        p.mini-header #{responsibilities.title}
-                                        ul
-                                            each line in responsibilities.list
-                                                li #{line}
-                                .list
-                                    - const requirements = opening.details.description.requirements
-                                    if requirements
-                                        p.mini-header #{requirements.title}
-                                        ul
-                                            each line in requirements.list
-                                                li #{line}
-                                .list
-                                    - const additionalRequirements = opening.details.description.additionalRequirements
-                                    if additionalRequirements
-                                        p.mini-header #{additionalRequirements.title}
-                                        ul
-                                            each line in additionalRequirements.list
-                                                li #{line}
-                                p #{opening.details.description.conclusion}
+                                each section in opening.details.description.details
+                                    p.bolder #{section.title}
+                                    each line in section.list
+                                        p #{line}
                                 .buttons
                                     form(action="form.html")
                                         button Apply now
