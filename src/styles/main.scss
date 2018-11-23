@@ -501,6 +501,11 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
 .menu__item a {
   text-decoration: none;
+  color: oColorsMix(slate, white, 20);
+}
+
+.menu__item a:hover {
+  color: oColorsMix(slate, white, 0);
 }
 
 .video {
