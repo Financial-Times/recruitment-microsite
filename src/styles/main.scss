@@ -319,29 +319,32 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
 // Interviews
 .interview {
+  position: relative;
   text-align: center;
-  max-width: 100vw;
 
   img {
+    // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
+    display: block;
     width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-
-    -webkit-transition: -webkit-filter 1s;
     transition: -webkit-filter 1s;
-    -webkit-transition: filter 1s;
     transition: filter 1s;
   }
 
   img:hover {
-    -webkit-filter: none;
-    filter: none;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
 
   p {
     @include oTypographySans($scale: 1);
-    margin-top: -30px;
-    margin-bottom: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
 }
 
