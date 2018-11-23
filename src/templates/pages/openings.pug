@@ -2,14 +2,14 @@ doctype html
 html(lang="en")
   include ../partials/head.pug
   body
-    .content
+    .content.openings
         include ../partials/header.pug
         section.left-aligned-header.chapter
             .header-container
                 h1 Find your place to craFT
                 p Your perspective will help us make great things happen.
         section.epigraph.chapter
-            h2 We are always on the lookout for talent for the following roles:
+            h2 We are always on the lookout for talent for the following roles
         each opening, key in openings
             section.vacancy
                 .heading
@@ -63,10 +63,9 @@ html(lang="en")
                                 p #{opening.details.description.conclusion}
                                 .buttons
                                     form(action="form.html")
-                                        button Apply now
+                                        button Express an interest
         section.vacancy(id="current-openings")
-            .heading
+            .live-vacancies
                 .section-line
-                h2.live-vacancies-title Live Vacancies
-                a(href="https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be" target="_blank") See our current live roles here
+                a(href="https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be" target="_blank") Live vacancies
         include ../partials/footer.pug
