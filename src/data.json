@@ -21,7 +21,7 @@
                 "link": "#benefits"
             },
             {
-                "text": "Current openings",
+                "text": "Roles",
                 "link": "openings.html"
             }
         ]
@@ -45,7 +45,7 @@
             {
                 "image": "inclusion.png",
                 "title": "Inclusion",
-                "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives."
+                "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives. We also make it our priority to provide the most flexible conditions for everyone, including flexible working hours."
             },
             {
                 "image": "creativity.png",
@@ -56,7 +56,7 @@
     },
     "quotes": [
         {
-            "quote": "Empowered teams delivering world-class products for the FT",
+            "quote": "Our teams are empowered to deliver world-class products for the FT",
             "author": "Cait O’Riordan, Chief Product & Information Officer"
         }
     ],
@@ -126,26 +126,8 @@
         ]
     },
     "apply": {
-        "title": "Apply",
-        "cards": [
-            {
-                "title": "Engineering",
-                "text": "In FT Tech, we develop products such as FT.com, internal tools for our editorial teams and power the FT with strong, simple and open technology."
-            },
-            {
-                "title": "UX and Design",
-                "text": "Our UX and Design team crafts and evolves the quality user experience and design across our digital products across web and mobile devices."
-            },
-            {
-                "title": "Product Management",
-                "text": "The Product Management team at the FT define and deliver a vision through to product delivery, ensuring that user needs are addressed and business goals are achieved."
-            },
-            {
-                "title": "Delivery",
-                "text": "FT Technology is organised to align to an empowerment model with a focus on Delivery teams to specific groups across our programme."
-            }
-        ],
-        "button": "Current Vacancies"
+        "title": "Discover more here",
+        "button": "Roles"
     },
     "openings": [
         {
