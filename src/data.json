@@ -10,19 +10,23 @@
         [
             {
                 "text": "About Us",
-                "link": "#about"
+                "link": "#about",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Our People",
-                "link": "#people"
+                "link": "#people",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Benefits",
-                "link": "#benefits"
+                "link": "#benefits",
+                "class": "not-on-mobile"
             },
             {
                 "text": "Roles",
-                "link": "openings.html"
+                "link": "openings.html",
+                "class": "on-mobile"
             }
         ]
     },
