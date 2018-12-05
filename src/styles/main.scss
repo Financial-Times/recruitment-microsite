@@ -22,7 +22,7 @@ $light-grey: #4A4A4A;
 $animation-fade-in: 2s;
 $animation-fade-out: 1.25s;
 $content-width: 1440px;
-$one-third-card-width: 340px;
+$one-third-card-width: 350px;
 
 // Breakpoints
 $breakpoint-s: 420px;
@@ -91,11 +91,11 @@ header, .quotes, .central-header, .video, .apply, footer {
 .chapter {
   grid-column: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: auto auto;
 
   .announcement {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -121,17 +121,17 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 
   .question {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
   }
 
   .quote {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1/-1;
   }
 
   .culture-cards, .benefits-cards, .interviews {
-    grid-column: 2/5;
+    grid-column: 1/-1;
     grid-row: 2;
     display: grid;
     grid-gap: 16px;
@@ -150,14 +150,7 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 
   .header-container {
-    grid-column: 3;
-  }
-}
-
-.epigraph {
-  h2 {
-    grid-column: 3;
-    align-self: end;
+    grid-column: 2;
   }
 }
 
@@ -176,10 +169,10 @@ header, .quotes, .central-header, .video, .apply, footer {
 .vacancy {
   grid-column: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
 
   .heading {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -218,7 +211,7 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 
   h2 {
-    grid-column: 3;
+    grid-column: 2;
   }
 }
 
@@ -386,7 +379,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 
 @media only screen and (max-width: $breakpoint-m) {
   .interviews {
-    grid-column: 3;
+    grid-column: 2;
   }
 }
 
@@ -488,7 +481,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 }
 
 .vacancy .live-vacancies {
-  grid-column: 3;
+  grid-column: 2;
   margin-bottom: 3em;
 
   a {
@@ -582,7 +575,7 @@ h2, label {
 
 .table {
   display: grid;
-  grid-column: 3;
+  grid-column: 2;
   grid-template-columns: 2fr 6fr;
   overflow: hidden;
 
@@ -924,7 +917,7 @@ footer .o-footer-services__container:before {
   @include oFormsBaseFeatures();
   @include oFormsWideFeature();
   @include oFormsRadioCheckboxFeatures();
-  grid-column: 3;
+  grid-column: 2;
   margin-top: 1rem;
   margin-bottom: 3rem;
 
