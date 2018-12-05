@@ -352,22 +352,35 @@ header, .quotes, .central-header, .video, .apply, footer {
     transition: filter 1s;
   }
 
-  img:hover {
+  p {
+    opacity: 0;
+    transition: opacity 1s;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+
+    @include oTypographySans($scale: 1);
+
+    // shading
+    background-color: rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+    padding-top: 6px;
+    bottom: 0;
+  }
+}
+
+.interview:hover {
+  img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
 
   p {
-    @include oTypographySans($scale: 1);
-    // filters affect stacking context so ensure text is painted on top
-    position: absolute;
-    right: 0;
-    bottom: 5px;
-    left: 0;
-    margin: 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    // prevent hovering over this element removing :hover from the underlying image
-    pointer-events: none;
+    opacity: 1;
+    transition: opacity 1s;
   }
 }
 
