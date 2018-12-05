@@ -70,7 +70,7 @@
         "information": [
             {
                 "image": "Caroline.png",
-                "caption": "Caroline, Research"
+                "caption": "Caroline, Senior Research Manager"
             },
             {
                 "image": "Jamie.png",
@@ -163,7 +163,7 @@
                     ],
                     "details": {
                         "responsibilities": {
-                            "title": "You will work on...",
+                            "title": "You will work on…",
                             "list": [
                                 "New features for FT.com and our presentation layer applications / services using modern web technologies.",
                                 "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
@@ -172,7 +172,7 @@
                             ]
                         },
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
                                 "You want to use tech where your input is valued in both product and technical choices.",
                                 "You prioritise a good work / life balance and rewarding work environment.",
@@ -184,7 +184,7 @@
                                 "You enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team.",
                                 "You love the web, have an interest performance and accessibility.",
                                 "You have an understanding of design and UX principles.",
-                                "You like to avoid of frameworks and only use them when necessary and right for the use case."
+                                "You like to avoid frameworks and only use them when necessary and right for the use case."
                             ]
                         },
                         "technologies": {
@@ -204,7 +204,7 @@
                         "hiringProcess": {
                             "title": "The hiring process",
                             "list": [
-                                "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly.  It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
+                                "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly. It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
                             ]
                         }
                     }
@@ -242,7 +242,7 @@
                     ],
                     "details": {
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
                                 "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
                                 "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
@@ -254,7 +254,7 @@
                             ]
                         },
                         "additionalRequirements": {
-                            "title": "You have...",
+                            "title": "You have…",
                             "list": [
                                 "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
                                 "A wide variety of analysis and problem solving techniques to call upon.",
@@ -296,11 +296,11 @@
                     "title": "Description",
                     "about": [
                         "Our Delivery Managers sit right across our organisation - from Editorial to Sales & Marketing - and we are striving to be leaner, more nimble, effective and innovative. We can help teams do this by giving them data and tools that can not only support their processes, but also allow them to experiment on better ways to achieve their outcomes.",
-                        "The successful candidate will be obsessed with value, measurement, teamwork and removing any obstacles impeding delivery. He or she will love communicating with people, facilitating teams, creating vision and consensus. He or she will also have a keen sense of stakeholder communication, engagement and creating transparency."
+                        "The successful candidate will be obsessed with value, measurement, teamwork and removing any obstacles impeding delivery. They will love communicating with people, facilitating teams, creating vision and consensus. They will also have a keen sense of stakeholder communication, engagement and creating transparency."
                     ],
                     "details": {
                         "responsibilities": {
-                            "title": "Your responsibility is to drive delivery...",
+                            "title": "Your responsibility is to drive delivery…",
                             "list": [
                                 "Deliver value - Work with leadership team, business owners and teams to ensure that products & services are delivered effectively to realise measurable benefits.",
                                 "Facilitate team - Resolve conflict and disagreement. Lead workshops. Remove impediments that hold your team back. Help them make decisions. Promote continuous improvement, clarity and empowerment.",
@@ -309,28 +309,28 @@
                                 "Build good governance - Manage and monitor resources and risks, proactively plan and take corrective action where necessary.",
                                 "Create vision and value - Help to define, shape and prioritise the vision, goals, initiatives and outcomes - seeking value, avoiding complexity.",
                                 "Manage 3rd parties - Manage and collaborate with 3rd parties to ensure they deliver effectively and that contracts are structured appropriately.",
-                                "Build community - Work to improve the FT’s Agile capability. Foster Agile knowledge, the supporting community and tools across the organisation"
+                                "Build community - Work to improve the FT’s Agile capability. Foster Agile knowledge, the supporting community and tools across the organisation."
                             ]
                         },
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
-                                "You are enthusiastic, proactive and able to resolve conflict - individuals & teams",
-                                "You are able to steer a team towards self-organisation",
-                                "You are able to quickly grasp business domains and assess genuine business value",
-                                "You are a clear, adaptive and transparent communicator",
-                                "You are Bold and strategic - not afraid of failing, but afraid of not failing fast enough",
+                                "You are enthusiastic, proactive and able to resolve conflict - individuals & teams.",
+                                "You are able to steer a team towards self-organisation.",
+                                "You are able to quickly grasp business domains and assess genuine business value.",
+                                "You are a clear, adaptive and transparent communicator.",
+                                "You are bold and strategic - not afraid of failing, but afraid of not failing fast enough.",
                                 "You are a proactive and an accomplished influencer - ability to negotiate with other programmes and teams to deliver work to fixed deadlines."
                             ]
                         },
                         "additionalRequirements": {
-                            "title": "You have...",
+                            "title": "You have…",
                             "list": [
-                                "3+ years leading and coaching Agile teams",
-                                "Strong experience and understanding of digital product development",
-                                "A good understanding of lean/agile principles and multiple methodologies",
-                                "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving",
-                                "Experience managing delivery using measurable business outcomes"
+                                "3+ years leading and coaching Agile teams.",
+                                "Strong experience and understanding of digital product development.",
+                                "A good understanding of lean/agile principles and multiple methodologies.",
+                                "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving.",
+                                "Experience managing delivery using measurable business outcomes."
                             ]
                         }
                     }
@@ -363,7 +363,7 @@
                 "description": {
                     "title": "Description",
                     "about": [
-                        "This role is within Enterprise Services (ES)  Networks whose mantra is ‘To enable the FT with outstanding, cost- effective technology.",
+                        "This role is within Enterprise Services (ES) Networks whose mantra is ‘To enable the FT with outstanding, cost- effective technology.",
                         "Networks spans all areas of network associated services and scope, covering; local and wide-area networking; cloud services; development; security; quality assurance; integration; operational support; governance and cost controls; project management & customer/supplier management.",
                         "We believe in multi-disciplined co-located teams empowered to choose their own development methodologies. Teams typically use methodologies such as SCRUM or Kanban. Similarly most teams choose to practise Continuous Delivery or Continuous Deployment. We are constantly pushing the boundaries in the quality of the network services that support our internal users, always looking for better, simpler and more effective ways of delivery in a fast paced environment.",
                         "This role has a wide remit and includes architecting & executing the delivery of scalable, secure, and highly available network services and products for our internal customers. On a daily basis the role covers the monitoring and supporting all network services in our global offices and datacentres, connectivity into Cloud Services, delivering continual service improvement of all network services and troubleshooting problem areas as required, providing in depth network support to both support and project teams. Proactively manage and administer systems that relate to network management (including network monitoring and analysis tools as well as peripheral network services like DNS and DHCP). Supporting the wider team become more code focused will also be a key part of the role as is accelerating the move to Infrastructure-as-code.",
@@ -375,29 +375,29 @@
                     ],
                     "details": {
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
-                                "You are highly capable in managing and troubleshooting in a Cisco and Checkpoint world to a senior level",
-                                "You have solid switching and routing skills and experience supporting both Layer 2 networks, and a Layer 3 LAN that closely integrates with the MAN and WAN network using BGP, OSPF and EIGRP routing protocols to provide resilience",
-                                "You have expertise in maximising performance and availability of wireless networking",
-                                "You have professional technical accreditations",
-                                "You have experience in Python or similar, with the desire to learn new languages",
+                                "You are highly capable in managing and troubleshooting in a Cisco and Checkpoint world to a senior level.",
+                                "You have solid switching and routing skills and experience supporting both Layer 2 networks, and a Layer 3 LAN that closely integrates with the MAN and WAN network using BGP, OSPF and EIGRP routing protocols to provide resilience.",
+                                "You have expertise in maximising performance and availability of wireless networking.",
+                                "You have professional technical accreditations.",
+                                "You have experience in Python or similar, with the desire to learn new languages.",
                                 "You have experience with Cloud Computing e.g. IaaS, PaaS, SaaS etc.",
-                                "You are familiar with a range of AWS  technologies (such as Cloudformation, Lambda and EC2)",
-                                "You have the ability to work with APIs",
-                                "You have experience with version control systems, e.g. Git",
-                                "You produce effective documentation to communicate anything from an idea to a strategy",
-                                "You have experience defining and implementing testing processes and procedures",
-                                "You have an understanding of agile development and its core principles",
+                                "You are familiar with a range of AWS technologies (such as Cloudformation, Lambda and EC2).",
+                                "You have the ability to work with APIs.",
+                                "You have experience with version control systems, e.g. Git.",
+                                "You produce effective documentation to communicate anything from an idea to a strategy.",
+                                "You have experience defining and implementing testing processes and procedures.",
+                                "You have an understanding of agile development and its core principles.",
                                 "You have a good command of written and spoken English."
                             ]
                         },
                         "additionalRequirements": {
-                            "title": "These are handy, but don’t be put of if you don’t have exposure to them...",
+                            "title": "These are handy, but don’t be put off if you don’t have exposure to them…",
                             "list": [
                                 "Software Defined Networking",
-                                "Experienced with shell scripting (bash or otherwise)",
-                                "Experience working with monitoring and visibility tools (e.g. Solarwinds, Graphite/Grafana, Splunk or Zabbix)",
+                                "Experienced with shell scripting (bash or otherwise).",
+                                "Experience working with monitoring and visibility tools (e.g. Solarwinds, Graphite/Grafana, Splunk or Zabbix).",
                                 "HTML, CSS & JavaScript"
                             ]
                         }
@@ -439,9 +439,9 @@
                     ],
                     "details": {
                         "responsibilities": {
-                            "title": "As a Product Designer you will be responsible for...",
+                            "title": "As a Product Designer you will be responsible for…",
                             "list": [
-                                "Design features across the entire project lifecycle from ideation to launch",
+                                "Design features across the entire project lifecycle from ideation to launch.",
                                 "You are a creative problem solver with an eye for detail and accuracy, you start any project by asking what are the behaviours and needs of the consumers we’re designing for.",
                                 "Confidently work alongside Product Managers to evolve the strategy and create user centred solutions for the product.",
                                 "Perform competitor analysis, review and analyse existing features, apply user-centred methods to provide ideas for improvements.",
@@ -451,11 +451,11 @@
                                 "Create user flows, journeys and pixel-perfect designs.",
                                 "Produce multiple concepts and prototype interactions, and iterate based on feedback, A/B testing, user research, etc. Work alongside research to create scripts and goals for testing.",
                                 "Champion consistency of the FT’s brand and products and uphold the quality of the design.",
-                                "Assist with technical implementation by providing advice, mockups, prototypes, and assets"
+                                "Assist with technical implementation by providing advice, mockups, prototypes, and assets."
                             ]
                         },
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
                                 "You are enthusiastic and eager to learn. You don’t think you’re a finished product.",
                                 "You are a good communicator, this is a crucial part of what you’ll do so you need to understand how to present your UX thinking to stakeholders.",
@@ -464,7 +464,7 @@
                             ]
                         },
                         "additionalRequirements": {
-                            "title": "You have...",
+                            "title": "You have…",
                             "list": [
                                 "Significant expertise in user experience and user interface design.",
                                 "Expertise in using Sketch, Invision, alongside knowledge of other prototyping tools.",
@@ -509,38 +509,111 @@
                     ],
                     "details": {
                         "responsibilities": {
-                            "title": "As a Product Manager you will be...",
+                            "title": "As a Product Manager you will be…",
                             "list": [
-                                "Owning a stream of work: define the problem, set up metrics and goals and set up a course of direction",
-                                "Working in a cross functional team and lead its direction without authority",
-                                "Conduct customer research and extract insights",
-                                "Take part in finding solutions together with UX and Design",
-                                "Help developers understand the problem and come up with the best way of implementing the solution",
-                                "Working with a diverse set of stakeholders to define, champion and deliver product vision and roadmaps",
-                                "Track and analyse competitors, feeding ‘best practice’ into the product development process",
-                                "Maintain and update product backlogs and to track priorities for the digital offerings",
-                                "Working within a lean development framework",
-                                "Communicate roadmap, vision, achievements and progress to the wider team and to stakeholders"
+                                "Owning a stream of work: define the problem, set up metrics and goals and set up a course of direction.",
+                                "Working in a cross functional team and lead its direction without authority.",
+                                "Conduct customer research and extract insights.",
+                                "Take part in finding solutions together with UX and Design.",
+                                "Help developers understand the problem and come up with the best way of implementing the solution.",
+                                "Working with a diverse set of stakeholders to define, champion and deliver product vision and roadmaps.",
+                                "Track and analyse competitors, feeding ‘best practice’ into the product development process.",
+                                "Maintain and update product backlogs and to track priorities for the digital offerings.",
+                                "Working within a lean development framework.",
+                                "Communicate roadmap, vision, achievements and progress to the wider team and to stakeholders."
                             ]
                         },
                         "requirements": {
-                            "title": "This role will be right for you if...",
+                            "title": "This role will be right for you if…",
                             "list": [
-                                "You have a proven track record in a product management role (2 years +)",
-                                "You are data-driven and hypothesis led with ability to balance alongside user research and business objectives",
-                                "You are customer obsessed",
-                                "You have good communication skills – able to clearly write and present documents targeted at various audiences, as well as make presentations to large/small groups",
-                                "You are proactive, outcome driven, with a can-do attitude",
-                                "You are intellectually curious,  with a demonstrable ability to identify opportunities and communicate their value proposition and business benefits",
-                                "You have the  ability to work independently, but with regular support and collaboration with their manager",
-                                "You have the ability to balance workloads and priorities throughout the product lifecycle across of a range of email products and offsite services"
+                                "You have a proven track record in a product management role (2+ years).",
+                                "You are data-driven and hypothesis led with ability to balance alongside user research and business objectives.",
+                                "You are customer obsessed.",
+                                "You have good communication skills – able to clearly write and present documents targeted at various audiences, as well as make presentations to large/small groups.",
+                                "You are proactive, outcome driven, with a can-do attitude.",
+                                "You are intellectually curious, with a demonstrable ability to identify opportunities and communicate their value proposition and business benefits.",
+                                "You have the ability to work independently, but with regular support and collaboration with their manager.",
+                                "You have the ability to balance workloads and priorities throughout the product lifecycle across of a range of email products and offsite services."
                             ]
                         },
                         "additionalRequirements": {
-                            "title": "These are handy, but don’t be put of if you don’t have exposure to them...",
+                            "title": "These are handy, but don’t be put off if you don’t have exposure to them…",
                             "list": [
-                                "Experience of working in a data heavy environment: AB testing, segmentation, data models",
-                                "Experience in customer research"
+                                "Experience of working in a data heavy environment: AB testing, segmentation, data models.",
+                                "Experience in customer research."
+                            ]
+                        }
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
+        },
+        {
+            "title": "Cloud Security Engineer - Python",
+            "id": "securityEngineer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "All"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Security Engineer"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "It takes a cutting edge technology stack to provide the foundation for the cutting edge journalism that the Financial Times is renowned for. Keeping our users - customers and developers - safe is paramount across our diverse technology portfolio of platforms, products and services.",
+                        "We’re looking for a skilled developer with a keen interest in security to help us deliver the tooling, practices and processes that keep our systems and applications safe across a wide platform of SaaS and PaaS, and the latest architectural concepts such as containerised microservices and serverless.",
+                        "We’re committed to equality and diversity in the tech industry, and want to encourage applications from underrepresented backgrounds. We consider part-time roles and flexible working hours to help support this.",
+                        "This is an exciting opportunity to work across Technology and the wider business developing solutions that help our staff and customers work safely, including API development and automation of vulnerability, intrusion and compliance bots."
+                    ],
+                    "details": {
+                        "responsibilities": {
+                            "title": "Your responsibility is to…",
+                            "list": [
+                                "Build security tools, infrastructure and API’s for developers and systems to consume.",
+                                "Provide support to other delivery teams at the FT and help them secure their platforms effectively.",
+                                "Proactively identify and fix insecure practices and security vulnerabilities in the platform and network through audits, penetration testing and various other means.",
+                                "Advocate security to technology and business colleagues.",
+                                "Assist with system vulnerability scans, assessments and penetration tests.",
+                                "Analysis and monitoring of cyber security threats and vulnerabilities."
+                            ]
+                        },
+                        "requirements": {
+                            "title": "This role will be right for you if…",
+                            "list": [
+                                "Your core skill set and expertise is development with infrastructure engineering expertise and you're enthusiastic about cyber security.",
+                                "You have a good understanding of Python and a willingness to learn new technologies and languages.",
+                                "You know how to build API’s and RESTful web services.",
+                                "You have good unit testing skills.",
+                                "You know about log aggregation tools and techniques, analysis and reporting.",
+                                "You know vulnerability management and analysis, including patching and remediation strategies.",
+                                "You have hands on experience with AWS, especially cloudformation and lambda.",
+                                "You have excellent communication skills."
+                            ]
+                        },
+                        "additionalRequirements": {
+                            "title": "You have…",
+                            "list": [
+                                "Knowledge of Node.js or Go.",
+                                "Ability to work effectively with infrastructure and config management tools.",
+                                "Experience integrating security tools into existing development workflows.",
+                                "Hold an AWS certification e.g. AWS certified solution architect - associate.",
+                                "Client/server architectures & networking architecture, protocols and principles.",
+                                "Web application vulnerabilities and attacks.",
+                                "Knowledge of Linux internals.",
+                                "Experience with Agile, Scrum and working with delivery teams."
                             ]
                         }
                     }
