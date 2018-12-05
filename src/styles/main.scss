@@ -1046,24 +1046,27 @@ header, .menu {
   z-index: 1;
 }
 
-.o-header-services__top .index-link {
+.o-header-services__top .logo-link {
   float: left;
 }
 
 .o-header-services .o-header-services__title {
-  padding: 7px 10px;
-}
-
-.o-header-services__top .openings-link {
-  float: right;
   padding: 16px 10px;
 }
 
-.openings header .o-header-services__top .o-header-services__title h1 a {
-  color: #a8aaad;
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
+.o-header-services__top .text-link {
+  float: right;
+  padding: 16px 10px;
+
+  .o-header-services__product-name {
+    margin-left: 10px;
+  }
+}
+
+.openings header .o-header-services__top .o-header-services__title .roles a,
+.landing header .o-header-services__top .o-header-services__title .about a {
+  border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
+  padding-bottom: 3px;
 }
 
 .o-footer-services__wrapper {
