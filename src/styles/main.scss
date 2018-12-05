@@ -53,7 +53,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-header, .quotes, .central-header, .video, .apply, footer, .menu {
+header, .quotes, .central-header, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
@@ -68,6 +68,11 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   .header-container {
     grid-row: 2;
   }
+}
+
+.menu-container {
+  grid-column: 2;
+  width: 100%;
 }
 
 .chapter {
@@ -321,6 +326,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 .interview {
   position: relative;
   text-align: center;
+  max-width: 100vw;
 
   img {
     // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
@@ -360,7 +366,6 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
 // Intro
 .central-header {
-  min-height: 56vh;
   text-align: center;
   padding: 1em;
   padding-top: 10vh;
@@ -368,6 +373,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   .central-logo {
     height: 29px;
     width: 350px;
+    max-width: 90vw;
     margin: 0 auto 1em auto;
   }
 
@@ -379,7 +385,7 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 
     .heritage-logo {
       max-width: 100%;
-      height: 30vh;
+      max-height: 30vh;
       margin: auto;
     }
   }
@@ -458,10 +464,8 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 // Header
 .o-header-services {
   @include oHeaderServices($class: 'o-header-services');
-
-  .o-header-services__bleed-container {
-    background-color: $dark-slate;
-  }
+  background-color: black;
+  width: 100%;
 
   .o-header-services__product-name {
     @include oTypographySans($scale: 1);
@@ -472,63 +476,11 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   }
 }
 
-// Menu
-.menu {
-  @include oTypographySans($scale: 2);
-  background-color: $dark-slate;
-  padding: 1rem;
-  min-height: 28px;
-  z-index: 3;
-  text-align: center;
-  margin-bottom: 2em;
-
-  .current-openings {
-    float: right;
-    text-decoration: none;
-  }
-
-  a img {
-    height: 30px;
-    float: left;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.menu__item, .menu p {
-  margin: 0;
-  padding: 0 1rem;
-  display: inline-block;
-}
-
-@media only screen and (max-width: 440px) {
-  .not-on-mobile {
-    display: none;
-  }
-}
-
-.menu__item {
-  border-right: 1px solid $light-grey;
-}
-
-.menu__item:last-child {
-  border-right: none;
-}
-
-.menu__item a {
-  text-decoration: none;
-  color: oColorsMix(slate, white, 20);
-}
-
-.menu__item a:hover {
-  color: oColorsMix(slate, white, 0);
-}
-
+// Video
 .video {
   margin-bottom: 2em;
 }
 
-// Video
 .video-wrapper {
   background-color: oColorsGetPaletteColor('claret-100');
 
@@ -874,6 +826,14 @@ h2, label {
   }
 }
 
+.header-container {
+  a {
+    @include oButtons('big');
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
+  }
+}
+
 // Footer
 footer {
   @include oFooterServicesBase($class: 'o-footer-services');
@@ -1043,31 +1003,34 @@ footer .o-footer-services__container:before {
   z-index: 2;
 }
 
-header, .menu {
+.landing, .openings {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-.o-header-services__top .index-link {
+.o-header-services__top .logo-link {
   float: left;
 }
 
 .o-header-services .o-header-services__title {
-  padding: 7px 10px;
-}
-
-.o-header-services__top .openings-link {
-  float: right;
   padding: 16px 10px;
 }
 
-.openings header .o-header-services__top .o-header-services__title h1 a {
-  color: #a8aaad;
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
+.o-header-services__top .text-link {
+  float: right;
+  padding: 16px 10px;
+
+  .o-header-services__product-name {
+    margin-left: 10px;
+  }
+}
+
+.openings header .content .o-header-services__top .o-header-services__title .roles a,
+.landing header .content .o-header-services__top .o-header-services__title .about a {
+  border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
+  padding-bottom: 3px;
 }
 
 .o-footer-services__wrapper {
