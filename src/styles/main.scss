@@ -1080,7 +1080,10 @@ footer .o-footer-services__wrapper--legal p {
 }
 
 footer {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  margin-top: 3em;
+  background-color: $dark-slate;
 }
 
 .invisible {
