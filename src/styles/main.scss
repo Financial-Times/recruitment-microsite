@@ -825,6 +825,14 @@ h2, label {
   }
 }
 
+.header-container {
+  a {
+    @include oButtons('big');
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
+  }
+}
+
 // Footer
 footer {
   @include oFooterServicesBase($class: 'o-footer-services');
