@@ -70,6 +70,11 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 }
 
+.menu-container {
+  grid-column: 2;
+  width: 100%;
+}
+
 .chapter {
   grid-column: 2;
   display: grid;
@@ -458,10 +463,8 @@ header, .quotes, .central-header, .video, .apply, footer {
 // Header
 .o-header-services {
   @include oHeaderServices($class: 'o-header-services');
-
-  .o-header-services__bleed-container {
-    background-color: $dark-slate;
-  }
+  background-color: black;
+  width: 100%;
 
   .o-header-services__product-name {
     @include oTypographySans($scale: 1);
@@ -991,7 +994,7 @@ footer .o-footer-services__container:before {
   z-index: 2;
 }
 
-header {
+.landing, .openings {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -1015,8 +1018,8 @@ header {
   }
 }
 
-.openings header .o-header-services__top .o-header-services__title .roles a,
-.landing header .o-header-services__top .o-header-services__title .about a {
+.openings header .content .o-header-services__top .o-header-services__title .roles a,
+.landing header .content .o-header-services__top .o-header-services__title .about a {
   border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
   padding-bottom: 3px;
 }

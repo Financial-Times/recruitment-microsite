@@ -2,8 +2,9 @@ doctype html
 html(lang="en")
   include partials/head.pug
   body
-    .content.landing
+    .landing
         include partials/header.pug
+    .content
         section.central-header
             .heritage-logo-container
                 img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
