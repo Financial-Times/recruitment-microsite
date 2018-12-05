@@ -75,6 +75,19 @@ header, .quotes, .central-header, .video, .apply, footer {
   width: 100%;
 }
 
+.left-aligned-header .header-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+
+  h1 {
+    grid-column: 1/-1;
+  }
+
+  p {
+    grid-column: 2;
+  }
+}
+
 .chapter {
   grid-column: 2;
   display: grid;
@@ -415,6 +428,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 .central-header, .left-aligned-header {
   h1 {
     @include oTypographyDisplay($scale: 8);
+    font-weight: 400;
   }
 
   p {
