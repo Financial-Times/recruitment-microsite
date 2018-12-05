@@ -34,11 +34,13 @@ html(lang="en")
                         h4 #{card.title}
                         p #{card.text}
         section.quotes
-            .chapter
+            .chapter.fade-in-animation
                 .quote
                     h1 #{quotes[0].quote}
                     hr
                     p #{quotes[0].author}
+            .heritage-logo-container
+                img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
         section.people.chapter(id="people")
             .announcement
                 .section-line
