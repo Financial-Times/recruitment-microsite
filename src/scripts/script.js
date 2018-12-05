@@ -6,3 +6,7 @@ uploadInput.addEventListener('change', function(event) {
         uploadInput.value = '';
     }
 });
+
+document.getElementById('submit-application').addEventListener('submit', function() {
+    document.getElementById('role').value = window.location.hash.slice(1).split(/(?=[A-Z])/).join(' ').toLowerCase();
+});
