@@ -12,10 +12,6 @@ html(lang="en")
                 h1.fade-in-animation #{intro.heading}
                 hr.fade-in-animation
                 p.fade-in-animation #{intro.subheading}
-        nav.menu
-            each val in menu.items
-                li.menu__item(class=`${val.class}`)
-                    a(href=val.link)=val.text
         section.about.chapter(id="about")
             .announcement
                 .section-line

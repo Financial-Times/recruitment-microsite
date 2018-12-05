@@ -53,7 +53,7 @@ body, body a {
     minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-header, .quotes, .central-header, .video, .apply, footer, .menu {
+header, .quotes, .central-header, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
@@ -472,63 +472,11 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
   }
 }
 
-// Menu
-.menu {
-  @include oTypographySans($scale: 2);
-  background-color: $dark-slate;
-  padding: 1rem;
-  min-height: 28px;
-  z-index: 3;
-  text-align: center;
-  margin-bottom: 2em;
-
-  .current-openings {
-    float: right;
-    text-decoration: none;
-  }
-
-  a img {
-    height: 30px;
-    float: left;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.menu__item, .menu p {
-  margin: 0;
-  padding: 0 1rem;
-  display: inline-block;
-}
-
-@media only screen and (max-width: 440px) {
-  .not-on-mobile {
-    display: none;
-  }
-}
-
-.menu__item {
-  border-right: 1px solid $light-grey;
-}
-
-.menu__item:last-child {
-  border-right: none;
-}
-
-.menu__item a {
-  text-decoration: none;
-  color: oColorsMix(slate, white, 20);
-}
-
-.menu__item a:hover {
-  color: oColorsMix(slate, white, 0);
-}
-
+// Video
 .video {
   margin-bottom: 2em;
 }
 
-// Video
 .video-wrapper {
   background-color: oColorsGetPaletteColor('claret-100');
 
@@ -1039,7 +987,7 @@ footer .o-footer-services__container:before {
   z-index: 2;
 }
 
-header, .menu {
+header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
