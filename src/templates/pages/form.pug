@@ -15,6 +15,9 @@ html(lang="en")
                 .form
                     form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
                         .fields
+                            .invisible
+                                label(for="role") Applied for position
+                                input(type="text", id="role", name="role")
                             .name
                                 .first-name
                                     label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
@@ -59,7 +62,7 @@ html(lang="en")
                                     label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
                                     input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
-                            button.submit-button(type="submit") Submit
+                            button.submit-button(type="submit", id="submit-application") Submit
     include ../partials/footer.pug
 script(type="text/javascript")
     include ../../scripts/script.js
