@@ -47,7 +47,7 @@ html(lang="en")
                                             each line in section.list
                                                 li #{line}
                                 .buttons
-                                    form(action="form.html")
+                                    form(action=`form.html#${opening.id}`)
                                         button Express an interest
         section.vacancy(id="current-openings")
             .live-vacancies
