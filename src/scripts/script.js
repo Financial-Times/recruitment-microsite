@@ -7,6 +7,6 @@ uploadInput.addEventListener('change', function(event) {
     }
 });
 
-document.getElementById('submit-application').addEventListener('submit', function() {
+document.getElementById('first-name').addEventListener('change', function() {
     document.getElementById('role').value = window.location.hash.slice(1).split(/(?=[A-Z])/).join(' ').toLowerCase();
 });
