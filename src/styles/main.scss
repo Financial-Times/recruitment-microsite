@@ -531,10 +531,28 @@ header, .quotes, .central-header, .video, .apply, footer, .menu {
 // Video
 .video-wrapper {
   background-color: oColorsGetPaletteColor('claret-100');
+  position: relative;
 
   video {
     width: 100%;
     margin-top: -2px;
+  }
+
+  video::-webkit-media-controls-overlay-play-button {
+    display: none;
+  }
+
+  .play-button {
+    background-image: url(../images/play_button.png);
+    background-size: cover;
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
   }
 }
 
