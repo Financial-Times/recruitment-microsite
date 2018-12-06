@@ -1102,6 +1102,12 @@ footer .o-footer-services__container:before {
   padding: 16px 10px;
 
   .o-header-services__product-name {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .o-header-services__top .text-link .o-header-services__product-name {
     margin-left: 10px;
   }
 }
