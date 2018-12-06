@@ -537,7 +537,6 @@ header, .quotes, .video, .apply, footer {
 
   p {
     @include oTypographySans($scale: 1);
-    // font-weight: 200;
   }
 }
 
@@ -647,14 +646,12 @@ header, .quotes, .video, .apply, footer {
 }
 
 h2, label {
-  @include oTypographySans($scale: 4);
-  // font-weight: 200;
+  @include oTypographySans($scale: 4)
 }
 
 .announcement, .vacancy {
   p, li {
     @include oTypographySans($scale: 0);
-    // font-weight: 200;
     margin-right: 2em;
   }
 
@@ -856,7 +853,6 @@ h2, label {
 
   p {
     @include oTypographySans($scale: 1);
-    // font-weight: 200;
     margin: 2rem 10% 67px 10%;
   }
 }
@@ -959,7 +955,6 @@ h2, label {
 
   p {
     @include oTypographySans($scale: 1);
-    // font-weight: 200;
     margin-bottom: 1rem;
   }
 
