@@ -89,6 +89,14 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 }
 
+@media only screen and (max-width: $breakpoint-m) {
+  .left-aligned-header .header-container {
+    p {
+      grid-column: 1/-1;
+    }
+  }
+}
+
 .chapter {
   grid-column: 2;
   display: grid;
@@ -157,7 +165,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 
 @media only screen and (max-width: $breakpoint-m) {
   .chapter .header-container {
-    grid-column: 2/5;
+    grid-column: 2;
   }
 
   .epigraph {
