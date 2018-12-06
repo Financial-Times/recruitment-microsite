@@ -163,6 +163,12 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter {
+    grid-template-columns: 20px 8fr 20px;
+  }
+}
+
 .central-header {
   grid-column: 2;
   display: grid;
@@ -545,6 +551,10 @@ header, .quotes, .video, .apply, footer {
 
   .o-header-services__product-name {
     @include oTypographySans($scale: 1);
+  }
+
+  .logo-text {
+    font-weight: 400;
   }
 
   .o-header-services__ftlogo {
