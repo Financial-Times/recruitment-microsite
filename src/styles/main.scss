@@ -33,7 +33,7 @@ $breakpoint-vl: 1340px;
 // Generic
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -49,26 +49,26 @@ body, body a {
 .content {
   display: grid;
   grid-template-columns:
-    minmax(0, 1fr)
+    minmax(20px, 1fr)
     minmax(auto, $content-width)
-    minmax(0, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
+    minmax(20px, 1fr); // Inspired by https://gedd.ski/post/article-grid-layout/
 }
 
-header, .quotes, .central-header, .video, .apply, footer {
+@media only screen and (max-width: $breakpoint-m) {
+  .content {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(auto, $content-width)
+      minmax(0, 1fr);
+  }
+}
+
+header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video video, h2 {
+.video video, h2,  {
   grid-column: 2;
-}
-
-.central-header {
-  display: grid;
-  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
-
-  .header-container {
-    grid-row: 2;
-  }
 }
 
 .menu-container {
@@ -86,6 +86,14 @@ header, .quotes, .central-header, .video, .apply, footer {
 
   p {
     grid-column: 2;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .left-aligned-header .header-container {
+    p {
+      grid-column: 1/-1;
+    }
   }
 }
 
@@ -129,6 +137,8 @@ header, .quotes, .central-header, .video, .apply, footer {
   .quote {
     grid-column: 2;
     grid-row: 1/-1;
+    margin-top: 6em;
+    margin-bottom: 6em;
   }
 
   .culture-cards, .benefits-cards, .interviews {
@@ -156,8 +166,44 @@ header, .quotes, .central-header, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
+  .chapter {
+    .culture-cards, .benefits-cards, .interviews {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter {
+    grid-template-columns: 20px 8fr 20px;
+  }
+}
+
+.central-header {
+  grid-column: 2;
+}
+
+.central-header {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
+
+  .header-container, .heritage-logo-container {
+    grid-column: 2;
+  }
+
+  .header-container {
+    grid-row: 2;
+  }
+
+  .heritage-logo-container {
+    grid-row: 1/-1;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
   .chapter .header-container {
-    grid-column: 2/5;
+    grid-column: 2;
   }
 
   .epigraph {
@@ -226,10 +272,29 @@ header, .quotes, .central-header, .video, .apply, footer {
   .chapter {
     .culture-cards, .benefits-cards {
       grid-column: 1/-1;
-    }
 
-    .culture-card img {
-      display: none;
+      .culture-card {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+
+        img, h4, p {
+          grid-column: 2;
+        }
+
+        img {
+          margin-top: -120px;
+        }
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+      }
     }
 
     .announcement {
@@ -363,7 +428,7 @@ header, .quotes, .central-header, .video, .apply, footer {
     @include oTypographySans($scale: 1);
 
     // shading
-    background-color: rgba(0,0,0,0.2);
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
     padding-bottom: 6px;
     padding-top: 6px;
     bottom: 0;
@@ -383,7 +448,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .interviews {
+  .chapter .interviews {
     grid-column: 2;
   }
 }
@@ -400,12 +465,6 @@ header, .quotes, .central-header, .video, .apply, footer {
     margin: 0 auto 1em auto;
   }
 
-  .heritage-logo-container {
-    position: absolute;
-    top: 15vh;
-    left: 0;
-  }
-
   h1 {
     max-width: 800px;
     margin: auto;
@@ -414,7 +473,7 @@ header, .quotes, .central-header, .video, .apply, footer {
   p {
     max-width: 480px;
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .thank-you-buttons a {
@@ -442,6 +501,8 @@ header, .quotes, .central-header, .video, .apply, footer {
 
 .heritage-logo-container {
   width: 100%;
+  display: grid;
+  align-content: center;
 
   .heritage-logo {
     max-width: 100%;
@@ -451,6 +512,7 @@ header, .quotes, .central-header, .video, .apply, footer {
 }
 
 .quotes {
+  grid-column: 1/-1;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -458,6 +520,14 @@ header, .quotes, .central-header, .video, .apply, footer {
   .chapter, .heritage-logo-container {
     grid-row: 1;
     grid-column: 1;
+  }
+
+  .quotes {
+    grid-column: 1/-1;
+  
+    .chapter {
+      grid-column: 2;
+    }
   }
 }
 
@@ -521,8 +591,14 @@ header, .quotes, .central-header, .video, .apply, footer {
     @include oTypographySans($scale: 1);
   }
 
+  .logo-text {
+    font-weight: 400;
+  }
+
   .o-header-services__ftlogo {
     margin: 8px 8px 8px 0;
+
+    background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
   }
 }
 
@@ -790,7 +866,6 @@ h2, label {
 // Quotes
 .quotes {
   min-height: 430px;
-  padding-top: 130px;
   background-color: $dark-slate;
   text-align: center;
   margin-bottom: 2em;
@@ -813,7 +888,7 @@ h2, label {
   }
 
   .quotes h1 {
-    @include oTypographySans($scale: 5);
+    @include oTypographyDisplay($scale: 5);
   }
 }
 
@@ -894,6 +969,12 @@ h2, label {
     @include oButtonsTheme('primary');
     @include oButtonsTheme('inverse');
     margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .apply {
+    margin-bottom: 0.3em;
   }
 }
 
@@ -1058,7 +1139,7 @@ footer .o-footer-services__container:before {
   0% {
     opacity: 0;
   }
-  40% {
+  20% {
     opacity: 0;
   }
   100% {
@@ -1078,7 +1159,7 @@ footer .o-footer-services__container:before {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .o-header-services__top .logo-link {
@@ -1094,6 +1175,12 @@ footer .o-footer-services__container:before {
   padding: 16px 10px;
 
   .o-header-services__product-name {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .o-header-services__top .text-link .o-header-services__product-name {
     margin-left: 10px;
   }
 }
