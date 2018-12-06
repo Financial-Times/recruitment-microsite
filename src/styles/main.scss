@@ -286,15 +286,17 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 }
 
-@media only screen and (max-width: $breakpoint-s) {
+@media only screen and (max-width: $breakpoint-m) {
   .name {
     display: block;
 
     .first-name {
+      grid-column: 1/-1;
       margin-right: 0;
     }
 
     .last-name {
+      grid-column: 1/-1;
       margin-left: 0;
     }
   }
@@ -315,15 +317,17 @@ header, .quotes, .central-header, .video, .apply, footer {
   }
 }
 
-@media only screen and (max-width: $breakpoint-s) {
+@media only screen and (max-width: $breakpoint-m) {
   .additional-info {
     display: block;
 
     .salary-expectations {
+      grid-column: 1/-1;
       margin-right: 0;
     }
 
     .availability {
+      grid-column: 1/-1;
       margin-left: 0;
     }
   }
