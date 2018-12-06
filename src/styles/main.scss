@@ -391,8 +391,7 @@ header, .quotes, .central-header, .video, .apply, footer {
   padding-top: 10vh;
 
   .central-logo {
-    height: 29px;
-    width: 350px;
+    max-width: 350px;
     max-width: 90vw;
     margin: 0 auto 1em auto;
   }
@@ -423,6 +422,12 @@ header, .quotes, .central-header, .video, .apply, footer {
     margin-right: 5px;
     width: 11em;
   }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .central-header .central-logo {
+      width: 200px;
+    }
 }
 
 .heritage-logo-container {
@@ -842,14 +847,12 @@ h2, label {
   margin-bottom: 2em;
 
   h2 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
+    @include oTypographySans($scale: 6);
     margin-bottom: 1rem;
   }
 
   p {
     @include oTypographySans($scale: 1);
-    font-weight: 200;
     margin-bottom: 1rem;
   }
 
@@ -1085,6 +1088,12 @@ footer {
   padding-top: 2em;
   margin-top: 3em;
   background-color: $dark-slate;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  footer {
+    margin-top: 1em;
+  }
 }
 
 .invisible {
