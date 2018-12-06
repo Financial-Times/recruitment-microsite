@@ -272,10 +272,29 @@ header, .quotes, .video, .apply, footer {
   .chapter {
     .culture-cards, .benefits-cards {
       grid-column: 1/-1;
-    }
 
-    .culture-card img {
-      display: none;
+      .culture-card {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+
+        img, h4, p {
+          grid-column: 2;
+        }
+
+        img {
+          margin-top: -120px;
+        }
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+      }
     }
 
     .announcement {
