@@ -879,7 +879,7 @@ h2, label {
 // Footer
 footer {
   @include oFooterServicesBase($class: 'o-footer-services');
-  height: 70px;
+  min-height: 70px;
   padding-right: 2em;
   padding-left: 2em;
 
