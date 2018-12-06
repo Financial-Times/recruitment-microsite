@@ -21,8 +21,8 @@ $light-grey: #4A4A4A;
 // Variables
 $animation-fade-in: 2s;
 $animation-fade-out: 1.25s;
-$content-width: 1440px;
-$one-third-card-width: 350px;
+$content-width: 1150px;
+$one-third-card-width: 280px;
 
 // Breakpoints
 $breakpoint-s: 420px;
@@ -74,6 +74,10 @@ header, .quotes, .video, .apply, footer {
 .menu-container {
   grid-column: 2;
   width: 100%;
+}
+
+.header-container {
+  padding-top: 5vh;
 }
 
 .left-aligned-header .header-container {
@@ -319,10 +323,6 @@ header, .quotes, .video, .apply, footer {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
-
-    .benefits-cards {
-      grid-template-rows: repeat(6, 1fr);
-    }
   }
 
   .vacancy {
@@ -457,7 +457,6 @@ header, .quotes, .video, .apply, footer {
 .central-header {
   text-align: center;
   padding: 1em;
-  padding-top: 10vh;
 
   .central-logo {
     max-width: 350px;
@@ -655,7 +654,7 @@ h2, label {
 
 .announcement, .vacancy {
   p, li {
-    @include oTypographySans($scale: 0);
+    @include oTypographySans($scale: 1);
     font-weight: 200;
     margin-right: 2em;
   }
