@@ -429,9 +429,15 @@ header, .quotes, .central-header, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .central-header .central-logo {
+  .central-header {
+    .central-logo {
       width: 200px;
     }
+
+    .heritage-logo-container {
+      top: 35vh;
+    }
+  }
 }
 
 .heritage-logo-container {
