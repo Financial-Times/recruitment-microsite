@@ -137,6 +137,8 @@ header, .quotes, .video, .apply, footer {
   .quote {
     grid-column: 2;
     grid-row: 1/-1;
+    margin-top: 6em;
+    margin-bottom: 6em;
   }
 
   .culture-cards, .benefits-cards, .interviews {
@@ -165,12 +167,23 @@ header, .quotes, .video, .apply, footer {
 
 @media only screen and (max-width: $breakpoint-m) {
   .chapter {
+    .culture-cards, .benefits-cards, .interviews {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter {
     grid-template-columns: 20px 8fr 20px;
   }
 }
 
 .central-header {
   grid-column: 2;
+}
+
+.central-header {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
@@ -433,11 +446,6 @@ header, .quotes, .video, .apply, footer {
     margin: 0 auto 1em auto;
   }
 
-  .heritage-logo-container {
-    display: grid;
-    align-content: center;
-  }
-
   h1 {
     max-width: 800px;
     margin: auto;
@@ -446,7 +454,7 @@ header, .quotes, .video, .apply, footer {
   p {
     max-width: 480px;
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .thank-you-buttons a {
@@ -474,6 +482,8 @@ header, .quotes, .video, .apply, footer {
 
 .heritage-logo-container {
   width: 100%;
+  display: grid;
+  align-content: center;
 
   .heritage-logo {
     max-width: 100%;
@@ -483,6 +493,7 @@ header, .quotes, .video, .apply, footer {
 }
 
 .quotes {
+  grid-column: 1/-1;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -490,6 +501,14 @@ header, .quotes, .video, .apply, footer {
   .chapter, .heritage-logo-container {
     grid-row: 1;
     grid-column: 1;
+  }
+
+  .quotes {
+    grid-column: 1/-1;
+  
+    .chapter {
+      grid-column: 2;
+    }
   }
 }
 
@@ -559,6 +578,8 @@ header, .quotes, .video, .apply, footer {
 
   .o-header-services__ftlogo {
     margin: 8px 8px 8px 0;
+
+    background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
   }
 }
 
@@ -826,7 +847,6 @@ h2, label {
 // Quotes
 .quotes {
   min-height: 430px;
-  padding-top: 130px;
   background-color: $dark-slate;
   text-align: center;
   margin-bottom: 2em;
@@ -849,7 +869,7 @@ h2, label {
   }
 
   .quotes h1 {
-    @include oTypographySans($scale: 5);
+    @include oTypographyDisplay($scale: 5);
   }
 }
 
@@ -930,6 +950,12 @@ h2, label {
     @include oButtonsTheme('primary');
     @include oButtonsTheme('inverse');
     margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .apply {
+    margin-bottom: 0.3em;
   }
 }
 
@@ -1114,7 +1140,7 @@ footer .o-footer-services__container:before {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .o-header-services__top .logo-link {
