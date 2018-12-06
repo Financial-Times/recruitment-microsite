@@ -12,6 +12,8 @@
 @include oFontsInclude(FinancierDisplayWeb, bold);
 
 @include oFontsInclude(MetricWeb, $weight: regular);
+@include oFontsInclude(MetricWeb, $weight: semibold);
+@include oFontsInclude(MetricWeb, $weight: bold);
 
 // Non origami colors
 $dark-slate: #1A1D24;
@@ -852,6 +854,7 @@ h2, label {
   h4 {
     @include oTypographySans($scale: 1);
     margin-top: 50px;
+    font-weight: 600;
   }
 
   p {
