@@ -212,12 +212,6 @@ header, .quotes, .video, .apply, footer {
   .chapter .header-container {
     grid-column: 2;
   }
-
-  .epigraph {
-    h2 {
-      grid-column: 2/4;
-    }
-  }
 }
 
 .vacancy {
@@ -557,13 +551,6 @@ header, .quotes, .video, .apply, footer {
 
   p {
     margin-bottom: 3em;
-  }
-}
-
-.epigraph {
-  h2 {
-    @include oTypographySansBold($scale: 2);
-    margin-bottom: 1.3em;
   }
 }
 
