@@ -398,8 +398,58 @@ header, .quotes, .video, .apply, footer {
 }
 
 //////////////////////////////////////////////////////////
-// Modules
+// Mixins
 //////////////////////////////////////////////////////////
+
+.central-header .thank-you-buttons a {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
+}
+
+.o-header-services {
+  @include oHeaderServices($class: 'o-header-services');
+}
+
+.announcement a, .vacancy  a {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
+}
+
+.table .buttons button {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
+}
+
+.apply a {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
+}
+
+.header-container {
+  a {
+    @include oButtons('big');
+    @include oButtonsTheme('primary');
+    @include oButtonsTheme('inverse');
+  }
+}
+
+footer {
+  @include oFooterServicesBase($class: 'o-footer-services');
+}
+
+.form {
+  @include oFormsBaseFeatures();
+  @include oFormsWideFeature();
+  @include oFormsRadioCheckboxFeatures();
+}
+
+.fields .upload-button, .fields .submit-button {
+  @include oButtons($size: big, $theme: primary);
+}
 
 //////////////////////////////////////////////////////////
 // Typography
@@ -666,9 +716,6 @@ footer {
   }
 
   .thank-you-buttons a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
     margin-top: 1em;
     margin-left: 5px;
     margin-right: 5px;
@@ -747,7 +794,6 @@ footer {
 
 // Header
 .o-header-services {
-  @include oHeaderServices($class: 'o-header-services');
   background-color: black;
   width: 100%;
 
@@ -814,10 +860,6 @@ footer {
   }
 
   a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-
     width: 230px;
     height: 2em;
   }
@@ -890,10 +932,6 @@ footer {
     display: flex;
 
     button {
-      @include oButtons('big');
-      @include oButtonsTheme('primary');
-      @include oButtonsTheme('inverse');
-
       margin: 10px;
       margin-top: 1em;
     }
@@ -1085,9 +1123,6 @@ footer {
   }
 
   a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
     margin-top: 2em;
   }
 }
@@ -1098,17 +1133,8 @@ footer {
   }
 }
 
-.header-container {
-  a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-  }
-}
-
 // Footer
 footer {
-  @include oFooterServicesBase($class: 'o-footer-services');
   min-height: 70px;
   padding-right: 2em;
   padding-left: 2em;
@@ -1130,9 +1156,6 @@ footer .o-footer-services__container:before {
 
 // Form
 .form {
-  @include oFormsBaseFeatures();
-  @include oFormsWideFeature();
-  @include oFormsRadioCheckboxFeatures();
   grid-column: 2;
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -1166,7 +1189,6 @@ footer .o-footer-services__container:before {
   }
 
   .upload-button {
-    @include oButtons($size: big, $theme: primary);
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
@@ -1182,7 +1204,6 @@ footer .o-footer-services__container:before {
   }
 
   .submit-button {
-    @include oButtons($size: big, $theme: primary);
     margin-bottom: 2rem;
   }
 }
