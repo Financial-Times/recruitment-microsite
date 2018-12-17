@@ -72,17 +72,8 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video video, h2,  {
+.video video, h2, .menu-container, .chapter {
   grid-column: 2;
-}
-
-.menu-container {
-  grid-column: 2;
-  width: 100%;
-}
-
-.header-container {
-  padding-top: 5vh;
 }
 
 .left-aligned-header .header-container {
@@ -107,7 +98,6 @@ header, .quotes, .video, .apply, footer {
 }
 
 .chapter {
-  grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: auto auto;
@@ -118,8 +108,6 @@ header, .quotes, .video, .apply, footer {
     display: grid;
     grid-template-columns: 2fr 6fr;
     grid-template-rows: 0.3em minmax(4em, 1fr) auto;
-
-    margin-bottom: 2em;
 
     .section-line {
       grid-column: 1/-1;
@@ -146,8 +134,6 @@ header, .quotes, .video, .apply, footer {
   .quote {
     grid-column: 2;
     grid-row: 1/-1;
-    margin-top: 6em;
-    margin-bottom: 6em;
   }
 
   .culture-cards, .benefits-cards, .interviews {
@@ -156,8 +142,6 @@ header, .quotes, .video, .apply, footer {
     display: grid;
     grid-gap: 16px;
     justify-content: center;
-
-    margin-bottom: 5rem;
   }
 
   .culture-cards {
@@ -171,14 +155,6 @@ header, .quotes, .video, .apply, footer {
 
   .header-container {
     grid-column: 2;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter {
-    .culture-cards, .benefits-cards, .interviews {
-      margin-bottom: 1rem;
-    }
   }
 }
 
@@ -252,7 +228,6 @@ header, .quotes, .video, .apply, footer {
 
     a {
       grid-column: 1/-1;
-      margin-top: 2em;
     }
 
     .table {
@@ -277,25 +252,11 @@ header, .quotes, .video, .apply, footer {
       grid-column: 1/-1;
 
       .culture-card {
-        margin-top: 120px;
         display: grid;
         grid-template-columns: 1fr 8fr 1fr;
 
         img, h4, p {
           grid-column: 2;
-        }
-
-        img {
-          margin-top: -120px;
-        }
-
-        h4 {
-          margin: 0;
-        }
-
-        p {
-          margin-top: 0;
-          margin-bottom: 1em;
         }
       }
     }
@@ -341,27 +302,21 @@ header, .quotes, .video, .apply, footer {
 
   .first-name {
     grid-column: 1;
-    margin-right: 10px;
   }
 
   .last-name {
     grid-column: 2;
-    margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
   .name {
-    display: block;
-
     .first-name {
       grid-column: 1/-1;
-      margin-right: 0;
     }
 
     .last-name {
       grid-column: 1/-1;
-      margin-left: 0;
     }
   }
 }
@@ -372,28 +327,116 @@ header, .quotes, .video, .apply, footer {
 
   .salary-expectations {
     grid-column: 1;
-    margin-right: 10px;
   }
 
   .availability {
     grid-column: 2;
-    margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
   .additional-info {
-    display: block;
-
     .salary-expectations {
       grid-column: 1/-1;
-      margin-right: 0;
     }
 
     .availability {
       grid-column: 1/-1;
-      margin-left: 0;
     }
+  }
+}
+
+.heritage-logo-container {
+  display: grid;
+  align-content: center;
+}
+
+.quotes {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+  .chapter, .heritage-logo-container {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .quotes {
+    grid-column: 1/-1;
+
+    .chapter {
+      grid-column: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter .interviews {
+    grid-column: 2;
+  }
+}
+
+.vacancy .live-vacancies {
+  grid-column: 2;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy .live-vacancies {
+    grid-column: 2;
+  }
+}
+
+.table {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 2fr 6fr;
+
+  .left {
+    grid-column: 1;
+  }
+
+  .right {
+    grid-column: 2;
+  }
+
+  hr {
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .table {
+    .left, .right {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .not-on-mobile-2 {
+    display: none;
+  }
+   .table .top {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     .righter {
+      grid-column: 2;
+    }
+     .lefter {
+      grid-column: 1;
+    }
+  }
+}
+
+.form {
+  grid-column: 2;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .form {
+    grid-column: 2;
   }
 }
 
@@ -640,6 +683,116 @@ footer {
   }
 }
 
+//////////////////////////////////////////////////////////
+// Components
+//////////////////////////////////////////////////////////
+
+.menu-container {
+  width: 100%;
+}
+
+.header-container {
+  padding-top: 5vh;
+}
+
+.chapter {
+  .announcement {
+    margin-bottom: 2em;
+  }
+
+  .quote {
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
+
+  .culture-cards, .benefits-cards, .interviews {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter {
+    .culture-cards, .benefits-cards, .interviews {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.vacancy a {
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .chapter {
+    .culture-cards, .benefits-cards {
+      .culture-card {
+        margin-top: 120px;
+
+        img {
+          margin-top: -120px;
+        }
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
+
+.name {
+  .first-name {
+    margin-right: 10px;
+  }
+
+  .last-name {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .name {
+    display: block;
+
+    .first-name {
+      margin-right: 0;
+    }
+
+    .last-name {
+      margin-left: 0;
+    }
+  }
+}
+
+.additional-info {
+  .salary-expectations {
+    margin-right: 10px;
+  }
+
+  .availability {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .additional-info {
+    display: block;
+
+    .salary-expectations {
+      margin-right: 0;
+    }
+
+    .availability {
+      margin-left: 0;
+    }
+  }
+}
+
 // Interviews
 .interview {
   position: relative;
@@ -687,12 +840,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter .interviews {
-    grid-column: 2;
-  }
-}
-
 // Intro
 .central-header {
   text-align: center;
@@ -737,33 +884,11 @@ footer {
 
 .heritage-logo-container {
   width: 100%;
-  display: grid;
-  align-content: center;
 
   .heritage-logo {
     max-width: 100%;
     max-height: 30vh;
     margin: auto;
-  }
-}
-
-.quotes {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-
-  .chapter, .heritage-logo-container {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .quotes {
-    grid-column: 1/-1;
-
-    .chapter {
-      grid-column: 2;
-    }
   }
 }
 
@@ -778,17 +903,10 @@ footer {
 }
 
 .vacancy .live-vacancies {
-  grid-column: 2;
   margin-bottom: 3em;
 
   a {
     margin-top: 7em;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .vacancy .live-vacancies {
-    grid-column: 2;
   }
 }
 
@@ -879,9 +997,6 @@ footer {
 }
 
 .table {
-  display: grid;
-  grid-column: 2;
-  grid-template-columns: 2fr 6fr;
   overflow: hidden;
 
   div {
@@ -904,12 +1019,10 @@ footer {
   }
 
   .left {
-    grid-column: 1;
     display: flex;
   }
 
   .right {
-    grid-column: 2;
     display: flex;
   }
 
@@ -922,7 +1035,6 @@ footer {
   }
 
   hr {
-    grid-column: 1/-1;
     width: 100%;
     height: 1px;
     background-color: oColorsGetPaletteColor('white-80');
@@ -993,31 +1105,6 @@ footer {
 
 .vacancy .hidden-input:checked ~ label i, .vacancy .hidden-input:checked ~ i  {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .table {
-    .left, .right {
-      grid-column: 1/-1;
-    }
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .not-on-mobile-2 {
-    display: none;
-  }
-   .table .top {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-     .righter {
-      grid-column: 2;
-    }
-     .lefter {
-      grid-column: 1;
-    }
-  }
 }
 
 // Culture
@@ -1156,7 +1243,6 @@ footer .o-footer-services__container:before {
 
 // Form
 .form {
-  grid-column: 2;
   margin-top: 1rem;
   margin-bottom: 3rem;
 
@@ -1167,12 +1253,6 @@ footer .o-footer-services__container:before {
 
   .o-forms {
     background-color: oColorsGetPaletteColor('white');
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .form {
-    grid-column: 2;
   }
 }
 
