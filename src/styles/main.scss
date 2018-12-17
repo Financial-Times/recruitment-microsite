@@ -44,10 +44,6 @@ body {
   background-color: oColorsGetPaletteColor('slate');
 }
 
-body, body a {
-  color: oColorsGetPaletteColor('white-80');
-}
-
 // Grid
 .content {
   display: grid;
@@ -395,6 +391,192 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
+// Typography
+body, body a {
+  color: oColorsGetPaletteColor('white-80');
+}
+
+.interview {
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+.central-header, .left-aligned-header {
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 400;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+@media only screen and (max-width: $breakpoint-s) {
+  .header-container h1 {
+    @include oTypographyDisplay($scale: 6);
+  }
+}
+
+.o-header-services .o-header-services__product-name {
+  @include oTypographySans($scale: 1);
+}
+
+h2, label {
+  @include oTypographySans($scale: 4);
+  font-weight: 400;
+}
+
+.announcement, .vacancy {
+  p, li {
+    @include oTypographySans($scale: 0);
+  }
+}
+
+.table div {
+  .bolder {
+    @include oTypographySans($scale: 0);
+    font-weight: 600;
+  }
+  
+  .mini-header {
+    @include oTypographySansBold($scale: 1);
+  }
+
+  .left {
+    @include oTypographySans($scale: 0);
+  }
+  
+  .right {
+    @include oTypographySans($scale: 0);
+  }
+  
+  .section-header {
+    @include oTypographySans($scale: 0);
+  }
+}
+
+.culture-card {
+  color: $light-grey;
+
+  h4 {
+    @include oTypographySans($scale: 1);
+    font-weight: 600;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+.quotes {
+  text-align: center;
+
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 200;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .quotes h1 {
+    @include oTypographyDisplay($scale: 5);
+  }
+}
+
+.benefits-card {
+  @include oTypographyDisplay($scale: 5);
+  color: $light-grey;
+
+  p {
+    @include oTypographySans($scale: 0);
+  }
+}
+
+.apply {
+  text-align: center;
+
+  h2 {
+    @include oTypographySans($scale: 6);
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+.central-header .title {
+  h1 {
+    @include oTypographyDisplay($scale: 8);
+    font-weight: 200;
+  }
+
+  p {
+    @include oTypographySans($scale: 1);
+  }
+}
+
+.form h2 {
+  @include oTypographySansBold($scale: 1);
+  color: oColorsGetPaletteColor('white-80');
+}
+
+.fields {
+  .o-forms__label {
+    @include oTypographySansBold($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
+
+  .o-forms__text {
+    @include oTypographySans($scale: 0);
+    color: oColorsGetPaletteColor('black-40');
+  }
+
+  .o-forms__errortext {
+    @include oTypographySans($scale: 0);
+  }
+
+  .o-forms__group .o-forms__label {
+    @include oTypographySans($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
+
+  span {
+    @include oTypographySansBold($scale: 0);
+    color: oColorsGetPaletteColor('black-80');
+  }
+
+  .upload-button {
+    @include oTypographySans($scale: 0);
+    color: oColorsGetPaletteColor('white-80');
+  }
+
+  .submit-button {
+    @include oTypographySans($scale: 0);
+    color: oColorsGetPaletteColor('white-80');
+  }
+}
+
+footer {
+  .o-footer-services__wrapper {
+    color: oColorsMix(slate, white, 20);
+  }
+
+  .o-footer-services__links a {
+    color: oColorsMix(slate, white, 20);
+    border: none;
+  }
+
+  .o-footer-services__links a:hover {
+    color: oColorsMix(slate, white, 0);
+  }
+}
+
 // Interviews
 .interview {
   position: relative;
@@ -421,8 +603,6 @@ header, .quotes, .video, .apply, footer {
     left: 0;
     margin: 0;
     pointer-events: none;
-
-    @include oTypographySans($scale: 1);
 
     // shading
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
@@ -527,23 +707,6 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.central-header, .left-aligned-header {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 400;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-  }
-}
-
-@media only screen and (max-width: $breakpoint-s) {
-  .header-container h1 {
-    @include oTypographyDisplay($scale: 6);
-  }
-}
-
 .left-aligned-header {
   h1 {
     margin-bottom: 0;
@@ -574,10 +737,6 @@ header, .quotes, .video, .apply, footer {
   @include oHeaderServices($class: 'o-header-services');
   background-color: black;
   width: 100%;
-
-  .o-header-services__product-name {
-    @include oTypographySans($scale: 1);
-  }
 
   .logo-text {
     font-weight: 400;
@@ -636,14 +795,8 @@ header, .quotes, .video, .apply, footer {
   margin-bottom: 3em;
 }
 
-h2, label {
-  @include oTypographySans($scale: 4);
-  font-weight: 400;
-}
-
 .announcement, .vacancy {
   p, li {
-    @include oTypographySans($scale: 0);
     margin-right: 2em;
   }
 
@@ -681,13 +834,7 @@ h2, label {
       margin: 10px;
     }
 
-    .bolder {
-      @include oTypographySans($scale: 0);
-      font-weight: 600;
-    }
-
     .mini-header {
-      @include oTypographySansBold($scale: 1);
       margin-top: 2em;
     }
   }
@@ -702,13 +849,11 @@ h2, label {
   }
 
   .left {
-    @include oTypographySans($scale: 0);
     grid-column: 1;
     display: flex;
   }
 
   .right {
-    @include oTypographySans($scale: 0);
     grid-column: 2;
     display: flex;
   }
@@ -718,7 +863,6 @@ h2, label {
   }
 
   .section-header {
-    @include oTypographySans($scale: 0);
     margin-bottom: 0.6rem;
   }
 
@@ -743,7 +887,7 @@ h2, label {
   }
 }
 
-// Vacancies animation
+// Accordion animation
 // https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
 .vacancy label i, .vacancy i  {
@@ -832,20 +976,16 @@ h2, label {
 
 .culture-card {
   background-color: oColorsGetPaletteColor('white-80');
-  color: $light-grey;
 
   img {
     width: 100%;
   }
 
   h4 {
-    @include oTypographySans($scale: 1);
     margin-top: 50px;
-    font-weight: 600;
   }
 
   p {
-    @include oTypographySans($scale: 1);
     margin: 2rem 10% 67px 10%;
   }
 }
@@ -854,17 +994,7 @@ h2, label {
 .quotes {
   min-height: 430px;
   background-color: $dark-slate;
-  text-align: center;
   margin-bottom: 2em;
-
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-  }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
@@ -873,18 +1003,12 @@ h2, label {
     padding-bottom: 60px;
     min-height: 215px;
   }
-
-  .quotes h1 {
-    @include oTypographyDisplay($scale: 5);
-  }
 }
 
 // Benefits
 .benefits-card {
   max-width: 100vw;
-  @include oTypographyDisplay($scale: 5);
   background-color: oColorsGetPaletteColor('white-80');
-  color: $light-grey;
   position: relative;
 
   hr {
@@ -901,7 +1025,6 @@ h2, label {
   }
 
   p {
-    @include oTypographySans($scale: 0);
     margin: 1rem 20% 2rem 10%;
   }
 }
@@ -937,17 +1060,14 @@ h2, label {
 // Apply
 .apply {
   background-color: $dark-slate;
-  text-align: center;
   padding-bottom: 4em;
   margin-bottom: 2em;
 
   h2 {
-    @include oTypographySans($scale: 6);
     margin-bottom: 1rem;
   }
 
   p {
-    @include oTypographySans($scale: 1);
     margin-bottom: 1rem;
   }
 
@@ -979,19 +1099,6 @@ footer {
   min-height: 70px;
   padding-right: 2em;
   padding-left: 2em;
-
-  .o-footer-services__wrapper {
-    color: oColorsMix(slate, white, 20);
-  }
-
-  .o-footer-services__links a {
-    color: oColorsMix(slate, white, 20);
-    border: none;
-  }
-
-  .o-footer-services__links a:hover {
-    color: oColorsMix(slate, white, 0);
-  }
 }
 
 footer .o-footer-services__container:before {
@@ -1000,20 +1107,11 @@ footer .o-footer-services__container:before {
 
 // Vacancies page
 .central-header .title {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
-
   hr {
     background-color: oColorsGetPaletteColor('claret-100');
     width: 60px;
     height: 4px;
     border: none;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
   }
 }
 
@@ -1027,14 +1125,12 @@ footer .o-footer-services__container:before {
   margin-bottom: 3rem;
 
   h2 {
-    @include oTypographySansBold($scale: 1);
-    color: oColorsGetPaletteColor('white-80');
     margin-left: 0.5rem;
     margin-bottom: 1.3rem;
   }
 
   .o-forms {
-  background-color: oColorsGetPaletteColor('white');
+    background-color: oColorsGetPaletteColor('white');
   }
 }
 
@@ -1048,36 +1144,16 @@ footer .o-footer-services__container:before {
   padding: 30px;
 
   .o-forms__label {
-    @include oTypographySansBold($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
 
   .o-forms__text {
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('black-40');
     margin-bottom: 1rem;
-  }
-
-  .o-forms__errortext {
-    @include oTypographySans($scale: 0);
-  }
-
-  .o-forms__group .o-forms__label {
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
-  }
-
-  span {
-    @include oTypographySansBold($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
   }
 
   .upload-button {
     @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('white-80');
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
@@ -1094,8 +1170,6 @@ footer .o-footer-services__container:before {
 
   .submit-button {
     @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('white-80');
     margin-bottom: 2rem;
   }
 }
