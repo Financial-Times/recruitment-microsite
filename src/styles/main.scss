@@ -434,7 +434,7 @@ header, .quotes, .video, .apply, footer {
 // Mixins
 //////////////////////////////////////////////////////////
 
-.intro__thank-you-buttons a {
+.intro__thank-you-button {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
