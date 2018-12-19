@@ -76,7 +76,7 @@ header, .quotes, .video, .apply, footer {
   grid-column: 2;
 }
 
-.left-aligned-header .header-container {
+.left-aligned-header .intro__message__container {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
 
@@ -90,7 +90,7 @@ header, .quotes, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .left-aligned-header .header-container {
+  .left-aligned-header .intro__message__container {
     p {
       grid-column: 1/-1;
     }
@@ -153,7 +153,7 @@ header, .quotes, .video, .apply, footer {
     grid-template-rows: repeat(auto-fill, 1fr);
   }
 
-  .header-container {
+  .intro__message__container {
     grid-column: 2;
   }
 }
@@ -164,30 +164,30 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.central-header {
+.intro {
   grid-column: 2;
 }
 
-.central-header {
+.intro {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
 
-  .header-container, .heritage-logo-container {
+  .intro__message__container, .intro__heritage-logo__container {
     grid-column: 2;
   }
 
-  .header-container {
+  .intro__message__container {
     grid-row: 2;
   }
 
-  .heritage-logo-container {
+  .intro__heritage-logo__container {
     grid-row: 1/-1;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter .header-container {
+  .chapter .intro__message__container {
     grid-column: 2;
   }
 }
@@ -346,7 +346,7 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.heritage-logo-container {
+.intro__heritage-logo__container {
   display: grid;
   align-content: center;
 }
@@ -357,7 +357,7 @@ header, .quotes, .video, .apply, footer {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 
-  .chapter, .heritage-logo-container {
+  .chapter, .intro__heritage-logo__container {
     grid-row: 1;
     grid-column: 1;
   }
@@ -444,7 +444,7 @@ header, .quotes, .video, .apply, footer {
 // Mixins
 //////////////////////////////////////////////////////////
 
-.central-header .thank-you-buttons a {
+.intro .thank-you-buttons a {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
@@ -472,7 +472,7 @@ header, .quotes, .video, .apply, footer {
   @include oButtonsTheme('inverse');
 }
 
-.header-container {
+.intro__message__container {
   a {
     @include oButtons('big');
     @include oButtonsTheme('primary');
@@ -508,7 +508,7 @@ body, body a {
   }
 }
 
-.central-header, .left-aligned-header {
+.intro, .left-aligned-header {
   h1 {
     @include oTypographyDisplay($scale: 8);
     font-weight: 400;
@@ -520,7 +520,7 @@ body, body a {
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .header-container h1 {
+  .intro__message__container h1 {
     @include oTypographyDisplay($scale: 6);
   }
 }
@@ -616,7 +616,7 @@ h2, label {
   }
 }
 
-.central-header .title {
+.intro .title {
   h1 {
     @include oTypographyDisplay($scale: 8);
     font-weight: 200;
@@ -691,7 +691,7 @@ footer {
   width: 100%;
 }
 
-.header-container {
+.intro__message__container {
   padding-top: 5vh;
 }
 
@@ -841,11 +841,11 @@ footer {
 }
 
 // Intro
-.central-header {
+.intro {
   text-align: center;
   padding: 1em;
 
-  .central-logo {
+  .intro__message__container__logo {
     max-width: 350px;
     max-width: 90vw;
     margin: 0 auto 1em auto;
@@ -871,21 +871,21 @@ footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .central-header {
-    .central-logo {
+  .intro {
+    .intro__message__container__logo {
       width: 200px;
     }
 
-    .heritage-logo-container {
+    .intro__heritage-logo__container {
       top: 35vh;
     }
   }
 }
 
-.heritage-logo-container {
+.intro__heritage-logo__container {
   width: 100%;
 
-  .heritage-logo {
+  .intro__heritage-logo {
     max-width: 100%;
     max-height: 30vh;
     margin: auto;
@@ -992,7 +992,7 @@ footer {
   border: none;
 }
 
-.central-header hr {
+.intro hr {
   border: none;
 }
 
@@ -1175,7 +1175,7 @@ footer .o-footer-services__container:before {
 }
 
 // Vacancies page
-.central-header .title {
+.intro .title {
   hr {
     background-color: oColorsGetPaletteColor('claret-100');
     width: 60px;

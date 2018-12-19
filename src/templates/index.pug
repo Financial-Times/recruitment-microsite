@@ -5,11 +5,11 @@ html(lang="en")
     .landing
         include partials/header.pug
     .content
-        section.central-header
-            .heritage-logo-container
-                img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
-            .header-container
-                img.central-logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
+        section.intro
+            .intro__heritage-logo__container
+                img.intro__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
+            .intro__message__container
+                img.intro__message__container__logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
                 h1.fade-in-animation #{intro.heading}
                 hr.fade-in-animation
                 p.fade-in-animation #{intro.subheading}
@@ -40,8 +40,8 @@ html(lang="en")
                     h1 #{quotes[0].quote}
                     hr
                     p #{quotes[0].author}
-            .heritage-logo-container
-                img.heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
+            .intro__heritage-logo__container
+                img.intro__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
         section.people.chapter(id="people")
             .announcement
                 .section-line
