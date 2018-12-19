@@ -13,7 +13,7 @@ html(lang="en")
                 h1.intro__message__header.fade-in-animation #{intro.heading}
                 p.intro__message__text.fade-in-animation #{intro.subheading}
                 a.intro__message__link.fade-in-animation(href="openings.html") See our roles
-        section.about.chapter(id="about")
+        section.about.chapter
             .announcement
                 .section-line
                 h2 #{about.title}
@@ -22,7 +22,7 @@ html(lang="en")
             .video-wrapper.content
                 video(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
                 .play-button(id="play-pause")
-        section.culture.chapter(id="culture")
+        section.culture.chapter
             .announcement
                 .section-line
                 h2 #{culture.title}
@@ -41,7 +41,7 @@ html(lang="en")
                     p #{quotes[0].author}
             .intro__heritage-logo__container
                 img.intro__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
-        section.people.chapter(id="people")
+        section.people.chapter
             .announcement
                 .section-line
                 h2 #{people.title}
@@ -51,7 +51,7 @@ html(lang="en")
                     .interview(class="interview-"+index)
                         img(src=`images/${person.image}`)
                         p #{person.caption}
-        section.benefits.chapter(id="benefits")
+        section.benefits.chapter
             .announcement
                 .section-line
                 h2 #{benefits.title}
