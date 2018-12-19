@@ -10,14 +10,14 @@ html(lang="en")
                 img.intro__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
             .intro__message__container
                 img.intro__message__container__logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-                h1.intro__message__header.fade-in-animation #{intro.heading}
+                h1.intro__message__heading.fade-in-animation #{intro.heading}
                 p.intro__message__text.fade-in-animation #{intro.subheading}
                 a.intro__message__link.fade-in-animation(href="openings.html") See our roles
-        section.about.chapter
-            .announcement
-                .section-line
-                h2 #{about.title}
-                p #{about.text}
+        section.about
+            .about__announcement
+                .about__announcement__section-line
+                h2.about__announcement__heading #{about.title}
+                p.about__announcement__text #{about.text}
         section.video
             .video-wrapper.content
                 video(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")

@@ -72,7 +72,7 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video video, h2, .menu-container, .chapter, .intro {
+.video video, h2, .menu-container, .chapter, .intro, .about {
   grid-column: 2;
 }
 
@@ -118,7 +118,7 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.chapter {
+.chapter, .about {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: auto auto;
@@ -173,6 +173,30 @@ header, .quotes, .video, .apply, footer {
     grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
     grid-template-rows: repeat(auto-fill, 1fr);
   }
+}
+
+.about__announcement {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 0.3em minmax(4em, 1fr) auto;
+}
+
+.about__announcement__section-line {
+  grid-column: 1/-1;
+  grid-row: 1;
+  align-self: end;
+}
+
+.about__announcement__heading {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
+
+.about__announcement__text {
+  grid-column: 2;
+  grid-row: 3/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
@@ -256,19 +280,19 @@ header, .quotes, .video, .apply, footer {
       }
     }
 
-    .announcement {
+    .announcement, .about__announcement {
       grid-column: 2/5;
 
-      .section-line {
+      .section-line, .about__announcement__section-line {
         grid-column: 1;
       }
 
-      h2 {
+      h2, .about__announcement__heading {
         grid-column: 1/-1;
         grid-row: 2/3;
       }
 
-      p {
+      p, .about__announcement__text {
         grid-column: 1/-1;
         grid-row: 3/-1;
       }
@@ -528,6 +552,10 @@ h2, label {
   }
 }
 
+.about__announcement__text {
+  @include oTypographySans($scale: 0);
+}
+
 .table div {
   .bolder {
     @include oTypographySans($scale: 0);
@@ -604,7 +632,7 @@ h2, label {
   }
 }
 
-.intro__message__header {
+.intro__message__heading {
   @include oTypographyDisplay($scale: 8);
   font-weight: 200;
 }
@@ -697,7 +725,7 @@ footer {
   width: 11em;
 }
 
-.intro__message__header {
+.intro__message__heading {
   max-width: 800px;
   margin: auto;
 }
@@ -746,6 +774,18 @@ footer {
 }
 
 // About
+
+.about__announcement {
+  margin-bottom: 2em;
+}
+
+.about__announcement__section-line {
+  border-top: 4px solid oColorsGetPaletteColor('claret-100');
+}
+
+.about__announcement__text {
+  margin-right: 2em;
+}
 
 .chapter {
   .announcement {
