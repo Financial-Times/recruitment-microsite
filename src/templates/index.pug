@@ -19,9 +19,9 @@ html(lang="en")
                 h2.about__announcement__heading #{about.title}
                 p.about__announcement__text #{about.text}
         section.video
-            .video-wrapper.content
-                video(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
-                .play-button(id="play-pause")
+            .video__wrapper.content
+                video.video__content(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
+                .video__play-button(id="play-pause")
         section.culture.chapter
             .announcement
                 .section-line

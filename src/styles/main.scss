@@ -72,7 +72,7 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video video, h2, .menu-container, .chapter, .intro, .about {
+.video__content, h2, .menu-container, .chapter, .intro, .about {
   grid-column: 2;
 }
 
@@ -787,6 +787,38 @@ footer {
   margin-right: 2em;
 }
 
+// Video
+.video {
+  margin-bottom: 2em;
+}
+
+.video__wrapper {
+  background-color: oColorsGetPaletteColor('claret-100');
+  position: relative;
+}
+
+.video__content {
+  width: 100%;
+  margin-top: -2px;
+}
+
+.video__content::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+.video__play-button {
+  background-image: url(../images/play_button.png);
+  background-size: cover;
+  width: 107px;
+  height: 107px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
 .chapter {
   .announcement {
     margin-bottom: 2em;
@@ -963,38 +995,6 @@ footer {
     margin: 8px 8px 8px 0;
 
     background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
-  }
-}
-
-// Video
-.video {
-  margin-bottom: 2em;
-}
-
-.video-wrapper {
-  background-color: oColorsGetPaletteColor('claret-100');
-  position: relative;
-
-  video {
-    width: 100%;
-    margin-top: -2px;
-  }
-
-  video::-webkit-media-controls-overlay-play-button {
-    display: none;
-  }
-
-  .play-button {
-    background-image: url(../images/play_button.png);
-    background-size: cover;
-    width: 107px;
-    height: 107px;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    margin: auto;
   }
 }
 
