@@ -72,11 +72,32 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video video, h2, .menu-container, .chapter {
+.video video, h2, .menu-container, .chapter, .intro {
   grid-column: 2;
 }
 
-.left-aligned-header .intro__message__container {
+// Intro
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
+}
+
+.intro__heritage-logo__container {
+  grid-row: 1/-1;
+  grid-column: 2;
+  display: grid;
+  align-content: center;
+}
+
+.intro__message__container {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.intro__message__container--left-aligned {
+  grid-column: 2;
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
 
@@ -90,7 +111,7 @@ header, .quotes, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .left-aligned-header .intro__message__container {
+  .intro__message__container--left-aligned {
     p {
       grid-column: 1/-1;
     }
@@ -152,42 +173,16 @@ header, .quotes, .video, .apply, footer {
     grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
     grid-template-rows: repeat(auto-fill, 1fr);
   }
-
-  .intro__message__container {
-    grid-column: 2;
-  }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter {
+  .chapter, .intro {
     grid-template-columns: 20px 8fr 20px;
   }
 }
 
-.intro {
-  grid-column: 2;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
-
-  .intro__message__container, .intro__heritage-logo__container {
-    grid-column: 2;
-  }
-
-  .intro__message__container {
-    grid-row: 2;
-  }
-
-  .intro__heritage-logo__container {
-    grid-row: 1/-1;
-  }
-}
-
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter .intro__message__container {
+  .intro__message__container {
     grid-column: 2;
   }
 }
@@ -346,18 +341,13 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.intro__heritage-logo__container {
-  display: grid;
-  align-content: center;
-}
-
 .quotes {
   grid-column: 1/-1;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 
-  .chapter, .intro__heritage-logo__container {
+  .chapter {
     grid-row: 1;
     grid-column: 1;
   }
@@ -444,7 +434,7 @@ header, .quotes, .video, .apply, footer {
 // Mixins
 //////////////////////////////////////////////////////////
 
-.intro .thank-you-buttons a {
+.intro__thank-you-buttons a {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
@@ -472,12 +462,10 @@ header, .quotes, .video, .apply, footer {
   @include oButtonsTheme('inverse');
 }
 
-.intro__message__container {
-  a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-  }
+.intro__message__link {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
 }
 
 footer {
@@ -520,7 +508,7 @@ body, body a {
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .intro__message__container h1 {
+  .intro__message__container__header {
     @include oTypographyDisplay($scale: 6);
   }
 }
@@ -616,15 +604,13 @@ h2, label {
   }
 }
 
-.intro .title {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
+.intro__message__header {
+  @include oTypographyDisplay($scale: 8);
+  font-weight: 200;
+}
 
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.intro__message__text {
+  @include oTypographySans($scale: 1);
 }
 
 .form h2 {
@@ -687,13 +673,79 @@ footer {
 // Components
 //////////////////////////////////////////////////////////
 
+// Header
+
 .menu-container {
   width: 100%;
+}
+
+// Intro
+
+.intro {
+  text-align: center;
+  padding: 1em;
 }
 
 .intro__message__container {
   padding-top: 5vh;
 }
+
+.intro__thank-you-button {
+  margin-top: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11em;
+}
+
+.intro__message__header {
+  max-width: 800px;
+  margin: auto;
+}
+
+.intro__message__text {
+  max-width: 480px;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.intro__message__container__logo {
+  max-width: 350px;
+  max-width: 90vw;
+  margin: 0 auto 1em auto;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .intro__message__container__logo {
+    width: 200px;
+  }
+
+  .intro__heritage-logo__container {
+    top: 35vh;
+  }
+}
+
+.intro__heritage-logo__container {
+  width: 100%;
+}
+
+.intro__heritage-logo {
+  max-width: 100%;
+  max-height: 30vh;
+  margin: auto;
+}
+
+// Vacancies page
+.intro .title {
+  hr {
+    background-color: oColorsGetPaletteColor('claret-100');
+    width: 60px;
+    height: 4px;
+    border: none;
+  }
+}
+
+// About
 
 .chapter {
   .announcement {
@@ -840,58 +892,6 @@ footer {
   }
 }
 
-// Intro
-.intro {
-  text-align: center;
-  padding: 1em;
-
-  .intro__message__container__logo {
-    max-width: 350px;
-    max-width: 90vw;
-    margin: 0 auto 1em auto;
-  }
-
-  h1 {
-    max-width: 800px;
-    margin: auto;
-  }
-
-  p {
-    max-width: 480px;
-    margin: auto;
-    margin-bottom: 2em;
-  }
-
-  .thank-you-buttons a {
-    margin-top: 1em;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 11em;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .intro {
-    .intro__message__container__logo {
-      width: 200px;
-    }
-
-    .intro__heritage-logo__container {
-      top: 35vh;
-    }
-  }
-}
-
-.intro__heritage-logo__container {
-  width: 100%;
-
-  .intro__heritage-logo {
-    max-width: 100%;
-    max-height: 30vh;
-    margin: auto;
-  }
-}
-
 .left-aligned-header {
   h1 {
     margin-bottom: 0;
@@ -989,10 +989,6 @@ footer {
   margin-bottom: 1.3em;
   margin-top: 1.3em;
   background-color: oColorsGetPaletteColor('claret-100');
-  border: none;
-}
-
-.intro hr {
   border: none;
 }
 
@@ -1172,16 +1168,6 @@ footer {
 
 footer .o-footer-services__container:before {
   border-top: none;
-}
-
-// Vacancies page
-.intro .title {
-  hr {
-    background-color: oColorsGetPaletteColor('claret-100');
-    width: 60px;
-    height: 4px;
-    border: none;
-  }
 }
 
 // Form

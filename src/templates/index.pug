@@ -10,10 +10,9 @@ html(lang="en")
                 img.intro__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
             .intro__message__container
                 img.intro__message__container__logo.fade-in-animation(src=`images/${intro.logo}`, alt=`${intro.logo}`, role="presentation")
-                h1.fade-in-animation #{intro.heading}
-                hr.fade-in-animation
-                p.fade-in-animation #{intro.subheading}
-                a.fade-in-animation(href="openings.html") See our roles
+                h1.intro__message__header.fade-in-animation #{intro.heading}
+                p.intro__message__text.fade-in-animation #{intro.subheading}
+                a.intro__message__link.fade-in-animation(href="openings.html") See our roles
         section.about.chapter(id="about")
             .announcement
                 .section-line
