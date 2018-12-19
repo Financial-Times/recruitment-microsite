@@ -22,17 +22,17 @@ html(lang="en")
             .video__wrapper.content
                 video.video__content(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
                 .video__play-button(id="play-pause")
-        section.culture.chapter
-            .announcement
-                .section-line
-                h2 #{culture.title}
-                p #{culture.text}
-            .culture-cards
+        section.culture
+            .culture__announcement
+                .culture__announcement__section-line
+                h2.culture__announcement__heading #{culture.title}
+                p.culture__announcement__text #{culture.text}
+            .culture__cards
                 each card in culture.cards
-                    .culture-card
-                        img(src=`images/${card.image}`, alt=`${card.title}`, role="presentation")
-                        h4 #{card.title}
-                        p #{card.text}
+                    .culture__card
+                        img.culture__card__image(src=`images/${card.image}`, alt=`${card.title}`, role="presentation")
+                        h4.culture__card__heading #{card.title}
+                        p.culture__card__text #{card.text}
         section.quotes
             .chapter.fade-in-animation
                 .quote

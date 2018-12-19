@@ -72,7 +72,7 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu-container, .chapter, .intro, .about {
+.video__content, h2, .menu-container, .chapter, .intro, .about, .culture {
   grid-column: 2;
 }
 
@@ -118,7 +118,7 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.chapter, .about {
+.chapter, .about, .culture {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: auto auto;
@@ -157,16 +157,12 @@ header, .quotes, .video, .apply, footer {
     grid-row: 1/-1;
   }
 
-  .culture-cards, .benefits-cards, .interviews {
+  .benefits-cards, .interviews {
     grid-column: 1/-1;
     grid-row: 2;
     display: grid;
     grid-gap: 16px;
     justify-content: center;
-  }
-
-  .culture-cards {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .benefits-cards, .interviews {
@@ -175,7 +171,19 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.about__announcement {
+.culture__cards {
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.culture__cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about__announcement, .culture__announcement {
   grid-column: 2;
   grid-row: 1;
   display: grid;
@@ -183,18 +191,18 @@ header, .quotes, .video, .apply, footer {
   grid-template-rows: 0.3em minmax(4em, 1fr) auto;
 }
 
-.about__announcement__section-line {
+.about__announcement__section-line, .culture__announcement__section-line {
   grid-column: 1/-1;
   grid-row: 1;
   align-self: end;
 }
 
-.about__announcement__heading {
+.about__announcement__heading, .culture__announcement__heading {
   grid-column: 1/-1;
   grid-row: 2/-1;
 }
 
-.about__announcement__text {
+.about__announcement__text, .culture__announcement__text {
   grid-column: 2;
   grid-row: 3/-1;
 }
@@ -266,41 +274,42 @@ header, .quotes, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
+  .culture__cards {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .culture__card {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  .culture__card__image, .culture__card__heading, .culture__card__text {
+    grid-column: 2;
+  }
+
   .chapter {
-    .culture-cards, .benefits-cards {
+    .benefits-cards {
       grid-column: 1/-1;
-
-      .culture-card {
-        display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-
-        img, h4, p {
-          grid-column: 2;
-        }
-      }
     }
 
-    .announcement, .about__announcement {
+    .announcement, .about__announcement, .culture__announcement {
       grid-column: 2/5;
 
-      .section-line, .about__announcement__section-line {
+      .section-line, .about__announcement__section-line, .culture__announcement__section-line {
         grid-column: 1;
       }
 
-      h2, .about__announcement__heading {
+      h2, .about__announcement__heading, .culture__announcement__heading {
         grid-column: 1/-1;
         grid-row: 2/3;
       }
 
-      p, .about__announcement__text {
+      p, .about__announcement__text, .culture__announcement__text {
         grid-column: 1/-1;
         grid-row: 3/-1;
       }
-    }
-
-    .culture-cards {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(3, 1fr);
     }
   }
 
@@ -552,7 +561,7 @@ h2, label {
   }
 }
 
-.about__announcement__text {
+.about__announcement__text, .culture__announcement__text {
   @include oTypographySans($scale: 0);
 }
 
@@ -579,17 +588,17 @@ h2, label {
   }
 }
 
-.culture-card {
+.culture__card {
   color: $light-grey;
+}
 
-  h4 {
-    @include oTypographySans($scale: 1);
-    font-weight: 600;
-  }
+.culture__card__heading {
+  @include oTypographySans($scale: 1);
+  font-weight: 600;
+}
 
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.culture__card__text {
+  @include oTypographySans($scale: 1);
 }
 
 .quotes {
@@ -703,6 +712,18 @@ footer {
 
 // Generic
 
+.about__announcement, .culture__announcement {
+  margin-bottom: 2em;
+}
+
+.about__announcement__section-line, .culture__announcement__section-line {
+  border-top: 4px solid oColorsGetPaletteColor('claret-100');
+}
+
+.about__announcement__text, .culture__announcement__text {
+  margin-right: 2em;
+}
+
 // Header
 
 .menu-container {
@@ -777,18 +798,6 @@ footer {
 
 // About
 
-.about__announcement {
-  margin-bottom: 2em;
-}
-
-.about__announcement__section-line {
-  border-top: 4px solid oColorsGetPaletteColor('claret-100');
-}
-
-.about__announcement__text {
-  margin-right: 2em;
-}
-
 // Video
 .video {
   margin-bottom: 2em;
@@ -823,6 +832,50 @@ footer {
 
 // Culture
 
+.culture__cards {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.culture__card {
+  background-color: oColorsGetPaletteColor('white-80');
+}
+
+.culture__card__image {
+  width: 100%;
+}
+
+.culture__card__heading {
+  margin-top: 50px;
+}
+
+.culture__card__text {
+  margin: 2rem 10% 67px 10%;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .culture__cards {
+    margin-bottom: 1rem;
+  }
+
+  .culture__card {
+    margin-top: 120px;
+  }
+
+  .culture__card__image {
+    margin-top: -120px;
+  }
+
+  .culture__card__heading {
+    margin: 0;
+  }
+
+  .culture__card__text {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+
 // Quotes
 
 // People
@@ -841,14 +894,14 @@ footer {
     margin-bottom: 6em;
   }
 
-  .culture-cards, .benefits-cards, .interviews {
+  .benefits-cards, .interviews {
     margin-bottom: 5rem;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
   .chapter {
-    .culture-cards, .benefits-cards, .interviews {
+    .benefits-cards, .interviews {
       margin-bottom: 1rem;
     }
   }
@@ -856,29 +909,6 @@ footer {
 
 .vacancy a {
   margin-top: 2em;
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter {
-    .culture-cards, .benefits-cards {
-      .culture-card {
-        margin-top: 120px;
-
-        img {
-          margin-top: -120px;
-        }
-
-        h4 {
-          margin: 0;
-        }
-
-        p {
-          margin-top: 0;
-          margin-bottom: 1em;
-        }
-      }
-    }
-  }
 }
 
 .name {
@@ -1095,27 +1125,6 @@ footer {
       margin: 10px;
       margin-top: 1em;
     }
-  }
-}
-
-// Culture
-.culture-cards {
-  text-align: center;
-}
-
-.culture-card {
-  background-color: oColorsGetPaletteColor('white-80');
-
-  img {
-    width: 100%;
-  }
-
-  h4 {
-    margin-top: 50px;
-  }
-
-  p {
-    margin: 2rem 10% 67px 10%;
   }
 }
 
