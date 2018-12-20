@@ -7,7 +7,7 @@ https://roles.ft.com/
 git clone git@github.com:Financial-Times/recruitment-microsite.git
 cd recruitment-microsite
 npm install
-npk run build
+npm run build
 ```
 
 `npm run watch` will look after your changes while you develop.
