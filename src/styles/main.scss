@@ -76,7 +76,7 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu-container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits {
+.video__content, h2, .menu__container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits {
   grid-column: 2;
 }
 
@@ -662,7 +662,7 @@ footer {
 
 // Header
 
-.menu-container {
+.menu__container {
   width: 100%;
 }
 
