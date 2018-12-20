@@ -72,26 +72,26 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu-container, .chapter, .intro, .about, .culture {
+.video__content, h2, .menu-container, .chapter, .intro, .about, .culture, .quotes__wrapper {
   grid-column: 2;
 }
 
 // Intro
 
-.intro {
+.intro, .quotes__wrapper {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
 }
 
-.intro__heritage-logo__container {
+.intro__heritage-logo__container, .quotes__heritage-logo__container {
   grid-row: 1/-1;
   grid-column: 2;
   display: grid;
   align-content: center;
 }
 
-.intro__message__container {
+.intro__message__container, .quotes__quote__container {
   grid-row: 2;
   grid-column: 2;
 }
@@ -152,11 +152,6 @@ header, .quotes, .video, .apply, footer {
     grid-row: 1;
   }
 
-  .quote {
-    grid-column: 2;
-    grid-row: 1/-1;
-  }
-
   .benefits-cards, .interviews {
     grid-column: 1/-1;
     grid-row: 2;
@@ -210,12 +205,6 @@ header, .quotes, .video, .apply, footer {
 @media only screen and (max-width: $breakpoint-m) {
   .chapter, .intro {
     grid-template-columns: 20px 8fr 20px;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .intro__message__container {
-    grid-column: 2;
   }
 }
 
@@ -370,26 +359,6 @@ header, .quotes, .video, .apply, footer {
 
     .availability {
       grid-column: 1/-1;
-    }
-  }
-}
-
-.quotes {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-
-  .chapter {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .quotes {
-    grid-column: 1/-1;
-
-    .chapter {
-      grid-column: 2;
     }
   }
 }
@@ -601,21 +570,21 @@ h2, label {
   @include oTypographySans($scale: 1);
 }
 
-.quotes {
+.quotes__quote__container {
   text-align: center;
+}
 
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
+.quotes__quote__heading {
+  @include oTypographyDisplay($scale: 8);
+  font-weight: 200;
+}
 
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.quotes__quote__text {
+  @include oTypographySans($scale: 1);
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .quotes h1 {
+  .quotes__quote__heading {
     @include oTypographyDisplay($scale: 5);
   }
 }
@@ -776,7 +745,7 @@ footer {
   }
 }
 
-.intro__heritage-logo__container {
+.intro__heritage-logo__container, .quotes__heritage-logo {
   width: 100%;
 }
 
@@ -878,6 +847,29 @@ footer {
 
 // Quotes
 
+.quotes__quote__divider {
+  width: 60px;
+  height: 4px;
+  margin-bottom: 1.3em;
+  margin-top: 1.3em;
+  background-color: oColorsGetPaletteColor('claret-100');
+  border: none;
+}
+
+.quotes {
+  min-height: 430px;
+  background-color: $dark-slate;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .quotes {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 215px;
+  }
+}
+
 // People
 
 // Benefits
@@ -887,11 +879,6 @@ footer {
 .chapter {
   .announcement {
     margin-bottom: 2em;
-  }
-
-  .quote {
-    margin-top: 6em;
-    margin-bottom: 6em;
   }
 
   .benefits-cards, .interviews {
@@ -1065,15 +1052,6 @@ footer {
   }
 }
 
-.quotes hr {
-  width: 60px;
-  height: 4px;
-  margin-bottom: 1.3em;
-  margin-top: 1.3em;
-  background-color: oColorsGetPaletteColor('claret-100');
-  border: none;
-}
-
 .table {
   overflow: hidden;
 
@@ -1125,21 +1103,6 @@ footer {
       margin: 10px;
       margin-top: 1em;
     }
-  }
-}
-
-// Quotes
-.quotes {
-  min-height: 430px;
-  background-color: $dark-slate;
-  margin-bottom: 2em;
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .quotes {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    min-height: 215px;
   }
 }
 
