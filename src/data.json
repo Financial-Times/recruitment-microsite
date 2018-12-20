@@ -165,7 +165,7 @@
                         "responsibilities": {
                             "title": "You will work on…",
                             "list": [
-                                "New features for FT.com and our presentation layer applications / services using modern web technologies.",
+                                "New features for FT.com, our iOS and Android apps and our presentation layer applications / services using modern web technologies.",
                                 "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
                                 "Maintain our high standards for web performance, security and accessibility.",
                                 "Help improve the way we work and the tools we use."
@@ -195,6 +195,7 @@
                                 "RESTful APIs (third-party APIs)",
                                 "Elasticsearch; Neo4j; Redis; GraphQL",
                                 "Handlebars; Sass; Webpack; Preact",
+                                "Swift; Java; Kotlin",
                                 "Fastly and VCL",
                                 "GitHub; CircleCI; Sentry",
                                 "Graphite; Grafana, Splunk",
