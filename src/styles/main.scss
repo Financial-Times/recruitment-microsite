@@ -1101,23 +1101,6 @@ label {
   }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .o-header-services__top .text-link .o-header-services__product-name {
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: vs) {
-  .o-header-services .o-header-services__bleed-container {
-    padding: 0 5px;
-  }
-
-  .o-header-services .o-header-services__title {
-    padding-left: 0;
-    padding-right: 5px;
-  }
-}
-
 .openings header .content .o-header-services__top .o-header-services__title .roles a,
 .landing header .content .o-header-services__top .o-header-services__title .about a {
   border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
@@ -1130,6 +1113,23 @@ label {
   position: sticky;
   top: 0;
   z-index: 3;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .o-header-services__top .text-link .o-header-services__product-name {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-vs) {
+  .o-header-services .o-header-services__bleed-container {
+    padding: 0 5px;
+  }
+
+  .o-header-services .o-header-services__title {
+    padding-left: 0;
+    padding-right: 5px;
+  }
 }
 
 // Footer
