@@ -310,10 +310,6 @@ footer {
     grid-column: 1/-1;
     grid-row: 3/-1;
   }
-
-  .vacancy__heading {
-    grid-column: 1/-1;
-  }
 }
 
 .name {
@@ -477,9 +473,7 @@ h2, label {
 }
 
 .vacancy {
-  p, li {
-    @include oTypographySans($scale: 0);
-  }
+  @include oTypographySans($scale: 0);
 }
 
 .about__announcement__text,
@@ -494,27 +488,8 @@ h2, label {
   color: $light-grey;
 }
 
-.table div {
-  .bolder {
-    @include oTypographySans($scale: 0);
-    font-weight: 600;
-  }
-  
-  .mini-header {
-    @include oTypographySansBold($scale: 1);
-  }
-
-  .left {
-    @include oTypographySans($scale: 0);
-  }
-  
-  .right {
-    @include oTypographySans($scale: 0);
-  }
-  
-  .section-header {
-    @include oTypographySans($scale: 0);
-  }
+.vacancy__description__subheading, .vacancy__text--top-left--lefter {
+  font-weight: 600;
 }
 
 .culture__card,
