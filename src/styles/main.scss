@@ -47,6 +47,10 @@ body {
   background-color: oColorsGetPaletteColor('slate');
 }
 
+.invisible {
+  display: none;
+}
+
 //////////////////////////////////////////////////////////
 // Layout
 //////////////////////////////////////////////////////////
@@ -72,13 +76,13 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu-container, .chapter, .intro, .about, .culture, .quotes__wrapper {
+.video__content, h2, .menu-container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits {
   grid-column: 2;
 }
 
 // Intro
 
-.intro, .quotes__wrapper {
+.intro, .quotes__wrapper, .apply {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
@@ -91,7 +95,7 @@ header, .quotes, .video, .apply, footer {
   align-content: center;
 }
 
-.intro__message__container, .quotes__quote__container {
+.intro__message__container, .quotes__quote__container, .apply__wrapper {
   grid-row: 2;
   grid-column: 2;
 }
@@ -118,52 +122,23 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.chapter, .about, .culture {
+.chapter, .about, .culture, .people, .benefits {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: auto auto;
+}
 
-  .announcement {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 0.3em minmax(4em, 1fr) auto;
+.benefits__cards, .people__interviews {
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+}
 
-    .section-line {
-      grid-column: 1/-1;
-      grid-row: 1;
-      align-self: end;
-    }
-
-    h2 {
-      grid-column: 1/-1;
-      grid-row: 2/-1;
-    }
-
-    p {
-      grid-column: 2;
-      grid-row: 3/-1;
-    }
-  }
-
-  .question {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .benefits-cards, .interviews {
-    grid-column: 1/-1;
-    grid-row: 2;
-    display: grid;
-    grid-gap: 16px;
-    justify-content: center;
-  }
-
-  .benefits-cards, .interviews {
-    grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
-    grid-template-rows: repeat(auto-fill, 1fr);
-  }
+.benefits__cards, .people__interviews {
+  grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
 }
 
 .culture__cards {
@@ -178,7 +153,7 @@ header, .quotes, .video, .apply, footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.about__announcement, .culture__announcement {
+.about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
   grid-column: 2;
   grid-row: 1;
   display: grid;
@@ -186,24 +161,24 @@ header, .quotes, .video, .apply, footer {
   grid-template-rows: 0.3em minmax(4em, 1fr) auto;
 }
 
-.about__announcement__section-line, .culture__announcement__section-line {
+.about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
   grid-column: 1/-1;
   grid-row: 1;
   align-self: end;
 }
 
-.about__announcement__heading, .culture__announcement__heading {
+.about__announcement__heading, .culture__announcement__heading, .people__announcement__heading, .benefits__announcement__heading {
   grid-column: 1/-1;
   grid-row: 2/-1;
 }
 
-.about__announcement__text, .culture__announcement__text {
+.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
   grid-column: 2;
   grid-row: 3/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter, .intro {
+  .intro, .about, .culture, .people, .benefits {
     grid-template-columns: 20px 8fr 20px;
   }
 }
@@ -256,12 +231,6 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.people {
-  .announcement h2 {
-    grid-column: 1/-1;
-  }
-}
-
 @media only screen and (max-width: $breakpoint-m) {
   .culture__cards {
     grid-column: 1/-1;
@@ -278,28 +247,31 @@ header, .quotes, .video, .apply, footer {
     grid-column: 2;
   }
 
-  .chapter {
-    .benefits-cards {
-      grid-column: 1/-1;
-    }
+  .benefits__cards {
+    grid-column: 1/-1;
+  }
 
-    .announcement, .about__announcement, .culture__announcement {
-      grid-column: 2/5;
+  .people__interviews {
+    grid-column: 2;
+  }
 
-      .section-line, .about__announcement__section-line, .culture__announcement__section-line {
-        grid-column: 1;
-      }
+  .about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
+    grid-column: 2/5;
 
-      h2, .about__announcement__heading, .culture__announcement__heading {
-        grid-column: 1/-1;
-        grid-row: 2/3;
-      }
+  }
+  
+  .about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
+    grid-column: 1;
+  }
 
-      p, .about__announcement__text, .culture__announcement__text {
-        grid-column: 1/-1;
-        grid-row: 3/-1;
-      }
-    }
+  .about__announcement__heading, .culture__announcement__heading, .people__announcement__heading, .benefits__announcement__heading {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  .about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
   }
 
   .vacancy {
@@ -363,12 +335,6 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter .interviews {
-    grid-column: 2;
-  }
-}
-
 .vacancy .live-vacancies {
   grid-column: 2;
 }
@@ -409,14 +375,17 @@ header, .quotes, .video, .apply, footer {
   .not-on-mobile-2 {
     display: none;
   }
-   .table .top {
+   
+  .table .top {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 2fr;
-     .righter {
+     
+    .righter {
       grid-column: 2;
     }
-     .lefter {
+    
+    .lefter {
       grid-column: 1;
     }
   }
@@ -424,12 +393,6 @@ header, .quotes, .video, .apply, footer {
 
 .form {
   grid-column: 2;
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .form {
-    grid-column: 2;
-  }
 }
 
 //////////////////////////////////////////////////////////
@@ -458,7 +421,7 @@ header, .quotes, .video, .apply, footer {
   @include oButtonsTheme('inverse');
 }
 
-.apply a {
+.apply__link {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
@@ -492,10 +455,8 @@ body, body a {
   color: oColorsGetPaletteColor('white-80');
 }
 
-.interview {
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.people__interviews__interview__text {
+  @include oTypographySans($scale: 1);
 }
 
 .intro, .left-aligned-header {
@@ -530,8 +491,13 @@ h2, label {
   }
 }
 
-.about__announcement__text, .culture__announcement__text {
+.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__card__text {
   @include oTypographySans($scale: 0);
+}
+
+.benefits__card__heading {
+  @include oTypographyDisplay($scale: 5);
+  color: $light-grey;
 }
 
 .table div {
@@ -557,7 +523,7 @@ h2, label {
   }
 }
 
-.culture__card {
+.culture__card, .benefits__card__text {
   color: $light-grey;
 }
 
@@ -589,25 +555,16 @@ h2, label {
   }
 }
 
-.benefits-card {
-  @include oTypographyDisplay($scale: 5);
-  color: $light-grey;
-
-  p {
-    @include oTypographySans($scale: 0);
-  }
+.apply__wrapper {
+  text-align: center;
 }
 
-.apply {
-  text-align: center;
+.apply__heading {
+  @include oTypographySans($scale: 6);
+}
 
-  h2 {
-    @include oTypographySans($scale: 6);
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.apply__text {
+  @include oTypographySans($scale: 1);
 }
 
 .intro__message__heading {
@@ -681,16 +638,26 @@ footer {
 
 // Generic
 
-.about__announcement, .culture__announcement {
+.about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
   margin-bottom: 2em;
 }
 
-.about__announcement__section-line, .culture__announcement__section-line {
+.about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
 
-.about__announcement__text, .culture__announcement__text {
+.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
   margin-right: 2em;
+}
+
+.benefits__cards, .people__interviews {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .benefits__cards, .people__interviews {
+    margin-bottom: 1rem;
+  }
 }
 
 // Header
@@ -872,25 +839,129 @@ footer {
 
 // People
 
-// Benefits
+.people__interviews__interview {
+  position: relative;
+  text-align: center;
+  max-width: 100vw;
+}
 
-// Apply
+.people__interviews__interview__image {
+  // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
+  display: block;
+  width: 100%;
+  will-change: filter;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+}
 
-.chapter {
-  .announcement {
-    margin-bottom: 2em;
+.people__interviews__interview__text {
+  opacity: 0;
+  transition: opacity 1s;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+
+  // shading
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
+  padding-bottom: 6px;
+  padding-top: 6px;
+  bottom: 0;
+}
+
+.people__interviews__interview:hover {
+  .people__interviews__interview__image {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
 
-  .benefits-cards, .interviews {
-    margin-bottom: 5rem;
+  .people__interviews__interview__text {
+    opacity: 1;
+    transition: opacity 1s;
   }
 }
 
+// Benefits
+
+.benefits__card {
+  max-width: 100vw;
+  background-color: oColorsGetPaletteColor('white-80');
+  position: relative;
+}
+
+.benefits__card__divider {
+  margin-left: 10%;
+  margin-top: 30px;
+  height: 4px;
+  width: 52px;
+  background-color: $light-grey;
+  border: none;
+}
+
+.benefits__card__heading {
+  margin: 10px 20% 0 10%;
+}
+
+.benefits__card__text {
+  margin: 1rem 20% 2rem 10%;
+}
+
+.benefits__card--0:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 75px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
+
+.benefits__card--4 .benefits__card__heading {
+  max-width: 250px;
+}
+
+.benefits__card--4:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 70px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+// Apply
+
+.apply__wrapper {
+  background-color: $dark-slate;
+  padding-bottom: 4em;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+.apply__heading {
+  margin-bottom: 1rem;
+}
+
+.apply__text {
+  margin-bottom: 1rem;
+}
+
+.apply__link {
+  margin-top: 2em;
+}
+
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter {
-    .benefits-cards, .interviews {
-      margin-bottom: 1rem;
-    }
+  .apply__wrapper {
+    margin-bottom: 0.3em;
   }
 }
 
@@ -946,53 +1017,6 @@ footer {
   }
 }
 
-// Interviews
-.interview {
-  position: relative;
-  text-align: center;
-  max-width: 100vw;
-
-  img {
-    // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
-    display: block;
-    width: 100%;
-    will-change: filter;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: -webkit-filter 1s;
-    transition: filter 1s;
-  }
-
-  p {
-    opacity: 0;
-    transition: opacity 1s;
-
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0;
-    pointer-events: none;
-
-    // shading
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
-    padding-bottom: 6px;
-    padding-top: 6px;
-    bottom: 0;
-  }
-}
-
-.interview:hover {
-  img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  p {
-    opacity: 1;
-    transition: opacity 1s;
-  }
-}
-
 .left-aligned-header {
   h1 {
     margin-bottom: 0;
@@ -1029,10 +1053,6 @@ footer {
 
 // Chapter
 // NOTE: chapter is the on front page, vacancy is the one on openings page - these naming is confusing =) - so maybe should be renamed
-.announcement .section-line {
-  border-top: 4px solid oColorsGetPaletteColor('claret-100');
-}
-
 .vacancy .section-line {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
@@ -1103,83 +1123,6 @@ footer {
       margin: 10px;
       margin-top: 1em;
     }
-  }
-}
-
-// Benefits
-.benefits-card {
-  max-width: 100vw;
-  background-color: oColorsGetPaletteColor('white-80');
-  position: relative;
-
-  hr {
-    margin-left: 10%;
-    margin-top: 30px;
-    height: 4px;
-    width: 52px;
-    background-color: $light-grey;
-    border: none;
-  }
-
-  h3 {
-    margin: 10px 20% 0 10%;
-  }
-
-  p {
-    margin: 1rem 20% 2rem 10%;
-  }
-}
-
-.benefit-0:after {
-  content: " ";
-  display: block;
-  width: 3px;
-  height: 75px;
-  background: oColorsGetPaletteColor('claret-100');
-  transform: rotate(50deg);
-  position: absolute;
-  bottom: 20px;
-  right: 60px;
-}
-
-.benefit-4 h3 {
-  max-width: 250px;
-}
-
-.benefit-4:after {
-  content: " ";
-  display: block;
-  width: 3px;
-  height: 70px;
-  background: oColorsGetPaletteColor('claret-100');
-  transform: rotate(50deg);
-  position: absolute;
-  top: 20px;
-  right: 60px;
-}
-
-// Apply
-.apply {
-  background-color: $dark-slate;
-  padding-bottom: 4em;
-  margin-bottom: 2em;
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
-  a {
-    margin-top: 2em;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .apply {
-    margin-bottom: 0.3em;
   }
 }
 
@@ -1300,10 +1243,6 @@ footer {
   footer {
     margin-top: 1em;
   }
-}
-
-.invisible {
-  display: none;
 }
 
 @media only screen and (max-width: 320px) {

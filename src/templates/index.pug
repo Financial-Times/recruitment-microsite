@@ -42,31 +42,31 @@ html(lang="en")
                         p.quotes__quote__text #{quotes[0].author}
                     .quotes__heritage-logo__container
                         img.quotes__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
-        section.people.chapter
-            .announcement
-                .section-line
-                h2 #{people.title}
-                p #{people.text}
-            .interviews
+        section.people
+            .people__announcement
+                .people__announcement__section-line
+                h2.people__announcement__heading #{people.title}
+                p.people__announcement__text #{people.text}
+            .people__interviews
                 each person,index in people.information
-                    .interview(class="interview-"+index)
-                        img(src=`images/${person.image}`)
-                        p #{person.caption}
-        section.benefits.chapter
-            .announcement
-                .section-line
-                h2 #{benefits.title}
-            .benefits-cards
+                    .people__interviews__interview(class="interview-"+index)
+                        img.people__interviews__interview__image(src=`images/${person.image}`)
+                        p.people__interviews__interview__text #{person.caption}
+        section.benefits
+            .benefits__announcement
+                .benefits__announcement__section-line
+                h2.benefits__announcement__heading #{benefits.title}
+            .benefits__cards
                 each card, index in benefits.cards
-                    .benefits-card(class="benefit-"+index)
-                        hr(align="left")
-                        h3 #{card.title}
-                        p #{card.text}
-        section.apply.chapter
-            .question
-                h2 #{apply.title}
-                p #{apply.text}
-                a(href="openings.html") #{apply.button}
+                    .benefits__card(class="benefits__card--"+index)
+                        hr.benefits__card__divider(align="left")
+                        h3.benefits__card__heading #{card.title}
+                        p.benefits__card__text #{card.text}
+        section.apply
+            .apply__wrapper
+                h2.apply__heading #{apply.title}
+                p.apply__text #{apply.text}
+                a.apply__link(href="openings.html") #{apply.button}
     include partials/footer.pug
 script(type="text/javascript")
     include ../scripts/play-pause-video.js
