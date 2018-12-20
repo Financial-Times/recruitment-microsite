@@ -76,16 +76,21 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu__container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits, .intro-message {
+.video__content, h2, .menu__container, .intro, .about, .culture, .quotes__wrapper, .people, .benefits, .intro-message, .vacancy, .live-vacancies, .form, .vacancy__table, .live-vacancies__wrapper {
   grid-column: 2;
 }
 
-// Intro
-
-.intro, .quotes__wrapper, .apply, .intro-message {
+.intro, .quotes__wrapper, .apply, .intro-message, .about, .culture, .people, .benefits, .vacancy, .live-vacancies {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
+}
+
+.intro, .quotes__wrapper, .apply, .intro-message {
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
+}
+
+.about, .culture, .people, .benefits {
+  grid-template-rows: auto auto;
 }
 
 .intro__heritage-logo__container, .quotes__heritage-logo__container {
@@ -117,12 +122,6 @@ header, .quotes, .video, .apply, footer {
   .intro-message__text {
     grid-column: 1/-1;
   }
-}
-
-.chapter, .about, .culture, .people, .benefits {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: auto auto;
 }
 
 .benefits__cards, .people__interviews {
@@ -180,52 +179,33 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.vacancy {
+.vacancy__heading {
   grid-column: 2;
+  grid-row: 1;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 0.3em 4em auto auto auto auto;
+}
 
-  .heading {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 0.3em 4em auto auto auto auto;
+.vacancy__section-line {
+  grid-column: 1/-1;
+  align-self: end;
+}
 
-    .section-line {
-      grid-column: 1/-1;
-      align-self: end;
-    }
+.vacancy__label {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-self: center;
+}
 
-    h2, label {
-      grid-column: 1/-1;
-      display: grid;
-      grid-template-columns: 5fr 1fr;
-      align-self: center;
-    }
+.vacancy__i {
+  grid-column: 2;
+  justify-self: end;
+}
 
-    i {
-      grid-column: 2;
-      justify-self: end;
-    }
-
-    p {
-      grid-column: 2/-1;
-      align-self: start;
-    }
-
-    a {
-      grid-column: 1/-1;
-    }
-
-    .table {
-      grid-column: 1/-1;
-    }
-  }
-
-  h2 {
-    grid-column: 2;
-  }
+.vacancy__table {
+  grid-column: 1/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
@@ -269,16 +249,6 @@ header, .quotes, .video, .apply, footer {
   .about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
     grid-column: 1/-1;
     grid-row: 3/-1;
-  }
-
-  .vacancy {
-    .heading, h2 {
-      grid-column: 2;
-
-      .section-line, h2, p, a {
-        grid-column: 1/-1;
-      }
-    }
   }
 }
 
@@ -332,71 +302,52 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.vacancy .live-vacancies {
+.live-vacancies__wrapper {
   grid-column: 2;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .vacancy .live-vacancies {
-    grid-column: 2;
-  }
-}
-
-.table {
+.vacancy__table {
   display: grid;
-  grid-column: 2;
   grid-template-columns: 2fr 6fr;
+}
 
-  .left {
-    grid-column: 1;
-  }
+.vacancy__text--top-left {
+  grid-column: 1;
+}
 
-  .right {
-    grid-column: 2;
-  }
+.vacancy__text--top-right {
+  grid-column: 2;
+}
 
-  hr {
-    grid-column: 1/-1;
-  }
+.vacancy__table-section-line {
+  grid-column: 1/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .table {
-    .left, .right {
-      grid-column: 1/-1;
-    }
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .not-on-mobile-2 {
-    display: none;
-  }
-   
-  .table .top {
+  .vacancy__text--top-left, .vacancy__text--top-right {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 2fr;
-     
-    .righter {
-      grid-column: 2;
-    }
-    
-    .lefter {
-      grid-column: 1;
-    }
   }
-}
 
-.form {
-  grid-column: 2;
+  .vacancy__text--top-left--righter {
+    grid-column: 2;
+  }
+  
+  .vacancy__text--top-left--lefter {
+    grid-column: 1;
+  }
 }
 
 //////////////////////////////////////////////////////////
 // Mixins
 //////////////////////////////////////////////////////////
 
-.intro__thank-you-button {
+.intro__thank-you-button,
+.live-vacancies__link,
+.apply__link,
+.intro-message__link,
+.vacancy__button {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
@@ -404,30 +355,6 @@ header, .quotes, .video, .apply, footer {
 
 .o-header-services {
   @include oHeaderServices($class: 'o-header-services');
-}
-
-.announcement a, .vacancy  a {
-  @include oButtons('big');
-  @include oButtonsTheme('primary');
-  @include oButtonsTheme('inverse');
-}
-
-.table .buttons button {
-  @include oButtons('big');
-  @include oButtonsTheme('primary');
-  @include oButtonsTheme('inverse');
-}
-
-.apply__link {
-  @include oButtons('big');
-  @include oButtonsTheme('primary');
-  @include oButtonsTheme('inverse');
-}
-
-.intro-message__link {
-  @include oButtons('big');
-  @include oButtonsTheme('primary');
-  @include oButtonsTheme('inverse');
 }
 
 footer {
@@ -628,11 +555,18 @@ footer {
 
 // Generic
 
-.about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
+.about__announcement,
+.culture__announcement,
+.people__announcement,
+.benefits__announcement {
   margin-bottom: 2em;
 }
 
-.about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
+.about__announcement__section-line,
+.culture__announcement__section-line,
+.people__announcement__section-line,
+.benefits__announcement__section-line,
+.live-vacancies__section-line {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
 
@@ -647,6 +581,10 @@ footer {
 @media only screen and (max-width: $breakpoint-m) {
   .benefits__cards, .people__interviews {
     margin-bottom: 1rem;
+  }
+
+  .not-on-mobile {
+    display: none;
   }
 }
 
@@ -676,12 +614,13 @@ footer {
 
 .intro-message__heading {
   max-width: 800px;
+  margin-bottom: 0;
 }
 
 .intro-message__text {
   max-width: 480px;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   margin-top: 1em;
 }
 
@@ -720,8 +659,6 @@ footer {
     border: none;
   }
 }
-
-// About
 
 // Video
 .video {
@@ -954,9 +891,75 @@ footer {
   }
 }
 
-.vacancy a {
-  margin-top: 2em;
+// Openings page
+
+.vacancy__section-line {
+  border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
+
+// .vacancy {
+//   p, li {
+//     margin-right: 2em;
+//   }
+// }
+
+.vacancy__table {
+  overflow: hidden;
+}
+
+.vacancy__description__list {
+  margin-top: 1em;
+}
+
+.vacancy__description__list--ul {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+.vacancy__text--top-left,
+.vacancy__text--top-right {
+  display: flex;
+}
+
+.vacancy__description {
+  display: block;
+}
+
+.vacancy__text--top-left--lefter, .vacancy__text--left {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.vacancy__section-header {
+  margin-bottom: 0.6rem;
+}
+
+.vacancy__table-section-line {
+  width: 100%;
+  height: 1px;
+  background-color: oColorsGetPaletteColor('white-80');
+}
+
+.vacancy__buttons {
+  display: flex;
+}
+
+.vacancy__button {
+  margin: 10px;
+  margin-top: 1em;
+}
+
+.live-vacancies__wrapper {
+  margin-bottom: 3em;
+}
+
+.live-vacancies__link {
+  margin-top: 7em;
+  width: 230px;
+  height: 2em;
+}
+
+// Form
 
 .name {
   .first-name {
@@ -1006,22 +1009,6 @@ footer {
   }
 }
 
-.intro-message__heading {
-  margin-bottom: 0;
-}
-
-.intro-message__text {
-  margin-bottom: 3em;
-}
-
-.vacancy .live-vacancies {
-  margin-bottom: 3em;
-
-  a {
-    margin-top: 7em;
-  }
-}
-
 // Header
 .o-header-services {
   background-color: black;
@@ -1035,81 +1022,6 @@ footer {
     margin: 8px 8px 8px 0;
 
     background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
-  }
-}
-
-// Chapter
-// NOTE: chapter is the on front page, vacancy is the one on openings page - these naming is confusing =) - so maybe should be renamed
-.vacancy .section-line {
-  border-top: 2px solid oColorsGetPaletteColor('claret-100');
-}
-
-.vacancy .heading a {
-  margin-bottom: 3em;
-}
-
-.announcement, .vacancy {
-  p, li {
-    margin-right: 2em;
-  }
-
-  a {
-    width: 230px;
-    height: 2em;
-  }
-}
-
-.table {
-  overflow: hidden;
-
-  div {
-    p, li {
-      margin: 10px;
-    }
-
-    .mini-header {
-      margin-top: 2em;
-    }
-  }
-
-  .description .list {
-    margin-top: 1em;
-
-    ul {
-      list-style-type: square;
-      list-style-position: outside;
-    }
-  }
-
-  .left {
-    display: flex;
-  }
-
-  .right {
-    display: flex;
-  }
-
-  .description {
-    display: block;
-  }
-
-  .section-header {
-    margin-bottom: 0.6rem;
-  }
-
-  hr {
-    width: 100%;
-    height: 1px;
-    background-color: oColorsGetPaletteColor('white-80');
-  }
-
-  .buttons {
-    display: flex;
-
-    button {
-      margin: 10px;
-      margin-top: 1em;
-    }
   }
 }
 
@@ -1292,15 +1204,15 @@ footer {
 // Accordion animation
 // https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
-.vacancy label i, .vacancy i  {
+.vacancy__i  {
   @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
 }
 
-.vacancy .hidden-input {
+.vacancy__hidden-input {
   display: none;
 }
 
-.vacancy .hidden-input ~ .table {
+.vacancy__hidden-input ~ .vacancy__table {
   max-height: 0;
   overflow-y: hidden;
 
@@ -1308,7 +1220,7 @@ footer {
 		max-height .6s ease-in-out;
 }
 
-.vacancy .hidden-input:checked ~ .table {
+.vacancy__hidden-input:checked ~ .vacancy__table {
   // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
   max-height: 1700px; // Be careful, this magic number might have to change if text changes!
@@ -1319,29 +1231,29 @@ footer {
 }
 
 @media only screen and (max-width: $breakpoint-vl) {
-  .vacancy .hidden-input:checked ~ .table {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
     max-height: 2100px; // Be careful, this magic number might have to change if text changes!
   }
 }
 
 @media only screen and (max-width: $breakpoint-l) {
-  .vacancy .hidden-input:checked ~ .table {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
     max-height: 2500px; // Be careful, this magic number might have to change if text changes!
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .vacancy .hidden-input:checked ~ .table {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
     max-height: 2800px; // Be careful, this magic number might have to change if text changes!
   }
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .vacancy .hidden-input:checked ~ .table {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
     max-height: 3500px; // Be careful, this magic number might have to change if text changes!
   }
 }
 
-.vacancy .hidden-input:checked ~ label i, .vacancy .hidden-input:checked ~ i  {
+.vacancy__hidden-input:checked ~ label i, .vacancy__hidden-input:checked ~ i  {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
