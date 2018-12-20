@@ -39,7 +39,7 @@
     },
     "culture": {
         "title": "Express yourself",
-        "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
+        "text": "The FT is not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
         "cards": [
             {
                 "image": "autonomy.png",
@@ -90,7 +90,7 @@
             },
             {
                 "image": "Robin.png",
-                "caption": "Robin, Interactive Data Journalist"
+                "caption": "Robin, Head of Digital Delivery"
             }
         ]
     },
