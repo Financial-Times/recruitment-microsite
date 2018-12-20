@@ -5,10 +5,10 @@ html(lang="en")
     .openings
         include ../partials/header.pug
     .content
-        section.left-aligned-header.chapter
-            .intro__message__container--left-aligned
-                h1 Apply today
-                p Below are the roles we are constantly on the look out for, if you like what you see, get in contact. 
+        section.intro-message
+            .intro-message__container
+                h1.intro-message__heading Apply today
+                p.intro-message__text Below are the roles we are constantly on the look out for, if you like what you see, get in contact. 
         each opening in openings
             section.vacancy
                 .heading

@@ -76,13 +76,13 @@ header, .quotes, .video, .apply, footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu__container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits {
+.video__content, h2, .menu__container, .chapter, .intro, .about, .culture, .quotes__wrapper, .people, .benefits, .intro-message {
   grid-column: 2;
 }
 
 // Intro
 
-.intro, .quotes__wrapper, .apply {
+.intro, .quotes__wrapper, .apply, .intro-message {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
@@ -95,30 +95,27 @@ header, .quotes, .video, .apply, footer {
   align-content: center;
 }
 
-.intro__message__container, .quotes__quote__container, .apply__wrapper {
+.intro-message__container, .quotes__quote__container, .apply__wrapper {
   grid-row: 2;
   grid-column: 2;
 }
 
-.intro__message__container--left-aligned {
-  grid-column: 2;
+.intro-message__container {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
+}
 
-  h1 {
-    grid-column: 1/-1;
-  }
+.intro-message__heading {
+  grid-column: 1/-1;
+}
 
-  p {
-    grid-column: 2;
-  }
+.intro-message__text {
+  grid-column: 2;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .intro__message__container--left-aligned {
-    p {
-      grid-column: 1/-1;
-    }
+  .intro-message__text {
+    grid-column: 1/-1;
   }
 }
 
@@ -427,7 +424,7 @@ header, .quotes, .video, .apply, footer {
   @include oButtonsTheme('inverse');
 }
 
-.intro__message__link {
+.intro-message__link {
   @include oButtons('big');
   @include oButtonsTheme('primary');
   @include oButtonsTheme('inverse');
@@ -459,19 +456,17 @@ body, body a {
   @include oTypographySans($scale: 1);
 }
 
-.intro, .left-aligned-header {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 400;
-  }
+.intro-message__heading {
+  @include oTypographyDisplay($scale: 8);
+  font-weight: 400;
+}
 
-  p {
-    @include oTypographySans($scale: 1);
-  }
+.intro-message__text {
+  @include oTypographySans($scale: 1);
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .intro__message__container__header {
+  .intro-message__container__header {
     @include oTypographyDisplay($scale: 6);
   }
 }
@@ -567,12 +562,7 @@ h2, label {
   @include oTypographySans($scale: 1);
 }
 
-.intro__message__heading {
-  @include oTypographyDisplay($scale: 8);
-  font-weight: 200;
-}
-
-.intro__message__text {
+.intro-message__text {
   @include oTypographySans($scale: 1);
 }
 
@@ -673,7 +663,7 @@ footer {
   padding: 1em;
 }
 
-.intro__message__container {
+.intro-message__container {
   padding-top: 5vh;
 }
 
@@ -684,26 +674,25 @@ footer {
   width: 11em;
 }
 
-.intro__message__heading {
+.intro-message__heading {
   max-width: 800px;
-  margin: auto;
 }
 
-.intro__message__text {
+.intro-message__text {
   max-width: 480px;
   margin: auto;
   margin-bottom: 2em;
   margin-top: 1em;
 }
 
-.intro__message__container__logo {
+.intro-message__container__logo {
   max-width: 350px;
   max-width: 90vw;
   margin: 0 auto 1em auto;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .intro__message__container__logo {
+  .intro-message__container__logo {
     width: 200px;
   }
 
@@ -1017,14 +1006,12 @@ footer {
   }
 }
 
-.left-aligned-header {
-  h1 {
-    margin-bottom: 0;
-  }
+.intro-message__heading {
+  margin-bottom: 0;
+}
 
-  p {
-    margin-bottom: 3em;
-  }
+.intro-message__text {
+  margin-bottom: 3em;
 }
 
 .vacancy .live-vacancies {
