@@ -441,19 +441,22 @@ body, body a {
   color: oColorsGetPaletteColor('white-80');
 }
 
-.people__interviews__interview__text {
+.people__interviews__interview__text,
+.intro-message__text,
+.intro__message__text,
+.quotes__quote__text,
+.culture__card__text {
   @include oTypographySans($scale: 1);
+}
+
+.quotes__quote__text {
+  text-align: center;
 }
 
 .intro-message__heading,
 .intro__message__heading {
   @include oTypographyDisplay($scale: 8);
   font-weight: 400;
-}
-
-.intro-message__text,
-.intro__message__text {
-  @include oTypographySans($scale: 1);
 }
 
 @media only screen and (max-width: $breakpoint-s) {
@@ -467,19 +470,20 @@ body, body a {
   @include oTypographySans($scale: 1);
 }
 
-h2, label {
+.about__announcement__heading,
+.culture__announcement__heading,
+.people__announcement__heading,
+.benefits__announcement__heading,
+label {
   @include oTypographySans($scale: 4);
   font-weight: 400;
-}
-
-.vacancy {
-  @include oTypographySans($scale: 0);
 }
 
 .about__announcement__text,
 .culture__announcement__text,
 .people__announcement__text,
-.benefits__card__text {
+.benefits__card__text,
+.vacancy {
   @include oTypographySans($scale: 0);
 }
 
@@ -488,7 +492,8 @@ h2, label {
   color: $light-grey;
 }
 
-.vacancy__description__subheading, .vacancy__text--top-left--lefter {
+.vacancy__description__subheading,
+.vacancy__text--top-left--lefter {
   font-weight: 600;
 }
 
@@ -502,21 +507,10 @@ h2, label {
   font-weight: 600;
 }
 
-.culture__card__text {
-  @include oTypographySans($scale: 1);
-}
-
-.quotes__quote__container {
-  text-align: center;
-}
-
 .quotes__quote__heading {
+  text-align: center;
   @include oTypographyDisplay($scale: 8);
   font-weight: 200;
-}
-
-.quotes__quote__text {
-  @include oTypographySans($scale: 1);
 }
 
 @media only screen and (max-width: $breakpoint-m) {
@@ -531,6 +525,7 @@ h2, label {
 
 .apply__heading {
   @include oTypographySans($scale: 6);
+  font-weight: 400;
 }
 
 .apply__text {
@@ -583,19 +578,17 @@ h2, label {
   }
 }
 
-footer {
-  .o-footer-services__wrapper {
-    color: oColorsMix(slate, white, 20);
-  }
+.o-footer-services__wrapper {
+  color: oColorsMix(slate, white, 20);
+}
 
-  .o-footer-services__links a {
-    color: oColorsMix(slate, white, 20);
-    border: none;
-  }
+.o-footer-services__links a {
+  color: oColorsMix(slate, white, 20);
+  border: none;
+}
 
-  .o-footer-services__links a:hover {
-    color: oColorsMix(slate, white, 0);
-  }
+.o-footer-services__links a:hover {
+  color: oColorsMix(slate, white, 0);
 }
 
 //////////////////////////////////////////////////////////
