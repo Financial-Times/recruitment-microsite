@@ -72,35 +72,71 @@ body {
   }
 }
 
-header, .quotes, .video, .apply, footer {
+header,
+.quotes,
+.video,
+.apply,
+footer {
   grid-column: 1/-1;
 }
 
-.video__content, h2, .menu__container, .intro, .about, .culture, .quotes__wrapper, .people, .benefits, .intro-message, .vacancy, .live-vacancies, .form, .vacancy__table, .live-vacancies__wrapper {
+.video__content,
+.menu__container,
+.intro,
+.about,
+.culture,
+.quotes__wrapper,
+.people,
+.benefits,
+.intro-message,
+.vacancy,
+.live-vacancies,
+.form,
+.vacancy__table,
+.live-vacancies__wrapper {
   grid-column: 2;
 }
 
-.intro, .quotes__wrapper, .apply, .intro-message, .about, .culture, .people, .benefits, .vacancy, .live-vacancies {
+.intro,
+.quotes__wrapper,
+.apply,
+.intro-message,
+.about,
+.culture,
+.people,
+.benefits,
+.vacancy,
+.live-vacancies {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
 }
 
-.intro, .quotes__wrapper, .apply, .intro-message {
+.intro,
+.quotes__wrapper,
+.apply,
+.intro-message {
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
 }
 
-.about, .culture, .people, .benefits {
+.about,
+.culture,
+.people,
+.benefits {
   grid-template-rows: auto auto;
 }
 
-.intro__heritage-logo__container, .quotes__heritage-logo__container {
+.intro__heritage-logo__container,
+.quotes__heritage-logo__container {
   grid-row: 1/-1;
   grid-column: 2;
   display: grid;
   align-content: center;
 }
 
-.intro-message__container, .quotes__quote__container, .apply__wrapper {
+.intro__message__container,
+.intro-message__container,
+.quotes__quote__container,
+.apply__wrapper {
   grid-row: 2;
   grid-column: 2;
 }
@@ -124,32 +160,30 @@ header, .quotes, .video, .apply, footer {
   }
 }
 
-.benefits__cards, .people__interviews {
-  grid-column: 1/-1;
-  grid-row: 2;
-  display: grid;
-  grid-gap: 16px;
-  justify-content: center;
-}
-
-.benefits__cards, .people__interviews {
-  grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
-  grid-template-rows: repeat(auto-fill, 1fr);
-}
-
+.benefits__cards,
+.people__interviews,
 .culture__cards {
   grid-column: 1/-1;
   grid-row: 2;
   display: grid;
   grid-gap: 16px;
   justify-content: center;
+}
+
+.benefits__cards,
+.people__interviews {
+  grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
 }
 
 .culture__cards {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
+.about__announcement,
+.culture__announcement,
+.people__announcement,
+.benefits__announcement {
   grid-column: 2;
   grid-row: 1;
   display: grid;
@@ -157,24 +191,37 @@ header, .quotes, .video, .apply, footer {
   grid-template-rows: 0.3em minmax(4em, 1fr) auto;
 }
 
-.about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
+.about__announcement__section-line,
+.culture__announcement__section-line,
+.people__announcement__section-line,
+.benefits__announcement__section-line {
   grid-column: 1/-1;
   grid-row: 1;
   align-self: end;
 }
 
-.about__announcement__heading, .culture__announcement__heading, .people__announcement__heading, .benefits__announcement__heading {
+.about__announcement__heading,
+.culture__announcement__heading,
+.people__announcement__heading,
+.benefits__announcement__heading {
   grid-column: 1/-1;
   grid-row: 2/-1;
 }
 
-.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__announcement__text {
   grid-column: 2;
   grid-row: 3/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .intro, .about, .culture, .people, .benefits {
+  .intro,
+  .about,
+  .culture,
+  .people,
+  .benefits {
     grid-template-columns: 20px 8fr 20px;
   }
 }
@@ -220,7 +267,9 @@ header, .quotes, .video, .apply, footer {
     grid-template-columns: 1fr 8fr 1fr;
   }
 
-  .culture__card__image, .culture__card__heading, .culture__card__text {
+  .culture__card__image,
+  .culture__card__heading,
+  .culture__card__text {
     grid-column: 2;
   }
 
@@ -232,23 +281,38 @@ header, .quotes, .video, .apply, footer {
     grid-column: 2;
   }
 
-  .about__announcement, .culture__announcement, .people__announcement, .benefits__announcement {
+  .about__announcement,
+  .culture__announcement,
+  .people__announcement,
+  .benefits__announcement {
     grid-column: 2/5;
-
   }
   
-  .about__announcement__section-line, .culture__announcement__section-line, .people__announcement__section-line, .benefits__announcement__section-line {
+  .about__announcement__section-line,
+  .culture__announcement__section-line,
+  .people__announcement__section-line,
+  .benefits__announcement__section-line {
     grid-column: 1;
   }
 
-  .about__announcement__heading, .culture__announcement__heading, .people__announcement__heading, .benefits__announcement__heading {
+  .about__announcement__heading,
+  .culture__announcement__heading,
+  .people__announcement__heading,
+  .benefits__announcement__heading {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
 
-  .about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
+  .about__announcement__text,
+  .culture__announcement__text,
+  .people__announcement__text,
+  .benefits__announcement__text {
     grid-column: 1/-1;
     grid-row: 3/-1;
+  }
+
+  .vacancy__heading {
+    grid-column: 1/-1;
   }
 }
 
@@ -324,7 +388,8 @@ header, .quotes, .video, .apply, footer {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .vacancy__text--top-left, .vacancy__text--top-right {
+  .vacancy__text--top-left,
+  .vacancy__text--top-right {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -346,7 +411,7 @@ header, .quotes, .video, .apply, footer {
 .intro__thank-you-button,
 .live-vacancies__link,
 .apply__link,
-.intro-message__link,
+.intro__message__link,
 .vacancy__button {
   @include oButtons('big');
   @include oButtonsTheme('primary');
@@ -367,7 +432,8 @@ footer {
   @include oFormsRadioCheckboxFeatures();
 }
 
-.fields .upload-button, .fields .submit-button {
+.fields .upload-button,
+.fields .submit-button {
   @include oButtons($size: big, $theme: primary);
 }
 
@@ -383,17 +449,20 @@ body, body a {
   @include oTypographySans($scale: 1);
 }
 
-.intro-message__heading {
+.intro-message__heading,
+.intro__message__heading {
   @include oTypographyDisplay($scale: 8);
   font-weight: 400;
 }
 
-.intro-message__text {
+.intro-message__text,
+.intro__message__text {
   @include oTypographySans($scale: 1);
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .intro-message__container__header {
+  .intro-message__container__header,
+  .intro__message__container__header {
     @include oTypographyDisplay($scale: 6);
   }
 }
@@ -407,13 +476,16 @@ h2, label {
   font-weight: 400;
 }
 
-.announcement, .vacancy {
+.vacancy {
   p, li {
     @include oTypographySans($scale: 0);
   }
 }
 
-.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__card__text {
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__card__text {
   @include oTypographySans($scale: 0);
 }
 
@@ -445,7 +517,8 @@ h2, label {
   }
 }
 
-.culture__card, .benefits__card__text {
+.culture__card,
+.benefits__card__text {
   color: $light-grey;
 }
 
@@ -489,7 +562,8 @@ h2, label {
   @include oTypographySans($scale: 1);
 }
 
-.intro-message__text {
+.intro-message__text,
+.intro__message__text {
   @include oTypographySans($scale: 1);
 }
 
@@ -570,16 +644,21 @@ footer {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
 
-.about__announcement__text, .culture__announcement__text, .people__announcement__text, .benefits__announcement__text {
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__announcement__text {
   margin-right: 2em;
 }
 
-.benefits__cards, .people__interviews {
+.benefits__cards,
+.people__interviews {
   margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .benefits__cards, .people__interviews {
+  .benefits__cards,
+  .people__interviews {
     margin-bottom: 1rem;
   }
 
@@ -601,7 +680,8 @@ footer {
   padding: 1em;
 }
 
-.intro-message__container {
+.intro-message__container,
+.intro__message__container {
   padding-top: 5vh;
 }
 
@@ -612,26 +692,28 @@ footer {
   width: 11em;
 }
 
-.intro-message__heading {
+.intro-message__heading,
+.intro__message__heading {
   max-width: 800px;
   margin-bottom: 0;
 }
 
-.intro-message__text {
+.intro-message__text,
+.intro__message__text {
   max-width: 480px;
   margin: auto;
   margin-bottom: 3em;
   margin-top: 1em;
 }
 
-.intro-message__container__logo {
+.intro__message__logo {
   max-width: 350px;
   max-width: 90vw;
   margin: 0 auto 1em auto;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .intro-message__container__logo {
+  .intro__message__logo {
     width: 200px;
   }
 
@@ -640,7 +722,8 @@ footer {
   }
 }
 
-.intro__heritage-logo__container, .quotes__heritage-logo {
+.intro__heritage-logo__container,
+.quotes__heritage-logo {
   width: 100%;
 }
 
@@ -925,7 +1008,8 @@ footer {
   display: block;
 }
 
-.vacancy__text--top-left--lefter, .vacancy__text--left {
+.vacancy__text--top-left--lefter,
+.vacancy__text--left {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -1083,7 +1167,8 @@ footer .o-footer-services__container:before {
   }
 }
 
-.landing, .openings {
+.landing,
+.openings {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -1254,6 +1339,7 @@ footer {
   }
 }
 
-.vacancy__hidden-input:checked ~ label i, .vacancy__hidden-input:checked ~ i  {
+.vacancy__hidden-input:checked ~ label i,
+.vacancy__hidden-input:checked ~ i  {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
