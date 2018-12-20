@@ -398,6 +398,11 @@ footer {
   .vacancy__text--top-left--lefter {
     grid-column: 1;
   }
+
+  .vacancy__text--left,
+  .vacancy__text--right {
+    grid-column: 1/-1;
+  }
 }
 
 //////////////////////////////////////////////////////////
@@ -974,6 +979,12 @@ label {
 .vacancy__text--left {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy__text--top-left--lefter, .vacancy__text--top-left--righter {
+    margin-bottom: 0.3em;
+  }
 }
 
 .vacancy__section-header {
