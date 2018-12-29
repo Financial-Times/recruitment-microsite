@@ -94,7 +94,8 @@ footer {
 .live-vacancies,
 .form,
 .vacancy__table,
-.live-vacancies__wrapper {
+.live-vacancies__wrapper,
+.form__container {
   grid-column: 2;
 }
 
@@ -107,7 +108,8 @@ footer {
 .people,
 .benefits,
 .vacancy,
-.live-vacancies {
+.live-vacancies,
+.form__container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
 }
@@ -666,10 +668,13 @@ label {
   width: 11em;
 }
 
+.intro__message__heading {
+  margin: auto;
+}
+
 .intro-message__heading,
 .intro__message__heading {
   max-width: 800px;
-  margin: auto;
   margin-bottom: 0;
 }
 
