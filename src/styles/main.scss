@@ -315,51 +315,51 @@ footer {
   }
 }
 
-.name {
+.form__fields__names{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  .first-name {
+  .form__fields__first-name {
     grid-column: 1;
   }
 
-  .last-name {
+  .form__fields__last-name {
     grid-column: 2;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .name {
-    .first-name {
+  .form__fields__names{
+    .form__fields__first-name {
       grid-column: 1/-1;
     }
 
-    .last-name {
+    .form__fields__last-name {
       grid-column: 1/-1;
     }
   }
 }
 
-.additional-info {
+.form__additional-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  .salary-expectations {
+  .form__salary-expectations {
     grid-column: 1;
   }
 
-  .availability {
+  .form__availability {
     grid-column: 2;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .additional-info {
-    .salary-expectations {
+  .form__additional-info {
+    .form__salary-expectations {
       grid-column: 1/-1;
     }
 
-    .availability {
+    .form__availability {
       grid-column: 1/-1;
     }
   }
@@ -436,8 +436,8 @@ footer {
   @include oFormsRadioCheckboxFeatures();
 }
 
-.fields .upload-button,
-.fields .submit-button {
+.form__fields .form__upload-button,
+.form__fields .form__submit-button {
   @include oButtons($size: big, $theme: primary);
 }
 
@@ -550,7 +550,7 @@ label {
   color: oColorsGetPaletteColor('white-80');
 }
 
-.fields {
+.form__fields {
   .o-forms__label {
     @include oTypographySansBold($scale: 0);
     color: oColorsGetPaletteColor('black-80');
@@ -575,12 +575,12 @@ label {
     color: oColorsGetPaletteColor('black-80');
   }
 
-  .upload-button {
+  .form__upload-button {
     @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
   }
 
-  .submit-button {
+  .form__submit-button {
     @include oTypographySans($scale: 0);
     color: oColorsGetPaletteColor('white-80');
   }
@@ -1025,49 +1025,49 @@ label {
 
 // Form
 
-.name {
-  .first-name {
+.form__fields__names{
+  .form__fields__first-name {
     margin-right: 10px;
   }
 
-  .last-name {
+  .form__fields__last-name {
     margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .name {
+  .form__fields__names{
     display: block;
 
-    .first-name {
+    .form__fields__first-name {
       margin-right: 0;
     }
 
-    .last-name {
+    .form__fields__last-name {
       margin-left: 0;
     }
   }
 }
 
-.additional-info {
-  .salary-expectations {
+.form__additional-info {
+  .form__salary-expectations {
     margin-right: 10px;
   }
 
-  .availability {
+  .form__availability {
     margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .additional-info {
+  .form__additional-info {
     display: block;
 
-    .salary-expectations {
+    .form__salary-expectations {
       margin-right: 0;
     }
 
-    .availability {
+    .form__availability {
       margin-left: 0;
     }
   }
@@ -1188,7 +1188,7 @@ footer {
   }
 }
 
-.fields {
+.form__fields {
   padding: 30px;
 
   .o-forms__label {
@@ -1200,13 +1200,13 @@ footer {
     margin-bottom: 1rem;
   }
 
-  .upload-button {
+  .form__upload-button {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
   }
 
-  .upload-file {
+  .form__upload-file {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -1215,7 +1215,7 @@ footer {
     z-index: -1;
   }
 
-  .submit-button {
+  .form__submit-button {
     margin-bottom: 2rem;
   }
 }

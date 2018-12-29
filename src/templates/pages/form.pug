@@ -12,15 +12,15 @@ html(lang="en")
             main.form__container
                 .form
                     form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
-                        .fields
+                        .form__fields
                             .invisible
                                 label(for="role") Applied for position
                                 input(type="text", id="role", name="role")
-                            .name
-                                .first-name
+                            .form__fields__names
+                                .form__fields__first-name
                                     label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
                                     input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
-                                .last-name
+                                .form__fields__last-name
                                     label.o-forms__label(aria-describedby="text-box-info", for="last-name") Last name
                                     input.o-forms__text(type="text", id="last-name", placeholder="Last name", name="last-name" required)
 
@@ -39,8 +39,8 @@ html(lang="en")
                                     label.o-forms__label(for="sofia") Sofia
 
                             span Attach CV/Resume
-                            label.upload-button(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
-                            input.upload-file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
+                            label.form__upload-button(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
+                            input.form__upload-file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
 
                             label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
                             input.o-forms__text(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
@@ -52,15 +52,15 @@ html(lang="en")
                                     label.o-forms__label(for="contract") Contract
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
                                     label.o-forms__label(for="permanent") Permanent
-                            .additional-info
-                                .salary-expectations
+                            .form__additional-info
+                                .form__salary-expectations
                                     label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations (in local currency)
                                     input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations in local currency", name="salary" required)
-                                .availability
+                                .form__availability
                                     label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
                                     input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
-                            button.submit-button(type="submit", id="submit-application") Submit
+                            button.form__submit-button(type="submit", id="submit-application") Submit
     include ../partials/footer.pug
 script(type="text/javascript")
     include ../../scripts/script.js
