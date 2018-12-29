@@ -14,7 +14,7 @@
     },
     "culture": {
         "title": "Express yourself",
-        "text": "The FT’s not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
+        "text": "The FT is not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
         "cards": [
             {
                 "image": "autonomy.png",
@@ -65,7 +65,7 @@
             },
             {
                 "image": "Robin.png",
-                "caption": "Robin, Interactive Data Journalist"
+                "caption": "Robin, Head of Digital Delivery"
             }
         ]
     },
@@ -140,7 +140,7 @@
                         "responsibilities": {
                             "title": "You will work on…",
                             "list": [
-                                "New features for FT.com and our presentation layer applications / services using modern web technologies.",
+                                "New features for FT.com, our iOS and Android apps and our presentation layer applications / services using modern web technologies.",
                                 "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
                                 "Maintain our high standards for web performance, security and accessibility.",
                                 "Help improve the way we work and the tools we use."
@@ -170,6 +170,7 @@
                                 "RESTful APIs (third-party APIs)",
                                 "Elasticsearch; Neo4j; Redis; GraphQL",
                                 "Handlebars; Sass; Webpack; Preact",
+                                "Swift; Java; Kotlin",
                                 "Fastly and VCL",
                                 "GitHub; CircleCI; Sentry",
                                 "Graphite; Grafana, Splunk",
@@ -549,7 +550,7 @@
                     "title": "Description",
                     "about": [
                         "It takes a cutting edge technology stack to provide the foundation for the cutting edge journalism that the Financial Times is renowned for. Keeping our users - customers and developers - safe is paramount across our diverse technology portfolio of platforms, products and services.",
-                        "We’re looking for a skilled developer with a keen interest in security to help us deliver the tooling, practices and processes that keep our systems and applications safe across a wide platform of SaaS and PaaS, and the latest architectural concepts such as containerised microservices and serverless.",
+                        "We’re looking for a skilled engineer with a keen interest in security to help us deliver the tooling, practices and processes that keep our systems and applications safe across a wide platform of SaaS and PaaS, and the latest architectural concepts such as containerised microservices and serverless.",
                         "We’re committed to equality and diversity in the tech industry, and want to encourage applications from underrepresented backgrounds. We consider part-time roles and flexible working hours to help support this.",
                         "This is an exciting opportunity to work across Technology and the wider business developing solutions that help our staff and customers work safely, including API development and automation of vulnerability, intrusion and compliance bots."
                     ],
