@@ -687,12 +687,17 @@ footer {
   margin-bottom: 0;
 }
 
+.intro__message__text {
+  margin: 0.3em auto 2em auto;
+}
+
+.intro-message__text {
+  margin-bottom: 3em;
+}
+
 .intro-message__text,
 .intro__message__text {
   max-width: 480px;
-  margin: auto;
-  margin-bottom: 2em;
-  margin-top: 0.3em;
 }
 
 .intro__message__logo {
