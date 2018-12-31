@@ -224,7 +224,13 @@ footer {
   .about,
   .culture,
   .people,
-  .benefits {
+  .benefits,
+  .quotes__wrapper,
+  .apply,
+  .intro-message,
+  .vacancy,
+  .live-vacancies,
+  .form__container {
     grid-template-columns: 20px 8fr 20px;
   }
 }
