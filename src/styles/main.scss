@@ -587,17 +587,25 @@ span {
   color: oColorsGetPaletteColor('white-80');
 }
 
-.o-footer-services__wrapper {
-  color: oColorsMix(slate, white, 20);
-}
+footer {
+  .o-footer-services__wrapper {
+    color: oColorsMix(slate, white, 20);
+  }
 
-.o-footer-services__links a {
-  color: oColorsMix(slate, white, 20);
-  border: none;
-}
+  span {
+    @include oTypographySansBold($scale: -1);
+    color: oColorsMix(slate, white, 20);
+    font-weight: normal;
+  }
 
-.o-footer-services__links a:hover {
-  color: oColorsMix(slate, white, 0);
+  .o-footer-services__links a {
+    color: oColorsMix(slate, white, 20);
+    border: none;
+  }
+  
+  .o-footer-services__links a:hover {
+    color: oColorsMix(slate, white, 0);
+  }
 }
 
 //////////////////////////////////////////////////////////
