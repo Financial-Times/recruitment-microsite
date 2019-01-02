@@ -56,7 +56,7 @@ body {
 // Layout
 //////////////////////////////////////////////////////////
 
-.content {
+.content, .quotes {
   display: grid;
   grid-template-columns:
     minmax(20px, 1fr)
@@ -65,7 +65,7 @@ body {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .content {
+  .content, .quotes {
     grid-template-columns:
       minmax(0, 1fr)
       minmax(auto, $content-width)
@@ -74,8 +74,8 @@ body {
 }
 
 header,
-.quotes,
 .video,
+.quotes,
 .apply,
 footer {
   grid-column: 1/-1;
@@ -91,6 +91,7 @@ footer {
 .benefits,
 .intro-message,
 .vacancy,
+.intro-message__text,
 .live-vacancies,
 .form,
 .vacancy__table,
@@ -100,7 +101,6 @@ footer {
 }
 
 .intro,
-.quotes__wrapper,
 .apply,
 .intro-message,
 .about,
@@ -114,21 +114,22 @@ footer {
   grid-template-columns: 1fr 8fr 1fr;
 }
 
-.intro,
-.quotes__wrapper,
-{
+.intro {
   grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
-}
-
-.intro-message {
-  grid-template-rows: auto auto;
 }
 
 .about,
 .culture,
 .people,
-.benefits {
+.benefits,
+.intro-message {
   grid-template-rows: auto auto;
+}
+
+.quotes__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: auto;
 }
 
 .intro__heritage-logo__container,
@@ -140,12 +141,18 @@ footer {
 }
 
 .intro__message__container,
-.intro-message__container,
-.quotes__quote__container {
+.intro-message__container {
   grid-row: 2;
   grid-column: 2;
 }
 
+.quotes__quote__container {
+  grid-row: 1/-1;
+  grid-column: 2;
+  align-self: center;
+}
+
+.intro-message__heading,
 .apply__wrapper {
   grid-column: 1/-1;
 }
@@ -153,14 +160,6 @@ footer {
 .intro-message__container {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
-}
-
-.intro-message__heading {
-  grid-column: 1/-1;
-}
-
-.intro-message__text {
-  grid-column: 2;
 }
 
 @media only screen and (max-width: $breakpoint-m) {

@@ -34,14 +34,13 @@ html(lang="en")
                         h4.culture__card__heading #{card.title}
                         p.culture__card__text #{card.text}
         section.quotes
-            .content
-                .quotes__wrapper
-                    .quotes__quote__container.fade-in-animation
-                        h1.quotes__quote__heading #{quotes[0].quote}
-                        hr.quotes__quote__divider
-                        p.quotes__quote__text #{quotes[0].author}
-                    .quotes__heritage-logo__container
-                        img.quotes__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
+            .quotes__wrapper
+                .quotes__quote__container.fade-in-animation
+                    h1.quotes__quote__heading #{quotes[0].quote}
+                    hr.quotes__quote__divider
+                    p.quotes__quote__text #{quotes[0].author}
+                .quotes__heritage-logo__container
+                    img.quotes__heritage-logo.fade-out-animation(src=`images/${intro.heritage_logo}`, alt=`${intro.heritage_logo}`, role="presentation")
         section.people
             .people__announcement
                 .people__announcement__section-line
