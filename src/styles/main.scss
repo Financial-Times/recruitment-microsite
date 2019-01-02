@@ -624,8 +624,7 @@ footer {
 .about__announcement__section-line,
 .culture__announcement__section-line,
 .people__announcement__section-line,
-.benefits__announcement__section-line,
-.live-vacancies__section-line {
+.benefits__announcement__section-line {
   border-top: 4px solid oColorsGetPaletteColor('claret-100');
 }
 
@@ -969,7 +968,8 @@ footer {
 
 // Openings page
 
-.vacancy__section-line {
+.vacancy__section-line,
+.live-vacancies__section-line {
   border-top: 2px solid oColorsGetPaletteColor('claret-100');
 }
 
