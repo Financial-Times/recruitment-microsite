@@ -508,7 +508,8 @@ label {
 }
 
 .vacancy__description__subheading,
-.vacancy__text--top-left--lefter {
+.vacancy__text--top-left--lefter,
+.vacancy__text--left {
   font-weight: 600;
 }
 
@@ -995,9 +996,12 @@ footer {
 }
 
 .vacancy__text--top-left--lefter,
-.vacancy__text--left {
-  margin-left: 10px;
-  margin-right: 10px;
+.vacancy__text--top-left--righter,
+.vacancy__text--left,
+.vacancy__description__text,
+.vacancy__description__subheading,
+.vacancy__description__list-item {
+  margin: 10px;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
