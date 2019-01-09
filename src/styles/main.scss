@@ -48,7 +48,7 @@ body {
   background-color: oColorsGetPaletteColor('slate');
 }
 
-.invisible {
+.form-fields__field--invisible {
   display: none;
 }
 
@@ -301,7 +301,7 @@ footer {
   .benefits__announcement {
     grid-column: 2/5;
   }
-  
+
   .about__announcement__section-line,
   .culture__announcement__section-line,
   .people__announcement__section-line,
@@ -326,48 +326,35 @@ footer {
   }
 }
 
-.form__fields__names{
+.form-fields__group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.form__fields__first-name {
+.form-fields__field--first {
   grid-column: 1;
 }
 
-.form__fields__last-name {
+.form-fields__field--last {
   grid-column: 2;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .form__fields__first-name {
-    grid-column: 1/-1;
-  }
-
-  .form__fields__last-name {
+  .form-fields__group--name {
     grid-column: 1/-1;
   }
 }
 
-.form__additional-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.form__salary-expectations {
+.form-fields__field--salary-expectations {
   grid-column: 1;
 }
 
-.form__availability {
+.form-fields__field--availability {
   grid-column: 2;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .form__salary-expectations {
-    grid-column: 1/-1;
-  }
-
-  .form__availability {
+  .form-fields__group--additional-info {
     grid-column: 1/-1;
   }
 }
@@ -404,7 +391,7 @@ footer {
   .vacancy__text--top-left--righter {
     grid-column: 2;
   }
-  
+
   .vacancy__text--top-left--lefter {
     grid-column: 1;
   }
@@ -443,8 +430,7 @@ footer {
   @include oFormsRadioCheckboxFeatures();
 }
 
-.form__upload-button,
-.form__submit-button {
+.form-fields__button {
   @include oButtons($size: big, $theme: primary);
 }
 
@@ -577,12 +563,7 @@ span {
   color: oColorsGetPaletteColor('black-80');
 }
 
-.form__upload-button {
-  @include oTypographySans($scale: 0);
-  color: oColorsGetPaletteColor('white-80');
-}
-
-.form__submit-button {
+.form-fields__button {
   @include oTypographySans($scale: 0);
   color: oColorsGetPaletteColor('white-80');
 }
@@ -602,7 +583,7 @@ footer {
     color: oColorsMix(slate, white, 20);
     border: none;
   }
-  
+
   .o-footer-services__links a:hover {
     color: oColorsMix(slate, white, 0);
   }
@@ -1041,44 +1022,40 @@ footer {
 
 // Form
 
-.form__fields__first-name {
+.form-fields__field--first {
   margin-right: 10px;
 }
 
-.form__fields__last-name {
+.form-fields__field--last {
   margin-left: 10px;
 }
 
-.form__salary-expectations {
+.form-fields__field--salary-expectations {
   margin-right: 10px;
 }
 
-.form__availability {
+.form-fields__field--availability {
   margin-left: 10px;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .form__fields__names {
+  .form-fields__group {
     display: block;
   }
 
-  .form__fields__first-name {
+  .form-fields__field--first {
     margin-right: 0;
   }
 
-  .form__fields__last-name {
+  .form-fields__field--last {
     margin-left: 0;
   }
 
-  .form__additional-info {
-    display: block;
-  }
-
-  .form__salary-expectations {
+  .form-fields__field--salary-expectations {
     margin-right: 0;
   }
 
-  .form__availability {
+  .form-fields__field--availability {
     margin-left: 0;
   }
 }
@@ -1193,7 +1170,7 @@ footer {
   background-color: oColorsGetPaletteColor('white');
 }
 
-.form__fields {
+.form-fields {
   padding: 30px;
 }
 
@@ -1206,13 +1183,13 @@ footer {
   margin-bottom: 1rem;
 }
 
-.form__upload-button {
+.form-fields__button--upload {
   margin-top: 1em;
   margin-bottom: 1.5em;
   width: 100%;
 }
 
-.form__upload-file {
+.form-fields__file {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -1221,7 +1198,7 @@ footer {
   z-index: -1;
 }
 
-.form__submit-button {
+.form-fields__button--submit {
   margin-bottom: 2rem;
 }
 
