@@ -158,14 +158,14 @@
                     "title": "Description",
                     "about": [
                         "We are a multi-disciplinary, co-located team within which we periodically rotate between teams.",
-                        "We value transparency, accountability, shared responsibility and teamwork. We’re listen to our users real needs and the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
+                        "We value transparency, accountability, shared responsibility and teamwork. We listen to our users real needs and the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
                         "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tech we use and site reliability."
                     ],
                     "details": {
                         "responsibilities": {
-                            "title": "You will work on…",
+                            "title": "What you’ll do…",
                             "list": [
-                                "New features for FT.com, our iOS and Android apps and our presentation layer applications / services using modern web technologies.",
+                                "Work on new features for FT.com, our iOS and Android apps, and our presentation layer applications / services using modern web technologies.",
                                 "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
                                 "Maintain our high standards for web performance, security and accessibility.",
                                 "Help improve the way we work and the tools we use."
@@ -182,7 +182,7 @@
                                 "You pay attention to detail and have common sense.",
                                 "You love being collaborative.",
                                 "You enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team.",
-                                "You love the web, have an interest performance and accessibility.",
+                                "You love the web, and have an interest performance and accessibility.",
                                 "You have an understanding of design and UX principles.",
                                 "You like to avoid frameworks and only use them when necessary and right for the use case."
                             ]
