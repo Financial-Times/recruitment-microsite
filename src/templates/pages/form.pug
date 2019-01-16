@@ -4,30 +4,29 @@ html(lang="en")
     body
         include ../partials/header.pug
         .content
-            //- TODO: Figure out why VO is not reading the header text
-            section.left-aligned-header.chapter
-                .header-container
-                    h1 Tell us about yourself
-                    p Your perspective will help us make great things happen.
-            main.chapter
+            section.intro-message
+                .intro-message__container
+                    h1.intro-message__heading Tell us about yourself
+                    p.intro-message__text Your perspective will help us make great things happen.
+            main.form__container
                 .form
                     form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
-                        .fields
-                            .invisible
+                        .form-fields
+                            .form-fields__field--invisible
                                 label(for="role") Applied for position
                                 input(type="text", id="role", name="role")
-                            .name
-                                .first-name
+
+                            .form-fields__group.form-fields__group--name
+                                .form-fields__field.form-fields__field--first
                                     label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
                                     input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
-                                .last-name
+                                .form-fields__field.form-fields__field--last
                                     label.o-forms__label(aria-describedby="text-box-info", for="last-name") Last name
                                     input.o-forms__text(type="text", id="last-name", placeholder="Last name", name="last-name" required)
 
                             label.o-forms__label(aria-describedby="text-box-info", for="email") Email address
                             input.o-forms__text(type="text", id="email", placeholder="Enter your email address", name="email" required)
 
-                            //- TODO: Make location a required field
                             fieldset.o-forms
                                 legend.o-forms__label Location
                                 .o-forms__group.o-forms__group--inline
@@ -39,8 +38,8 @@ html(lang="en")
                                     label.o-forms__label(for="sofia") Sofia
 
                             span Attach CV/Resume
-                            label.upload-button(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
-                            input.upload-file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
+                            label.form-fields__button.form-fields__button--upload(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
+                            input.form-fields__file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
 
                             label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
                             input.o-forms__text(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
@@ -52,15 +51,16 @@ html(lang="en")
                                     label.o-forms__label(for="contract") Contract
                                     input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
                                     label.o-forms__label(for="permanent") Permanent
-                            .additional-info
-                                .salary-expectations
+
+                            .form-fields__group.form-fields__group--additional-info
+                                .form-fields__field.form-fields__field--salary-expectations
                                     label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations (in local currency)
                                     input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations in local currency", name="salary" required)
-                                .availability
+                                .form-fields__field.form-fields__field--availability
                                     label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
                                     input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
-                            button.submit-button(type="submit", id="submit-application") Submit
+                            button.form-fields__button.form-fields__button--submit(type="submit", id="submit-application") Submit
     include ../partials/footer.pug
 script(type="text/javascript")
     include ../../scripts/script.js

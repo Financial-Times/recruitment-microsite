@@ -5,51 +5,50 @@ html(lang="en")
     .openings
         include ../partials/header.pug
     .content
-        section.left-aligned-header.chapter
-            .header-container
-                h1 Apply today
-                p Below are the roles we are constantly on the look out for, if you like what you see, get in contact. 
+        section.intro-message
+            .intro-message__container
+                h1.intro-message__heading Apply today
+                p.intro-message__text Below are the roles we are constantly on the look out for, if you like what you see, get in contact. 
         each opening in openings
             section.vacancy
-                .heading
-                    input.hidden-input(id=`${opening.id}` type="checkbox")
-                    .section-line
-                    label(for=`${opening.id}`) #{opening.title}
-                        i
-                    .table
-                        .section-header
-                        .left.top
-                            p.bolder.lefter #{opening.details.level.title}
-                            p.righter #{opening.details.level.text}
-                        .right.top
-                            p.bolder.lefter #{opening.details.profession.title}
-                            p.righter #{opening.details.profession.text}
-                        hr.not-on-mobile-2
-                        .left.top
-                            p.bolder.lefter #{opening.details.type.title}
-                            p.righter  #{opening.details.type.text}
-                        .right.top
-                            p.bolder.lefter #{opening.details.location.title}
-                            p.righter #{opening.details.location.text}
-                        hr
-                        .left
-                            p.bolder #{opening.details.description.title}
-                        .right
-                            .description
+                .vacancy__heading
+                    input.vacancy__hidden-input(id=`${opening.id}` type="checkbox")
+                    .vacancy__section-line
+                    label.vacancy__label(for=`${opening.id}`) #{opening.title}
+                        i.vacancy__i
+                    .vacancy__table
+                        .vacancy__section-header
+                        .vacancy__text--top-left
+                            p.vacancy__text--top-left--lefter #{opening.details.level.title}
+                            p.vacancy__text--top-left--righter #{opening.details.level.text}
+                        .vacancy__text--top-right
+                            p.vacancy__text--top-left--lefter #{opening.details.profession.title}
+                            p.vacancy__text--top-left--righter #{opening.details.profession.text}
+                        hr.vacancy__table-section-line.not-on-mobile
+                        .vacancy__text--top-left
+                            p.vacancy__text--top-left--lefter #{opening.details.type.title}
+                            p.vacancy__text--top-left--righter  #{opening.details.type.text}
+                        .vacancy__text--top-right
+                            p.vacancy__text--top-left--lefter #{opening.details.location.title}
+                            p.vacancy__text--top-left--righter #{opening.details.location.text}
+                        hr.vacancy__table-section-line
+                        p.vacancy__text--left #{opening.details.description.title}
+                        .vacancy__text--right
+                            .vacancy__description
                                 if opening.details.description.about
                                     each line in opening.details.description.about
-                                        p #{line}
+                                        p.vacancy__description__text #{line}
                                 each section in opening.details.description.details
-                                    p.bolder #{section.title}
-                                    .list
-                                        ul
+                                    p.vacancy__description__subheading #{section.title}
+                                    .vacancy__description__list
+                                        ul.vacancy__description__list--ul
                                             each line in section.list
-                                                li #{line}
-                                .buttons
+                                                li.vacancy__description__list-item #{line}
+                                .vacancy__buttons
                                     form(action=`form.html#${opening.id}`)
-                                        button Express an interest
-        section.vacancy(id="current-openings")
-            .live-vacancies
-                .section-line
-                a(href="https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be" target="_blank") Live vacancies
+                                        button.vacancy__button Express an interest
+        section.live-vacancies(id="current-openings")
+            .live-vacancies__wrapper
+                .live-vacancies__section-line
+                a.live-vacancies__link(href="https://ft.wd3.myworkdayjobs.com/FT_External_Careers/9/refreshFacet/318c8bb6f553100021d223d9780d30be" target="_blank") Live vacancies
     include ../partials/footer.pug

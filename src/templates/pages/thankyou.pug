@@ -4,13 +4,12 @@ html(lang="en")
   body
     include ../partials/header.pug
     .content
-        section.central-header
-            .header-container
-                h1 Thank you
-                hr
-                p A member of our team will be in contact shortly. #[br]In the meantime feel free to perform one of the following actions:
-                .thank-you-buttons
-                    a(href="https://www.ft.com/" role="button" target="_blank") Use our website
-                    a(href="https://medium.com/ft-product-technology" role="button" target="_blank") Read our blog
-                    a(href="https://github.com/Financial-Times" role="button" target="_blank") Visit our GitHub
-                    a(href="https://www.twitter.com/lifeatFT" role="button" target="_blank") Follow our Twitter
+        section.intro
+            .intro__message__container
+                h1.intro__message__heading Thank you
+                p.intro__message__text A member of our team will be in contact shortly. #[br]In the meantime feel free to perform one of the following actions:
+                .intro__thank-you-buttons
+                    a.intro__thank-you-button(href="https://www.ft.com/" role="button" target="_blank") Use our website
+                    a.intro__thank-you-button(href="https://medium.com/ft-product-technology" role="button" target="_blank") Read our blog
+                    a.intro__thank-you-button(href="https://github.com/Financial-Times" role="button" target="_blank") Visit our GitHub
+                    a.intro__thank-you-button(href="https://www.twitter.com/lifeatFT" role="button" target="_blank") Follow our Twitter

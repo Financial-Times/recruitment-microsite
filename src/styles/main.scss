@@ -26,12 +26,16 @@ $content-width: 1150px;
 $one-third-card-width: 280px;
 
 // Breakpoints
+$breakpoint-vs: 360px;
 $breakpoint-s: 420px;
 $breakpoint-m: 780px;
 $breakpoint-l: 960px;
 $breakpoint-vl: 1340px;
 
-// Generic
+//////////////////////////////////////////////////////////
+// Base
+//////////////////////////////////////////////////////////
+
 html,
 body {
   min-height: 100vh;
@@ -44,12 +48,15 @@ body {
   background-color: oColorsGetPaletteColor('slate');
 }
 
-body, body a {
-  color: oColorsGetPaletteColor('white-80');
+.form-fields__field--invisible {
+  display: none;
 }
 
-// Grid
-.content {
+//////////////////////////////////////////////////////////
+// Layout
+//////////////////////////////////////////////////////////
+
+.content, .quotes {
   display: grid;
   grid-template-columns:
     minmax(20px, 1fr)
@@ -58,7 +65,7 @@ body, body a {
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .content {
+  .content, .quotes {
     grid-template-columns:
       minmax(0, 1fr)
       minmax(auto, $content-width)
@@ -66,935 +73,510 @@ body, body a {
   }
 }
 
-header, .quotes, .video, .apply, footer {
+header,
+.video,
+.quotes,
+footer {
   grid-column: 1/-1;
 }
 
-.video video, h2,  {
+.video__content,
+.menu__container,
+.intro,
+.about,
+.culture,
+.quotes__wrapper,
+.people,
+.benefits,
+.intro-message,
+.apply,
+.vacancy,
+.intro-message__text,
+.live-vacancies,
+.form,
+.vacancy__table,
+.live-vacancies__wrapper,
+.form__container {
   grid-column: 2;
 }
 
-.menu-container {
-  grid-column: 2;
-  width: 100%;
-}
-
-.header-container {
-  padding-top: 5vh;
-}
-
-.left-aligned-header .header-container {
-  display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
-
-  h1 {
-    grid-column: 1/-1;
-  }
-
-  p {
-    grid-column: 2;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .left-aligned-header .header-container {
-    p {
-      grid-column: 1/-1;
-    }
-  }
-}
-
-.chapter {
-  grid-column: 2;
+.intro,
+.apply,
+.intro-message,
+.about,
+.culture,
+.people,
+.benefits,
+.vacancy,
+.live-vacancies,
+.form__container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
+}
+
+.intro {
+  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
+}
+
+.about,
+.culture,
+.people,
+.benefits,
+.intro-message {
   grid-template-rows: auto auto;
+}
 
-  .announcement {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 0.3em minmax(4em, 1fr) auto;
+.quotes__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: auto;
+}
 
-    margin-bottom: 2em;
+.intro__heritage-logo__container,
+.quotes__heritage-logo__container {
+  grid-row: 1/-1;
+  grid-column: 2;
+  display: grid;
+  align-content: center;
+}
 
-    .section-line {
-      grid-column: 1/-1;
-      grid-row: 1;
-      align-self: end;
-    }
+.intro__message__container,
+.intro-message__container {
+  grid-row: 2;
+  grid-column: 2;
+}
 
-    h2 {
-      grid-column: 1/-1;
-      grid-row: 2/-1;
-    }
+.quotes__quote__container {
+  grid-row: 1/-1;
+  grid-column: 2;
+  align-self: center;
+}
 
-    p {
-      grid-column: 2;
-      grid-row: 3/-1;
-    }
-  }
+.intro-message__heading,
+.apply__wrapper {
+  grid-column: 1/-1;
+}
 
-  .question {
-    grid-column: 2;
-    grid-row: 1;
-  }
+.intro-message__container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+}
 
-  .quote {
-    grid-column: 2;
-    grid-row: 1/-1;
-    margin-top: 6em;
-    margin-bottom: 6em;
-  }
-
-  .culture-cards, .benefits-cards, .interviews {
+@media only screen and (max-width: $breakpoint-m) {
+  .intro-message__text {
     grid-column: 1/-1;
-    grid-row: 2;
-    display: grid;
-    grid-gap: 16px;
-    justify-content: center;
-
-    margin-bottom: 5rem;
-  }
-
-  .culture-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .benefits-cards, .interviews {
-    grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
-    grid-template-rows: repeat(auto-fill, 1fr);
-  }
-
-  .header-container {
-    grid-column: 2;
   }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter {
-    .culture-cards, .benefits-cards, .interviews {
-      margin-bottom: 1rem;
-    }
-  }
+.benefits__cards,
+.people__interviews,
+.culture__cards {
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.benefits__cards,
+.people__interviews {
+  grid-template-columns: repeat(auto-fill, minmax($one-third-card-width, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+.culture__cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about__announcement,
+.culture__announcement,
+.people__announcement,
+.benefits__announcement {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 0.3em minmax(4em, 1fr) auto;
+}
+
+.about__announcement__section-line,
+.culture__announcement__section-line,
+.people__announcement__section-line,
+.benefits__announcement__section-line {
+  grid-column: 1/-1;
+  grid-row: 1;
+  align-self: end;
+}
+
+.about__announcement__heading,
+.culture__announcement__heading,
+.people__announcement__heading,
+.benefits__announcement__heading {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
+
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__announcement__text {
+  grid-column: 2;
+  grid-row: 3/-1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .chapter {
+  .intro,
+  .about,
+  .culture,
+  .people,
+  .benefits,
+  .quotes__wrapper,
+  .apply,
+  .intro-message,
+  .vacancy,
+  .live-vacancies,
+  .form__container {
     grid-template-columns: 20px 8fr 20px;
   }
 }
 
-.central-header {
+.vacancy__heading {
   grid-column: 2;
-}
-
-.central-header {
+  grid-row: 1;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 0.66fr minmax(16em, 5fr) 1fr;
-
-  .header-container, .heritage-logo-container {
-    grid-column: 2;
-  }
-
-  .header-container {
-    grid-row: 2;
-  }
-
-  .heritage-logo-container {
-    grid-row: 1/-1;
-  }
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 0.3em 4em auto auto auto auto;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter .header-container {
-    grid-column: 2;
-  }
-
-  .epigraph {
-    h2 {
-      grid-column: 2/4;
-    }
-  }
+.vacancy__section-line {
+  grid-column: 1/-1;
+  align-self: end;
 }
 
-.vacancy {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-
-  .heading {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 0.3em 4em auto auto auto auto;
-
-    .section-line {
-      grid-column: 1/-1;
-      align-self: end;
-    }
-
-    h2, label {
-      grid-column: 1/-1;
-      display: grid;
-      grid-template-columns: 5fr 1fr;
-      align-self: center;
-    }
-
-    i {
-      grid-column: 2;
-      justify-self: end;
-    }
-
-    p {
-      grid-column: 2/-1;
-      align-self: start;
-    }
-
-    a {
-      grid-column: 1/-1;
-      margin-top: 2em;
-    }
-
-    .table {
-      grid-column: 1/-1;
-    }
-  }
-
-  h2 {
-    grid-column: 2;
-  }
-}
-
-.people {
-  .announcement h2 {
-    grid-column: 1/-1;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter {
-    .culture-cards, .benefits-cards {
-      grid-column: 1/-1;
-
-      .culture-card {
-        margin-top: 120px;
-        display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-
-        img, h4, p {
-          grid-column: 2;
-        }
-
-        img {
-          margin-top: -120px;
-        }
-
-        h4 {
-          margin: 0;
-        }
-
-        p {
-          margin-top: 0;
-          margin-bottom: 1em;
-        }
-      }
-    }
-
-    .announcement {
-      grid-column: 2/5;
-
-      .section-line {
-        grid-column: 1;
-      }
-
-      h2 {
-        grid-column: 1/-1;
-        grid-row: 2/3;
-      }
-
-      p {
-        grid-column: 1/-1;
-        grid-row: 3/-1;
-      }
-    }
-
-    .culture-cards {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-    }
-  }
-
-  .vacancy {
-    .heading, h2 {
-      grid-column: 2;
-
-      .section-line, h2, p, a {
-        grid-column: 1/-1;
-      }
-    }
-  }
-}
-
-.name {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  .first-name {
-    grid-column: 1;
-    margin-right: 10px;
-  }
-
-  .last-name {
-    grid-column: 2;
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .name {
-    display: block;
-
-    .first-name {
-      grid-column: 1/-1;
-      margin-right: 0;
-    }
-
-    .last-name {
-      grid-column: 1/-1;
-      margin-left: 0;
-    }
-  }
-}
-
-.additional-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  .salary-expectations {
-    grid-column: 1;
-    margin-right: 10px;
-  }
-
-  .availability {
-    grid-column: 2;
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .additional-info {
-    display: block;
-
-    .salary-expectations {
-      grid-column: 1/-1;
-      margin-right: 0;
-    }
-
-    .availability {
-      grid-column: 1/-1;
-      margin-left: 0;
-    }
-  }
-}
-
-// Interviews
-.interview {
-  position: relative;
-  text-align: center;
-  max-width: 100vw;
-
-  img {
-    // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
-    display: block;
-    width: 100%;
-    will-change: filter;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: -webkit-filter 1s;
-    transition: filter 1s;
-  }
-
-  p {
-    opacity: 0;
-    transition: opacity 1s;
-
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0;
-    pointer-events: none;
-
-    @include oTypographySans($scale: 1);
-
-    // shading
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
-    padding-bottom: 6px;
-    padding-top: 6px;
-    bottom: 0;
-  }
-}
-
-.interview:hover {
-  img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  p {
-    opacity: 1;
-    transition: opacity 1s;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .chapter .interviews {
-    grid-column: 2;
-  }
-}
-
-// Intro
-.central-header {
-  text-align: center;
-  padding: 1em;
-
-  .central-logo {
-    max-width: 350px;
-    max-width: 90vw;
-    margin: 0 auto 1em auto;
-  }
-
-  h1 {
-    max-width: 800px;
-    margin: auto;
-  }
-
-  p {
-    max-width: 480px;
-    margin: auto;
-    margin-bottom: 2em;
-  }
-
-  .thank-you-buttons a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-    margin-top: 1em;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 11em;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .central-header {
-    .central-logo {
-      width: 200px;
-    }
-
-    .heritage-logo-container {
-      top: 35vh;
-    }
-  }
-}
-
-.heritage-logo-container {
-  width: 100%;
-  display: grid;
-  align-content: center;
-
-  .heritage-logo {
-    max-width: 100%;
-    max-height: 30vh;
-    margin: auto;
-  }
-}
-
-.quotes {
+.vacancy__label {
   grid-column: 1/-1;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 5fr 1fr;
+  align-self: center;
+}
 
-  .chapter, .heritage-logo-container {
-    grid-row: 1;
+.vacancy__i {
+  grid-column: 2;
+  justify-self: end;
+}
+
+.vacancy__table {
+  grid-column: 1/-1;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .culture__cards {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .culture__card {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  .culture__card__image,
+  .culture__card__heading,
+  .culture__card__text {
+    grid-column: 2;
+  }
+
+  .benefits__cards {
+    grid-column: 1/-1;
+  }
+
+  .people__interviews {
+    grid-column: 2;
+  }
+
+  .about__announcement,
+  .culture__announcement,
+  .people__announcement,
+  .benefits__announcement {
+    grid-column: 2/5;
+  }
+
+  .about__announcement__section-line,
+  .culture__announcement__section-line,
+  .people__announcement__section-line,
+  .benefits__announcement__section-line {
     grid-column: 1;
   }
 
-  .quotes {
+  .about__announcement__heading,
+  .culture__announcement__heading,
+  .people__announcement__heading,
+  .benefits__announcement__heading {
     grid-column: 1/-1;
+    grid-row: 2/3;
+  }
 
-    .chapter {
-      grid-column: 2;
-    }
+  .about__announcement__text,
+  .culture__announcement__text,
+  .people__announcement__text,
+  .benefits__announcement__text {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
   }
 }
 
-.central-header, .left-aligned-header {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 400;
+.form-fields__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-fields__field--first {
+  grid-column: 1;
+}
+
+.form-fields__field--last {
+  grid-column: 2;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .form-fields__group--name {
+    grid-column: 1/-1;
+  }
+}
+
+.form-fields__field--salary-expectations {
+  grid-column: 1;
+}
+
+.form-fields__field--availability {
+  grid-column: 2;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .form-fields__group--additional-info {
+    grid-column: 1/-1;
+  }
+}
+
+.live-vacancies__wrapper {
+  grid-column: 2;
+}
+
+.vacancy__table {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+
+.vacancy__text--top-left {
+  grid-column: 1;
+}
+
+.vacancy__text--top-right {
+  grid-column: 2;
+}
+
+.vacancy__table-section-line {
+  grid-column: 1/-1;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy__text--top-left,
+  .vacancy__text--top-right {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
-  p {
-    @include oTypographySans($scale: 1);
+  .vacancy__text--top-left--righter {
+    grid-column: 2;
   }
+
+  .vacancy__text--top-left--lefter {
+    grid-column: 1;
+  }
+
+  .vacancy__text--left,
+  .vacancy__text--right {
+    grid-column: 1/-1;
+  }
+}
+
+//////////////////////////////////////////////////////////
+// Mixins
+//////////////////////////////////////////////////////////
+
+.intro__thank-you-button,
+.live-vacancies__link,
+.apply__link,
+.intro__message__link,
+.vacancy__button {
+  @include oButtons('big');
+  @include oButtonsTheme('primary');
+  @include oButtonsTheme('inverse');
+}
+
+.o-header-services {
+  @include oHeaderServices($class: 'o-header-services');
+}
+
+footer {
+  @include oFooterServicesBase($class: 'o-footer-services');
+}
+
+.form {
+  @include oFormsBaseFeatures();
+  @include oFormsWideFeature();
+  @include oFormsRadioCheckboxFeatures();
+}
+
+.form-fields__button {
+  @include oButtons($size: big, $theme: primary);
+}
+
+//////////////////////////////////////////////////////////
+// Typography
+//////////////////////////////////////////////////////////
+
+body, body a {
+  color: oColorsGetPaletteColor('white-80');
+}
+
+.people__interviews__interview__text,
+.intro-message__text,
+.intro__message__text,
+.quotes__quote__text,
+.culture__card__text {
+  @include oTypographySans($scale: 1);
+}
+
+.quotes__quote__text {
+  text-align: center;
+}
+
+.intro-message__heading,
+.intro__message__heading {
+  @include oTypographyDisplay($scale: 8);
+  font-weight: 400;
 }
 
 @media only screen and (max-width: $breakpoint-s) {
-  .header-container h1 {
+  .intro-message__heading,
+  .intro__message__heading {
     @include oTypographyDisplay($scale: 6);
   }
 }
 
-.left-aligned-header {
-  h1 {
-    margin-bottom: 0;
-  }
-
-  p {
-    margin-bottom: 3em;
-  }
+.o-header-services .o-header-services__product-name {
+  @include oTypographySans($scale: 1);
 }
 
-.epigraph {
-  h2 {
-    @include oTypographySansBold($scale: 2);
-    margin-bottom: 1.3em;
-  }
-}
-
-.vacancy .live-vacancies {
-  grid-column: 2;
-  margin-bottom: 3em;
-
-  a {
-    margin-top: 7em;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .vacancy .live-vacancies {
-    grid-column: 2;
-  }
-}
-
-// Header
-.o-header-services {
-  @include oHeaderServices($class: 'o-header-services');
-  background-color: black;
-  width: 100%;
-
-  .o-header-services__product-name {
-    @include oTypographySans($scale: 1);
-  }
-
-  .logo-text {
-    font-weight: 400;
-  }
-
-  .o-header-services__ftlogo {
-    margin: 8px 8px 8px 0;
-
-    background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
-  }
-}
-
-// Video
-.video {
-  margin-bottom: 2em;
-}
-
-.video-wrapper {
-  background-color: oColorsGetPaletteColor('claret-100');
-  position: relative;
-
-  video {
-    width: 100%;
-    margin-top: -2px;
-  }
-
-  video::-webkit-media-controls-overlay-play-button {
-    display: none;
-  }
-
-  .play-button {
-    background-image: url(../images/play_button.png);
-    background-size: cover;
-    width: 107px;
-    height: 107px;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    margin: auto;
-  }
-}
-
-// Chapter
-// NOTE: chapter is the on front page, vacancy is the one on openings page - these naming is confusing =) - so maybe should be renamed
-.announcement .section-line {
-  border-top: 4px solid oColorsGetPaletteColor('claret-100');
-}
-
-.vacancy .section-line {
-  border-top: 2px solid oColorsGetPaletteColor('claret-100');
-}
-
-.vacancy .heading a {
-  margin-bottom: 3em;
-}
-
-h2, label {
+.about__announcement__heading,
+.culture__announcement__heading,
+.people__announcement__heading,
+.benefits__announcement__heading,
+label {
   @include oTypographySans($scale: 4);
   font-weight: 400;
 }
 
-.announcement, .vacancy {
-  p, li {
-    @include oTypographySans($scale: 0);
-    margin-right: 2em;
-  }
-
-  a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-
-    width: 230px;
-    height: 2em;
-  }
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__card__text,
+.vacancy {
+  @include oTypographySans($scale: 0);
 }
 
-.quotes hr {
-  width: 60px;
-  height: 4px;
-  margin-bottom: 1.3em;
-  margin-top: 1.3em;
-  background-color: oColorsGetPaletteColor('claret-100');
-  border: none;
-}
-
-.central-header hr {
-  border: none;
-}
-
-.table {
-  display: grid;
-  grid-column: 2;
-  grid-template-columns: 2fr 6fr;
-  overflow: hidden;
-
-  div {
-    p, li {
-      margin: 10px;
-    }
-
-    .bolder {
-      @include oTypographySans($scale: 0);
-      font-weight: 600;
-    }
-
-    .mini-header {
-      @include oTypographySansBold($scale: 1);
-      margin-top: 2em;
-    }
-  }
-
-  .description .list {
-    margin-top: 1em;
-
-    ul {
-      list-style-type: square;
-      list-style-position: outside;
-    }
-  }
-
-  .left {
-    @include oTypographySans($scale: 0);
-    grid-column: 1;
-    display: flex;
-  }
-
-  .right {
-    @include oTypographySans($scale: 0);
-    grid-column: 2;
-    display: flex;
-  }
-
-  .description {
-    display: block;
-  }
-
-  .section-header {
-    @include oTypographySans($scale: 0);
-    margin-bottom: 0.6rem;
-  }
-
-  hr {
-    grid-column: 1/-1;
-    width: 100%;
-    height: 1px;
-    background-color: oColorsGetPaletteColor('white-80');
-  }
-
-  .buttons {
-    display: flex;
-
-    button {
-      @include oButtons('big');
-      @include oButtonsTheme('primary');
-      @include oButtonsTheme('inverse');
-
-      margin: 10px;
-      margin-top: 1em;
-    }
-  }
-}
-
-// Vacancies animation
-// https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
-
-.vacancy label i, .vacancy i  {
-  @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
-}
-
-.vacancy .hidden-input {
-  display: none;
-}
-
-.vacancy .hidden-input ~ .table {
-  max-height: 0;
-  overflow-y: hidden;
-
-  transition:
-		max-height .6s ease-in-out;
-}
-
-.vacancy .hidden-input:checked ~ .table {
-  // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
-  height: auto;
-  max-height: 1700px; // Be careful, this magic number might have to change if text changes!
-  margin-bottom: 3rem;
-
-  transition:
-		max-height 2s ease-in-out;
-}
-
-@media only screen and (max-width: $breakpoint-vl) {
-  .vacancy .hidden-input:checked ~ .table {
-    max-height: 2100px; // Be careful, this magic number might have to change if text changes!
-  }
-}
-
-@media only screen and (max-width: $breakpoint-l) {
-  .vacancy .hidden-input:checked ~ .table {
-    max-height: 2500px; // Be careful, this magic number might have to change if text changes!
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .vacancy .hidden-input:checked ~ .table {
-    max-height: 2800px; // Be careful, this magic number might have to change if text changes!
-  }
-}
-
-@media only screen and (max-width: $breakpoint-s) {
-  .vacancy .hidden-input:checked ~ .table {
-    max-height: 3500px; // Be careful, this magic number might have to change if text changes!
-  }
-}
-
-.vacancy .hidden-input:checked ~ label i, .vacancy .hidden-input:checked ~ i  {
-  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .table {
-    .left, .right {
-      grid-column: 1/-1;
-    }
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .not-on-mobile-2 {
-    display: none;
-  }
-   .table .top {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-     .righter {
-      grid-column: 2;
-    }
-     .lefter {
-      grid-column: 1;
-    }
-  }
-}
-
-// Culture
-.culture-cards {
-  text-align: center;
-}
-
-.culture-card {
-  background-color: oColorsGetPaletteColor('white-80');
+.benefits__card__heading {
+  @include oTypographyDisplay($scale: 5);
   color: $light-grey;
-
-  img {
-    width: 100%;
-  }
-
-  h4 {
-    @include oTypographySans($scale: 1);
-    margin-top: 50px;
-    font-weight: 600;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-    margin: 2rem 10% 67px 10%;
-  }
 }
 
-// Quotes
-.quotes {
-  min-height: 430px;
-  background-color: $dark-slate;
+.vacancy__description__subheading,
+.vacancy__text--top-left--lefter,
+.vacancy__text--left {
+  font-weight: 600;
+}
+
+.culture__card,
+.benefits__card__text {
+  color: $light-grey;
+}
+
+.culture__card__heading {
+  @include oTypographySans($scale: 1);
+  font-weight: 600;
+}
+
+.quotes__quote__heading {
   text-align: center;
-  margin-bottom: 2em;
-
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-  }
+  @include oTypographyDisplay($scale: 8);
+  font-weight: 200;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .quotes {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    min-height: 215px;
-  }
-
-  .quotes h1 {
+  .quotes__quote__heading {
     @include oTypographyDisplay($scale: 5);
   }
 }
 
-// Benefits
-.benefits-card {
-  max-width: 100vw;
-  @include oTypographyDisplay($scale: 5);
-  background-color: oColorsGetPaletteColor('white-80');
-  color: $light-grey;
-  position: relative;
-
-  hr {
-    margin-left: 10%;
-    margin-top: 30px;
-    height: 4px;
-    width: 52px;
-    background-color: $light-grey;
-    border: none;
-  }
-
-  h3 {
-    margin: 10px 20% 0 10%;
-  }
-
-  p {
-    @include oTypographySans($scale: 0);
-    margin: 1rem 20% 2rem 10%;
-  }
-}
-
-.benefit-0:after {
-  content: " ";
-  display: block;
-  width: 3px;
-  height: 75px;
-  background: oColorsGetPaletteColor('claret-100');
-  transform: rotate(50deg);
-  position: absolute;
-  bottom: 20px;
-  right: 60px;
-}
-
-.benefit-4 h3 {
-  max-width: 250px;
-}
-
-.benefit-4:after {
-  content: " ";
-  display: block;
-  width: 3px;
-  height: 70px;
-  background: oColorsGetPaletteColor('claret-100');
-  transform: rotate(50deg);
-  position: absolute;
-  top: 20px;
-  right: 60px;
-}
-
-// Apply
-.apply {
-  background-color: $dark-slate;
+.apply__wrapper {
   text-align: center;
-  padding-bottom: 4em;
-  margin-bottom: 2em;
-
-  h2 {
-    @include oTypographySans($scale: 6);
-    margin-bottom: 1rem;
-  }
-
-  p {
-    @include oTypographySans($scale: 1);
-    margin-bottom: 1rem;
-  }
-
-  a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-    margin-top: 2em;
-  }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .apply {
-    margin-bottom: 0.3em;
-  }
+.apply__heading {
+  @include oTypographySans($scale: 6);
+  font-weight: 400;
 }
 
-.header-container {
-  a {
-    @include oButtons('big');
-    @include oButtonsTheme('primary');
-    @include oButtonsTheme('inverse');
-  }
+.apply__text {
+  @include oTypographySans($scale: 1);
 }
 
-// Footer
+.intro-message__text,
+.intro__message__text {
+  @include oTypographySans($scale: 1);
+}
+
+.o-forms__label {
+  @include oTypographySansBold($scale: 0);
+  color: oColorsGetPaletteColor('black-80');
+}
+
+.o-forms__text {
+  @include oTypographySans($scale: 0);
+  color: oColorsGetPaletteColor('black-40');
+}
+
+.o-forms__errortext {
+  @include oTypographySans($scale: 0);
+}
+
+.o-forms__group .o-forms__label {
+  @include oTypographySans($scale: 0);
+  color: oColorsGetPaletteColor('black-80');
+}
+
+span {
+  @include oTypographySansBold($scale: 0);
+  color: oColorsGetPaletteColor('black-80');
+}
+
+.form-fields__button {
+  @include oTypographySans($scale: 0);
+  color: oColorsGetPaletteColor('white-80');
+}
+
 footer {
-  @include oFooterServicesBase($class: 'o-footer-services');
-  min-height: 70px;
-  padding-right: 2em;
-  padding-left: 2em;
-
   .o-footer-services__wrapper {
     color: oColorsMix(slate, white, 20);
+  }
+
+  span {
+    @include oTypographySansBold($scale: -1);
+    color: oColorsMix(slate, white, 20);
+    font-weight: normal;
   }
 
   .o-footer-services__links a {
@@ -1007,113 +589,624 @@ footer {
   }
 }
 
-footer .o-footer-services__container:before {
-  border-top: none;
+//////////////////////////////////////////////////////////
+// Components
+//////////////////////////////////////////////////////////
+
+// Generic
+
+.about__announcement,
+.culture__announcement,
+.people__announcement,
+.benefits__announcement {
+  margin-bottom: 2em;
+}
+
+.about__announcement__section-line,
+.culture__announcement__section-line,
+.people__announcement__section-line,
+.benefits__announcement__section-line {
+  border-top: 4px solid oColorsGetPaletteColor('claret-100');
+}
+
+.about__announcement__text,
+.culture__announcement__text,
+.people__announcement__text,
+.benefits__announcement__text {
+  margin-right: 2em;
+}
+
+.benefits__cards,
+.people__interviews {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .benefits__cards,
+  .people__interviews {
+    margin-bottom: 1rem;
+  }
+
+  .not-on-mobile {
+    display: none;
+  }
+}
+
+// Header
+
+.menu__container {
+  width: 100%;
+}
+
+// Intro
+
+.intro {
+  text-align: center;
+  padding: 1em;
+}
+
+.intro-message__container,
+.intro__message__container {
+  padding-top: 5vh;
+}
+
+.intro__thank-you-button {
+  margin-top: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11em;
+}
+
+.intro__message__heading {
+  margin: auto;
+}
+
+.intro-message__heading,
+.intro__message__heading {
+  max-width: 800px;
+  margin-bottom: 0;
+}
+
+.intro__message__text {
+  margin: 1em auto 2em auto;
+}
+
+.intro-message__text {
+  margin-bottom: 3em;
+}
+
+.intro-message__text,
+.intro__message__text {
+  max-width: 480px;
+}
+
+.intro__message__logo {
+  max-width: 350px;
+  max-width: 90vw;
+  margin: 0 auto 1em auto;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .intro__message__logo {
+    width: 200px;
+  }
+
+  .intro__heritage-logo__container {
+    top: 35vh;
+  }
+}
+
+.intro__heritage-logo__container,
+.quotes__heritage-logo {
+  width: 100%;
+}
+
+.intro__heritage-logo {
+  max-width: 100%;
+  max-height: 30vh;
+  margin: auto;
 }
 
 // Vacancies page
-.central-header .title {
-  h1 {
-    @include oTypographyDisplay($scale: 8);
-    font-weight: 200;
-  }
-
+.intro .title {
   hr {
     background-color: oColorsGetPaletteColor('claret-100');
     width: 60px;
     height: 4px;
     border: none;
   }
+}
 
-  p {
-    @include oTypographySans($scale: 1);
+// Video
+.video {
+  margin-bottom: 2em;
+}
+
+.video__wrapper {
+  background-color: oColorsGetPaletteColor('claret-100');
+  position: relative;
+}
+
+.video__content {
+  width: 100%;
+  margin-top: -2px;
+}
+
+.video__content::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+.video__play-button {
+  background-image: url(../images/play_button.png);
+  background-size: cover;
+  width: 107px;
+  height: 107px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
+// Culture
+
+.culture__cards {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.culture__card {
+  background-color: oColorsGetPaletteColor('white-80');
+}
+
+.culture__card__image {
+  width: 100%;
+}
+
+.culture__card__heading {
+  margin-top: 50px;
+}
+
+.culture__card__text {
+  margin: 2rem 10% 67px 10%;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .culture__cards {
+    margin-bottom: 1rem;
+  }
+
+  .culture__card {
+    margin-top: 120px;
+  }
+
+  .culture__card__image {
+    margin-top: -120px;
+  }
+
+  .culture__card__heading {
+    margin: 0;
+  }
+
+  .culture__card__text {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+
+// Quotes
+
+.quotes__quote__divider {
+  width: 60px;
+  height: 4px;
+  margin-bottom: 1.3em;
+  margin-top: 1.3em;
+  background-color: oColorsGetPaletteColor('claret-100');
+  border: none;
+}
+
+.quotes {
+  min-height: 430px;
+  background-color: $dark-slate;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .quotes {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 215px;
+  }
+}
+
+// People
+
+.people__interviews__interview {
+  position: relative;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.people__interviews__interview__image {
+  // images are inline by default, so they sit on a line-block (and have a gap at the bottom!)
+  display: block;
+  width: 100%;
+  will-change: filter;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+}
+
+.people__interviews__interview__text {
+  opacity: 0;
+  transition: opacity 1s;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+
+  // shading
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
+  padding-bottom: 6px;
+  padding-top: 6px;
+  bottom: 0;
+}
+
+.people__interviews__interview:hover {
+  .people__interviews__interview__image {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  .people__interviews__interview__text {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+}
+
+// Benefits
+
+.benefits__card {
+  max-width: 100vw;
+  background-color: oColorsGetPaletteColor('white-80');
+  position: relative;
+}
+
+.benefits__card__divider {
+  margin-left: 10%;
+  margin-top: 30px;
+  height: 4px;
+  width: 52px;
+  background-color: $light-grey;
+  border: none;
+}
+
+.benefits__card__heading {
+  margin: 10px 20% 0 10%;
+}
+
+.benefits__card__text {
+  margin: 1rem 20% 2rem 10%;
+}
+
+.benefits__card--0:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 75px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
+
+.benefits__card--4 .benefits__card__heading {
+  max-width: 250px;
+}
+
+.benefits__card--4:after {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 70px;
+  background: oColorsGetPaletteColor('claret-100');
+  transform: rotate(50deg);
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+// Apply
+
+.apply__wrapper {
+  background-color: $dark-slate;
+  padding-bottom: 4em;
+  margin-bottom: 2em;
+}
+
+.apply__heading {
+  margin-bottom: 1rem;
+}
+
+.apply__text {
+  margin-bottom: 1rem;
+}
+
+.apply__link {
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .apply__wrapper {
+    margin-bottom: 0.3em;
+  }
+}
+
+// Openings page
+
+.vacancy__section-line,
+.live-vacancies__section-line {
+  border-top: 2px solid oColorsGetPaletteColor('claret-100');
+}
+
+.vacancy__table {
+  overflow: hidden;
+}
+
+.vacancy__description__list {
+  margin-top: 1em;
+}
+
+.vacancy__description__list--ul {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+.vacancy__text--top-left,
+.vacancy__text--top-right {
+  display: flex;
+}
+
+.vacancy__description {
+  display: block;
+}
+
+.vacancy__text--top-left--lefter,
+.vacancy__text--top-left--righter,
+.vacancy__text--left,
+.vacancy__description__text,
+.vacancy__description__subheading,
+.vacancy__description__list-item {
+  margin: 10px;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy__text--top-left--lefter, .vacancy__text--top-left--righter {
+    margin-bottom: 0.3em;
+  }
+}
+
+.vacancy__section-header {
+  margin-bottom: 0.6rem;
+}
+
+.vacancy__table-section-line {
+  width: 100%;
+  height: 1px;
+  background-color: oColorsGetPaletteColor('white-80');
+}
+
+.vacancy__buttons {
+  display: flex;
+}
+
+.vacancy__button {
+  margin: 10px;
+  margin-top: 1em;
+}
+
+.live-vacancies__wrapper {
+  margin-bottom: 3em;
+}
+
+.live-vacancies__link {
+  margin-top: 7em;
+  width: 230px;
+  height: 2em;
+}
+
+// Form
+
+.form-fields__field--first {
+  margin-right: 10px;
+}
+
+.form-fields__field--last {
+  margin-left: 10px;
+}
+
+.form-fields__field--salary-expectations {
+  margin-right: 10px;
+}
+
+.form-fields__field--availability {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .form-fields__group {
+    display: block;
+  }
+
+  .form-fields__field--first {
+    margin-right: 0;
+  }
+
+  .form-fields__field--last {
+    margin-left: 0;
+  }
+
+  .form-fields__field--salary-expectations {
+    margin-right: 0;
+  }
+
+  .form-fields__field--availability {
+    margin-left: 0;
+  }
+}
+
+// Header
+.o-header-services {
+  background-color: black;
+  width: 100%;
+
+  .logo-text {
+    font-weight: 400;
+  }
+
+  .o-header-services__ftlogo {
+    margin: 8px 8px 8px 0;
+
+    background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-ft-logo-squared-bw?source=o-header-services&format=svg&width=55);
+  }
+}
+
+.o-header-services__top .logo-link {
+  float: left;
+}
+
+.o-header-services .o-header-services__title {
+  padding: 16px 10px;
+}
+
+.o-header-services__top .text-link {
+  float: right;
+  padding: 16px 10px;
+
+  .o-header-services__product-name {
+    margin-left: 20px;
+  }
+}
+
+.openings header .content .o-header-services__top .o-header-services__title .roles a,
+.landing header .content .o-header-services__top .o-header-services__title .about a {
+  border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
+  padding-bottom: 3px;
+}
+
+.landing,
+.openings {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .o-header-services__top .text-link .o-header-services__product-name {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-vs) {
+  .o-header-services .o-header-services__bleed-container {
+    padding: 0 5px;
+  }
+
+  .o-header-services .o-header-services__title {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+}
+
+// Footer
+footer {
+  min-height: 70px;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+footer .o-footer-services__container:before {
+  border-top: none;
+}
+
+.o-footer-services__wrapper {
+  text-align: center;
+
+  .o-footer-services__links {
+    float: none;
+  }
+}
+
+footer .o-footer-services__wrapper--legal p {
+  float: none;
+}
+
+footer {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  margin-top: auto;
+  background-color: $dark-slate;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  footer {
+    margin-top: 1em;
   }
 }
 
 // Form
 .form {
-  @include oFormsBaseFeatures();
-  @include oFormsWideFeature();
-  @include oFormsRadioCheckboxFeatures();
-  grid-column: 2;
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
 
-  h2 {
-    @include oTypographySansBold($scale: 1);
-    color: oColorsGetPaletteColor('white-80');
-    margin-left: 0.5rem;
-    margin-bottom: 1.3rem;
-  }
-
-  .o-forms {
+.o-forms {
   background-color: oColorsGetPaletteColor('white');
-  }
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-  .form {
-    grid-column: 2;
-  }
-}
-
-.fields {
+.form-fields {
   padding: 30px;
-
-  .o-forms__label {
-    @include oTypographySansBold($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
-  .o-forms__text {
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('black-40');
-    margin-bottom: 1rem;
-  }
-
-  .o-forms__errortext {
-    @include oTypographySans($scale: 0);
-  }
-
-  .o-forms__group .o-forms__label {
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
-  }
-
-  span {
-    @include oTypographySansBold($scale: 0);
-    color: oColorsGetPaletteColor('black-80');
-  }
-
-  .upload-button {
-    @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('white-80');
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    width: 100%;
-  }
-
-  .upload-file {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-  }
-
-  .submit-button {
-    @include oButtons($size: big, $theme: primary);
-    @include oTypographySans($scale: 0);
-    color: oColorsGetPaletteColor('white-80');
-    margin-bottom: 2rem;
-  }
 }
 
+.o-forms__label {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.o-forms__text {
+  margin-bottom: 1rem;
+}
+
+.form-fields__button--upload {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.form-fields__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.form-fields__button--submit {
+  margin-bottom: 2rem;
+}
+
+//////////////////////////////////////////////////////////
 // Animation
+//////////////////////////////////////////////////////////
+
+// Financial time old-style logo fading in
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -1155,78 +1248,60 @@ footer .o-footer-services__container:before {
   z-index: 2;
 }
 
-.landing, .openings {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 3;
+// Accordion animation
+// https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
+
+.vacancy__i  {
+  @include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white-80'), 32);
 }
 
-.o-header-services__top .logo-link {
-  float: left;
-}
-
-.o-header-services .o-header-services__title {
-  padding: 16px 10px;
-}
-
-.o-header-services__top .text-link {
-  float: right;
-  padding: 16px 10px;
-
-  .o-header-services__product-name {
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  .o-header-services__top .text-link .o-header-services__product-name {
-    margin-left: 10px;
-  }
-}
-
-.openings header .content .o-header-services__top .o-header-services__title .roles a,
-.landing header .content .o-header-services__top .o-header-services__title .about a {
-  border-bottom: 1px solid oColorsGetPaletteColor('claret-100');
-  padding-bottom: 3px;
-}
-
-.o-footer-services__wrapper {
-  text-align: center;
-
-  .o-footer-services__links {
-    float: none;
-  }
-}
-
-footer .o-footer-services__wrapper--legal p {
-  float: none;
-}
-
-footer {
-  padding-bottom: 2em;
-  padding-top: 2em;
-  margin-top: auto;
-  background-color: $dark-slate;
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-  footer {
-    margin-top: 1em;
-  }
-}
-
-.invisible {
+.vacancy__hidden-input {
   display: none;
 }
 
-@media only screen and (max-width: 320px) {
-  .o-header-services .o-header-services__bleed-container {
-    padding: 0 5px;
-  }
+.vacancy__hidden-input ~ .vacancy__table {
+  max-height: 0;
+  overflow-y: hidden;
 
-  .o-header-services .o-header-services__title {
-    padding-left: 0;
-    padding-right: 5px;
+  transition:
+		max-height .6s ease-in-out;
+}
+
+.vacancy__hidden-input:checked ~ .vacancy__table {
+  // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
+  height: auto;
+  max-height: 1700px; // Be careful, this magic number might have to change if text changes!
+  margin-bottom: 3rem;
+
+  transition:
+		max-height 2s ease-in-out;
+}
+
+@media only screen and (max-width: $breakpoint-vl) {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
+    max-height: 2100px; // Be careful, this magic number might have to change if text changes!
   }
+}
+
+@media only screen and (max-width: $breakpoint-l) {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
+    max-height: 2500px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
+    max-height: 2800px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+@media only screen and (max-width: $breakpoint-s) {
+  .vacancy__hidden-input:checked ~ .vacancy__table {
+    max-height: 3500px; // Be careful, this magic number might have to change if text changes!
+  }
+}
+
+.vacancy__hidden-input:checked ~ label i,
+.vacancy__hidden-input:checked ~ i  {
+  @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }

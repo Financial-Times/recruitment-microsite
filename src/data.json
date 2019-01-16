@@ -5,31 +5,6 @@
         "logo": "white_masthead.svg",
         "heritage_logo": "ft-heritage-logo.svg"
     },
-    "menu": {
-        "items":
-        [
-            {
-                "text": "About Us",
-                "link": "#about",
-                "class": "not-on-mobile"
-            },
-            {
-                "text": "Our People",
-                "link": "#people",
-                "class": "not-on-mobile"
-            },
-            {
-                "text": "Benefits",
-                "link": "#benefits",
-                "class": "not-on-mobile"
-            },
-            {
-                "text": "Roles",
-                "link": "openings.html",
-                "class": "on-mobile"
-            }
-        ]
-    },
     "video": {
         "link": "https://www.ft.com/assets/product-and-tech/FT+Product+%26+Technology+Recruitment.mp4"
     },
