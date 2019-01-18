@@ -28,13 +28,13 @@ html(lang="en")
                             input.o-forms__text(type="text", id="email", placeholder="Enter your email address", name="email" required)
 
                             fieldset.o-forms
-                                legend.o-forms__label Location
+                                legend.o-forms__label(name="location", multiple)  Location
                                 .o-forms__group.o-forms__group--inline              
-                                    input.o-forms__radio(type="radio" name="location" value="london" id="london" aria-label="Select London as your location")
+                                    input.o-forms__radio(type="radio" name="radio" value="london" id="london" aria-label="Select London as your location")
                                     label.o-forms__label(for="london") London
-                                    input.o-forms__radio(type="radio" name="location" value="manila" id="manila" aria-label="Select Manila as your location")
+                                    input.o-forms__radio(type="radio" name="radio" value="manila" id="manila" aria-label="Select Manila as your location")
                                     label.o-forms__label(for="manila") Manila
-                                    input.o-forms__radio(type="radio" name="location" value="sofia" id="sofia" aria-label="Select Sofia as your location")
+                                    input.o-forms__radio(type="radio" name="radio" value="sofia" id="sofia" aria-label="Select Sofia as your location")
                                     label.o-forms__label(for="sofia") Sofia
 
                             span Attach CV/Resume
