@@ -21,6 +21,7 @@ html(lang="en")
         section.video
             .video__wrapper.content
                 video.video__content(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
+                    track(kind="captions" default src=`${video.captions}` srclang="en-GB")
                 .video__play-button(id="play-pause")
         section.culture
             .culture__announcement
