@@ -599,6 +599,99 @@
                     "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
                 }
             }
+        },
+        {
+            "title": "Cloud Platforms Engineer",
+            "id": "platformsEngineer",
+            "details": {
+                "level": {
+                    "title": "Level",
+                    "text": "Senior"
+                },
+                "profession": {
+                    "title": "Profession",
+                    "text": "Senior Engineer - Cloud Platforms"
+                },
+                "type": {
+                    "title": "Type",
+                    "text": "Full time"
+                },
+                "location": {
+                    "title": "Location",
+                    "text": "London"
+                },
+                "description": {
+                    "title": "Description",
+                    "about": [
+                        "We are looking for engineers to help us build and operate our AWS and Heroku cloud platforms effectively, thus enabling delivery teams to deliver systems quickly, safely and cost effectively."
+                    ],
+                    "details": {
+                        "responsibilities": {
+                            "title": "Your responsibility is to…",
+                            "list": [
+                                "Work as part of an agile team implementing modern software development practices including test automation, continuous delivery, defining infrastructure as code and application monitoring.",
+                                "Collaborate with product owners and teams across the FT to understand problems and requirements.",
+                                "Be responsible for the development of functionality from accepting a story through to delivery of high quality solutions into Production environments.",
+                                "Understand that operating systems is just as important as building them.",
+                                "Help to mentor and coach more junior members of the team in modern software development practices through pairing and training sessions.",
+                                "Provide support to other delivery teams at the FT and help them utilise the cloud platforms efficiently, safely, and cost effectively."
+                            ]
+                        },
+                        "additionalResponsibilities": {
+                            "title": "You'll work on…",
+                            "list": [
+                                "Developing solutions that help us run and govern a large AWS and Heroku cloud estate",
+                                "Providing guidance to other teams within the FT on how to use cloud platforms effectively",
+                                "Providing self-service APIs and tools that enable delivery teams to utilise cloud platforms safely and effectively",
+                                "Providing tools to help teams understand usage and costs of their cloud estate and encourage cost effective infrastructure"
+                            ]
+                        },
+                        "technologies": {
+                            "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
+                            "list": [
+                                "Python 3",
+                                "Pytest",
+                                "Git / Github",
+                                "GoCD",
+                                "AWS: Lambda; Cloudformation; Config Rules; Organisations; plus the usual suspects EC2, S3, RDS",
+                                "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
+                            ]
+                        },
+                        "requirements": {
+                            "title": "You have…",
+                            "list": [
+                                "Strong programming and engineering skills.",
+                                "A natural bias towards test driving solution development.",
+                                "Taken ownership of solutions and demonstrate technical leadership within the team.",
+                                "Been responsibile for ensuring systems are available and operating well.",
+                                "Experience with AWS, particularly lambda & serverless.",
+                                "Setup and managed continuous integration jobs, continuous delivery pipelines and config management tools like ansible and cloudformation.",
+                                "Understanding of the principles of continuous delivery & infrastructure as code.",
+                                "Understanding of risk, cyber security and governance functions and building secure solutions."
+                            ]
+                        },
+                        "additionalRequirements": {
+                            "title": "Characteristics we value…",
+                            "list": [
+                                "Dedication to technical excellence, quality, security and reliability.",
+                                "Ability to understand complex problems.",
+                                "Effective communication and collaboration.",
+                                "Understanding when a task is done, and steering others to complete tasks or decisions.",
+                                "Ability to decide appropriately when to buy or build, and to communicate the reasons to others."
+                            ]
+                        },
+                        "hiringProcess": {
+                            "title": "The hiring process",
+                            "list": [
+                                "After we review your CV the next stage will be a 30 minute chat on the phone. Following this we will invite you in to meet with senior engineers and other members of the FT technology group for interviews. You will also do an onsite pair programming exercise with the aim of making it easy for you to demonstrate your strengths."
+                            ]
+                        }
+                    }
+                },
+                "conclusion": {
+                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+                }
+            }
         }
     ]
 }
