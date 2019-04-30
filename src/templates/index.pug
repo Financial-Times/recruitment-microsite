@@ -1,3 +1,6 @@
+- const origamiUrl = (url, quality) => `https://www.ft.com/__origami/service/image/v2/images/raw/${encodeURIComponent(url)}?source=roles&quality=${quality || 'low'}`
+- const imageHost = process.env.DEPLOY_PRIME_URL
+- const imageUrl = (url, quality) => (imageHost ? origamiUrl(`${imageHost}/${url}`, quality) : url)
 doctype html
 html(lang="en")
   include partials/head.pug
@@ -20,7 +23,7 @@ html(lang="en")
                 p.about__announcement__text #{about.text}
         section.video
             .video__wrapper.content
-                video.video__content(controls id="recruitment-video" src=`${video.link}` poster="images/Video_Cover.png")
+                video.video__content(controls id="recruitment-video" src=`${video.link}` poster=imageUrl("images/Video_Cover.png", 'lowest'))
                     track(kind="captions" default src=`${video.captions}` srclang="en-GB")
                 .video__play-button(id="play-pause")
         section.culture
@@ -31,7 +34,7 @@ html(lang="en")
             .culture__cards
                 each card in culture.cards
                     .culture__card
-                        img.culture__card__image(src=`images/${card.image}`, alt=`${card.title}`, role="presentation")
+                        img.culture__card__image(src=imageUrl(`images/${card.image}`), alt=`${card.title}`, role="presentation")
                         h4.culture__card__heading #{card.title}
                         p.culture__card__text #{card.text}
         section.quotes
@@ -50,7 +53,7 @@ html(lang="en")
             .people__interviews
                 each person,index in people.information
                     .people__interviews__interview(class="interview-"+index)
-                        img.people__interviews__interview__image(src=`images/${person.image}`)
+                        img.people__interviews__interview__image(src=imageUrl(`images/${person.image}`))
                         p.people__interviews__interview__text #{person.caption}
         section.benefits
             .benefits__announcement
