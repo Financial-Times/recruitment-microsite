@@ -1,5 +1,5 @@
 - const origamiUrl = (url, quality) => `https://www.ft.com/__origami/service/image/v2/images/raw/${encodeURIComponent(url)}?source=roles&quality=${quality || 'low'}`
-- const imageHost = process.env.DEPLOY_PRIME_URL
+- const imageHost = (process.env.CONTEXT === 'production' ? process.env.URL  : process.env.DEPLOY_PRIME_URL)
 - const imageUrl = (url, quality) => (imageHost ? origamiUrl(`${imageHost}/${url}`, quality) : url)
 doctype html
 html(lang="en")
