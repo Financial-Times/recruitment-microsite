@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  include ../partials/head.pug
+  body
+    .openings
+        include ../partials/header.pug
+    .content
+        section.intro-message
+            .intro-message__container
+                h1.intro-message__heading FT.com Tech Principles
+
+        main.content__area
+            each principle, index in principles
+                .expander
+                    input.expander__hidden-input(id=`principle-${index}` type="checkbox")
+                    label.expander__label(for=`principle-${index}`) #{principle.title}
+                    .expander__content
+                        p #{principle.descriptions}
+                        h2 Questions
+                        ul
+                            each question in principle.questions
+                                li #{question}
+
+    include ../partials/footer.pug

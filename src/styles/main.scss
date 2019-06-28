@@ -96,7 +96,9 @@ footer {
 .form,
 .vacancy__table,
 .live-vacancies__wrapper,
-.form__container {
+.form__container,
+// TODO: refactor components to use this generic container
+.content__area {
   grid-column: 2;
 }
 
@@ -112,6 +114,11 @@ footer {
 .form__container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
+}
+
+// TODO: refactor components to use this generic container
+.content__area {
+  padding: 2rem 10%;
 }
 
 .intro {
@@ -1305,3 +1312,6 @@ footer {
 .vacancy__hidden-input:checked ~ i  {
   @include oIconsGetIcon('arrow-up', oColorsGetPaletteColor('white-80'), 32);
 }
+
+
+@import "components/expander";

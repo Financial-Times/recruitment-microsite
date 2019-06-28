@@ -1,0 +1,40 @@
+.expander {
+  border-top: 2px solid oColorsGetPaletteColor("claret-100");
+}
+
+.expander__label {
+  @include oTypographySans($scale: 4);
+  display: block;
+  padding: 0.25rem 0;
+  font-weight: 400;
+}
+
+.expander__label::after {
+  content: '';
+  @include oIconsGetIcon("arrow-down", oColorsGetPaletteColor("white-80"), 32);
+  float: right;
+  vertical-align: middle;
+  transition: transform 1s ease-out;
+}
+
+.expander__hidden-input:checked ~ .expander__label .expander__i {
+    transform: rotate(180deg);
+}
+
+.expander__hidden-input {
+  display: none;
+}
+
+.expander__hidden-input ~ .expander__content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.6s ease-out;
+}
+
+.expander__hidden-input:checked ~ .expander__content {
+  // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
+  height: auto;
+  max-height: 4000px; // Be careful, this magic number might have to change if text changes!
+  margin-bottom: 3rem;
+  transition: max-height 2s ease-out;
+}

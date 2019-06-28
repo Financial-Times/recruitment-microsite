@@ -620,5 +620,25 @@
                 }
             }
         }
+    ],
+    "principles": [
+        {
+            "title": "Slow down to speed up",
+            "description": "Validating requirements, testing, writing documentation, setting up monitoring, and communicating changes are not secondary to shipping code. Before starting to code pause to evaluate whether the problem you’re being asked to solve is clear and valid. When coding consider how you or someone else may interpret your work in the future and how easy it is to understand, refactor, and remove. If you’re working on systems which are used by others, think about the wider impact of the changes you make and involve those who will be affected by your decisions.",
+            "questions": [
+                "Does this change affect any teams or systems outside of my immediate area?",
+                "Do I need to update the readme, wiki, healthchecks, or runbook to cover this change?",
+                "Do the existing tests adequately provide coverage of the code and describe how it is intended to behave?"
+            ]
+        },
+        {
+            "title": "Write code you can fix at 3AM",
+            "description": "Making the intent of your code clear is more important than how clever it is. Make time to refine your ideas and consider how easy they are to interpret and debug. Use code comments, commit messages, and pull request descriptions to add context to the decisions your code encompasses. Integrate metrics and logging around important business logic so that health checks can be used to effectively detect and pinpoint errors. Ensuring documentation remains up-to-date might mean nobody needs to be called at all.",
+            "questions": [
+                "Can this code be debugged easily and without any special tools?",
+                "Could my new feature be safely contained within a feature flag?",
+                "Are the readme and runbook for this project still up-to-date?"
+            ]
+        }
     ]
 }
