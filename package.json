@@ -19,9 +19,9 @@
   "author": "Caroline Handley",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.9.2",
-    "origami-build-tools": "^7.8.1",
-    "parallelshell": "3.0.1",
+    "node-sass": "^4.12.0",
+    "origami-build-tools": "^8.0.4",
+    "parallelshell": "3.0.2",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
