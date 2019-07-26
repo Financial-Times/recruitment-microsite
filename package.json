@@ -7,11 +7,12 @@
   "scripts": {
     "clean-previous-build": "rm -rf build",
     "bower-install": "bower install",
-    "create-folders": "mkdir build && mkdir build/images && mkdir build/css",
+    "create-folders": "mkdir build && mkdir build/images && mkdir build/css && mkdir build/subtitles",
     "build-styles": "obt build --sass=./src/styles/main.scss --build-css=./css/main.css",
     "copy-assets": "cp src/images/* build/images/",
+    "copy-subtitles": "cp src/subtitles/* build/subtitles",
     "build-html": "pug --pretty src/templates/index.pug src/templates/pages/openings.pug src/templates/pages/form.pug src/templates/pages/thankyou.pug -O src/data.json -o build",
-    "build": "npm run clean-previous-build && npm run create-folders && npm run copy-assets && npm run bower-install && npm run build-styles && npm run build-html",
+    "build": "npm run clean-previous-build && npm run create-folders && npm run copy-assets && npm run copy-subtitles && npm run bower-install && npm run build-styles && npm run build-html",
     "watch-html": "npm run build-html -- --watch",
     "watch-styles": "npm run build-styles -- --watch",
     "watch": "parallelshell 'npm run watch-styles' 'npm run watch-html'"
