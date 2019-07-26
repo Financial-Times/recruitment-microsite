@@ -1,9 +1,8 @@
 {
-  "name": "recruitment-website",
+  "name": "recruitment-microsite",
   "private": true,
   "version": "0.0.0",
-  "description": "",
-  "main": "",
+  "description": "FT Product & Tech recruitment microsite",
   "scripts": {
     "clean-previous-build": "rm -rf build",
     "bower-install": "bower install",
