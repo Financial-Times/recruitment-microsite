@@ -10,7 +10,7 @@ html(lang="en")
                     p.intro-message__text Your perspective will help us make great things happen.
             main.form__container
                 .form
-                    form.o-forms.o-forms--wide(action="thankyou.html" name="application" method="POST" netlify)
+                    form(action="thankyou.html" name="application" method="POST" netlify)
                         .form-fields
                             .form-fields__field--invisible
                                 label(for="role") Applied for position
@@ -18,47 +18,75 @@ html(lang="en")
 
                             .form-fields__group.form-fields__group--name
                                 .form-fields__field.form-fields__field--first
-                                    label.o-forms__label(aria-describedby="text-box-info", for="first-name") First name
-                                    input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
+                                    label.o-forms-field
+                                        span.o-forms-title
+                                            span.o-forms-title__main First name
+                                        span.o-forms-input.o-forms-input--text
+                                            input.o-forms__text(type="text", id="first-name", placeholder="First name", name="first-name" required)
                                 .form-fields__field.form-fields__field--last
-                                    label.o-forms__label(aria-describedby="text-box-info", for="last-name") Last name
-                                    input.o-forms__text(type="text", id="last-name", placeholder="Last name", name="last-name" required)
+                                    label.o-forms-field
+                                        span.o-forms-title
+                                            span.o-forms-title__main Last name
+                                        span.o-forms-input.o-forms-input--text
+                                            input(type="text", id="last-name", placeholder="Last name", name="last-name" required)
 
-                            label.o-forms__label(aria-describedby="text-box-info", for="email") Email address
-                            input.o-forms__text(type="email", id="email", placeholder="Enter your email address", name="email" required)
+                            label.o-forms-field
+                                span.o-forms-title
+                                    span.o-forms-title__main Email address
+                                span.o-forms-input.o-forms-input--text
+                                    input(type="email", id="email", placeholder="Enter your email address", name="email" required)
 
-                            fieldset.o-forms
-                                legend.o-forms__label(name="location", multiple)  Location
-                                .o-forms__group.o-forms__group--inline              
-                                    input.o-forms__radio(type="radio" name="radio" value="london" id="london" aria-label="Select London as your location")
-                                    label.o-forms__label(for="london") London
-                                    input.o-forms__radio(type="radio" name="radio" value="manila" id="manila" aria-label="Select Manila as your location")
-                                    label.o-forms__label(for="manila") Manila
-                                    input.o-forms__radio(type="radio" name="radio" value="sofia" id="sofia" aria-label="Select Sofia as your location")
-                                    label.o-forms__label(for="sofia") Sofia
+                            .o-forms-field(role="group", aria-labelledby="location")
+                                span.o-forms-title
+                                    span.o-forms-title__main(id="location") Location
+                                span.o-forms-input.o-forms-input--radio-round.o-forms-input--inline
+                                    label
+                                        input(type="radio" name="radio" value="london" id="london" aria-label="London")
+                                        span.o-forms-input__label(aria-hidden="true") London
+                                    label
+                                        input(type="radio" name="radio" value="manila" id="manila" aria-label="Manila")
+                                        span.o-forms-input__label(aria-hidden="true") Manila
+                                    label
+                                        input(type="radio" name="radio" value="sofia" id="sofia" aria-label="Sofia")
+                                        span.o-forms-input__label(aria-hidden="true") Sofia
 
-                            span Attach CV/Resume
-                            label.form-fields__button.form-fields__button--upload(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
-                            input.form-fields__file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
+                            div
+                                span.o-forms-title
+                                    span.o-forms-title__main Attach CV/Resume
+                                span.o-forms-input
+                                    label.form-fields__button.form-fields__button--upload(for="upload-cv", id="upload-cv-button") Upload CV (.pdf, size < 300KB)
+                                    input.form-fields__file(type="file", id="upload-cv", name="upload-cv", accept=".pdf")
 
-                            label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="portfolio") Portfolio
-                            input.o-forms__text(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
+                            label.o-forms-field.o-forms-field--optional
+                                span.o-forms-title
+                                    span.o-forms-title__main Portfolio
+                                span.o-forms-input.o-forms-input--text
+                                    input(type="text", id="portfolio", placeholder="Enter links to your portfolio e.g. Github, Blog, Behance, Dribbble", name="portfolio")
 
-                            fieldset.o-forms
-                                legend.o-forms__label.o-forms__label--optional Role type
-                                .o-forms__group.o-forms__group--inline
-                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="contract" id="contract" aria-label="Select contract as your role type")
-                                    label.o-forms__label(for="contract") Contract
-                                    input.o-forms__checkbox(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Select permanent as your role type")
-                                    label.o-forms__label(for="permanent") Permanent
+                            .o-forms-field.o-forms-field--optional(role="group", aria-labelledby="role-type")
+                                span.o-forms-title
+                                    span.o-forms-title__main(id="role-type") Role Type
+                                .o-forms-input.o-forms-input--checkbox.o-forms-input--inline
+                                    label
+                                        input(type="checkbox" name="checkbox" value="contract" id="contract" aria-label="Contract")
+                                        span.o-forms-input__label(aria-hidden="true") Contract
+                                    label
+                                        input(type="checkbox" name="checkbox" value="permanent" id="permanent" aria-label="Permanent")
+                                        span.o-forms-input__label(aria-hidden="true") Permanent
 
                             .form-fields__group.form-fields__group--additional-info
                                 .form-fields__field.form-fields__field--salary-expectations
-                                    label.o-forms__label(aria-describedby="text-box-info", for="salary") Salary expectations (in local currency)
-                                    input.o-forms__text(type="text", id="salary", placeholder="Enter your salary expectations in local currency", name="salary")
+                                    label.o-forms-field
+                                        span.o-forms-title
+                                            span.o-forms-title__main Salary expectations (in local currency)
+                                        span.o-forms-input.o-forms-input--text
+                                            input(type="text", id="salary", placeholder="Enter your salary expectations in local currency", name="salary")
                                 .form-fields__field.form-fields__field--availability
-                                    label.o-forms__label.o-forms__label--optional(aria-describedby="text-box-info", for="notice-period") Availability/Notice period
-                                    input.o-forms__text(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
+                                    label.o-forms-field.o-forms-field--optional
+                                        span.o-forms-title
+                                            span.o-forms-title__main  Availability/Notice period
+                                        span.o-forms-input.o-forms-input--text
+                                            input(type="text", id="notice-period", placeholder="Enter your availability/notice period", name="notice-period")
 
                             button.form-fields__button.form-fields__button--submit(type="submit", id="submit-application") Submit
     include ../partials/footer.pug
