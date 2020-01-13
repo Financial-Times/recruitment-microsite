@@ -36,14 +36,29 @@ html(lang="en")
                         .vacancy__text--right
                             .vacancy__description
                                 if opening.details.description.about
-                                    each line in opening.details.description.about
-                                        p.vacancy__description__text #{line}
+                                    each paragraph in opening.details.description.about
+                                        p.vacancy__description__text
+                                            each phrase in paragraph
+                                                if phrase.text
+                                                    span.some_class #{phrase.text}
+                                                if phrase.link
+                                                    a(href=phrase.link.url) #{phrase.link.text}
                                 each section in opening.details.description.details
-                                    p.vacancy__description__subheading #{section.title}
-                                    .vacancy__description__list
-                                        ul.vacancy__description__list--ul
-                                            each line in section.list
-                                                li.vacancy__description__list-item #{line}
+                                    if section.title
+                                        p.vacancy__description__subheading #{section.title}
+                                    if section.list
+                                        .vacancy__description__list
+                                            ul.vacancy__description__list--ul
+                                                each line in section.list
+                                                    li.vacancy__description__list-item #{line}
+                                    if section.comment
+                                        each paragraph in section.comment
+                                            p.vacancy__description__text
+                                                each phrase in paragraph
+                                                    if phrase.text
+                                                        span.some_class #{phrase.text}
+                                                    if phrase.link
+                                                        a(href=phrase.link.url) #{phrase.link.text}
                                 .vacancy__buttons
                                     form(action=`form.html#${opening.id}`)
                                         button.vacancy__button Express an interest

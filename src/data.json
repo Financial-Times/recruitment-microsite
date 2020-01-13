@@ -1,624 +1,973 @@
 {
-    "intro": {
-        "heading": "Make work that’s meaningful",
-        "subheading": "We may be 130 years old but we've never stopped innovating",
-        "logo": "white_masthead.svg",
-        "heritage_logo": "ft-heritage-logo.svg"
-    },
-    "video": {
-        "link": "https://www.ft.com/assets/product-and-tech/FT+Product+%26+Technology+Recruitment.mp4",
-        "captions": "subtitles/ft-product-technology-recruitment.vtt"
-    },
-    "about": {
-        "title": "Creative collaboration. 24/7",
-        "text": "The FT is 130 years old but we’re an exciting, pioneering business - not stuck in the past. Our digital news relies on constant technological innovation so our projects vary in scale and scope. We’re constantly looking for new ways to improve our user experience, design and delivery."
-    },
-    "culture": {
-        "title": "Express yourself",
-        "text": "The FT is not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
-        "cards": [
-            {
-                "image": "autonomy.png",
-                "title": "Autonomy",
-                "text": "Our teams are small, self-governing and multi-disciplined. Working as part of our team means you’ll be empowered to choose your own tools, methodologies and frameworks to solve problems."
-            },
-            {
-                "image": "inclusion.png",
-                "title": "Inclusion",
-                "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives. We also make it our priority to provide the most flexible conditions for everyone, including flexible working hours."
-            },
-            {
-                "image": "creativity.png",
-                "title": "Creativity",
-                "text": "With internal Hackathons and 10% time, we welcome ideas and different approaches to improving our product."
-            }
-        ]
-    },
-    "quotes": [
-        {
-            "quote": "Our teams are empowered to deliver world-class products for the FT",
-            "author": "Cait O’Riordan, CPIO"
-        }
-    ],
-    "people": {
-        "title": "Tech is what makes us tick",
-        "text": "Our product and tech team comprises hundreds of developers, designers, product managers and analysts - but our teams are small, self-governing and multi-disciplined. It means your decisions and knowledge will count in a major way, every day.",
-        "information": [
-            {
-                "image": "Caroline.png",
-                "caption": "Caroline, Senior Research Manager"
-            },
-            {
-                "image": "Jamie.png",
-                "caption": "Jamie, Junior Engineer"
-            },
-            {
-                "image": "Katie.png",
-                "caption": "Katie, Junior Engineer"
-            },
-            {
-                "image": "Kamran.png",
-                "caption": "Kamran, Junior Integration Engineer"
-            },
-            {
-                "image": "Miguel.png",
-                "caption": "Miguel, IT Service Desk Analyst"
-            },
-            {
-                "image": "Robin.png",
-                "caption": "Robin, Head of Digital Delivery"
-            }
-        ]
-    },
-    "benefits": {
-        "title": "Benefits",
-        "cards": [
-            {
-                "title": "Career Development",
-                "text": "We offer confidential career coaching, mentoring and a range of training courses, including tech talks, internal and external workshops and conferences.",
-                "decoration": true
-            },
-            {
-                "title": "Friendly, vibrant team of 400+",
-                "text": "We are a cross-functional, diverse team of 400+ globally and regularly have socials such as board games night, netball, rounders, football and quiz night.",
-                "decoration": false
-            },
-            {
-                "title": "Work-life Balance",
-                "text": "We make it a priority to provide flexible conditions for everyone, including flexi-leave, capacity to work from home, shared parental leave, a 35-hour work week, 10% time and more. (Location Specific)",
-                "decoration": false
-            },
-            {
-                "title": "Investing in Your Future ",
-                "text": "Employees can save for the future through competitive local pension schemes, such as a double match employee pension contribution in UK. (Location Specific)",
-                "decoration": false
-            },
-            {
-                "title": "Health & Wellness",
-                "text": "We offer competitive healthcare options in all regions, such as subsidised gym membership, or weekly yoga classes. (Location Specific)",
-                "decoration": true
-            },
-            {
-                "title": "Active Communities",
-                "text": "Active employee led communities such as FT Women, FT Embrace (BAME Network), FT Mental Health, FT Access and Proud FT.",
-                "decoration": false
-            }
-        ]
-    },
-    "apply": {
-        "title": "Join the team",
-        "button": "See our roles"
-    },
-    "openings": [
-        {
-            "title": "Software Engineer",
-            "id": "softwareEngineer",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Software Engineer"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London, Sofia"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "We are a multi-disciplinary, co-located team within which we periodically rotate between teams.",
-                        "We value transparency, accountability, shared responsibility and teamwork. We listen to the real needs of our users and follow the FT’s mission to provide engaging world-class journalism. We ensure Engineers have the tools they need - people are free to choose the OS and device type that suits them, and we encourage exploration of new tools and techniques. We support collaboration to share skills alongside more formal training opportunities.",
-                        "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tech we use and site reliability."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "What you’ll do…",
-                            "list": [
-                                "Work on new features for FT.com, our iOS and Android apps, and our presentation layer applications / services using modern web technologies.",
-                                "In conjunction with other disciplines (Product Owners, UX, design and more) you’ll contribute ideas to help make decisions and achieve our clear, company-wide goals.",
-                                "Maintain our high standards for web performance, security and accessibility.",
-                                "Help improve the way we work and the tools we use."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "You want to use tech where your input is valued in both product and technical choices.",
-                                "You prioritise a good work / life balance and rewarding work environment.",
-                                "You value a clear view on the reason why you’re working on something and how its success is measured.",
-                                "Your core skill set and expertise is web development and you're enthusiastic about contributing to all parts of the process.",
-                                "You are keen to take action whilst being pragmatic.",
-                                "You pay attention to detail and have common sense.",
-                                "You love being collaborative.",
-                                "You enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team.",
-                                "You love the web, and have an interest performance and accessibility.",
-                                "You have an understanding of design and UX principles.",
-                                "You like to avoid frameworks and only use them when necessary and right for the use case."
-                            ]
-                        },
-                        "technologies": {
-                            "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
-                            "list": [
-                                "Node.js; Heroku; AWS: Mainly Lambda, Kinesis, Dynamo",
-                                "Ad-tech stack (Google Ad Server DFP, 3rd Party Ad Servers, GPT libraries)",
-                                "RESTful APIs (third-party APIs)",
-                                "Elasticsearch; Neo4j; Redis; GraphQL",
-                                "Handlebars; Sass; Webpack; Preact",
-                                "Swift; Java; Kotlin",
-                                "Fastly and VCL",
-                                "GitHub; CircleCI; Sentry",
-                                "Graphite; Grafana, Splunk",
-                                "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
-                            ]
-                        },
-                        "hiringProcess": {
-                            "title": "The hiring process",
-                            "list": [
-                                "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly. It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Business Analyst",
-            "id": "businessAnalyst",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Business Analyst"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London, Sofia"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "Business Analysts at the Financial Times (FT) are central to the changes that support our continued growth.",
-                        "As a BA at the FT you will naturally flex your approach to analysis depending on the stakeholders and business needs. We’re empowered to work in the best way for the work/delivery and ultimately deliver value for our colleagues, customers and the organisation as a whole. At times you will be thinking strategically and helping to set direction with the team leadership; equally you may be working in close partnership with delivery teams to get things done."
-                    ],
-                    "details": {
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "Your stakeholders love you. You build effective working relationships and mediate in meetings and discussions to accommodate different personalities.",
-                                "Developers trust you. You are technically fluent and can express requirements in precise terms without losing nuance.",
-                                "You’re able to rapidly understand new concepts and business areas, as well as the fundamentals of underpinning technologies.",
-                                "You can communicate complexity and distill detail into clearly understandable concepts, no matter the audience.",
-                                "You flourish when balancing appropriate levels of detail and shifting priorities whilst keeping an eye on outcomes, strategy and scope.",
-                                "You’re an effective devil’s advocate, constructively and impartially questioning the status quo.",
-                                "You love juggling multiple projects at the same time."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "You have…",
-                            "list": [
-                                "The ability to translate business wants into needs, outputs and ultimately business value within a technology-led environment.",
-                                "A wide variety of analysis and problem solving techniques to call upon.",
-                                "Experience of conducting analysis in an Agile environment. You might have a background in Lean, Scrum, Kanban, UX, Anarchy, or a mix of all of the above.",
-                                "Experience of working with Product Owners and stakeholders from senior level management to end-users.",
-                                "The confidence to own the analysis of a problem, define the scope and present findings and recommendations to Senior stakeholders.",
-                                "A knack for understanding, documenting and assessing business processes.",
-                                "Experience in using data and metrics to assess the value of requirements or change requests."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Delivery Manager",
-            "id": "deliveryManager",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Delivery Manager"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "Our Delivery Managers sit right across our organisation - from Editorial to Sales & Marketing - and we are striving to be leaner, more nimble, effective and innovative. We can help teams do this by giving them data and tools that can not only support their processes, but also allow them to experiment on better ways to achieve their outcomes.",
-                        "The successful candidate will be obsessed with value, measurement, teamwork and removing any obstacles impeding delivery. They will love communicating with people, facilitating teams, creating vision and consensus. They will also have a keen sense of stakeholder communication, engagement and creating transparency."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "Your responsibility is to drive delivery…",
-                            "list": [
-                                "Deliver value - Work with leadership team, business owners and teams to ensure that products & services are delivered effectively to realise measurable benefits.",
-                                "Facilitate team - Resolve conflict and disagreement. Lead workshops. Remove impediments that hold your team back. Help them make decisions. Promote continuous improvement, clarity and empowerment.",
-                                "Champion quality - Technical standards, service management, agile quality management practices and principles.",
-                                "Create transparency - Clearly communicate and measure vision, schedule and progress within and outside of the teams.",
-                                "Build good governance - Manage and monitor resources and risks, proactively plan and take corrective action where necessary.",
-                                "Create vision and value - Help to define, shape and prioritise the vision, goals, initiatives and outcomes - seeking value, avoiding complexity.",
-                                "Manage 3rd parties - Manage and collaborate with 3rd parties to ensure they deliver effectively and that contracts are structured appropriately.",
-                                "Build community - Work to improve the FT’s Agile capability. Foster Agile knowledge, the supporting community and tools across the organisation."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "You are enthusiastic, proactive and able to resolve conflict - individuals & teams.",
-                                "You are able to steer a team towards self-organisation.",
-                                "You are able to quickly grasp business domains and assess genuine business value.",
-                                "You are a clear, adaptive and transparent communicator.",
-                                "You are bold and strategic - not afraid of failing, but afraid of not failing fast enough.",
-                                "You are a proactive and an accomplished influencer - ability to negotiate with other programmes and teams to deliver work to fixed deadlines."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "You have…",
-                            "list": [
-                                "3+ years leading and coaching Agile teams.",
-                                "Strong experience and understanding of digital product development.",
-                                "A good understanding of lean/agile principles and multiple methodologies.",
-                                "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving.",
-                                "Experience managing delivery using measurable business outcomes."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Network Engineer",
-            "id": "networkEngineer",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Network Engineer"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London, Manila"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "This role is within Enterprise Services (ES) Networks whose mantra is ‘To enable the FT with outstanding, cost- effective technology.",
-                        "Networks spans all areas of network associated services and scope, covering; local and wide-area networking; cloud services; development; security; quality assurance; integration; operational support; governance and cost controls; project management & customer/supplier management.",
-                        "We believe in multi-disciplined co-located teams empowered to choose their own development methodologies. Teams typically use methodologies such as SCRUM or Kanban. Similarly most teams choose to practise Continuous Delivery or Continuous Deployment. We are constantly pushing the boundaries in the quality of the network services that support our internal users, always looking for better, simpler and more effective ways of delivery in a fast paced environment.",
-                        "This role has a wide remit and includes architecting & executing the delivery of scalable, secure, and highly available network services and products for our internal customers. On a daily basis the role covers the monitoring and supporting all network services in our global offices and datacentres, connectivity into Cloud Services, delivering continual service improvement of all network services and troubleshooting problem areas as required, providing in depth network support to both support and project teams. Proactively manage and administer systems that relate to network management (including network monitoring and analysis tools as well as peripheral network services like DNS and DHCP). Supporting the wider team become more code focused will also be a key part of the role as is accelerating the move to Infrastructure-as-code.",
-                        "You will also take responsibility for exposing the performance metrics and alerting on the global networks for all internal users to consume, ensuring changes and new products are being delivered with customers in mind and not just focused on feature delivery.",
-                        "Collaboration with our customers is encouraged to understand their experience of the services we provide and then using that to improve and shape new products and services. Active involvement in all stages of planning of initiatives and preparing and presenting product demos at the fortnightly program showcases will help develop your interpersonal skills.",
-                        "As a Network Engineer you will be using a breadth of technologies and processes to help promote quality within the Working Environments Team.",
-                        "You should be passionate about delivering excellence and to achieve that we encourage self management and ownership of technical issue. So you should be tenacious in finding a resolution, working collaboratively within different teams.",
-                        "As an important member of Product/Technology you will contribute to the company-wide strategies and frameworks and ensure all network components adhere to security standard. In addition, you are encouraged to participate in a number of activities such as Hackathons, coding club, lunch & learn sessions, training courses and conferences and contributing to the open source community."
-                    ],
-                    "details": {
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "You are highly capable in managing and troubleshooting in a Cisco and Checkpoint world to a senior level.",
-                                "You have solid switching and routing skills and experience supporting both Layer 2 networks, and a Layer 3 LAN that closely integrates with the MAN and WAN network using BGP, OSPF and EIGRP routing protocols to provide resilience.",
-                                "You have expertise in maximising performance and availability of wireless networking.",
-                                "You have professional technical accreditations.",
-                                "You have experience in Python or similar, with the desire to learn new languages.",
-                                "You have experience with Cloud Computing e.g. IaaS, PaaS, SaaS etc.",
-                                "You are familiar with a range of AWS technologies (such as Cloudformation, Lambda and EC2).",
-                                "You have the ability to work with APIs.",
-                                "You have experience with version control systems, e.g. Git.",
-                                "You produce effective documentation to communicate anything from an idea to a strategy.",
-                                "You have experience defining and implementing testing processes and procedures.",
-                                "You have an understanding of agile development and its core principles.",
-                                "You have a good command of written and spoken English."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "These are handy, but don’t be put off if you don’t have exposure to them…",
-                            "list": [
-                                "Software Defined Networking",
-                                "Experienced with shell scripting (bash or otherwise).",
-                                "Experience working with monitoring and visibility tools (e.g. Solarwinds, Graphite/Grafana, Splunk or Zabbix).",
-                                "HTML, CSS & JavaScript"
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Product Designer",
-            "id": "productDesigner",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Product Designer"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "As a Product Designer in the FT, you will be working with our growing user experience design team in a fast and iterative product environment. We craft and evolve the quality user experience across several of our digital products across web and mobile devices and build on the success we have already gained among our growing audience of international readers.",
-                        "Working collaboratively with the Principal UX and UI designers on the FT.com programme you will be creating flows, wireframes and prototypes, through to visual / UI design while working within mature UX frameworks and design system.",
-                        "Our teams work using a lean methodology, this means validating design solutions quickly and being a highly collaborative and communicative team player (no rock stars please!). We design products and services to add value to our FT readers, not for ourselves. It requires working hand in hand with Product Owners, Researchers, BA’s and Developers and a willingness to both dig into details and think strategically.",
-                        "Our Product Designers can lean towards UX or UI - but what we are looking for is solid UX thinkers with quality design skills who can demonstrate a clear problem solving process based around the needs of users. Please note we are not looking for Visual Designers who can do wireframes.",
-                        "It’s important that you are committed to creating great product design but are pragmatic enough to test out customer-centric hypotheses quickly. Are comfortable working with analysts and product managers in assessing those ideas for likely impact, and are willing to re-evaluate your solutions when the insight isn’t in their favour."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "As a Product Designer you will be responsible for…",
-                            "list": [
-                                "Design features across the entire project lifecycle from ideation to launch.",
-                                "You are a creative problem solver with an eye for detail and accuracy, you start any project by asking what are the behaviours and needs of the consumers we’re designing for.",
-                                "Confidently work alongside Product Managers to evolve the strategy and create user centred solutions for the product.",
-                                "Perform competitor analysis, review and analyse existing features, apply user-centred methods to provide ideas for improvements.",
-                                "Work alongside our Research team for creating briefs for user research and testing.",
-                                "Collaborate with Product Managers, Research, Engineers, and other stakeholders to solve design problems effectively and efficiently.",
-                                "Run ideation workshops and design sprints.",
-                                "Create user flows, journeys and pixel-perfect designs.",
-                                "Produce multiple concepts and prototype interactions, and iterate based on feedback, A/B testing, user research, etc. Work alongside research to create scripts and goals for testing.",
-                                "Champion consistency of the FT’s brand and products and uphold the quality of the design.",
-                                "Assist with technical implementation by providing advice, mockups, prototypes, and assets."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "You are enthusiastic and eager to learn. You don’t think you’re a finished product.",
-                                "You are a good communicator, this is a crucial part of what you’ll do so you need to understand how to present your UX thinking to stakeholders.",
-                                "You are a solid team player. You will be highly collaborative and welcome working with others.",
-                                "You are receptive to giving and receiving feedback and productive design critique."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "You have…",
-                            "list": [
-                                "Significant expertise in user experience and user interface design.",
-                                "Expertise in using Sketch, Invision, alongside knowledge of other prototyping tools.",
-                                "Demonstrate your ability to create prototypes for web and mobile that provide a fantastic user experience and demonstrate your design thinking",
-                                "Ability to work with existing pattern libraries/design systems.",
-                                "Able to work in a lean environment."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Product Manager",
-            "id": "productManager",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "All"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Product Manager"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London, Sofia"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "Digital and the web have an increasingly important role to play for the business as media consumption habits change and revenues migrate from print to online. The Product Management team are responsible for defining and delivering on a vision through to product delivery, ensuring that user needs are addressed and business goals are achieved.",
-                        "A Product Manager role is available with an exciting remit of working on satisfying the needs of the FT 930,000 paid for subscribers and providing the Editorial team with front-end tools to improve storytelling and bring clarity to news.",
-                        "The right person will play a key role working with stakeholders across Editorial, B2B/B2C, Ads and Data Science. You’ll be both data led and user focused with a keen eye for detail. You’ll be adept at spotting opportunities to improve our customer facing platforms; driving greater engagement among existing users while delivering new ways to tell stories. You will conduct customer research, define problems, discover insights and come up with solutions. You will work in a cross functional autonomous team that use lean methodology to deliver on outcomes."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "As a Product Manager you will be…",
-                            "list": [
-                                "Owning a stream of work: define the problem, set up metrics and goals and set up a course of direction.",
-                                "Working in a cross functional team and lead its direction without authority.",
-                                "Conduct customer research and extract insights.",
-                                "Take part in finding solutions together with UX and Design.",
-                                "Help developers understand the problem and come up with the best way of implementing the solution.",
-                                "Working with a diverse set of stakeholders to define, champion and deliver product vision and roadmaps.",
-                                "Track and analyse competitors, feeding ‘best practice’ into the product development process.",
-                                "Maintain and update product backlogs and to track priorities for the digital offerings.",
-                                "Working within a lean development framework.",
-                                "Communicate roadmap, vision, achievements and progress to the wider team and to stakeholders."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "This role will be right for you if…",
-                            "list": [
-                                "You have a proven track record in a product management role (2+ years).",
-                                "You are data-driven and hypothesis led with ability to balance alongside user research and business objectives.",
-                                "You are customer obsessed.",
-                                "You have good communication skills – able to clearly write and present documents targeted at various audiences, as well as make presentations to large/small groups.",
-                                "You are proactive, outcome driven, with a can-do attitude.",
-                                "You are intellectually curious, with a demonstrable ability to identify opportunities and communicate their value proposition and business benefits.",
-                                "You have the ability to work independently, but with regular support and collaboration with their manager.",
-                                "You have the ability to balance workloads and priorities throughout the product lifecycle across of a range of email products and offsite services."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "These are handy, but don’t be put off if you don’t have exposure to them…",
-                            "list": [
-                                "Experience of working in a data heavy environment: AB testing, segmentation, data models.",
-                                "Experience in customer research."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        },
-        {
-            "title": "Cloud Platforms Engineer",
-            "id": "platformsEngineer",
-            "details": {
-                "level": {
-                    "title": "Level",
-                    "text": "Senior"
-                },
-                "profession": {
-                    "title": "Profession",
-                    "text": "Senior Engineer - Cloud Platforms"
-                },
-                "type": {
-                    "title": "Type",
-                    "text": "Full time"
-                },
-                "location": {
-                    "title": "Location",
-                    "text": "London"
-                },
-                "description": {
-                    "title": "Description",
-                    "about": [
-                        "We are looking for engineers to help us build and operate our AWS and Heroku cloud platforms effectively, thus enabling delivery teams to deliver systems quickly, safely and cost effectively."
-                    ],
-                    "details": {
-                        "responsibilities": {
-                            "title": "Your responsibility is to…",
-                            "list": [
-                                "Work as part of an agile team implementing modern software development practices including test automation, continuous delivery, defining infrastructure as code and application monitoring.",
-                                "Collaborate with product owners and teams across the FT to understand problems and requirements.",
-                                "Be responsible for the development of functionality from accepting a story through to delivery of high quality solutions into Production environments.",
-                                "Understand that operating systems is just as important as building them.",
-                                "Help to mentor and coach more junior members of the team in modern software development practices through pairing and training sessions.",
-                                "Provide support to other delivery teams at the FT and help them utilise the cloud platforms efficiently, safely, and cost effectively."
-                            ]
-                        },
-                        "additionalResponsibilities": {
-                            "title": "You'll work on…",
-                            "list": [
-                                "Developing solutions that help us run and govern a large AWS and Heroku cloud estate",
-                                "Providing guidance to other teams within the FT on how to use cloud platforms effectively",
-                                "Providing self-service APIs and tools that enable delivery teams to utilise cloud platforms safely and effectively",
-                                "Providing tools to help teams understand usage and costs of their cloud estate and encourage cost effective infrastructure"
-                            ]
-                        },
-                        "technologies": {
-                            "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
-                            "list": [
-                                "Python 3",
-                                "Pytest",
-                                "Git / Github",
-                                "GoCD",
-                                "AWS: Lambda; Cloudformation; Config Rules; Organisations; plus the usual suspects EC2, S3, RDS",
-                                "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
-                            ]
-                        },
-                        "requirements": {
-                            "title": "You have…",
-                            "list": [
-                                "Strong programming and engineering skills.",
-                                "A natural bias towards test driving solution development.",
-                                "Taken ownership of solutions and demonstrate technical leadership within the team.",
-                                "Been responsibile for ensuring systems are available and operating well.",
-                                "Experience with AWS, particularly lambda & serverless.",
-                                "Setup and managed continuous integration jobs, continuous delivery pipelines and config management tools like ansible and cloudformation.",
-                                "Understanding of the principles of continuous delivery & infrastructure as code.",
-                                "Understanding of risk, cyber security and governance functions and building secure solutions."
-                            ]
-                        },
-                        "additionalRequirements": {
-                            "title": "Characteristics we value…",
-                            "list": [
-                                "Dedication to technical excellence, quality, security and reliability.",
-                                "Ability to understand complex problems.",
-                                "Effective communication and collaboration.",
-                                "Understanding when a task is done, and steering others to complete tasks or decisions.",
-                                "Ability to decide appropriately when to buy or build, and to communicate the reasons to others."
-                            ]
-                        },
-                        "hiringProcess": {
-                            "title": "The hiring process",
-                            "list": [
-                                "After we review your CV the next stage will be a 30 minute chat on the phone. Following this we will invite you in to meet with senior engineers and other members of the FT technology group for interviews. You will also do an onsite pair programming exercise with the aim of making it easy for you to demonstrate your strengths."
-                            ]
-                        }
-                    }
-                },
-                "conclusion": {
-                    "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
-                }
-            }
-        }
+  "intro": {
+    "heading": "Make work that’s meaningful",
+    "subheading": "We may be 130 years old but we've never stopped innovating",
+    "logo": "white_masthead.svg",
+    "heritage_logo": "ft-heritage-logo.svg"
+  },
+  "video": {
+    "link": "https://www.ft.com/assets/product-and-tech/FT+Product+%26+Technology+Recruitment.mp4",
+    "captions": "subtitles/ft-product-technology-recruitment.vtt"
+  },
+  "about": {
+    "title": "Creative collaboration. 24/7",
+    "text": "The FT is 130 years old but we’re an exciting, pioneering business - not stuck in the past. Our digital news relies on constant technological innovation so our projects vary in scale and scope. We’re constantly looking for new ways to improve our user experience, design and delivery."
+  },
+  "culture": {
+    "title": "Express yourself",
+    "text": "The FT is not all suits and stock markets. Far from it. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team.",
+    "cards": [
+      {
+        "image": "autonomy.png",
+        "title": "Autonomy",
+        "text": "Our teams are small, self-governing and multi-disciplined. Working as part of our team means you’ll be empowered to choose your own tools, methodologies and frameworks to solve problems."
+      },
+      {
+        "image": "inclusion.png",
+        "title": "Inclusion",
+        "text": "We don’t hire for team fit, we hire for team betterment and diverse perspectives. We also make it our priority to provide the most flexible conditions for everyone, including flexible working hours."
+      },
+      {
+        "image": "creativity.png",
+        "title": "Creativity",
+        "text": "With internal Hackathons and 10% time, we welcome ideas and different approaches to improving our product."
+      }
     ]
+  },
+  "quotes": [
+    {
+      "quote": "Our teams are empowered to deliver world-class products for the FT",
+      "author": "Cait O’Riordan, CPIO"
+    }
+  ],
+  "people": {
+    "title": "Tech is what makes us tick",
+    "text": "Our product and tech team comprises hundreds of developers, designers, product managers and analysts - but our teams are small, self-governing and multi-disciplined. It means your decisions and knowledge will count in a major way, every day.",
+    "information": [
+      {
+        "image": "Caroline.png",
+        "caption": "Caroline, Senior Research Manager"
+      },
+      {
+        "image": "Jamie.png",
+        "caption": "Jamie, Junior Engineer"
+      },
+      {
+        "image": "Katie.png",
+        "caption": "Katie, Junior Engineer"
+      },
+      {
+        "image": "Kamran.png",
+        "caption": "Kamran, Junior Integration Engineer"
+      },
+      {
+        "image": "Miguel.png",
+        "caption": "Miguel, IT Service Desk Analyst"
+      },
+      {
+        "image": "Robin.png",
+        "caption": "Robin, Head of Digital Delivery"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits",
+    "cards": [
+      {
+        "title": "Career Development",
+        "text": "We offer confidential career coaching, mentoring and a range of training courses, including tech talks, internal and external workshops and conferences.",
+        "decoration": true
+      },
+      {
+        "title": "Friendly, vibrant team of 400+",
+        "text": "We are a cross-functional, diverse team of 400+ globally and regularly have socials such as board games night, netball, rounders, football and quiz night.",
+        "decoration": false
+      },
+      {
+        "title": "Work-life Balance",
+        "text": "We make it a priority to provide flexible conditions for everyone, including flexi-leave, capacity to work from home, shared parental leave, a 35-hour work week, 10% time and more. (Location Specific)",
+        "decoration": false
+      },
+      {
+        "title": "Investing in Your Future ",
+        "text": "Employees can save for the future through competitive local pension schemes, such as a double match employee pension contribution in UK. (Location Specific)",
+        "decoration": false
+      },
+      {
+        "title": "Health & Wellness",
+        "text": "We offer competitive healthcare options in all regions, such as subsidised gym membership, or weekly yoga classes. (Location Specific)",
+        "decoration": true
+      },
+      {
+        "title": "Active Communities",
+        "text": "Active employee led communities such as FT Women, FT Embrace (BAME Network), FT Mental Health, FT Access and Proud FT.",
+        "decoration": false
+      }
+    ]
+  },
+  "apply": {
+    "title": "Join the team",
+    "button": "See our roles"
+  },
+  "openings": [
+    {
+      "title": "Senior Engineer - Internal Products",
+      "id": "seniorEngineerInternalProducts",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Senior"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Financial Times are looking for a Senior Engineers to join our teams across the Internal Products programme."
+              }
+            ],
+            [
+              {
+                "text": "We’re committed to equality and diversity in the tech industry, and want to encourage applications from underrepresented backgrounds. We consider part-time roles and flexible working hours to help support this."
+              }
+            ]
+          ],
+          "details": {
+            "department": {
+              "title": "Internal Products",
+              "comment": [
+                [
+                  {
+                    "text": "The mission of the Internal Products team is to enable our peers (in tech and beyond) to do their best work. We do this in a variety of ways: finding a team the right tool for the job, helping them automate the most tedious parts of their work so they can invest in the valuable tasks they truly care about, discovering new ways in which to bring value to the business, and more. We are made up of the following feature teams in 2020: Incubate, Envoy, Digital Newsroom, Email Platform, Ads, DevX, CRM, CMS and People Tech. Head on over here to find out more on what it's like to work in Internal Products."
+                  }
+                ]
+              ]
+            },
+            "requirements": {
+              "title": "This role will be right for you if you have…",
+              "list": [
+                "Dedication to performance, accessibility, security and reliability",
+                "Ability to understand a complex business problem and to build or lead a team to solve that problem",
+                "Effective communication and collaboration",
+                "Understanding when a task is done, and steering others to complete tasks or decisions",
+                "Ability to decide appropriately when to buy or build, and to communicate the reasons to stakeholders",
+                "A respect for all disciplines involved in an excellent product, and a commitment to improving customer experience",
+                "Being collaborative",
+                "Enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team",
+                "A love of the web, an interest in performance and dedication to accessibility",
+                "An understanding of design and UX principles",
+                "An avoidance of frameworks, to get things done you prefer the tools that are right for the use case and frameworks only where necessary"
+              ]
+            },
+            "technologies": {
+              "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
+              "list": [
+                "Node.js",
+                "Elasticsearch; Neo4j; GraphQL",
+                "Heroku; AWS: mainly Lambda; Kinesis; DynamoDB",
+                "Working with data science teams - data models, statistics",
+                "GitHub; CircleCI; Sentry",
+                "Graphite; Grafana; Splunk"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
+                  }
+                ]
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be strong but friendly. It is set up to allow you to demonstrate your strengths. We have a short tech test that requires minimal code writing, a friendly in-house technical exercise and a set of standardised questions to encourage you to tell us about what you know and what you enjoy."
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Senior Engineer - Customer Products",
+      "id": "seniorEngineerCustomerProducts",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Mid"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Customer Products group works on our "
+              },
+              {
+                "link": {
+                  "text": "award winning website",
+                  "url": "https://www.ft.com/"
+                }
+              },
+              {
+                "text": ", "
+              },
+              {
+                "link": {
+                  "text": "iOS and Android apps",
+                  "url": "https://www.ft.com/tour/apps"
+                }
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "We are a multi-disciplinary, co-located team. We value transparency, accountability, shared responsibility and teamwork. We’re focused on our users and the FT’s mission to provide engaging world-class journalism."
+              }
+            ],
+            [
+              {
+                "text": "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tools we use and site reliability."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll do…",
+              "list": [
+                "Develop new features for FT.com and our mobile apps using modern web technologies",
+                "Collaborate with Product Owners, Delivery Managers, and UX Designers, contributing ideas to help achieve our company-wide goals",
+                "Maintain our high standards for web performance, security and accessibility",
+                "Help improve the way we work and the tools we use"
+              ]
+            },
+            "requirements": {
+              "title": "The role will be right for you if you are…",
+              "list": [
+                "Keen to take action whilst being pragmatic",
+                "Attention to detail and common sense",
+                "Being collaborative",
+                "Enjoy learning and teaching — whether that be pair programming, lightning talks, good documentation, leading workshops or mentoring more junior members of the team",
+                "A love of the web, an interest in performance and dedication to accessibility",
+                "An understanding of design and UX principles",
+                "An avoidance of frameworks, to get things done you prefer the tools that are right for the use case and frameworks only where necessary"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "Your core skill set and expertise is web development and  you're enthusiastic about contributing to all parts of the process. Our ideal candidate will bring a unique point of view to the work that we do. We firmly believe that diverse perspectives help us create a great product and enhance the team."
+                  }
+                ]
+              ]
+            },
+            "technologies": {
+              "title": "Here’s a list of things we use a lot. It’s not exhaustive, but gives you a taste of what our stack and tools look like:",
+              "list": [
+                "Node.js; Heroku; AWS Lambda; Kinesis; DynamoDB",
+                "Elasticsearch; Neo4j; Redis; GraphQL",
+                "Handlebars; Sass; Webpack; Preact",
+                "Fastly; VCL",
+                "Github; CircleCI; Sentry",
+                "Graphite; Grafana; Splunk"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We don’t expect you to have worked with all of these, it will be a bonus for us if you have worked with some of them. To find out more you can read about "
+                  },
+                  {
+                    "link": {
+                      "text": "how we route traffic on FT.com",
+                      "url": "http://matt.chadburn.co.uk/notes/modern-routing.html"
+                    }
+                  },
+                  {
+                    "text": " and have a look at "
+                  },
+                  {
+                    "link": {
+                      "text": "the code we make public on GitHub",
+                      "url": "https://github.com/Financial-Times/"
+                    }
+                  },
+                  {
+                    "text": ". You can also get an insight into how we work from our "
+                  },
+                  {
+                    "link": {
+                      "text": "FT Product & Technology Medium publication",
+                      "url": "https://medium.com/ft-product-technology"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be rigorous but friendly. We don’t do whiteboard coding or peer over your shoulder when you’re writing code."
+                  }
+                ],
+                [
+                  {
+                    "text": "We’re committed to equality and diversity in the tech industry, so we’ll be especially happy to see applications from under-represented backgrounds. We encourage this for example by considering part time roles and flexible working hours as well as tuning the hiring process to promoting diversity."
+                  }
+                ],
+                [
+                  {
+                    "text": "We have recently published our competencies for a Software Engineer. "
+                  },
+                  {
+                    "link": {
+                      "text": "Engineering Progression framework",
+                      "url": "https://engineering-progression.ft.com/"
+                    }
+                  },
+                  {
+                    "text": " and associated "
+                  },
+                  {
+                    "link": {
+                      "text": "competencies for a Software Engineer",
+                      "url": "https://engineering-progression.ft.com/competencies/junior-to-mid/"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
+      "title": "Engineer - Customer Products",
+      "id": "engineerCustomerProducts",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Mid"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Customer Products group works on our "
+              },
+              {
+                "link": {
+                  "text": "award winning website",
+                  "url": "https://www.ft.com/"
+                }
+              },
+              {
+                "text": ", "
+              },
+              {
+                "link": {
+                  "text": "iOS and Android apps",
+                  "url": "https://www.ft.com/tour/apps"
+                }
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "We are a multi-disciplinary, co-located team. We value transparency, accountability, shared responsibility and teamwork. We’re focused on our users and the FT’s mission to provide engaging world-class journalism."
+              }
+            ],
+            [
+              {
+                "text": "Most Engineers work across the entire stack, although many have expertise with particular technologies and domains, for example client-side, performance, accessibility, building APIs, security and integration. We deploy to production many times a day and have full ownership of releases, the tools we use and site reliability."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll do…",
+              "list": [
+                "Develop new features for FT.com and our mobile apps using modern web technologies",
+                "Collaborate with Product Owners, Delivery Managers, and UX Designers, contributing ideas to help achieve our company-wide goals",
+                "Maintain our high standards for web performance, security and accessibility",
+                "Help improve the way we work and the tools we use"
+              ]
+            },
+            "requirements": {
+              "title": "The role will be right for you if you are…",
+              "list": [
+                "Action-oriented and pragmatic",
+                "Strong problem solving skills",
+                "Attention to detail",
+                "Being collaborative",
+                "Enjoy learning",
+                "A love of the web, an interest performance and dedication to accessibility",
+                "An understanding of design and UX principles",
+                "You don’t need to rely on a framework to get things done, and you prefer the tools that are good enough for your use case"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "Your core skill set and expertise is web development and  you're enthusiastic about contributing to all parts of the process. Our ideal candidate will bring a unique point of view to the work that we do. We firmly believe that diverse perspectives help us create a great product and enhance the team."
+                  }
+                ]
+              ]
+            },
+            "technologies": {
+              "title": "Here’s a list of things we use a lot. It’s not exhaustive, but gives you a taste of what our stack and tools look like:",
+              "list": [
+                "Node.js; Heroku; AWS Lambda; Kinesis, and DynamoDB",
+                "Elasticsearch; Neo4j; Redis; GraphQL",
+                "Handlebars; Sass; Webpack; Preact",
+                "Fastly; VCL",
+                "Github; CircleCI; Sentry",
+                "Graphite; Grafana; Splunk"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We don’t expect you to have worked with all of these, it will be a bonus for us if you have worked with some of them. To find out more you can read about "
+                  },
+                  {
+                    "link": {
+                      "text": "how we route traffic on FT.com",
+                      "url": "http://matt.chadburn.co.uk/notes/modern-routing.html"
+                    }
+                  },
+                  {
+                    "text": " and have a look at "
+                  },
+                  {
+                    "link": {
+                      "text": "the code we make public on GitHub",
+                      "url": "https://github.com/Financial-Times/"
+                    }
+                  },
+                  {
+                    "text": ". You can also get an insight into how we work from our "
+                  },
+                  {
+                    "link": {
+                      "text": "FT Product & Technology Medium publication",
+                      "url": "https://medium.com/ft-product-technology"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be rigorous but friendly. We don’t do whiteboard coding or peer over your shoulder when you’re writing code."
+                  }
+                ],
+                [
+                  {
+                    "text": "We’re committed to equality and diversity in the tech industry, so we’ll be especially happy to see applications from under-represented backgrounds. We encourage this for example by considering part time roles and flexible working hours as well as tuning the hiring process to promoting diversity."
+                  }
+                ],
+                [
+                  {
+                    "text": "We have recently published our competencies for a Software Engineer. "
+                  },
+                  {
+                    "link": {
+                      "text": "Engineering Progression framework",
+                      "url": "https://engineering-progression.ft.com/"
+                    }
+                  },
+                  {
+                    "text": " and associated "
+                  },
+                  {
+                    "link": {
+                      "text": "competencies for a Software Engineer",
+                      "url": "https://engineering-progression.ft.com/competencies/junior-to-mid/"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
+      "title": "Senior Engineer - Operations & Reliability",
+      "id": "seniorEngineerOperationsAndReliability",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Mid"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Financial Times is looking for a Senior Engineer to join the Reliability Engineering team. This is a hands on development role, contributing to the tools our engineering teams use to improve our operational reliability, and helping to lead the development team."
+              }
+            ]
+          ],
+          "details": {
+            "projects": {
+              "title": "Projects you might work on…",
+              "list": [
+                "Graph database (neo4j), GraphQL and JSX systems for representing and administering our technical estate. Mainly Node.js Lambda apps",
+                "Prometheus-backed monitoring systems, mainly written in Go and deployed on AWS’s Elastic Container Service, with a react based UI",
+                "Project to pull together data about the state of every system in the FT from a range of sources and display them in a consistent view"
+              ]
+            },
+            "technologies": {
+              "title": "We often use these, it’s not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
+              "list": [
+                "Node.js",
+                "Web platform (HTML, CSS, JS)",
+                "AWS",
+                "React",
+                "GraphQL",
+                "Go",
+                "Prometheus",
+                "Neo4j"
+              ]
+            },
+            "responsibilities": {
+              "title": "What you’ll work on…",
+              "list": [
+                "Write robust, well-tested and secure solutions for the problems we need to solve",
+                "Ensure solutions align to FT technology strategy",
+                "Guide other team members in improving their code, through review and mentoring",
+                "Continually improve the tooling and processes we use within the team",
+                "Interact with the users of our tools, contributing to a culture where everything we deliver is well-crafted and user-focused",
+                "Own the development of functionality from analysis of requirements through to operating in production",
+                "Manage own workload, and be willing to help coordinate the efforts of a small team of engineers",
+                "Onboarding and mentoring secondees to the team (our team includes regular 3 month secondments of engineers from elsewhere in the business)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of User Research",
+      "id": "headOfResearch",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Senior"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Research"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "This is a new role with responsibility for leading a growing team of high performing user researchers across the FT’s twin product missions of optimising how we reach/ activate readers and creating more personally relevant experiences.  You will work with product and design leads to oversee a robust yet lean process for product discovery that evaluates ideas before they are invested in.  Together you will put that process into action with a focus on developing research skills, establishing research practices and maintaining the pace and quality of research insights."
+              }
+            ],
+            [
+              {
+                "text": "User researchers plan, conduct and share research that inspires and provokes transformational product experiences across desktop and mobile. They build customer knowledge within teams, utilising the best methods to answer challenging value and design questions, and reveal user needs, motivation and behaviours through conducting generative and evaluative, qualitative and quantitative research.  Researchers inspire action at all stages of product development – from rapid discovery and prototyping to post launch analysis – with clear and compelling oral, written and visual presentations about user insights.  You and the team will be evangelisers for user research and insights about the FT’s community of global readers across the product organisation and wider business."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll do…",
+              "list": [
+                "Hire and retain a team of brilliant, passionate user researchers",
+                "Nurture and continually advance their skills in research methods, analysis, synthesis and communication",
+                "In partnership with Product management and Product designers, own the process of product discovery for FT.com and the apps",
+                "Understand the FT’s strategic priorities and align research activities to create strategic insights",
+                "Ensure the FT product team is the best at knowing the needs and behaviours of the global business and finance community, through both direct, regular contact with customers and distilled, holistic insight",
+                "Effectively champion user research and customer perspective in an energetic, cross discipline environment",
+                "Be accountable for research quality – balancing best practice rigour with being lean"
+              ]
+            },
+            "requirements": {
+              "title": "What you’ll bring to the role…",
+              "list": [
+                "Proven research skills - experience of using a range of methods and techniques, and able to develop efficient and creative new approaches, to deliver insights that impact product direction",
+                "Clear communication and presentation skills – able to tell a compelling customer narrative with qual and quant results",
+                "Rousing team leadership – support and challenge researchers to always bring their best",
+                "Strong collaboration skills – know how to contribute and influence through finding common ground and building rapport with team members",
+                "Natural curiosity – a desire to understand how and why people use digital news and content products, and how FT can best meet their needs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "User Research",
+      "id": "userResearch",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Mid"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Research"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "Your job as user researcher is to set up and manage a programme of regular interaction between product team members and FT readers that enable rapid discovery and prototyping of opportunities across the FT’s product missions of optimising how we reach/ activate readers and creating more personally relevant experiences.   For example, fortnightly in-person user testing sessions.  Your work will set the pace and inform best practices for iterating on product designs with robust yet lean reader insights.   You will brand and raise the profile of the programme across the business, bringing product teams and business stakeholders together through regular, direct contact with readers."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll do…",
+              "list": [
+                "Run a programme of in-house customer sessions to support rapid product discovery and prototyping, including: recruiting readers, crafting research objectives and questions, utilising qualitative and evaluative techniques and analysis, and distilling and reporting insights",
+                "Balance robust methods with a lean approach to quickly turnaround customer insights that teams can have confidence in",
+                "Brand and raise the profile of the programme within the Product Organisation and other business areas (eg. Marketing and Editorial) and ensure sessions are well-attended and utilised"
+              ]
+            },
+            "requirements": {
+              "title": "What you’ll bring to the role…",
+              "list": [
+                "Research/ Usability lab experience – knowledge of how to set up and run a research lab or working in a lab environment",
+                "Proven research skills - experience with a range of design research methods and techniques, and able to develop efficient and creative new approaches, to deliver insights with impact",
+                "Clear communication and presentation skills – able to tell a compelling customer narrative with qual and quant results",
+                "Impeccable organisation and time management skills – able to balance being lean and applying rigour",
+                "Strong collaboration skills – know how to contribute and influence through finding common ground and building rapport",
+                "Natural curiosity – a desire to understand how and why people use digital news and content products, and how best to support their needs"
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
+      "title": "Product Designer",
+      "id": "productDesigner",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Mid"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Product Designer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "We are looking for a talented Product Designer, to join our team in a fast and iterative product environment. The role will involve end to end creation of products and features - from ideation into concepting, to testing and final delivery, crafting a quality experience for our digital products across web and mobile devices."
+              }
+            ],
+            [
+              {
+                "text": "Life at the FT is far from suits and stock markets. You’ll be working with a positive, switched-on team to solve challenges and make great things happen. Our culture is welcoming and your unique perspective will help us build better products and an even better team."
+              }
+            ],
+            [
+              {
+                "text": "We hire for team betterment and diverse perspectives. We also make it a priority to provide flexible conditions for everyone, including flexible working hours."
+              }
+            ],
+            [
+              {
+                "text": "Our Product Designers can lean towards UX or UI but what we are looking for is solid thinkers with quality design skills who can demonstrate a clear problem solving process based around the needs of users. "
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll be doing…",
+              "list": [
+                "Immersing yourself in data and research - You will work alongside our Research team for creating briefs for user research and testing, as well as digging into our data with our Analysts to surface journeys and behaviours",
+                "Analysis and reviews - By performing competitor and comparator analysis, reviewing existing journeys and features, you will explore ways of improving and innovating our experience",
+                "Empathising with our readers - You will approach your work with the users needs as a priority. To put yourself into their shoes, you will create flows, journeys and empathy maps that bring our users need and pain points to life",
+                "Running workshops and sessions to generate ideas - You will be running and facilitating workshops and design sprints with cross functional teams, ensuring we generate the strongest ideas",
+                "Concepting and exploring - You will take loose ideas, then explore and develop them into multiple concepts. You will share your early ideas with your team and continually seek feedback",
+                "Testing and learning fast - Working with researchers to create scripts, you will be getting your concepts in front of users and seeking valuable feedback for you to learn from and iterate your designs. A/B testing",
+                "Crafting final designs - Finishing and delivering high quality designs that reflect the gold standard of the FT’s journalism"
+              ]
+            },
+            "requirements": {
+              "title": "This role will be right for you if…",
+              "list": [
+                "You are truly collaborative — We really praise collaboration within our team, and believe this is a core requirement for this role. You’ll be working with a cross functional team, made up of a Product Manager, Delivery Lead, Researchers and Engineers, as well as embracing feedback and ideas from all members of the Product Design team and other stakeholders",
+                "You welcome critique — We promote a culture of healthy feedback and trust at the FT. You actively seek feedback and are open to iterating based on the opinions of your peers",
+                "You make things that are useful for your customers - You design for the needs and behaviours of users, not to make something look great for yourself",
+                "You are a creative problem solver with an eye for detail and accuracy",
+                "You are enthusiastic and eager to learn - You don’t think you’re a finished product and want to always keep improving your skills and techniques. We’ll help you fill in any gaps and we’re committed to helping you grow as a practitioner and we work together as a team",
+                "You’re a great communicator, this is a crucial part of what you’ll do so you need to understand how to present your thinking to stakeholders",
+                "You love working with a team of friendly designers. If all of this sounds like you, we’d love you to come and join the team"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Delivery Manager",
+      "id": "deliveryManager",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "All"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Delivery Manager"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "Our Delivery Managers sit right across our organisation - from Editorial to Sales & Marketing - and we are striving to be leaner, more nimble, effective and innovative. We can help teams do this by giving them data and tools that can not only support their processes, but also allow them to experiment on better ways to achieve their outcomes."
+              }
+            ],
+            [
+              {
+                "text": "The successful candidate will be obsessed with value, measurement, teamwork and removing any obstacles impeding delivery. They will love communicating with people, facilitating teams, creating vision and consensus. They will also have a keen sense of stakeholder communication, engagement and creating transparency."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "Your responsibility is to drive delivery…",
+              "list": [
+                "Deliver value - Work with leadership team, business owners and teams to ensure that products & services are delivered effectively to realise measurable benefits.",
+                "Facilitate team - Resolve conflict and disagreement. Lead workshops. Remove impediments that hold your team back. Help them make decisions. Promote continuous improvement, clarity and empowerment.",
+                "Champion quality - Technical standards, service management, agile quality management practices and principles.",
+                "Create transparency - Clearly communicate and measure vision, schedule and progress within and outside of the teams.",
+                "Build good governance - Manage and monitor resources and risks, proactively plan and take corrective action where necessary.",
+                "Create vision and value - Help to define, shape and prioritise the vision, goals, initiatives and outcomes - seeking value, avoiding complexity.",
+                "Manage 3rd parties - Manage and collaborate with 3rd parties to ensure they deliver effectively and that contracts are structured appropriately.",
+                "Build community - Work to improve the FT’s Agile capability. Foster Agile knowledge, the supporting community and tools across the organisation."
+              ]
+            },
+            "requirements": {
+              "title": "This role will be right for you if…",
+              "list": [
+                "You are enthusiastic, proactive and able to resolve conflict - individuals & teams.",
+                "You are able to steer a team towards self-organisation.",
+                "You are able to quickly grasp business domains and assess genuine business value.",
+                "You are a clear, adaptive and transparent communicator.",
+                "You are bold and strategic - not afraid of failing, but afraid of not failing fast enough.",
+                "You are a proactive and an accomplished influencer - ability to negotiate with other programmes and teams to deliver work to fixed deadlines."
+              ]
+            },
+            "additionalRequirements": {
+              "title": "You have…",
+              "list": [
+                "3+ years leading and coaching Agile teams.",
+                "Strong experience and understanding of digital product development.",
+                "A good understanding of lean/agile principles and multiple methodologies.",
+                "Strong experience of coaching agile teams and individuals, workshop facilitation and structured problem solving.",
+                "Experience managing delivery using measurable business outcomes."
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
+      "title": "Product Manager",
+      "id": "productManager",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "All"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Product Manager"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London, Sofia"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "Digital and the web have an increasingly important role to play for the business as media consumption habits change and revenues migrate from print to online. The Product Management team are responsible for defining and delivering on a vision through to product delivery, ensuring that user needs are addressed and business goals are achieved."
+              }
+            ],
+            [
+              {
+                "text": " Product Manager role is available with an exciting remit of working on satisfying the needs of the FT 930,000 paid for subscribers and providing the Editorial team with front-end tools to improve storytelling and bring clarity to news."
+              }
+            ],
+            [
+              {
+                "text": "The right person will play a key role working with stakeholders across Editorial, B2B/B2C, Ads and Data Science. You’ll be both data led and user focused with a keen eye for detail. You’ll be adept at spotting opportunities to improve our customer facing platforms; driving greater engagement among existing users while delivering new ways to tell stories. You will conduct customer research, define problems, discover insights and come up with solutions. You will work in a cross functional autonomous team that use lean methodology to deliver on outcomes."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "As a Product Manager you will be…",
+              "list": [
+                "Owning a stream of work: define the problem, set up metrics and goals and set up a course of direction.",
+                "Working in a cross functional team and lead its direction without authority.",
+                "Conduct customer research and extract insights.",
+                "Take part in finding solutions together with UX and Design.",
+                "Help developers understand the problem and come up with the best way of implementing the solution.",
+                "Working with a diverse set of stakeholders to define, champion and deliver product vision and roadmaps.",
+                "Track and analyse competitors, feeding ‘best practice’ into the product development process.",
+                "Maintain and update product backlogs and to track priorities for the digital offerings.",
+                "Working within a lean development framework.",
+                "Communicate roadmap, vision, achievements and progress to the wider team and to stakeholders."
+              ]
+            },
+            "requirements": {
+              "title": "This role will be right for you if…",
+              "list": [
+                "You have a proven track record in a product management role (2+ years).",
+                "You are data-driven and hypothesis led with ability to balance alongside user research and business objectives.",
+                "You are customer obsessed.",
+                "You have good communication skills – able to clearly write and present documents targeted at various audiences, as well as make presentations to large/small groups.",
+                "You are proactive, outcome driven, with a can-do attitude.",
+                "You are intellectually curious, with a demonstrable ability to identify opportunities and communicate their value proposition and business benefits.",
+                "You have the ability to work independently, but with regular support and collaboration with their manager.",
+                "You have the ability to balance workloads and priorities throughout the product lifecycle across of a range of email products and offsite services."
+              ]
+            },
+            "additionalRequirements": {
+              "title": "These are handy, but don’t be put off if you don’t have exposure to them…",
+              "list": [
+                "Experience of working in a data heavy environment: AB testing, segmentation, data models.",
+                "Experience in customer research."
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
 }
