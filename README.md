@@ -6,9 +6,9 @@ The Product and Tech recruitment microsite for prospective candidates to learn a
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Running locally](#running-locally)
-* [Deploying changes](#deploying-changes)
+- [Installation](#installation)
+- [Running locally](#running-locally)
+- [Deploying changes](#deploying-changes)
 
 ## Installation
 
@@ -16,6 +16,7 @@ The Product and Tech recruitment microsite for prospective candidates to learn a
 git clone git@github.com:Financial-Times/recruitment-microsite.git
 cd recruitment-microsite
 npm install
+bower install
 ```
 
 ## Running locally
