@@ -625,6 +625,152 @@
       }
     },
     {
+      "title": "Junior Cloud Infrastructure Engineer - Enterprise Services",
+      "id": "juniorCloudInfraEngineer",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Junior"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Cloud Infrastructure Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Infrastructure Delivery team within Enterprise Services enables other engineering teams to deliver well architected solutions quickly and safely to our growing audience of internationally minded business people."
+              }
+            ]
+          ],
+          "details": {
+            "responsibilities": {
+              "title": "What you’ll do…",
+              "list": [
+                "Designing and implementing a central solution for containers(PaaS), Linux infrastructure management and monitoring tools like Graphite, Grafana, etc in the cloud (AWS).",
+                "Providing self service APIs and tools that enable other delivery teams to utilise the centrally managed solutions.",
+                "Providing support to other delivery teams at the FT and helping them utilise core SaaS infrastructure products effectively.",
+                "Ensuring our solutions have high engineering standards (robust, fit for purpose, include synthetic testing and/or application monitoring and meet our quality standards)"
+              ]
+            },
+            "requirements": {
+              "title": "The role will be right for you if…",
+              "list": [
+                "You love solving technical problems",
+                "You have the enthusiasm and are keen to learn building and operating Linux environments and IaaS/SaaS cost effectively.",
+                "You are an effective communicator able to communicate complicated and technical topics in a simple way with a powerful narrative.",
+                "You are Customer focused with an eye for detail to ensure quality assurance and customer happiness at all times.",
+                "You are a ‘T-shaped’ DevOps enthusiast."
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "Your core skill set and expertise is cloud infrastructure and  you're enthusiastic about contributing to all parts of the process. Our ideal candidate will bring a unique point of view to the work that we do. We firmly believe that diverse perspectives help us create a great product and enhance the team."
+                  }
+                ]
+              ]
+            },
+            "technologies": {
+              "title": "Here’s a list of things we use a lot. It’s not exhaustive, but gives you a taste of what our stack and tools look like:",
+              "list": [
+                "AWS EC2, Lambda; RDS, and DynamoDB",
+                "RHEL; Amazon Linux OS",
+                "Python; Ansible; Cloudformation; Infrastructure-as-code",
+                "Fastly; VCL",
+                "Github; CircleCI;",
+                "Graphite; Grafana; Splunk"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We don’t expect you to have worked with all of these, it will be a bonus for us if you have worked with some of them. To find out more you can read about "
+                  },
+                  {
+                    "link": {
+                      "text": "how we route traffic on FT.com",
+                      "url": "http://matt.chadburn.co.uk/notes/modern-routing.html"
+                    }
+                  },
+                  {
+                    "text": " and have a look at "
+                  },
+                  {
+                    "link": {
+                      "text": "the code we make public on GitHub",
+                      "url": "https://github.com/Financial-Times/"
+                    }
+                  },
+                  {
+                    "text": ". You can also get an insight into how we work from our "
+                  },
+                  {
+                    "link": {
+                      "text": "FT Product & Technology Medium publication",
+                      "url": "https://medium.com/ft-product-technology"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be rigorous but friendly. We don’t do whiteboard coding or peer over your shoulder when you’re writing code."
+                  }
+                ],
+                [
+                  {
+                    "text": "We’re committed to equality and diversity in the tech industry, so we’ll be especially happy to see applications from under-represented backgrounds. We encourage this for example by considering part time roles and flexible working hours as well as tuning the hiring process to promoting diversity."
+                  }
+                ],
+                [
+                  {
+                    "text": "We have recently published our competencies for Engineers. "
+                  },
+                  {
+                    "link": {
+                      "text": "Engineering Progression framework",
+                      "url": "https://engineering-progression.ft.com/"
+                    }
+                  },
+                  {
+                    "text": " and associated "
+                  },
+                  {
+                    "link": {
+                      "text": "competencies for Engineers",
+                      "url": "https://engineering-progression.ft.com/competencies/junior-to-mid/"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
       "title": "Head of User Research",
       "id": "headOfResearch",
       "details": {
