@@ -625,6 +625,100 @@
       }
     },
     {
+      "title": "Senior Engineer - Cloud Platforms",
+      "id": "seniorEngineerCloudPlatforms",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Senior"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "London"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Financial Times are looking for a Senior Engineer to join our Cloud Enablement team within the Enterprise Services group."
+              }
+            ],
+            [
+              {
+                "text": "We’re committed to equality and diversity in the tech industry, and want to encourage applications from underrepresented backgrounds. We consider part-time roles and flexible working hours to help support this."
+              }
+            ]
+          ],
+          "details": {
+            "projects": {
+              "title": "What you might work on",
+              "list": [
+                "Develop solutions that help us run and govern a large AWS and Heroku cloud estate",
+                "Provide self-service APIs, tools and support that enable our tech teams to use cloud platforms quickly, safely and cost effectively",
+                "10% time - a half day every week to work on your own projects and develop your skills"
+              ]
+            },
+            "technologies": {
+              "title": "Here’s some of the tech we use a lot. It’s not exhaustive, but gives you a taste of what our stack and tools look like:",
+              "list": [
+                "Python 3; pytest; Git; Github; GoCD; AWS; Heroku; Lambda; Cloudformation; Config Rules; IAM; EC2; S3"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We do not expect you to have worked with them all but if you have experience of some of these it will be a bonus."
+                  }
+                ]
+              ]
+            },
+            "responsibilities": {
+              "title": "Key responsibilities of the role",
+              "list": [
+                "Working as part of an agile team using modern practices e.g. simple design, test automation, continuous delivery, defining infrastructure as code and service monitoring.",
+                "Be responsible for the development of high quality software - from idea through to delivery into production.",
+                "Understand that operating systems is as if not more important than building them.",
+                "Help to mentor more junior members of the team.",
+                "Provide support to other delivery teams at the FT, helping them use cloud platforms efficiently, safely, and cost effectively."
+              ]
+            },
+            "requirements": {
+              "title": "This role will be right for you if you have…",
+              "list": [
+                "Strong programming and engineering skills, ideally with Python or a willingness to learn.",
+                "A bias towards test driving solution development.",
+                "Taking ownership of solutions and demonstrating technical leadership within the team.",
+                "Feeling responsibility for ensuring systems are available and operating well.",
+                "Understanding of the principles of continuous delivery & infrastructure as code.",
+                "Understanding of risk, cyber security and governance functions and building secure solutions.",
+                "Dedication to technical excellence, quality, security and reliability.",
+                "Effective communication and collaboration.",
+                "Ability to decide appropriately when to buy versus build."
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "After we review your application the next stage will be a chat on the phone. Following this we will invite you in to meet with senior engineers for interviews. You will also do an onsite pair programming exercise in python with the aim of allowing you to demonstrate your strengths."
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
       "title": "Junior Cloud Infrastructure Engineer - Enterprise Services",
       "id": "juniorCloudInfraEngineer",
       "details": {
