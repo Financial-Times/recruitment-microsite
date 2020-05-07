@@ -29,6 +29,6 @@ Run `npm run watch` to listen for file changes as you develop.
 
 ## Deploying changes
 
-Changes are deployed to Netlify. The Netlify login details for the `next.developers@ft.com` account are stored in the `Shared-Next` LastPass folder. Learn how to get access to the Customer Products LastPass account in the [Next wiki](https://github.com/Financial-Times/next/wiki/Lastpass).
+Changes are deployed to Netlify. The Netlify login details for the `talent@ft.com` account are stored in the `Shared-Next` LastPass folder under: "roles.ft.com netlify login details". Learn how to get access to the Customer Products LastPass account in the [Next wiki](https://github.com/Financial-Times/next/wiki/Lastpass).
 
 Preview your changes by using Netlify's Deploy Previews. It's a unique URL that is generated when you push any changes to GitHub. It allows you to test and verify your changes before merging them into the master branch. Once all GitHub checks have passed, the preview link will be available in the pull request.
