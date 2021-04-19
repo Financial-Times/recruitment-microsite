@@ -719,6 +719,156 @@
       }
     },
     {
+      "title": "Senior Data Engineer - FT Core",
+      "id": "seniorDataEngineerFTCore",
+      "details": {
+        "level": {
+          "title": "Level",
+          "text": "Senior"
+        },
+        "profession": {
+          "title": "Profession",
+          "text": "Software Engineer"
+        },
+        "type": {
+          "title": "Type",
+          "text": "Full time"
+        },
+        "location": {
+          "title": "Location",
+          "text": "Sofia, Bulgaria"
+        },
+        "description": {
+          "title": "Description",
+          "about": [
+            [
+              {
+                "text": "The Financial Times are looking for a Senior Engineers to join our teams across the FT Core programme."
+              }
+            ]
+          ],
+          "details": {
+            "department": {
+              "title": "FT Core is a Product & Technology group within FT that brings together key digital assets:",
+              "list": [
+                "Content and Metadata - enabling content publishing, discoverability and targeting",
+                "Membership - powering a seamless subscription/payments/access and the whole newspaper distribution customer journeys",
+                "Data Platform - enabling storing, processing and getting insights from readership data"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "FT Core's mission is to develop and combine the digital assets of content, membership and data in supporting the FT Product strategy."
+                  }
+                ]
+              ]
+            },
+            "duties": {
+              "title": "This role will be right for you if you are happy to:",
+              "list": [
+                "Work directly with product owners and senior stakeholders to fully shape solutions from inception to deployment and beyond",
+                "Work within (with an opportunity to lead) a team of engineers in an agile delivery team",
+                "Develop high quality data solutions within Financial Times' Data Platform",
+                "Design and implement low maintenance, well monitored, secure and scalable solutions to customer problems",
+                "Design, build and operate solutions, from cradle to grave, which meet both functional and non-functional KPIs",
+                "Understand and play an active part in designing the architecture, tooling and release cycle processes used by the engineering teams across Product & Technology",
+                "Contribute to company-wide processes, frameworks and guidelines",
+                "Develop an in-depth understanding of FT's underlying data and data flow, data structures",
+                "Develop a close relationship with our customers and provide operational support"
+              ]
+            },
+            "candidatesProfile": {
+              "title": "The ideal candidate profile is:",
+              "list": [
+                "Experience in a Data Engineering role involving hands-on experience in data processing/data technologies/data warehousing within a significantly-sized Data project",
+                "Experience in modern database technologies (AWS/cloud-based/in-memory etc.), scripting languages, big data technologies",
+                "Experience working with data sources of varying volumes, variety and velocity",
+                "Experience in designing and developing ETL/ELT/Streaming solutions using out-of-the-box or custom-built technologies",
+                "Experience in delivering well engineered solutions using current technologies and best practices such as SOLID, TDD, CI/CD and pair programming",
+                "Good understanding of the principles and trade-offs of a microservices architecture",
+                "Good working experience of at least one cloud infrastructure, ideally AWS",
+                "Knowledge of optimisation techniques like indexing/performance tuning on both relational and columnar databases",
+                "Experience working within an environment where operational support and monitoring of code and systems is part of the culture",
+                "Experience productionizing Machine learning algorithms or Data science models",
+                "Experience working as part of an Agile delivery team, using methodologies like Scrum and Kanban",
+                "An active member of the broader technology community with an understanding of current leading trends",
+                "Natural advocate for data and BI",
+                "Natural collaborator and team player with proactive and determined approach to problem solving"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We do not expect you to have experience in all listed above but if you have some of these it will be a bonus. Most importantly we need team mates willing to work and innovate in building and operating extendible and stable Data Platfrom."
+                  }
+                ]
+              ]
+            },
+            "technologies": {
+              "title": "We often use these, it's not an exhaustive list but gives you a taste of what our technology stack and tools look like:",
+              "list": [
+                "Python",
+                "SQL",
+                "Workflow orchestration tools like Airflow, Luigi or Oozie",
+                "AWS: ECS/EKS, Kinesis/MSK (Kafka), Redshift",
+                "Streaming technologies like Kafka, Spark or Flink",
+                "Distributed SQL Engines like Presto, Athena or Impala",
+                "GitHub, CircleCI",
+                "Graphite, Grafana, Splunk"
+              ],
+              "comment": [
+                [
+                  {
+                    "text": "We do not expect you to have worked with them all rather than having knowledge of them and potential experience with alternatives."
+                  }
+                ]
+              ]
+            },
+            "hiringProcess": {
+              "title": "The hiring process",
+              "comment": [
+                [
+                  {
+                    "text": "We understand that tech interviews are often stressful for no good reason, so we designed our interview process to be rigorous but friendly. We have tech test requiring minimal code writing and algorithms understanding, a friendly system design exercise and a set of questions to encourage you to tell us about your strengths and what makes you happy at work."
+                  }
+                ],
+                [
+                  {
+                    "text": "We're committed to equality and diversity in the tech industry, so we'll be especially happy to see applications from under-represented backgrounds. We encourage this for example by considering flexible working hours as well as tuning the hiring process to promoting diversity."
+                  }
+                ],
+                [
+                  {
+                    "text": "We have recently published our competencies for a Software Engineer. "
+                  },
+                  {
+                    "link": {
+                      "text": "Engineering Progression framework",
+                      "url": "https://engineering-progression.ft.com/"
+                    }
+                  },
+                  {
+                    "text": " and associated "
+                  },
+                  {
+                    "link": {
+                      "text": "competencies for a Software Engineer",
+                      "url": "https://engineering-progression.ft.com/competencies/mid-to-senior1/"
+                    }
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "conclusion": {
+          "text": "Think this sounds like you? If you can see yourself working here and think you've got what it takes please attach your CV."
+        }
+      }
+    },
+    {
       "title": "Junior Cloud Infrastructure Engineer - Enterprise Services",
       "id": "juniorCloudInfraEngineer",
       "details": {

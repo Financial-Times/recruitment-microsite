@@ -1224,7 +1224,7 @@ footer.o-footer-services {
 .vacancy__hidden-input:checked ~ .vacancy__table {
   // Nice article! https://css-tricks.com/using-css-transitions-auto-dimensions/
   height: auto;
-  max-height: 1700px; // Be careful, this magic number might have to change if text changes!
+  max-height: 100%;
   margin-bottom: 3rem;
 
   transition:
